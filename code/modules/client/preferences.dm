@@ -360,12 +360,15 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 			dat += "<b>Always Pick Random Appearance:</b> <a href='byond://?_src_=prefs;preference=rand_body'><b>[be_random_body ? "Yes" : "No"]</b></a><br><br>"
 
 			dat += "<h2><b><u>Physical Information:</u></b>"
-			dat += "<a href='byond://?_src_=prefs;preference=all;task=random'>&reg;</A></h2>"
-			dat += "<b>Age:</b> <a href='byond://?_src_=prefs;preference=age;task=input'><b>[age]</b></a><br>"
-			dat += "<b>Gender:</b> <a href='byond://?_src_=prefs;preference=gender'><b>[gender == MALE ? "Male" : "Female"]</b></a><br>"
-			dat += "<b>Skin Color:</b> <a href='byond://?_src_=prefs;preference=skin_color;task=input'><b>[skin_color]</b></a><br>"
-			dat += "<b>Body Size:</b> <a href='byond://?_src_=prefs;preference=body_size;task=input'><b>[body_size]</b></a><br>"
-			dat += "<b>Body Muscularity:</b> <a href='byond://?_src_=prefs;preference=body_type;task=input'><b>[body_type]</b></a><br>"
+			dat += "<a href='?_src_=prefs;preference=all;task=random'>&reg;</A></h2>"
+			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'><b>[age]</b></a><br>"
+			dat += "<b>Gender:</b> <a href='?_src_=prefs;preference=gender'><b>[gender == MALE ? "Male" : "Female"]</b></a><br><br>"
+
+			dat += "<b>Skin Color:</b> [skin_color]<br>"
+			dat += "<b>Body Size:</b> [body_size]<br>"
+			dat += "<b>Body Muscularity:</b> [body_type]<br>"
+			dat += "<b>Edit Body:</b> <a href='?_src_=prefs;preference=body;task=input'><b>Picker</b></a><br><br>"
+
 			dat += "<b>Traits:</b> <a href='byond://?src=\ref[user];preference=traits;task=open'><b>Character Traits</b></a>"
 			dat += "<br>"
 

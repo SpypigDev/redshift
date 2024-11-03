@@ -100,6 +100,11 @@ $scrollbar-color-multiplier: 0.5 !default;
     )
   );
 
+  @include meta.load-css(
+    '../components/Modal.scss',
+    $with: ('background-color': base.$color-bg)
+  );
+
   .Layout__content {
     background-image: none;
     background: radial-gradient(

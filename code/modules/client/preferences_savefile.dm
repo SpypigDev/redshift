@@ -203,6 +203,18 @@
 				origin = ORIGIN_USCM_AW
 		S["origin"] << origin
 
+	if(savefile_version < 29)
+		var/hair_style = ""
+		S["hair_style_name"] >> hair_style
+
+		switch(hair_style)
+			if("Shoulder-length Hair Alt")
+				hair_style = "Long Fringe"
+			if("Long Hair Alt")
+				hair_style = "Longer Fringe"
+
+		S["hair_style_name"] << hair_style
+
 	savefile_version = SAVEFILE_VERSION_MAX
 	return 1
 

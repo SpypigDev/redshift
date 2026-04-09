@@ -8323,7 +8323,7 @@
 	pixel_x = -6;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/det_hat,
+/obj/item/clothing/head/fedora/brown,
 /obj/structure/pipes/vents/pump,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
@@ -26501,9 +26501,6 @@
 /obj/structure/machinery/door/airlock/almayer/security/glass{
 	name = "\improper Marshal Office Interrogation";
 	req_access = null
-	},
-/obj/structure/pipes/standard/simple/hidden/green{
-	dir = 4
 	},
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4

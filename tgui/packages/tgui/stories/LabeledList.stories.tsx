@@ -4,14 +4,14 @@
  * @license MIT
  */
 
-import { Button, LabeledList } from '../components';
+import { Button, LabeledList } from 'tgui/components';
 
 export const meta = {
   title: 'LabeledList',
   render: () => <Story />,
 };
 
-const Story = (props) => {
+function Story() {
   return (
     <>
       <LabeledList>
@@ -70,4 +70,4 @@ const Story = (props) => {
       </LabeledList>
     </>
   );
-};
+}

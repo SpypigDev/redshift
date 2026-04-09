@@ -4243,10 +4243,6 @@
 	},
 /turf/open/floor/almayer/plating/northeast,
 /area/almayer/shipboard/port_point_defense)
-"bDn" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/closed/wall/almayer,
-/area/almayer/hallways/hangar)
 "bDu" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 4
@@ -89160,7 +89156,7 @@ oQg
 bdV
 bvf
 tQL
-bDn
+bcm
 bGu
 bvf
 uEj
@@ -125448,7 +125444,7 @@ kjy
 kjy
 tte
 hvw
-gLN
+kjy
 cCG
 fTt
 unz

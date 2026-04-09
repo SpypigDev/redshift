@@ -7559,15 +7559,6 @@
 	},
 /turf/open/gm/river/no_overlay,
 /area/kleschers/int_reg/filtration)
-"ehg" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 1
-	},
-/turf/closed/wall/mineral/sandstone/runed/decor{
-	color = "#666666";
-	name = "memorial wall"
-	},
-/area/kleschers/outside/eta_courtyard)
 "ehu" = (
 /turf/open/floor/shiva/radiator_tile2,
 /area/kleschers/int_heavy/filtration_locks)
@@ -36481,12 +36472,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/shiva,
 /area/kleschers/int_reg/hydroponics)
-"tiG" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
-/turf/closed/wall/strata_outpost,
-/area/kleschers/int_reg/filtration)
 "tiI" = (
 /obj/structure/platform/strata{
 	color = "#df9f9f";
@@ -36516,7 +36501,6 @@
 /area/kleschers/int_reg/dorms)
 "tjB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/pipes/vents/pump,
 /turf/closed/wall/strata_outpost/reinforced,
 /area/kleschers/int_reg/engineering)
 "tjG" = (
@@ -44023,12 +44007,6 @@
 /obj/structure/bed/chair,
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/kleschers/outside/construction)
-"xrj" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 1
-	},
-/turf/closed/wall/strata_outpost/reinforced/hull,
-/area/kleschers/outside/eta_courtyard)
 "xrF" = (
 /obj/structure/machinery/space_heater/radiator/red,
 /turf/open/floor/shiva/red/north,
@@ -68744,12 +68722,12 @@ gRb
 fNg
 oSc
 fOA
-xrj
+krq
 dQA
 tni
 jdG
 jdG
-ehg
+bEm
 jdG
 vze
 hMJ
@@ -72435,7 +72413,7 @@ dgz
 ibX
 wda
 eZn
-tiG
+ggq
 jmE
 uFV
 jHJ

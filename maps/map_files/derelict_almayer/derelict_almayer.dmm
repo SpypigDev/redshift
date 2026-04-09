@@ -38336,10 +38336,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/carpet,
 /area/almayer/living/commandbunks)
-"opM" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/closed/wall/almayer,
-/area/almayer/hallways/hangar)
 "oqb" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -51014,7 +51010,6 @@
 /area/almayer/hallways/upper/aft_hallway)
 "tnr" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/pipes/standard/simple/hidden/supply,
 /turf/closed/wall/almayer/reinforced,
 /area/almayer/shipboard/brig/warden_office)
 "tnw" = (
@@ -76562,7 +76557,7 @@ mkI
 qKC
 sgC
 dUv
-opM
+ydm
 uCY
 sgC
 vAM

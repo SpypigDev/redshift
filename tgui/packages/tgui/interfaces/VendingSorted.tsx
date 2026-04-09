@@ -1,8 +1,9 @@
 import { KEY_ESCAPE } from 'common/keycodes';
 import { toFixed } from 'common/math';
 import { classes } from 'common/react';
-import { type ComponentProps, useState } from 'react';
-import { useBackend } from 'tgui/backend';
+import { useState } from 'react';
+
+import { useBackend } from '../backend';
 import {
   Box,
   Button,
@@ -13,15 +14,15 @@ import {
   ProgressBar,
   Section,
   Tooltip,
-} from 'tgui/components';
-import { Table, TableCell, TableRow } from 'tgui/components/Table';
-import { Window } from 'tgui/layouts';
+} from '../components';
+import { BoxProps } from '../components/Box';
+import { Table, TableCell, TableRow } from '../components/Table';
+import { Window } from '../layouts';
 
 const THEME_COMP = 0;
 const THEME_USCM = 1;
 const THEME_CLF = 2;
 const THEME_UPP = 3;
-const THEME_YAUTJA = 4;
 
 const VENDOR_ITEM_REGULAR = 1;
 const VENDOR_ITEM_MANDATORY = 2;
@@ -34,7 +35,6 @@ interface VendingRecord {
   prod_desc?: string;
   prod_cost: number;
   image: string;
-  image_size: string;
 }
 
 interface VendingCategory {
@@ -59,7 +59,7 @@ interface VenableItem {
   readonly record: VendingRecord;
 }
 
-interface RecordNameProps extends ComponentProps<typeof Box> {
+interface RecordNameProps extends BoxProps {
   readonly record: VendingRecord;
 }
 
@@ -95,7 +95,7 @@ const DescriptionTooltip = (props: RecordNameProps) => {
   );
 };
 
-interface VendButtonProps extends ComponentProps<typeof Box> {
+interface VendButtonProps extends BoxProps {
   readonly isRecommended: boolean;
   readonly isMandatory: boolean;
   readonly available: boolean;
@@ -142,11 +142,7 @@ const VendableItemRow = (props: VenableItem) => {
     <>
       <TableCell className="IconCell" verticalAlign="top">
         <span
-          className={classes([
-            `Icon`,
-            `vending${props.record.image_size ? props.record.image_size : `32x32`}`,
-            `${props.record.image}`,
-          ])}
+          className={classes([`Icon`, `vending32x32`, `${props.record.image}`])}
         />
       </TableCell>
 
@@ -197,11 +193,7 @@ const VendableClothingItemRow = (props: {
     <>
       <TableCell className="IconCell" verticalAlign="top">
         <span
-          className={classes([
-            `Icon`,
-            `vending${props.record.image_size ? props.record.image_size : `32x32`}`,
-            `${props.record.image}`,
-          ])}
+          className={classes([`Icon`, `vending32x32`, `${props.record.image}`])}
         />
       </TableCell>
 
@@ -321,8 +313,6 @@ const getTheme = (value: string | number): string => {
       return 'retro';
     case THEME_COMP:
       return 'weyland';
-    case THEME_YAUTJA:
-      return 'ntos_spooky';
     default:
       return 'usmc';
   }

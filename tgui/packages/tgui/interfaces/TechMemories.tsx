@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { useBackend } from 'tgui/backend';
-import { Box, Button, Flex, LabeledList, Section, Tabs } from 'tgui/components';
-import { Window } from 'tgui/layouts';
+
+import { useBackend } from '../backend';
+import { Box, Button, Flex, LabeledList, Section, Tabs } from '../components';
+import { Window } from '../layouts';
 
 type Clue = {
   text: string;

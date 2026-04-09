@@ -1,17 +1,9 @@
-import { type BooleanLike, classes } from 'common/react';
-import { useState } from 'react';
-import { resolveAsset } from 'tgui/assets';
-import { useBackend } from 'tgui/backend';
-import {
-  Button,
-  Icon,
-  Image,
-  Input,
-  NoticeBox,
-  Section,
-  Stack,
-} from 'tgui/components';
-import { Window } from 'tgui/layouts';
+import { BooleanLike, classes } from 'common/react';
+
+import { resolveAsset } from '../assets';
+import { useBackend } from '../backend';
+import { Button, Icon, Image, NoticeBox, Section, Stack } from '../components';
+import { Window } from '../layouts';
 
 type Data = {
   selected: string;
@@ -76,17 +68,8 @@ const ObjectDisplay = (props) => {
   const { act, data } = useBackend<Data>();
   const { object = [], scanning, selected } = data;
 
-  const [filter, setFilter] = useState('');
-
   return (
-    <Section
-      buttons={
-        <Input
-          placeholder="Search..."
-          onInput={(_, val) => setFilter(val.toLowerCase())}
-        />
-      }
-    >
+    <Section>
       <Button
         icon="redo-alt"
         color="blue"
@@ -97,31 +80,26 @@ const ObjectDisplay = (props) => {
       </Button>
       {!object.length && !scanning && <div>No trackable signals found</div>}
       {!scanning &&
-        object
-          .filter(
-            (val) =>
-              filter.length <= 0 || val.name.toLowerCase().includes(filter),
-          )
-          .map((object) => (
-            <div
-              key={object.dev}
-              title={object.name}
-              className={classes([
-                'Button',
-                'Button--fluid',
-                'Button--color--transparent',
-                'Button--ellipsis',
-                object.ref === selected && 'Button--selected',
-              ])}
-              onClick={() => {
-                act('selecttarget', {
-                  ref: object.ref,
-                });
-              }}
-            >
-              {object.name}
-            </div>
-          ))}
+        object.map((object) => (
+          <div
+            key={object.dev}
+            title={object.name}
+            className={classes([
+              'Button',
+              'Button--fluid',
+              'Button--color--transparent',
+              'Button--ellipsis',
+              object.ref === selected && 'Button--selected',
+            ])}
+            onClick={() => {
+              act('selecttarget', {
+                ref: object.ref,
+              });
+            }}
+          >
+            {object.name}
+          </div>
+        ))}
     </Section>
   );
 };

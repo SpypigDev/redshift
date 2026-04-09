@@ -1,5 +1,5 @@
-import type { BooleanLike } from 'common/react';
-import { useBackend } from 'tgui/backend';
+import { BooleanLike } from '../../common/react';
+import { useBackend } from '../backend';
 import {
   Box,
   Button,
@@ -8,8 +8,8 @@ import {
   ProgressBar,
   Section,
   Stack,
-} from 'tgui/components';
-import { Window } from 'tgui/layouts';
+} from '../components';
+import { Window } from '../layouts';
 
 type ScopeData = {
   offset_x: number;

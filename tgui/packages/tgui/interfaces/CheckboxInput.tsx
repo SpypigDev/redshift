@@ -1,6 +1,7 @@
 import { createSearch, decodeHtmlEntities } from 'common/string';
 import { useState } from 'react';
-import { useBackend } from 'tgui/backend';
+
+import { useBackend } from '../backend';
 import {
   Button,
   Icon,
@@ -10,10 +11,9 @@ import {
   Stack,
   Table,
   Tooltip,
-} from 'tgui/components';
-import { TableCell, TableRow } from 'tgui/components/Table';
-import { Window } from 'tgui/layouts';
-
+} from '../components';
+import { TableCell, TableRow } from '../components/Table';
+import { Window } from '../layouts';
 import { InputButtons } from './common/InputButtons';
 import { Loader } from './common/Loader';
 

@@ -1,10 +1,9 @@
-import { useBackend } from 'tgui/backend';
-import { Box } from 'tgui/components';
-import { ByondUi } from 'tgui/components';
-
-import { MfdPanel, type MfdProps } from './MultifunctionDisplay';
+import { useBackend } from '../../backend';
+import { Box } from '../../components';
+import { ByondUi } from '../../components';
+import { MfdPanel, MfdProps } from './MultifunctionDisplay';
 import { mfdState } from './stateManagers';
-import type { MapProps } from './types';
+import { MapProps } from './types';
 
 export const MapMfdPanel = (props: MfdProps) => {
   const { setPanelState } = mfdState(props.panelStateId);
@@ -28,13 +27,11 @@ const MapPanel = () => {
   return (
     <Box className="NavigationMenu">
       <ByondUi
-        winsetParams={{
+        params={{
           id: data.tactical_map_ref,
           type: 'map',
         }}
-        boxProps={{
-          className: 'MapPanel',
-        }}
+        className="MapPanel"
       />
     </Box>
   );

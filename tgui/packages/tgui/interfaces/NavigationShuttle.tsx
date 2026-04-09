@@ -1,4 +1,4 @@
-import { useBackend, useSharedState } from 'tgui/backend';
+import { useBackend, useSharedState } from '../backend';
 import {
   Box,
   Button,
@@ -9,8 +9,8 @@ import {
   ProgressBar,
   Section,
   Stack,
-} from 'tgui/components';
-import { Window } from 'tgui/layouts';
+} from '../components';
+import { Window } from '../layouts';
 
 export interface DockingPort {
   id: string;
@@ -23,7 +23,6 @@ export interface NavigationProps {
   destinations: DockingPort[];
   doors_locked?: boolean;
   shuttle_mode: string;
-  ui_theme: string;
   target_destination?: string;
   flight_time: number;
   max_flight_duration: number;
@@ -352,7 +351,7 @@ const RenderScreen = (props) => {
 export const NavigationShuttle = (props) => {
   const { data } = useBackend<NavigationProps>();
   return (
-    <Window theme={data.ui_theme} height={505} width={700}>
+    <Window theme="crtgreen" height={505} width={700}>
       <Window.Content className="NavigationMenu">
         {data.is_disabled === 1 && <DisabledScreen />}
         {data.is_disabled === 0 && <RenderScreen />}

@@ -1,4 +1,4 @@
-import { useSharedState } from 'tgui/backend';
+import { useSharedState } from '../../backend';
 
 export const useEquipmentState = (panelId: string) => {
   const [data, set] = useSharedState<number | undefined>(

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useBackend } from 'tgui/backend';
+
+import { useBackend } from '../backend';
 import {
   Box,
   Flex,
@@ -8,10 +9,8 @@ import {
   Section,
   Slider,
   Tabs,
-} from 'tgui/components';
-import { Window } from 'tgui/layouts';
-
-import { replaceRegexChars } from './helpers';
+} from '../components';
+import { Window } from '../layouts';
 
 type STUIData = {
   tabs: Array<string>;
@@ -89,13 +88,7 @@ const RenderLogs = (props: {
   return (
     <Section fill scrollable>
       {logs
-        .filter((x) =>
-          x
-            .toLowerCase()
-            .match(
-              searchTerm ? replaceRegexChars(searchTerm.toLowerCase()) : '',
-            ),
-        )
+        .filter((x) => x.toLowerCase().match(searchTerm) !== null)
         .map((log, i) => (
           <RenderLog log={log} key={i} logsfontnumber={logsfontnumber} />
         ))}

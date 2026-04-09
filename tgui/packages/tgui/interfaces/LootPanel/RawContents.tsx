@@ -1,8 +1,8 @@
 import { createSearch } from 'common/string';
-import { Flex } from 'tgui/components';
 
+import { Flex } from '../../components';
 import { LootBox } from './LootBox';
-import type { SearchItem } from './types';
+import { SearchItem } from './types';
 
 type Props = {
   readonly contents: SearchItem[];

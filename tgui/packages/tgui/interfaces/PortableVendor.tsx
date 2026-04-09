@@ -1,6 +1,13 @@
-import { useBackend } from 'tgui/backend';
-import { Button, Icon, ProgressBar, Stack, Tooltip } from 'tgui/components';
-import { Window } from 'tgui/layouts';
+import { useBackend } from '../backend';
+import {
+  Button,
+  Icon,
+  ProgressBar,
+  Section,
+  Stack,
+  Tooltip,
+} from '../components';
+import { Window } from '../layouts';
 
 interface PortableVendorProduct {
   index: number;
@@ -64,17 +71,19 @@ export const PortableVendor = (props) => {
 
   return (
     <Window width={400} height={700}>
-      <Window.Content scrollable>
-        <Stack vertical>
-          {data.show_points && <PointCounter />}
-          {data.displayed_records.map((record) => {
-            return (
-              <Stack.Item key={record.index}>
-                <RecordEntry record={record} />
-              </Stack.Item>
-            );
-          })}
-        </Stack>
+      <Window.Content>
+        <Section fill scrollable>
+          <Stack fill vertical>
+            {data.show_points && <PointCounter />}
+            {data.displayed_records.map((record) => {
+              return (
+                <Stack.Item key={record.index}>
+                  <RecordEntry record={record} />
+                </Stack.Item>
+              );
+            })}
+          </Stack>
+        </Section>
       </Window.Content>
     </Window>
   );

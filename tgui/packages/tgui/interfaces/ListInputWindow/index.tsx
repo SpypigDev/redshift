@@ -1,6 +1,5 @@
-import { useBackend } from 'tgui/backend';
-import { Window } from 'tgui/layouts';
-
+import { useBackend } from '../../backend';
+import { Window } from '../../layouts';
 import { Loader } from '../common/Loader';
 import { ListInputModal } from './ListInputModal';
 

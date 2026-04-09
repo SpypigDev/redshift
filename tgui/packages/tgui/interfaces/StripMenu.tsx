@@ -1,9 +1,10 @@
 import { range } from 'common/collections';
-import type { BooleanLike } from 'common/react';
-import { resolveAsset } from 'tgui/assets';
-import { useBackend } from 'tgui/backend';
-import { Box, Button, Icon, Image, Stack } from 'tgui/components';
-import { Window } from 'tgui/layouts';
+import { BooleanLike } from 'common/react';
+
+import { resolveAsset } from '../assets';
+import { useBackend } from '../backend';
+import { Box, Button, Icon, Image, Stack } from '../components';
+import { Window } from '../layouts';
 
 const ROWS = 5;
 const COLUMNS = 6;

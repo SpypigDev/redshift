@@ -1,5 +1,6 @@
 import { clamp01 } from 'common/math';
-import { Box } from 'tgui/components';
+
+import { Box } from '../../components';
 
 export const Loader = (props) => {
   const { value } = props;

@@ -1,7 +1,7 @@
-import { useBackend } from 'tgui/backend';
-import { Box, Button, Flex, Stack } from 'tgui/components';
-import { Window } from 'tgui/layouts';
-import { logger } from 'tgui/logging';
+import { useBackend } from '../backend';
+import { Box, Button, Flex, Stack } from '../components';
+import { Window } from '../layouts';
+import { logger } from '../logging';
 
 interface Destination {
   id: string;

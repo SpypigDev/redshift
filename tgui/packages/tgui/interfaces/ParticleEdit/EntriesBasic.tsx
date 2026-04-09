@@ -1,4 +1,4 @@
-import { useBackend } from 'tgui/backend';
+import { useBackend } from '../../backend';
 import {
   Box,
   Button,
@@ -8,20 +8,18 @@ import {
   LabeledList,
   NumberInput,
   Stack,
-} from 'tgui/components';
-
+} from '../../components';
 import {
-  type EntryCoordProps,
-  type EntryFloatProps,
-  type EntryGradientProps,
-  type EntryIconStateProps,
-  type EntryTransformProps,
+  EntryCoordProps,
+  EntryFloatProps,
+  EntryGradientProps,
+  EntryIconStateProps,
+  EntryTransformProps,
   MatrixTypes,
-  P_DATA_GRADIENT,
   P_DATA_ICON_ADD,
   P_DATA_ICON_REMOVE,
   P_DATA_ICON_WEIGHT,
-  type ParticleUIData,
+  ParticleUIData,
   SpaceToNum,
   SpaceTypes,
 } from './data';
@@ -110,22 +108,12 @@ export const EntryCoord = (props: EntryCoordProps) => {
 export const EntryGradient = (props: EntryGradientProps) => {
   const { act, data } = useBackend<ParticleUIData>();
   const { name, var_name, gradient, setDesc } = props;
-  const cleanGradient = gradient?.map((entry) => {
-    if (typeof entry === 'object') {
-      return Object.keys(entry)[0];
-    } else {
-      return entry;
-    }
-  });
   const isLooping = gradient?.find((x) => x === 'loop');
-  const spaceIndex = cleanGradient ? cleanGradient.indexOf('space') : -1;
-  const space_type =
-    spaceIndex >= 0
-      ? Object.keys(SpaceToNum).find(
-          (space) =>
-            SpaceToNum[space] === Object.values(gradient![spaceIndex])[0],
-        )
-      : 'COLORSPACE_RGB';
+  const space_type = gradient?.includes('space')
+    ? Object.keys(SpaceToNum).find(
+        (space) => SpaceToNum[space] === gradient['space'],
+      )
+    : 'COLORSPACE_RGB';
   return (
     <LabeledList.Item label={name}>
       <Stack>
@@ -144,7 +132,6 @@ export const EntryGradient = (props: EntryGradientProps) => {
             onClick={() =>
               act('edit', {
                 var: var_name,
-                var_mod: P_DATA_GRADIENT,
                 new_value: isLooping
                   ? gradient!.filter((x, i) => i !== gradient!.indexOf('loop'))
                   : [...(gradient || []), 'loop'],
@@ -159,7 +146,6 @@ export const EntryGradient = (props: EntryGradientProps) => {
             onSelected={(e) =>
               act('edit', {
                 var: var_name,
-                var_mod: P_DATA_GRADIENT,
                 new_value: gradient
                   ? setGradientSpace(gradient, SpaceToNum[e])
                   : { space: SpaceToNum[e] },
@@ -169,7 +155,7 @@ export const EntryGradient = (props: EntryGradientProps) => {
           />
         </Stack.Item>
         <Stack.Item>
-          {cleanGradient?.map((entry, index) =>
+          {gradient?.map((entry, index) =>
             entry === 'loop' || entry === 'space' ? null : (
               <>
                 {typeof entry === 'string' ? (
@@ -182,12 +168,9 @@ export const EntryGradient = (props: EntryGradientProps) => {
                   onChange={(e, value) =>
                     act('edit', {
                       var: var_name,
-                      var_mod: P_DATA_GRADIENT,
-                      new_value: gradient!.map((x, i) => {
-                        const floatNum = parseFloat(value);
-                        const result = isNaN(floatNum) ? value : floatNum;
-                        return i === index ? result : x;
-                      }),
+                      new_value: gradient!.map((x, i) =>
+                        i === index ? value : x,
+                      ),
                     })
                   }
                 />
@@ -197,8 +180,7 @@ export const EntryGradient = (props: EntryGradientProps) => {
                   onClick={() =>
                     act('edit', {
                       var: var_name,
-                      var_mod: P_DATA_GRADIENT,
-                      new_value: gradient!.filter((x, i) => i !== index),
+                      new_value: gradient.filter((x, i) => i !== index),
                     })
                   }
                 />
@@ -213,7 +195,6 @@ export const EntryGradient = (props: EntryGradientProps) => {
             onClick={() =>
               act('edit', {
                 var: var_name,
-                var_mod: P_DATA_GRADIENT,
                 new_value: [...(gradient || []), '#FFFFFF'],
               })
             }

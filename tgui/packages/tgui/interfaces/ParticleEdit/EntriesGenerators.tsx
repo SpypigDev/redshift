@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
-import { useBackend } from 'tgui/backend';
+import { useBackend } from '../../backend';
 import {
   Button,
   ColorBox,
@@ -7,14 +7,13 @@ import {
   LabeledList,
   NumberInput,
   Stack,
-} from 'tgui/components';
-
+} from '../../components';
 import {
-  type EntryGeneratorNumbersListProps,
-  type FloatGeneratorColorProps,
-  type FloatGeneratorProps,
+  EntryGeneratorNumbersListProps,
+  FloatGeneratorColorProps,
+  FloatGeneratorProps,
   P_DATA_GENERATOR,
-  type ParticleUIData,
+  ParticleUIData,
   RandToNumber,
 } from './data';
 import { GeneratorListEntry } from './Generators';

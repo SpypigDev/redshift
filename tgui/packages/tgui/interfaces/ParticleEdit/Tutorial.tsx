@@ -1,4 +1,4 @@
-import { resolveAsset } from 'tgui/assets';
+import { resolveAsset } from '../../assets';
 import {
   Box,
   Button,
@@ -7,7 +7,7 @@ import {
   Modal,
   Section,
   Stack,
-} from 'tgui/components';
+} from '../../components';
 
 export const ShowDesc = (props: {
   readonly desc: string;

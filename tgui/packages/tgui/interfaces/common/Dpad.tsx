@@ -1,6 +1,5 @@
-import { useBackend } from 'tgui/backend';
-import { Box, Button, Stack } from 'tgui/components';
-
+import { useBackend } from '../../backend';
+import { Box, Button, Stack } from '../../components';
 import {
   useFiremissionXOffsetValue,
   useFiremissionYOffsetValue,
@@ -12,7 +11,7 @@ const SvgButton = (props: {
   readonly onClick?: (e: any) => void;
 }) => {
   return (
-    <svg height="100" width="100" overflow="visible">
+    <svg height="100" width="100">
       <g transform={props.transform} onClick={props.onClick}>
         <path
           stroke="#808080"

@@ -1,7 +1,9 @@
-import { type BooleanLike, classes } from 'common/react';
+import { filter, sort } from 'common/collections';
+import { BooleanLike, classes } from 'common/react';
 import { createSearch } from 'common/string';
 import { useState } from 'react';
-import { useBackend } from 'tgui/backend';
+
+import { useBackend } from '../backend';
 import {
   Button,
   ByondUi,
@@ -9,8 +11,8 @@ import {
   NoticeBox,
   Section,
   Stack,
-} from 'tgui/components';
-import { Window } from 'tgui/layouts';
+} from '../components';
+import { Window } from '../layouts';
 
 type Data = {
   activeCamera: Camera & { status: BooleanLike };
@@ -67,15 +69,15 @@ const prevNextCamera = (
  * Filters cameras, applies search terms and sorts the alphabetically.
  */
 const selectCameras = (cameras: Camera[], searchText = ''): Camera[] => {
-  let queriedCameras = cameras.filter((camera: Camera) => !!camera.name);
+  let queriedCameras = filter(cameras, (camera: Camera) => !!camera.name);
   if (searchText) {
     const testSearch = createSearch(
       searchText,
       (camera: Camera) => camera.name,
     );
-    queriedCameras = queriedCameras.filter(testSearch);
+    queriedCameras = filter(queriedCameras, testSearch);
   }
-  queriedCameras.sort();
+  queriedCameras = sort(queriedCameras);
 
   return queriedCameras;
 };
@@ -205,13 +207,11 @@ const CameraControls = (props: { readonly searchText: string }) => {
         </Stack.Item>
         <Stack.Item grow>
           <ByondUi
-            winsetParams={{
+            height="100%"
+            width="100%"
+            params={{
               id: mapRef,
               type: 'map',
-            }}
-            boxProps={{
-              height: '100%',
-              width: '100%',
             }}
           />
         </Stack.Item>

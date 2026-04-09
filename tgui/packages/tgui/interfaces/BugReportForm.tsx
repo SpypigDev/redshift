@@ -1,9 +1,10 @@
-import type { BooleanLike } from 'common/react';
+import { BooleanLike } from 'common/react';
 import React, { useState } from 'react';
-import { useBackend } from 'tgui/backend';
-import { Flex, Section } from 'tgui/components';
-import { ButtonCheckbox } from 'tgui/components/Button';
-import { Window } from 'tgui/layouts';
+
+import { useBackend } from '../backend';
+import { Flex, Section } from '../components';
+import { ButtonCheckbox } from '../components/Button';
+import { Window } from '../layouts';
 interface FormTypes {
   awaiting_admin_approval: BooleanLike;
   report_details: FormDetails;

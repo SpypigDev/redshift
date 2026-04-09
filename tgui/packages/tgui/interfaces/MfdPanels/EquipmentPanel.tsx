@@ -1,10 +1,9 @@
-import { useBackend } from 'tgui/backend';
-import { Box } from 'tgui/components';
-
-import type { DropshipEquipment } from '../DropshipWeaponsConsole';
-import { MfdPanel, type MfdProps } from './MultifunctionDisplay';
+import { useBackend } from '../../backend';
+import { Box } from '../../components';
+import { DropshipEquipment } from '../DropshipWeaponsConsole';
+import { MfdPanel, MfdProps } from './MultifunctionDisplay';
 import { mfdState, useEquipmentState, useWeaponState } from './stateManagers';
-import type { EquipmentContext } from './types';
+import { EquipmentContext } from './types';
 
 const equipment_xs = [140, 160, 320, 340, 180, 300, 240, 240, 240, 140, 340];
 const equipment_ys = [120, 100, 100, 120, 100, 100, 260, 300, 340, 320, 320];
@@ -76,8 +75,8 @@ const DrawWeaponEquipment = (props: DropshipEquipment) => {
         desc={props.shorthand}
         sub_desc={`${
           props.shorthand === 'MSL'
-            ? (props.ammo_name?.split(' ')[0] ?? 'Empty')
-            : (props.ammo ?? 0)
+            ? props.ammo_name?.split(' ')[0] ?? 'Empty'
+            : props.ammo ?? 0
         }`}
       />
     </>
@@ -217,7 +216,7 @@ const DrawAirlocks = () => {
 const EquipmentPanel = () => {
   return (
     <Box className="NavigationMenu">
-      <svg height="501" width="501" overflow="visible">
+      <svg height="501" width="501">
         <defs>
           <pattern
             id="diagonalHatch"

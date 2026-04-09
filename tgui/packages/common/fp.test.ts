@@ -1,5 +1,3 @@
-import { describe, expect, it } from 'bun:test';
-
 import { flow } from './fp';
 
 describe('flow', () => {

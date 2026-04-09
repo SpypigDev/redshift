@@ -1,5 +1,3 @@
-import { describe, expect, it, jest } from 'bun:test';
-
 import { EventEmitter } from './events';
 
 describe('EventEmitter', () => {

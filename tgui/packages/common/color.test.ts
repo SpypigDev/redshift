@@ -1,5 +1,3 @@
-import { describe, expect, it } from 'bun:test';
-
 import { Color } from './color';
 
 describe('Color', () => {

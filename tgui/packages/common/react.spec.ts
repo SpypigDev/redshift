@@ -3,16 +3,15 @@
  * @copyright 2021 Aleksej Komarov
  * @license MIT
  */
-import { describe, expect, it } from 'bun:test';
 
 import { classes } from './react';
 
 describe('classes', () => {
-  it('empty', () => {
+  test('empty', () => {
     expect(classes([])).toBe('');
   });
 
-  it('result contains inputs', () => {
+  test('result contains inputs', () => {
     const output = classes(['foo', 'bar', false, true, 0, 1, 'baz']);
     expect(output).toContain('foo');
     expect(output).toContain('bar');

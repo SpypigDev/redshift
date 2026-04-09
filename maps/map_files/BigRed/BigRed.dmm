@@ -8259,7 +8259,7 @@
 /area/bigredv2/caves/mining)
 "ffk" = (
 /obj/structure/surface/table/woodentable/fancy,
-/obj/item/clothing/head/fedora/brown,
+/obj/item/clothing/head/fedora,
 /turf/open/floor/wood,
 /area/bigredv2/outside/marshal_office)
 "ffB" = (

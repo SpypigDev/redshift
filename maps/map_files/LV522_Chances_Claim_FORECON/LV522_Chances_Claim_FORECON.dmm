@@ -1,4 +1,24 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aaa" = (
+/obj/structure/pipes/standard/simple/hidden/green{
+	dir = 9
+	},
+/turf/open/floor/prison/blue,
+/area/lv522/indoors/a_block/admin)
+"aab" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/manifold/hidden/green{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/lv522/indoors/a_block/admin)
+"aac" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/simple/hidden/green{
+	dir = 1
+	},
+/turf/open/floor/prison,
+/area/lv522/indoors/a_block/admin)
 "aaP" = (
 /obj/item/prop/helmetgarb/lucky_feather{
 	pixel_x = 11;
@@ -15881,13 +15901,6 @@
 /obj/structure/machinery/squeezer,
 /turf/open/floor/wood,
 /area/lv522/indoors/b_block/bar)
-"hMb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/pipes/standard/manifold/hidden/green{
-	dir = 8
-	},
-/turf/open/floor/plating/plating_catwalk/prison,
-/area/lv522/indoors/a_block/admin)
 "hMr" = (
 /turf/open/floor/corsat/brown,
 /area/lv522/atmos/east_reactor/east)
@@ -23086,13 +23099,6 @@
 /obj/structure/pipes/standard/manifold/hidden/green,
 /turf/open/floor/corsat/squares,
 /area/lv522/atmos/cargo_intake)
-"leV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/pipes/standard/simple/hidden/green{
-	dir = 1
-	},
-/turf/open/floor/prison,
-/area/lv522/indoors/a_block/admin)
 "leW" = (
 /obj/structure/surface/table/almayer,
 /obj/item/tool/wirecutters{
@@ -49065,12 +49071,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/lv522/outdoors/colony_streets/north_street)
-"xcE" = (
-/obj/structure/pipes/standard/simple/hidden/green{
-	dir = 9
-	},
-/turf/open/floor/prison/blue,
-/area/lv522/indoors/a_block/admin)
 "xcF" = (
 /obj/structure/pipes/standard/simple/hidden/green,
 /obj/effect/decal/cleanable/dirt,
@@ -82925,10 +82925,10 @@ oPf
 eSP
 gaw
 nIa
-leV
-hMb
+aac
+aab
 olI
-xcE
+aaa
 wJR
 tDS
 fMM

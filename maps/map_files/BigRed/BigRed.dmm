@@ -3553,6 +3553,9 @@
 "bjA" = (
 /turf/open/mars,
 /area/bigredv2/outside/s)
+"bjC" = (
+/turf/closed/wall/solaris/reinforced,
+/area/bigredv2/outside/s)
 "bjM" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 9
@@ -19082,9 +19085,6 @@
 	},
 /turf/open/floor/whitebluefull/northeast,
 /area/bigredv2/outside/medical)
-"ofX" = (
-/turf/closed/wall/solaris/reinforced,
-/area/bigredv2/outside/s)
 "ogv" = (
 /obj/effect/decal/cleanable/blood/drip{
 	pixel_x = -1;
@@ -47769,7 +47769,7 @@ eaj
 ukV
 biV
 aGM
-ofX
+bjC
 gqX
 bkq
 mrt
@@ -48854,7 +48854,7 @@ drO
 xKX
 nbQ
 eaj
-ofX
+bjC
 ggg
 gvw
 ggg
@@ -49505,7 +49505,7 @@ pnG
 ukV
 nbQ
 eaj
-ofX
+bjC
 ggg
 ggg
 ggg
@@ -50373,7 +50373,7 @@ qjX
 ukV
 nbQ
 qjX
-ofX
+bjC
 oTR
 ovG
 bjA

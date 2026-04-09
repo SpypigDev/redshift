@@ -6,7 +6,7 @@ type Data = {
   selectable_hives: string[];
   selected_hive: string;
   embryo_stage: number;
-}
+};
 
 export const GameMasterSubmenuInfest = (props, context) => {
   const { data, act } = useBackend();

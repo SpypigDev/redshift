@@ -4,14 +4,14 @@
  * @license MIT
  */
 
-import { Box, Section } from '../components';
+import { Box, Section } from 'tgui/components';
 
 export const meta = {
   title: 'Box',
   render: () => <Story />,
 };
 
-const Story = (props) => {
+function Story() {
   return (
     <Section>
       <Box bold>bold</Box>
@@ -24,4 +24,4 @@ const Story = (props) => {
       <Box textAlign="right">right</Box>
     </Section>
   );
-};
+}

@@ -5,18 +5,27 @@
  */
 
 import { useState } from 'react';
-
-import { Button, Section, Tabs } from '../components';
+import { Button, Section, Tabs } from 'tgui/components';
 
 export const meta = {
   title: 'Tabs',
   render: () => <Story />,
 };
 
-const TAB_RANGE = ['Tab #1', 'Tab #2', 'Tab #3', 'Tab #4'];
+const TAB_RANGE = ['Tab #1', 'Tab #2', 'Tab #3', 'Tab #4'] as const;
 
-const Story = (props) => {
-  const [tabProps, setTabProps] = useState({});
+type TabProps = Partial<{
+  centered: boolean;
+  fluid: boolean;
+  icon: boolean;
+  leftSlot: boolean;
+  rightSlot: boolean;
+  vertical: boolean;
+}>;
+
+function Story() {
+  const [tabProps, setTabProps] = useState<TabProps>({});
+
   return (
     <>
       <Section>
@@ -30,7 +39,7 @@ const Story = (props) => {
             })
           }
         >
-          vertical
+          Vertical
         </Button.Checkbox>
         <Button.Checkbox
           inline
@@ -106,10 +115,11 @@ const Story = (props) => {
       <TabsPrefab tabProps={tabProps} />
     </>
   );
-};
+}
 
-const TabsPrefab = (props) => {
+function TabsPrefab(props) {
   const [tabIndex, setTabIndex] = useState(0);
+
   return (
     <Tabs
       vertical={props.tabProps.vertical}
@@ -120,7 +130,7 @@ const TabsPrefab = (props) => {
         <Tabs.Tab
           key={i}
           selected={i === tabIndex}
-          icon={props.tabProps.icon && 'info-circle'}
+          icon={props.tabProps.icon ? 'info-circle' : undefined}
           leftSlot={
             props.tabProps.leftSlot && (
               <Button circular compact color="transparent" icon="times" />
@@ -138,4 +148,4 @@ const TabsPrefab = (props) => {
       ))}
     </Tabs>
   );
-};
+}

@@ -4,7 +4,7 @@
  * @license MIT
  */
 
-import { Box, Button, Section } from '../components';
+import { Box, Button, Section } from 'tgui/components';
 
 export const meta = {
   title: 'Button',
@@ -28,13 +28,12 @@ const COLORS_SPECTRUM = [
 
 const COLORS_STATES = ['good', 'average', 'bad', 'black', 'white'];
 
-const Story = (props) => {
+function Story() {
   return (
     <Section>
       <Box mb={1}>
         <Button>Simple</Button>
         <Button selected>Selected</Button>
-        <Button altSelected>Alt Selected</Button>
         <Button disabled>Disabled</Button>
         <Button color="transparent">Transparent</Button>
         <Button icon="cog">Icon</Button>
@@ -65,4 +64,4 @@ const Story = (props) => {
       </Box>
     </Section>
   );
-};
+}

@@ -1,11 +1,11 @@
-import { Box, Popper } from 'tgui/components';
+import { Box, Popper } from '../components';
 
 export const meta = {
   title: 'Popper',
   render: () => <Story />,
 };
 
-function Story() {
+const Story = () => {
   return (
     <>
       <Popper
@@ -55,4 +55,4 @@ function Story() {
       </Popper>
     </>
   );
-}
+};

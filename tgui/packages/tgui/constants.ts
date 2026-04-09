@@ -46,7 +46,6 @@ export const COLORS = {
     echo: '#027d02',
     foxtrot: '#4a4740',
     raiders: '#6e1919',
-    forecon: '#32CD32',
   },
   // Damage type colors
   damageType: {
@@ -98,11 +97,6 @@ export const RADIO_CHANNELS = [
     color: '#1ecc43',
   },
   {
-    name: 'Yautja SpecOps',
-    freq: 1207,
-    color: '#1ecc43',
-  },
-  {
     name: "Dutch's Dozen",
     freq: 1210,
     color: '#1ecc43',
@@ -110,6 +104,11 @@ export const RADIO_CHANNELS = [
   {
     name: 'VAI',
     freq: 1215,
+    color: '#e3580e',
+  },
+  {
+    name: 'RMC',
+    freq: 1229,
     color: '#e3580e',
   },
   {
@@ -123,43 +122,48 @@ export const RADIO_CHANNELS = [
     color: '#e6754c',
   },
   {
+    name: 'USASF',
+    freq: 1224,
+    color: '#2a1bb6',
+  },
+  {
+    name: 'US Army',
+    freq: 1228,
+    color: '#037741',
+  },
+  {
+    name: 'USCG',
+    freq: 1229,
+    color: '#62a759',
+  },
+  {
     name: 'WY',
     freq: 1231,
     color: '#fe9b24',
   },
   {
-    name: 'WY Corp',
-    freq: 1233,
-    color: '#f5a747',
-  },
-  {
-    name: 'WY Sec',
-    freq: 1233,
-    color: '#d07a11',
-  },
-  {
     name: 'PMC CMD',
-    freq: 1234,
+    freq: 1232,
     color: '#4dc5ce',
   },
   {
     name: 'PMC',
-    freq: 1235,
+    freq: 1233,
     color: '#4dc5ce',
   },
   {
     name: 'PMC ENG',
-    freq: 1236,
+    freq: 1234,
     color: '#4dc5ce',
   },
   {
     name: 'PMC MED',
-    freq: 1237,
+    freq: 1235,
     color: '#4dc5ce',
   },
   {
     name: 'PMC CCT',
-    freq: 1238,
+    freq: 1236,
     color: '#4dc5ce',
   },
   {
@@ -218,9 +222,19 @@ export const RADIO_CHANNELS = [
     color: '#159e73',
   },
   {
-    name: 'CLF CCT',
+    name: 'GUARD',
     freq: 1275,
-    color: '#b3222e',
+    color: '7ec837',
+  },
+  {
+    name: 'PFA',
+    freq: 1278,
+    color: '#4a4dc9',
+  },
+  {
+    name: 'JSC',
+    freq: 1279,
+    color: '#8b3434',
   },
   {
     name: 'LSTN BUG A',
@@ -231,11 +245,6 @@ export const RADIO_CHANNELS = [
     name: 'LSTN BUG B',
     freq: 1291,
     color: '#d65d95',
-  },
-  {
-    name: 'Hyperdyne',
-    freq: 1331,
-    color: '#ff711a',
   },
   {
     name: 'Common',
@@ -261,11 +270,6 @@ export const RADIO_CHANNELS = [
     name: 'Provost',
     freq: 1473,
     color: '#9b0612',
-  },
-  {
-    name: 'Army',
-    freq: 1476,
-    color: '#318779',
   },
   {
     name: 'Sentry',

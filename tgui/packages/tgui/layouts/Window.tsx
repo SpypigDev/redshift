@@ -6,26 +6,22 @@
 
 import { classes } from 'common/react';
 import { decodeHtmlEntities, toTitleCase } from 'common/string';
-import {
-  type ComponentProps,
-  type PropsWithChildren,
-  type ReactNode,
-  useEffect,
-} from 'react';
-import { backendSuspendStart, useBackend } from 'tgui/backend';
-import { globalStore } from 'tgui/backend';
-import { type Box, Icon } from 'tgui/components';
-import { UI_DISABLED, UI_INTERACTIVE, UI_UPDATE } from 'tgui/constants';
-import { useDebug } from 'tgui/debug';
-import { toggleKitchenSink } from 'tgui/debug/actions';
+import { PropsWithChildren, ReactNode, useEffect } from 'react';
+
+import { backendSuspendStart, useBackend } from '../backend';
+import { globalStore } from '../backend';
+import { Icon } from '../components';
+import { BoxProps } from '../components/Box';
+import { UI_DISABLED, UI_INTERACTIVE, UI_UPDATE } from '../constants';
+import { useDebug } from '../debug';
+import { toggleKitchenSink } from '../debug/actions';
 import {
   dragStartHandler,
   recallWindowGeometry,
   resizeStartHandler,
   setWindowKey,
-} from 'tgui/drag';
-import { createLogger } from 'tgui/logging';
-
+} from '../drag';
+import { createLogger } from '../logging';
 import { Layout } from './Layout';
 
 const logger = createLogger('Window');
@@ -39,8 +35,6 @@ type Props = Partial<{
   theme: string;
   title: string;
   width: number;
-  fitted: boolean;
-  scrollbars: boolean;
 }> &
   PropsWithChildren;
 
@@ -53,8 +47,6 @@ export const Window = (props: Props) => {
     buttons,
     width,
     height,
-    fitted,
-    scrollbars = true,
   } = props;
 
   const { config, suspended } = useBackend();
@@ -82,10 +74,7 @@ export const Window = (props: Props) => {
       'can-close': Boolean(canClose),
     });
     logger.log('mounting');
-
-    if (!fitted) {
-      updateGeometry();
-    }
+    updateGeometry();
 
     return () => {
       logger.log('unmounting');
@@ -104,33 +93,25 @@ export const Window = (props: Props) => {
 
   return suspended ? null : (
     <Layout className="Window" theme={theme}>
-      {!fitted && (
-        <TitleBar
-          className="Window__titleBar"
-          title={title || decodeHtmlEntities(config.title)}
-          status={config.status}
-          fancy={fancy}
-          onDragStart={dragStartHandler}
-          onClose={() => {
-            logger.log('pressed close');
-            dispatch(backendSuspendStart());
-          }}
-          canClose={canClose}
-        >
-          {buttons}
-        </TitleBar>
-      )}
-      <div
-        className={classes([
-          'Window__rest',
-          !fitted && 'Window__restwithTitlebar',
-          debugLayout && 'debug-layout',
-        ])}
+      <TitleBar
+        className="Window__titleBar"
+        title={title || decodeHtmlEntities(config.title)}
+        status={config.status}
+        fancy={fancy}
+        onDragStart={dragStartHandler}
+        onClose={() => {
+          logger.log('pressed close');
+          dispatch(backendSuspendStart());
+        }}
+        canClose={canClose}
       >
+        {buttons}
+      </TitleBar>
+      <div className={classes(['Window__rest', debugLayout && 'debug-layout'])}>
         {!suspended && children}
         {showDimmer && <div className="Window__dimmer" />}
       </div>
-      {fancy && scrollbars && (
+      {fancy && (
         <>
           <div
             className="Window__resizeHandle__e"
@@ -156,7 +137,7 @@ type ContentProps = Partial<{
   scrollable: boolean;
   vertical: boolean;
 }> &
-  ComponentProps<typeof Box> &
+  BoxProps &
   PropsWithChildren;
 
 const WindowContent = (props: ContentProps) => {

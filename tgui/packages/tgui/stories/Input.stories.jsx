@@ -5,6 +5,7 @@
  */
 
 import { useState } from 'react';
+
 import {
   Box,
   DraggableControl,
@@ -15,14 +16,14 @@ import {
   NumberInput,
   Section,
   Slider,
-} from 'tgui/components';
+} from '../components';
 
 export const meta = {
   title: 'Input',
   render: () => <Story />,
 };
 
-function Story() {
+const Story = (props) => {
   const [number, setNumber] = useState(0);
   const [text, setText] = useState('Sample text');
   return (
@@ -120,4 +121,4 @@ function Story() {
       </LabeledList>
     </Section>
   );
-}
+};

@@ -5,7 +5,9 @@
  */
 
 import { storage } from 'common/storage';
-import { Button, LabeledList, NoticeBox, Section } from 'tgui/components';
+
+import { Button, LabeledList, NoticeBox, Section } from '../components';
+import { formatSiUnit } from '../format';
 
 export const meta = {
   title: 'Storage',
@@ -16,7 +18,6 @@ const Story = (props) => {
   if (!window.localStorage) {
     return <NoticeBox>Local storage is not available.</NoticeBox>;
   }
-
   return (
     <Section
       title="Local Storage"
@@ -35,6 +36,9 @@ const Story = (props) => {
       <LabeledList>
         <LabeledList.Item label="Keys in use">
           {localStorage.length}
+        </LabeledList.Item>
+        <LabeledList.Item label="Remaining space">
+          {formatSiUnit(localStorage.remainingSpace, 0, 'B')}
         </LabeledList.Item>
       </LabeledList>
     </Section>

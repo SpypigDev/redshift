@@ -5,6 +5,7 @@
  */
 
 import { useState } from 'react';
+
 import {
   Box,
   Button,
@@ -12,14 +13,14 @@ import {
   LabeledList,
   ProgressBar,
   Section,
-} from 'tgui/components';
+} from '../components';
 
 export const meta = {
   title: 'ProgressBar',
   render: () => <Story />,
 };
 
-function Story() {
+const Story = (props) => {
   const [progress, setProgress] = useState(0.5);
   const [color, setColor] = useState('');
 
@@ -30,7 +31,7 @@ function Story() {
           good: [0.5, Infinity],
           bad: [-Infinity, 0.1],
           average: [0, 0.5],
-        } as Record<string, [number, number]>,
+        },
       };
 
   return (
@@ -39,16 +40,16 @@ function Story() {
         Value: {Number(progress).toFixed(1)}
       </ProgressBar>
       <Box mt={1}>
-        <LabeledList>
+        <LabeledList mt="2em">
           <LabeledList.Item label="Adjust value">
             <Button onClick={() => setProgress(progress - 0.1)}>-0.1</Button>
             <Button onClick={() => setProgress(progress + 0.1)}>+0.1</Button>
           </LabeledList.Item>
           <LabeledList.Item label="Override color">
-            <Input value={color} onChange={(event, value) => setColor(value)} />
+            <Input value={color} onChange={(e, value) => setColor(value)} />
           </LabeledList.Item>
         </LabeledList>
       </Box>
     </Section>
   );
-}
+};

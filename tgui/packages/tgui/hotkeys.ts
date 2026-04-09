@@ -6,7 +6,7 @@
 
 import * as keycodes from 'common/keycodes';
 
-import { globalEvents, type KeyEvent } from './events';
+import { globalEvents, KeyEvent } from './events';
 import { createLogger } from './logging';
 
 const logger = createLogger('hotkeys');
@@ -190,9 +190,6 @@ export const setupHotKeys = () => {
   });
   // Setup event handlers
   globalEvents.on('window-blur', () => {
-    releaseHeldKeys();
-  });
-  globalEvents.on('input-focus', () => {
     releaseHeldKeys();
   });
   startKeyPassthrough();

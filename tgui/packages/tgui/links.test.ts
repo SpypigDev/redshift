@@ -1,5 +1,3 @@
-import { afterEach, beforeEach, describe, expect, it, jest } from 'bun:test';
-
 import { captureExternalLinks } from './links';
 
 describe('captureExternalLinks', () => {

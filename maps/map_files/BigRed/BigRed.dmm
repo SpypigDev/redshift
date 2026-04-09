@@ -647,12 +647,6 @@
 /obj/structure/window_frame/solaris,
 /turf/open/floor/plating,
 /area/bigredv2/outside/marshal_office)
-"amh" = (
-/obj/structure/pipes/standard/simple/hidden/green{
-	dir = 4
-	},
-/turf/closed/wall/solaris,
-/area/bigredv2/outside/general_offices)
 "ami" = (
 /obj/structure/pipes/standard/manifold/fourway/hidden/green,
 /obj/effect/landmark/crap_item,
@@ -756,10 +750,6 @@
 	},
 /turf/open/floor/plating,
 /area/bigredv2/caves/lambda/breakroom)
-"amZ" = (
-/obj/structure/pipes/standard/simple/hidden/green,
-/turf/closed/wall/solaris,
-/area/bigredv2/outside/general_offices)
 "anf" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -3564,9 +3554,6 @@
 /turf/open/mars,
 /area/bigredv2/outside/s)
 "bjC" = (
-/obj/structure/pipes/standard/simple/hidden/green{
-	dir = 5
-	},
 /turf/closed/wall/solaris/reinforced,
 /area/bigredv2/outside/s)
 "bjM" = (
@@ -8275,7 +8262,7 @@
 /area/bigredv2/caves/mining)
 "ffk" = (
 /obj/structure/surface/table/woodentable/fancy,
-/obj/item/clothing/head/det_hat,
+/obj/item/clothing/head/fedora,
 /turf/open/floor/wood,
 /area/bigredv2/outside/marshal_office)
 "ffB" = (
@@ -13714,11 +13701,6 @@
 "jHV" = (
 /turf/open/floor/darkyellow2/west,
 /area/bigredv2/outside/engineering)
-"jHY" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden,
-/turf/open/floor/asteroidwarning/east,
-/area/bigredv2/outside/n)
 "jIq" = (
 /obj/structure/cable{
 	icon_state = "1-6"
@@ -19103,12 +19085,6 @@
 	},
 /turf/open/floor/whitebluefull/northeast,
 /area/bigredv2/outside/medical)
-"ofX" = (
-/obj/structure/pipes/standard/simple/hidden/green{
-	dir = 4
-	},
-/turf/closed/wall/solaris/reinforced,
-/area/bigredv2/outside/s)
 "ogv" = (
 /obj/effect/decal/cleanable/blood/drip{
 	pixel_x = -1;
@@ -48878,7 +48854,7 @@ drO
 xKX
 nbQ
 eaj
-ofX
+bjC
 ggg
 gvw
 ggg
@@ -49529,7 +49505,7 @@ pnG
 ukV
 nbQ
 eaj
-ofX
+bjC
 ggg
 ggg
 ggg
@@ -50344,7 +50320,7 @@ ixz
 ixz
 ixz
 ixz
-jHY
+xCo
 xCo
 ixz
 fsV
@@ -50397,7 +50373,7 @@ qjX
 ukV
 nbQ
 qjX
-ofX
+bjC
 oTR
 ovG
 bjA
@@ -59013,7 +58989,7 @@ aao
 ako
 ako
 ako
-amh
+ako
 ako
 ako
 ako
@@ -59454,7 +59430,7 @@ hWw
 apd
 atH
 aud
-amZ
+ako
 avH
 awv
 axj

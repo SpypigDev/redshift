@@ -3019,9 +3019,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/machinery/door/firedoor/border_only/almayer,
 /turf/open/floor/almayer/plate,
 /area/almayer/squads/req)
@@ -38339,10 +38336,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/carpet,
 /area/almayer/living/commandbunks)
-"opM" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/closed/wall/almayer,
-/area/almayer/hallways/hangar)
 "oqb" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -39974,11 +39967,6 @@
 /obj/effect/spawner/random/tool,
 /turf/open/floor/almayer/mono,
 /area/almayer/lifeboat_pumps/south2)
-"oTh" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/plating_catwalk,
-/area/almayer/hallways/upper/aft_hallway)
 "oTt" = (
 /obj/structure/machinery/light/small,
 /turf/open/floor/almayer/plate,
@@ -51022,7 +51010,6 @@
 /area/almayer/hallways/upper/aft_hallway)
 "tnr" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/pipes/standard/simple/hidden/supply,
 /turf/closed/wall/almayer/reinforced,
 /area/almayer/shipboard/brig/warden_office)
 "tnw" = (
@@ -76570,7 +76557,7 @@ mkI
 qKC
 sgC
 dUv
-opM
+ydm
 uCY
 sgC
 vAM
@@ -94471,7 +94458,7 @@ nMp
 gYd
 ioP
 nqW
-oTh
+ioP
 ioP
 ioP
 gYd

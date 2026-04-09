@@ -113,3 +113,7 @@
 /datum/map_template/interior/uppapc
 	name = "ZSL-68"
 	interior_id = "uppapc"
+
+/datum/map_template/interior/humvee
+	name = "humvee"
+	interior_id = "humvee"

@@ -1,4 +1,5 @@
 import { BooleanLike } from 'common/react';
+
 import { useBackend } from '../backend';
 import { Button, Collapsible, Divider, Section, Stack } from '../components';
 import { Window } from '../layouts';
@@ -6,11 +7,11 @@ import { Window } from '../layouts';
 type Data = {
   rappel_click_intercept: BooleanLike;
   game_master_rappels: Array<RappelInfo>;
-}
+};
 
 type RappelInfo = {
   rappel_name: string;
-}
+};
 
 export const GameMasterRappelMenu = (props, context) => {
   const { data, act } = useBackend();

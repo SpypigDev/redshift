@@ -1,4 +1,3 @@
-import { BooleanLike } from 'common/react';
 import { useBackend } from '../backend';
 import { Button, Dropdown, Section, Stack } from '../components';
 import { Window } from '../layouts';
@@ -10,7 +9,7 @@ type Data = {
   selected_xeno: string;
   selected_hive: string;
   ambush_info: string;
-}
+};
 
 export const GameMasterSubmenuAmbush = (props, context) => {
   const { data, act } = useBackend();

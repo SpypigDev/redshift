@@ -1,9 +1,9 @@
 import { auto } from '@popperjs/core';
+import { BooleanLike } from 'common/react';
 
 import { useBackend } from '../backend';
 import { Button, Collapsible, Section, Stack } from '../components';
 import { Window } from '../layouts';
-import { BooleanLike } from 'common/react';
 
 type Data = {
   fire_support_click_intercept: BooleanLike;
@@ -14,23 +14,18 @@ type Data = {
   chemical_ordnance_options: string[];
   throwables_ordnance_options: string[];
   selected_ordnance: string;
-}
+};
 
 type MissileData = {
   selected_ordnance: string;
-}
+};
 
 export const GameMasterFireSupportMenu = (props, context) => {
   const { act, data } = useBackend<Data>();
   return (
     <Window width={450}>
       <Window.Content scrollable>
-        <Section
-          fill
-          title="Fire Support Menu"
-          align="center"
-          height={auto}
-        >
+        <Section fill title="Fire Support Menu" align="center" height={auto}>
           <Stack vertical>
             <Stack.Item>
               <Button

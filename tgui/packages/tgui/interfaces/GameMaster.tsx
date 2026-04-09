@@ -1,4 +1,5 @@
 import { BooleanLike } from 'common/react';
+
 import { useBackend } from '../backend';
 import {
   Box,
@@ -28,12 +29,12 @@ type Data = {
   game_master_objectives: Array<GameMasterInfo>;
   radio_clarity: number;
   radio_clarity_example: string;
-}
+};
 
 type GameMasterInfo = {
   object_name: string;
   objective_info: string;
-}
+};
 
 export const GameMaster = (props, context) => {
   const { data, act } = useBackend();
@@ -269,7 +270,7 @@ export const GameMasterCommunicationPanel = (props, context) => {
             minValue={0}
             value={data.radio_clarity}
             stepPixelSize={3}
-            suppressFlicker={true}
+            suppressFlicker
             onChange={(e, clarity) => {
               act('set_radio_clarity', { clarity });
             }}

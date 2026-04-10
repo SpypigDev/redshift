@@ -147,10 +147,7 @@
 
 /datum/human_ai_brain/duplicate/proc/engage_alter()
 	UnregisterSignal(alter, COMSIG_HUMAN_SAY)
-	tied_human.emote("roar")
-	tied_human.speed = -1.5
-	playsound(tied_human, 'sound/weapons/wristblades_on.ogg', 25)
-	tied_human.add_filter("empower_rage", 1, list("type" = "outline", "color" = "#440202", "size" = 1))
+	//emote
 	mimic_timer = null
 	holster_primary()
 	holster_melee()

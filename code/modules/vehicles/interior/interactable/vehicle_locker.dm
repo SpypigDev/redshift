@@ -250,6 +250,8 @@
 	if (container.handle_mousedrop(user, over_object))
 		..(over_object)
 
+/obj/structure/vehicle_locker/med/humvee
+	icon = 'icons/obj/vehicles/interiors/general_humvee.dmi'
 
 /obj/structure/vehicle_locker/med/verb/remove_surgical_tray()
 	set name = "Remove Surgical Tray"

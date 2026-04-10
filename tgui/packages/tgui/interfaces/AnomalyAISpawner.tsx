@@ -2,14 +2,7 @@ import { classes } from 'common/react';
 import { useState } from 'react';
 
 import { useBackend } from '../backend';
-import {
-  Box,
-  Button,
-  Collapsible,
-  Divider,
-  Section,
-  Stack,
-} from '../components';
+import { Box, Button, Divider, Section, Stack } from '../components';
 import { Window } from '../layouts';
 
 type AnomalyAIPreset = {
@@ -56,66 +49,79 @@ const AnomalyAISpawnerr = (props) => {
   const { presets } = data;
   return (
     <Section fill className="AnomalySpawner__Main">
-      <Stack fill vertical>
-        <Stack fill>
-          <Stack.Item grow mr={1}>
-            <Section fill scrollable>
-              {Object.keys(presets).map((dictKey) => (
-                <Collapsible
-                  title={dictKey}
-                  key={dictKey}
-                  className="AnomalyClass"
-                >
-                  {presets[dictKey].map((squad) => (
-                    <Box pb={'12px'} key={squad.path}>
-                      <Button
-                        className="AnomalyType"
-                        selected={squad === chosenPreset}
-                        key={squad.path}
-                        onClick={() => setPreset(squad)}
-                      >
-                        {squad.name}
-                      </Button>
-                    </Box>
-                  ))}
-                </Collapsible>
-              ))}
-            </Section>
-          </Stack.Item>
-          <Divider vertical />
-          <Stack.Item width="35%">
-            <Section title="Selected Preset" height="100%">
-              <Stack vertical height="100%">
-                <Stack.Item height="50%">
-                  <Box align="center">
-                    <span
-                      className={classes([
-                        'anomaly_menu128x128',
-                        `${chosenPreset ? chosenPreset.icon : 'ss13'}`,
-                      ])}
-                    />
-                  </Box>
+      <Stack fill>
+        <Stack.Item grow mr={1}>
+          <Section fill scrollable>
+            {Object.keys(presets).map((dictKey) => (
+              <Stack key={dictKey} vertical>
+                <Stack.Item className="AnomalyClass" fontSize={1.1} bold>
+                  &gt;&gt;&gt; {dictKey} Class Hazard
                 </Stack.Item>
-                <Stack.Item>
-                  {chosenPreset ? chosenPreset.description : 'NULL'}
-                </Stack.Item>
-                <Stack.Item>
-                  <Button
-                    textAlign="center"
-                    width="100%"
-                    onClick={() =>
-                      act('create_ai', {
-                        path: chosenPreset && chosenPreset.path,
-                      })
-                    }
-                  >
-                    Spawn
-                  </Button>
-                </Stack.Item>
+                {presets[dictKey].map((squad) => (
+                  <Stack.Item pb={'12px'} key={squad.path}>
+                    <Button
+                      className="AnomalyType"
+                      selected={squad === chosenPreset}
+                      key={squad.path}
+                      onClick={() => setPreset(squad)}
+                    >
+                      - {squad.name} -
+                    </Button>
+                  </Stack.Item>
+                ))}
               </Stack>
-            </Section>
-          </Stack.Item>
-        </Stack>
+            ))}
+          </Section>
+        </Stack.Item>
+        <Divider vertical />
+        <Stack.Item width="40%">
+          <Stack height="100%" vertical>
+            <Stack.Item
+              className="AnomalyClass"
+              fontSize={1.1}
+              bold
+              textAlign="center"
+              pb="3px"
+            >
+              Selected Preset
+            </Stack.Item>
+            <Stack.Item
+              className="SelectedPreset"
+              fontSize={1.2}
+              bold
+              textAlign="center"
+              mt="3px"
+            >
+              {chosenPreset ? chosenPreset.name : 'NONE'}
+            </Stack.Item>
+            <Stack fill pt="5%">
+              <Stack.Item width="50%">
+                <Box align="left" ml="-30%">
+                  <span
+                    className={classes([
+                      'anomaly_menu128x128',
+                      `${chosenPreset ? chosenPreset.icon : 'ss13'}`,
+                    ])}
+                  />
+                </Box>
+              </Stack.Item>
+              <Stack.Item className="AnomalyInfo" height="90%">
+                {chosenPreset ? chosenPreset.description : 'NULL'}
+              </Stack.Item>
+            </Stack>
+            <Button
+              textAlign="center"
+              width="100%"
+              onClick={() =>
+                act('create_ai', {
+                  path: chosenPreset && chosenPreset.path,
+                })
+              }
+            >
+              Spawns
+            </Button>
+          </Stack>
+        </Stack.Item>
       </Stack>
     </Section>
   );

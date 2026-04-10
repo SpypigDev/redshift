@@ -3,8 +3,7 @@
 //Read the documentation in multitile.dm before trying to decipher this stuff
 
 /obj/vehicle/multitile/humvee
-	name = "Kheshig-1M"
-	desc = "The Kheshig-1M is a result of a modernization program to try and make a common heavy utility vehicle for the Union. Lightly armored and relatively compact, most variants are unarmed."
+	name = "M26-JLTV"
 	layer = ABOVE_XENO_LAYER
 
 	icon = 'icons/obj/vehicles/humvee.dmi'
@@ -47,7 +46,8 @@
 	move_max_momentum = 3
 
 	hardpoints_allowed = list(
-		/obj/item/hardpoint/locomotion/van_wheels/upp,
+		/obj/item/hardpoint/locomotion/van_wheels/humvee,
+		/obj/item/hardpoint/holder/tank_turret/humvee
 	)
 
 	move_turn_momentum_loss_factor = 1
@@ -135,6 +135,28 @@
 
 	for(var/I in GLOB.player_list)
 		add_default_image(SSdcs, I)
+
+/obj/vehicle/multitile/humvee/relaymove(mob/user, direction)
+	if(user == seats[VEHICLE_DRIVER])
+		return ..()
+
+	if(user != seats[VEHICLE_GUNNER])
+		return FALSE
+
+	var/obj/item/hardpoint/holder/tank_turret/humvee/turret = null
+	for(var/obj/item/hardpoint/holder/tank_turret/humvee/tonkturret in hardpoints)
+		turret = tonkturret
+		break
+	if(!turret)
+		return FALSE
+
+	if(direction == GLOB.reverse_dir[turret.dir] || direction == turret.dir)
+		return FALSE
+
+	turret.user_rotation(user, turning_angle(turret.dir, direction))
+	update_icon()
+
+	return TRUE
 
 /obj/vehicle/multitile/humvee/BlockedPassDirs(atom/movable/mover, target_dir)
 	if(mover in mobs_under) //can't collide with the thing you're buckled to

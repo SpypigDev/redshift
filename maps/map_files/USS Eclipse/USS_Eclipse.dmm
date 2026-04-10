@@ -1,0 +1,27033 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/turf/open/floor/prison/darkyellow2/southeast,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ay" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/shuttle/escapepod/floor4,
+/area/golden_arrow/motor_pool)
+"aJ" = (
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"aR" = (
+/obj/structure/stairs{
+	icon_state = "ramptop"
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"aS" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"bg" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/shuttle/escapepod/west,
+/area/golden_arrow/motor_pool)
+"bi" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal3"
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"bm" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"by" = (
+/obj/structure/machinery/shower{
+	dir = 8
+	},
+/obj/structure/barricade/handrail/type_b{
+	layer = 3.1
+	},
+/obj/structure/curtain/open/shower{
+	pixel_x = -12
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/space)
+"bG" = (
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 8
+	},
+/obj/structure/dropship_equipment/medevac_system,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"bL" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"bW" = (
+/obj/structure/closet/crate/ammo{
+	pixel_y = 14
+	},
+/obj/structure/largecrate/random/mini/small_case{
+	pixel_x = -6
+	},
+/obj/structure/largecrate/random/mini/wooden{
+	pixel_x = 9
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ce" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"cr" = (
+/obj/structure/machinery/status_display{
+	pixel_y = 30
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"cM" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"cO" = (
+/obj/structure/cargo_container/uscm/right{
+	pixel_x = 8;
+	layer = 3.1;
+	opacity = 0
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"de" = (
+/turf/open/floor/almayer{
+	dir = 1;
+	icon_state = "cargo_arrow"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"di" = (
+/obj/structure/closet/firecloset{
+	pixel_x = 9;
+	layer = 3
+	},
+/obj/structure/closet/emcloset{
+	pixel_x = -6
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"dw" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/space)
+"dB" = (
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"dS" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/item/trash/candy{
+	layer = 1.9;
+	pixel_x = -4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"dZ" = (
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder{
+	layer = 1
+	},
+/turf/open/floor/prison/floor_plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ed" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ei" = (
+/obj/structure/machinery/door/poddoor/almayer,
+/turf/closed/wall/almayer/outer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ej" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"er" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/ship_ammo/minirocket,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ew" = (
+/turf/closed/wall/almayer/outer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ey" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/stairs,
+/turf/open/shuttle/escapepod/floor4,
+/area/golden_arrow/motor_pool)
+"eI" = (
+/obj/structure/prop/dam/crane/cargo,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"fd" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"fB" = (
+/obj/structure/cargo_container/uscm/sanfran/left{
+	pixel_x = 8;
+	layer = 3.1;
+	opacity = 0
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"fI" = (
+/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
+	dockId = "garrow_vehicle_elevator_two";
+	shuttleId = "garrow_vehicle_elevator_two";
+	pixel_y = 35;
+	name = "\improper vehicle elevator two control panel"
+	},
+/turf/open/floor/corsat,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"fV" = (
+/obj/structure/platform_decoration,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"fX" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ga" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"gb" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"gf" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"gw" = (
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
+	layer = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/prison/floor_plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"gA" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 3.1
+	},
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6;
+	layer = 3.51
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/platform{
+	dir = 1;
+	base_pixel_y = null
+	},
+/obj/structure/platform_decoration{
+	dir = 5;
+	layer = 3.51
+	},
+/obj/structure/platform_decoration{
+	dir = 9;
+	layer = 3.51
+	},
+/obj/structure/platform_decoration{
+	dir = 10;
+	layer = 3.51
+	},
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"gV" = (
+/obj/structure/machinery/door_control{
+	id = "vicne";
+	pixel_x = -24
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"gY" = (
+/turf/open/floor/almayer/plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"hb" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"hl" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"hm" = (
+/obj/structure/ship_ammo/minirocket{
+	pixel_y = -17
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"hy" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"hC" = (
+/obj/structure/closet/firecloset{
+	pixel_x = 9;
+	layer = 3
+	},
+/obj/structure/closet/emcloset{
+	pixel_x = -6
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"hD" = (
+/obj/structure/ship_ammo/rocket/keeper{
+	pixel_x = -18
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"hG" = (
+/obj/structure/machinery/floodlight/landing{
+	on_light_range = 10
+	},
+/turf/open/floor/interior/plastic,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"hT" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"hY" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/siding,
+/obj/structure/platform_decoration{
+	dir = 1;
+	layer = 4.1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ib" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"it" = (
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
+	layer = 2.1
+	},
+/turf/open/floor/almayer/cargo,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"iw" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"iB" = (
+/obj/structure/platform{
+	layer = 3.1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"iD" = (
+/obj/structure/barricade/handrail,
+/obj/structure/closet/firecloset/full{
+	layer = 2.5
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"iL" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/shuttle/escapepod/floor4,
+/area/golden_arrow/motor_pool)
+"iR" = (
+/turf/open/floor/prison/darkyellow2/southwest,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"jd" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ji" = (
+/obj/structure/platform{
+	dir = 1;
+	layer = 3.1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"jo" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/shuttle/escapepod/west,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"jq" = (
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/space)
+"jD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
+	dir = 8;
+	id = "hangardeckwest"
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"jH" = (
+/obj/structure/machinery/status_display{
+	pixel_y = -29
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"jK" = (
+/obj/structure/machinery/shower{
+	dir = 4
+	},
+/obj/structure/curtain/open/shower{
+	pixel_x = 12
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/space)
+"jN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"jP" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	name = "\improper Vehicle Bay Two Blast Door";
+	id = "vehiclebay2"
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"jX" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = 3;
+	layer = 3.1
+	},
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = -4;
+	pixel_y = 13
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"jY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ke" = (
+/obj/docking_port/stationary/trijent_elevator/shipmap_elevator/one{
+	airlock_area = /area/liberty/vehicle_shuttle/s/three;
+	name = "Crew Deck";
+	id = "LibertyElevatorS3";
+	elevator_network = "LibertyElevatorS";
+	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/south
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/space)
+"kl" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"kA" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"kV" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"lc" = (
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"lo" = (
+/obj/structure/largecrate/supply/ammo{
+	name = "materials crate";
+	fill_from_loc = 1
+	},
+/obj/item/stack/sheet/metal/large_stack,
+/obj/item/stack/sheet/plasteel{
+	amount = 40;
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"lq" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo_arrow";
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"lE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"lF" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/siding,
+/obj/structure/platform_decoration{
+	layer = 4.1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"lH" = (
+/obj/structure/stairs{
+	icon_state = "ramptop";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"lS" = (
+/obj/effect/decal/cleanable/generic,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"lZ" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/space/basic,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"mk" = (
+/obj/structure/bed/chair{
+	pixel_x = -2;
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"mo" = (
+/obj/structure/platform{
+	pixel_y = 5
+	},
+/obj/effect/decal/siding,
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	layer = 4.1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"mp" = (
+/obj/structure/machinery/door_control{
+	id = "vicne";
+	pixel_x = -24;
+	pixel_y = 22
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"mq" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"mA" = (
+/obj/structure/machinery/light,
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"mK" = (
+/obj/structure/ship_ammo/heavygun/antitank,
+/obj/structure/ship_ammo/heavygun/antitank{
+	pixel_y = 12
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"mL" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"mN" = (
+/obj/structure/platform{
+	layer = 3.1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/largecrate/random/barrel/brown,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"mR" = (
+/obj/structure/sign/safety/debark_lounge{
+	pixel_x = 15;
+	pixel_y = -32
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"mT" = (
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 28;
+	id = "vehiclebay2";
+	name = "vehicle bay blast door control"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"mW" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/item/trash/crushed_cup{
+	layer = 1.9;
+	pixel_x = -5
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"mX" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"nc" = (
+/turf/closed/wall/almayer/outer/friegt,
+/area/golden_arrow/motor_pool)
+"ng" = (
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"nh" = (
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ns" = (
+/obj/structure/cargo_container/uscm/mid{
+	pixel_y = 7;
+	pixel_x = 16;
+	color = "#4550A3";
+	opacity = 0
+	},
+/obj/structure/cargo_container/uscm/mid{
+	pixel_y = 7;
+	pixel_x = 8;
+	color = "#4550A3";
+	opacity = 0
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"nu" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = -5;
+	layer = 3.1;
+	pixel_y = -3
+	},
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = 1;
+	pixel_y = 13
+	},
+/obj/item/trash/uscm_mre{
+	layer = 1.9;
+	pixel_x = 2
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"nv" = (
+/obj/vehicle/train/cargo/trolley,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ny" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"nz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/vehicle/train/cargo/engine,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"nE" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"nH" = (
+/obj/structure/machinery/shower{
+	dir = 8
+	},
+/obj/structure/curtain/open/shower{
+	pixel_x = -12
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/space)
+"nZ" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/lifeboat/blastdoor{
+	id_tag = "Boat2-D3";
+	linked_dock = "almayer-lifeboat2";
+	throw_dir = 1
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"ol" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/shuttle/escapepod/floor1/east,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"om" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"oo" = (
+/turf/closed/wall/almayer/outer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"op" = (
+/obj/structure/stairs{
+	dir = 8;
+	icon_state = "ramptop"
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"os" = (
+/obj/structure/platform{
+	pixel_y = 5
+	},
+/obj/effect/decal/siding,
+/obj/structure/machinery/landinglight/ds1/delayone{
+	layer = 4.1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ot" = (
+/obj/structure/surface/table/almayer,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"oz" = (
+/obj/structure/dropship_equipment/paradrop_system,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"oA" = (
+/obj/structure/machinery/door_control{
+	id = "vicnw";
+	pixel_x = -24;
+	pixel_y = 21
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"oM" = (
+/obj/structure/closet/firecloset{
+	pixel_x = 9;
+	layer = 3
+	},
+/obj/structure/closet/emcloset{
+	pixel_x = -6
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"oS" = (
+/turf/open/floor/almayer_hull/outerhull_dir,
+/area/space)
+"oV" = (
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/obj/structure/platform_decoration,
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"oZ" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/shuttle/escapepod/floor4,
+/area/golden_arrow/motor_pool)
+"pc" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = -5;
+	pixel_y = 12
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"pe" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"pf" = (
+/turf/closed/wall/almayer/outer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"pi" = (
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"pn" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"pp" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"pq" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"pw" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 4;
+	pixel_y = 29
+	},
+/turf/open/shuttle/escapepod/west,
+/area/golden_arrow/motor_pool)
+"pz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"pD" = (
+/obj/structure/dropship_equipment/mg_holder,
+/obj/structure/dropship_equipment/mg_holder{
+	pixel_y = 9
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"pJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
+	dir = 8;
+	id = "hangardeckwest"
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"pM" = (
+/obj/structure/cargo_container/uscm/right{
+	pixel_y = 7;
+	pixel_x = 12;
+	color = "#4550A3";
+	opacity = 0
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"pO" = (
+/obj/structure/platform_decoration,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qg" = (
+/turf/open/floor/prison/darkyellowcorners2/west{
+	dir = 2
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qm" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/ash,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qo" = (
+/obj/structure/barricade/handrail,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qp" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qs" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"qy" = (
+/turf/open/floor/prison/darkyellowcorners2/west,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qE" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qP" = (
+/turf/open/floor/prison/darkyellow2/east,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"qQ" = (
+/turf/open/shuttle/escapepod/floor0/north,
+/area/golden_arrow/motor_pool)
+"ri" = (
+/obj/structure/cargo_container/uscm/chinook/mid{
+	color = "#898988";
+	pixel_y = 15;
+	layer = 3.2;
+	opacity = 0;
+	pixel_x = 6
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"rl" = (
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"rs" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"rt" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/shuttle/escapepod/floor1/east,
+/area/golden_arrow/motor_pool)
+"rB" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"rL" = (
+/obj/structure/prop/invuln{
+	desc = "An inflated membrane. This one is puncture proof. Wow!";
+	icon = 'icons/obj/items/inflatable.dmi';
+	icon_state = "wall";
+	name = "umbilical wall"
+	},
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/almayer_hull/outerhull_dir/east,
+/area/space)
+"se" = (
+/obj/structure/platform{
+	dir = 1;
+	layer = 3.1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"sf" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/lifeboat/blastdoor{
+	id_tag = "Boat2-D2";
+	linked_dock = "almayer-lifeboat2";
+	throw_dir = 2
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"sl" = (
+/obj/docking_port/stationary/trijent_elevator/shipmap_elevator/two{
+	id = "garrow_vehicle_elevator_two";
+	name = "Vehicle Elevator Two Upper";
+	elevator_network = "ArrowVehicleTwo";
+	airlock_area = /area/golden_arrow/vehicle_shuttle/two/upper
+	},
+/turf/open/floor/corsat,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"sn" = (
+/turf/closed/wall/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"ss" = (
+/obj/vehicle/powerloader{
+	dir = 8
+	},
+/turf/open/floor/prison/darkyellow2/southeast,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"sD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_y = -1;
+	pixel_x = 2
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"sM" = (
+/obj/structure/barricade/handrail/type_b{
+	layer = 3.1
+	},
+/obj/structure/machinery/shower{
+	dir = 4
+	},
+/obj/structure/curtain/open/shower{
+	pixel_x = 12
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/space)
+"sP" = (
+/obj/structure/cargo_container/uscm/right{
+	color = "#898988";
+	pixel_y = 15;
+	layer = 3.2;
+	opacity = 0;
+	pixel_x = 6
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"sR" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"th" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6;
+	layer = 3.51
+	},
+/obj/structure/platform_decoration{
+	dir = 10;
+	layer = 3.51
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/blood/oil/streak,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"tq" = (
+/turf/open/floor/almayer/plating_striped,
+/area/space)
+"tt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/ship_ammo/minirocket,
+/obj/structure/ship_ammo/minirocket{
+	pixel_y = 9
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"tx" = (
+/obj/item/prop{
+	desc = "Predecessor to the M56 the M38 was known for its extreme reliability in the field. This particular M38D is fondly remembered for its stalwart defence of the hangar bay during the Arcturian commando raid of the USS Almayer on Io.";
+	icon = 'icons/turf/whiskeyoutpost.dmi';
+	icon_state = "M56D_gun_e";
+	layer = 3.1;
+	name = "\improper M38D heavy machine gun 'Bess'";
+	pixel_x = -3;
+	pixel_y = 10
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"tQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"uc" = (
+/obj/structure/machinery/status_display{
+	pixel_y = 30
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"ud" = (
+/obj/vehicle/train/cargo/trolley,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"ug" = (
+/turf/open/floor/almayer_hull/outerhull_dir/north,
+/area/space)
+"uh" = (
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/golden_arrow/motor_pool)
+"un" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"uq" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	dir = 2
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"uB" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"uC" = (
+/obj/vehicle/powerloader{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"uN" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/turf/closed/wall/almayer/outer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"uS" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"uV" = (
+/obj/docking_port/stationary/marine_dropship/golden_arrow_hangar,
+/turf/open/floor/prison/floor_plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"uW" = (
+/obj/structure/machinery/door_control{
+	id = "vicne";
+	pixel_x = -24;
+	pixel_y = 24
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"uZ" = (
+/turf/open/floor/almayer_hull/outerhull_dir/north{
+	dir = 5
+	},
+/area/space)
+"vc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vk" = (
+/turf/open/floor/almayer_hull/outerhull_dir/north{
+	dir = 6
+	},
+/area/space)
+"vl" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"vq" = (
+/obj/structure/platform{
+	dir = 1;
+	layer = 3.1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vx" = (
+/obj/structure/platform{
+	layer = 3.1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vC" = (
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vL" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vQ" = (
+/turf/open/floor/prison/darkyellowcorners2/east,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vS" = (
+/obj/structure/prop/dam/crane{
+	layer = 3.1
+	},
+/obj/structure/largecrate/supply/supplies/flares{
+	layer = 3.1;
+	pixel_y = 22;
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vU" = (
+/turf/closed/wall/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"vV" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"vW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	layer = 2.5;
+	pixel_y = 2
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"wo" = (
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"wx" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"wz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"wC" = (
+/turf/open/shuttle/escapepod/floor1/east,
+/area/golden_arrow/motor_pool)
+"wM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"wU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"xf" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"xp" = (
+/obj/structure/machinery/cryopod/big/flipped{
+	layer = 3.2;
+	pixel_y = 8;
+	pixel_x = -16
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"xt" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"xv" = (
+/obj/structure/stairs{
+	icon_state = "ramptop";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"xF" = (
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"yl" = (
+/turf/open/floor/plating,
+/area/space)
+"yo" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"yy" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = -4;
+	layer = 3.1;
+	pixel_y = -3
+	},
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = 2;
+	pixel_y = 13
+	},
+/obj/item/trash/uscm_mre{
+	layer = 1.9;
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/obj/structure/sign/poster/pinup{
+	pixel_x = 25
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"yR" = (
+/obj/effect/step_trigger/teleporter/random{
+	affect_ghosts = 1;
+	name = "tele_ground1";
+	teleport_x = 180;
+	teleport_x_offset = 200;
+	teleport_y = 50;
+	teleport_y_offset = 80;
+	teleport_z = 1;
+	teleport_z_offset = 1
+	},
+/turf/open/space/basic,
+/area/space)
+"yS" = (
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/obj/structure/platform_decoration,
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"yT" = (
+/turf/open/space,
+/area/space)
+"zb" = (
+/turf/closed/wall/almayer/reinforced,
+/area/golden_arrow/motor_pool)
+"zf" = (
+/turf/open/floor/prison/darkyellow2/northwest,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"zr" = (
+/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
+	dockId = "garrow_vehicle_elevator_two";
+	shuttleId = "garrow_vehicle_elevator_two";
+	pixel_y = 35;
+	name = "\improper vehicle elevator two control panel"
+	},
+/turf/open/shuttle/escapepod/west,
+/area/golden_arrow/motor_pool)
+"zC" = (
+/obj/vehicle/train/cargo/engine,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"zO" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Aa" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/lifeboat/blastdoor{
+	id_tag = "Boat2-D4";
+	linked_dock = "almayer-lifeboat2";
+	throw_dir = 1
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"Ar" = (
+/turf/open/floor/almayer,
+/area/space)
+"Av" = (
+/turf/closed/wall/almayer,
+/area/space)
+"AB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"AC" = (
+/obj/structure/platform_decoration,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"AG" = (
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"AH" = (
+/turf/closed/wall/almayer/outer/gear,
+/area/golden_arrow/motor_pool)
+"AL" = (
+/turf/open/floor/almayer/pod_landing_floor,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"AS" = (
+/turf/open/floor/prison/darkyellow2/northeast,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"AX" = (
+/turf/open/floor/almayer_hull/outerhull_dir/east,
+/area/space/almayer/lifeboat_dock)
+"Bi" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 2;
+	req_access = null
+	},
+/obj/structure/machinery/door/poddoor/almayer,
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Bk" = (
+/turf/closed/wall/almayer/outer,
+/area/space)
+"Bo" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"BD" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"BS" = (
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"Ce" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/floor_plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Cq" = (
+/turf/open/floor/prison/floor_plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Cs" = (
+/obj/structure/machinery/door_control{
+	id = "vicne";
+	pixel_x = -24;
+	pixel_y = -24
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"CA" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 2;
+	req_access = null
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"CB" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/prison/darkyellow2/west,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Db" = (
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Dh" = (
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Dt" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/prison/darkyellow2/southwest,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"DB" = (
+/obj/structure/platform{
+	dir = 1;
+	base_pixel_y = null;
+	pixel_y = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"DF" = (
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"DU" = (
+/turf/closed/wall/almayer,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"Ee" = (
+/obj/vehicle/powerloader{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Eg" = (
+/obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/almayer,
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Eq" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Ex" = (
+/obj/structure/machinery/cryopod/big/flipped{
+	layer = 3.1;
+	pixel_x = -16;
+	pixel_y = 0
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"Ez" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"EO" = (
+/obj/structure/desertdam/decals/road_stop,
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"EP" = (
+/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
+	dockId = "garrow_vehicle_elevator_two";
+	shuttleId = "garrow_vehicle_elevator_two";
+	pixel_y = 35;
+	name = "\improper vehicle elevator two control panel"
+	},
+/turf/open/shuttle/escapepod/west,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Fa" = (
+/obj/structure/ship_ammo/rocket/harpoon,
+/obj/structure/ship_ammo/rocket/harpoon{
+	pixel_y = 12
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Fc" = (
+/obj/structure/platform{
+	pixel_y = 5
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	layer = 4.1
+	},
+/obj/effect/decal/siding,
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Fg" = (
+/obj/structure/dropship_equipment/mg_holder,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Fs" = (
+/obj/structure/machinery/door/airlock/multi_tile/elevator/freight{
+	icon_state = "door_locked";
+	locked = 1
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Fx" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"FH" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	name = "\improper Vehicle Bay Two Blast Door";
+	id = "vehiclebay2"
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"FJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"FL" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/floor/plating,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"FZ" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Gf" = (
+/obj/structure/machinery/cryopod/big{
+	layer = 3.1;
+	pixel_x = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"Gr" = (
+/turf/open/floor/almayer{
+	dir = 8;
+	icon_state = "cargo_arrow"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Gv" = (
+/obj/structure/platform{
+	pixel_y = 5
+	},
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	layer = 4.1
+	},
+/obj/effect/decal/siding,
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Gy" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"GC" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"GF" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/item/trash/burger{
+	layer = 1.9;
+	pixel_x = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"GG" = (
+/turf/open/floor/almayer_hull/outerhull_dir/northeast,
+/area/space)
+"Ha" = (
+/obj/structure/machinery/cryopod/big{
+	pixel_y = 11;
+	layer = 3.2;
+	pixel_x = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"Hq" = (
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass{
+	name = "Dormitory";
+	req_one_access_txt = "300"
+	},
+/turf/open/floor/almayer,
+/area/space)
+"HC" = (
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"HE" = (
+/obj/structure/prop/dam/crane{
+	bound_height = 32;
+	climbable = 1;
+	layer = 3.5;
+	pixel_y = -23
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"HO" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6;
+	layer = 3.51
+	},
+/obj/structure/platform_decoration{
+	dir = 10;
+	layer = 3.51
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"HP" = (
+/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
+	pixel_y = -15;
+	dockId = "LibertyElevatorS1";
+	name = "starboard elevator control";
+	shuttleId = "LibertyElevatorS"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Io" = (
+/turf/closed/wall/almayer/reinforced,
+/area/space)
+"Iq" = (
+/obj/structure/cargo_container/uscm/sanfran/mid{
+	layer = 3.1;
+	pixel_x = 8;
+	opacity = 0
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"II" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"IO" = (
+/obj/vehicle/powerloader{
+	dir = 4
+	},
+/turf/open/floor/prison/darkyellow2/west,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"IQ" = (
+/obj/structure/machinery/door_control{
+	id = "vicnw";
+	pixel_x = -24
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"IY" = (
+/turf/open/floor/almayer{
+	dir = 4;
+	icon_state = "cargo_arrow"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Jc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Jd" = (
+/obj/item/reagent_container/food/drinks/cans/beer{
+	pixel_x = 10
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Je" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/golden_arrow/motor_pool)
+"Jf" = (
+/obj/structure/platform{
+	pixel_y = 5
+	},
+/obj/structure/machinery/landinglight/ds1/delayone{
+	layer = 4.1
+	},
+/obj/effect/decal/siding,
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Jw" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Jz" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/plating,
+/area/space)
+"JA" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"JE" = (
+/obj/vehicle/train/cargo/engine{
+	dir = 2
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"JI" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = -2;
+	layer = 3.1;
+	pixel_y = 4
+	},
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_x = -4;
+	pixel_y = 23
+	},
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"JJ" = (
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"JM" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"JT" = (
+/obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
+	dir = 8;
+	id = "hangardeckwest"
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"JU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"JX" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform,
+/obj/structure/blocker/invisible_wall/water,
+/turf/open/floor/tdome/tcomms,
+/area/space)
+"Kk" = (
+/obj/docking_port/stationary/trijent_elevator/shipmap_elevator/two{
+	id = "garrow_vehicle_elevator_two";
+	name = "Vehicle Elevator Two Upper";
+	elevator_network = "ArrowVehicleTwo";
+	airlock_area = /area/golden_arrow/vehicle_shuttle/two/upper
+	},
+/turf/open/floor/corsat,
+/area/golden_arrow/motor_pool)
+"Kl" = (
+/obj/structure/machinery/door/airlock/multi_tile/elevator,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/space)
+"Kw" = (
+/turf/open/floor/almayer_hull/outerhull_dir/east,
+/area/space)
+"KX" = (
+/obj/item/tool/warning_cone,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Lc" = (
+/turf/closed/wall/almayer/reinforced,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Ld" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"Lf" = (
+/obj/docking_port/stationary/lifeboat_dock/starboard,
+/turf/open/floor/almayer_hull/outerhull_dir/east,
+/area/space/almayer/lifeboat_dock)
+"Lj" = (
+/obj/structure/machinery/door_control{
+	id = "hangardeckwest";
+	pixel_x = 24
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Lm" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Lq" = (
+/turf/open/floor/almayer/plating_striped/north,
+/area/space)
+"Lu" = (
+/obj/structure/prop/dam/crane/cargo,
+/obj/structure/ship_ammo/minirocket{
+	pixel_y = -17
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Ly" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Lz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"LC" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"Ml" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Mr" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 4;
+	pixel_y = 29
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Mv" = (
+/turf/open/floor/prison/darkyellow2/west{
+	dir = 2
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"MB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"MC" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 5
+	},
+/obj/structure/platform{
+	dir = 1;
+	base_pixel_y = null
+	},
+/obj/structure/platform_decoration{
+	dir = 9;
+	layer = 5
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5;
+	layer = 3.51
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"MO" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/turf/open/shuttle/escapepod/floor4,
+/area/golden_arrow/motor_pool)
+"MR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"MU" = (
+/turf/open/shuttle/escapepod/floor2,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"MW" = (
+/turf/open/shuttle/escapepod/floor1/east,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Ni" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	pixel_y = 8
+	},
+/obj/effect/landmark/observer_start,
+/obj/effect/landmark/late_join,
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"No" = (
+/obj/vehicle/powerloader{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Np" = (
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7;
+	pixel_x = 5
+	},
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Nq" = (
+/obj/structure/prop/dam/crane{
+	bound_height = 32;
+	climbable = 1;
+	layer = 3.5;
+	pixel_y = -23
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"NG" = (
+/obj/item/tool/crowbar/red{
+	pixel_x = -13;
+	pixel_y = -13
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"NK" = (
+/obj/docking_port/stationary/marine_dropship/crash_site,
+/turf/open/floor/prison/floor_plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"NO" = (
+/turf/open/floor/almayer/pod_landing_floor,
+/area/space)
+"NR" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/obj/vehicle/powerloader{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"NU" = (
+/turf/open/floor/corsat,
+/area/golden_arrow/motor_pool)
+"Oc" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	id = "hangarentrancesouth";
+	name = "\improper South Hangar Podlock"
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Oi" = (
+/turf/open/shuttle/escapepod/floor2,
+/area/golden_arrow/motor_pool)
+"Ot" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"Ou" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"OB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Pb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Pe" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Pf" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Ph" = (
+/obj/structure/ship_ammo/rocket/widowmaker,
+/obj/structure/ship_ammo/rocket/widowmaker{
+	pixel_y = 8
+	},
+/obj/structure/ship_ammo/rocket/widowmaker{
+	pixel_y = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Pm" = (
+/obj/structure/prop/invuln{
+	desc = "An inflated membrane. This one is puncture proof. Wow!";
+	icon = 'icons/obj/items/inflatable.dmi';
+	icon_state = "wall";
+	name = "umbilical wall"
+	},
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/almayer_hull/outerhull_dir/west,
+/area/space)
+"Po" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Py" = (
+/obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
+	id = "vicne"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"PO" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"PT" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"PY" = (
+/obj/structure/machinery/door/poddoor/almayer,
+/turf/open/floor/almayer,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Qm" = (
+/obj/structure/cargo_container/wy/left,
+/obj/structure/prop/almayer/minigun_crate{
+	pixel_x = 1;
+	pixel_y = 39
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Qn" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/turf/open/asphalt/cement_darkened,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"QA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement_darkened,
+/area/golden_arrow/motor_pool)
+"Rf" = (
+/turf/open/space/basic,
+/area/space)
+"Rg" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/item/trash/cigbutt/cigarbutt{
+	layer = 1.9;
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Rj" = (
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder{
+	layer = 2.1
+	},
+/turf/open/floor/almayer/cargo,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Ry" = (
+/obj/structure/platform{
+	pixel_y = 5
+	},
+/obj/effect/decal/siding,
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	layer = 4.1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"RD" = (
+/obj/structure/ship_ammo/rocket/keeper{
+	pixel_y = 10;
+	pixel_x = -18
+	},
+/obj/structure/ship_ammo/rocket/keeper{
+	pixel_x = -18
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"RM" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	dir = 2
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"RU" = (
+/turf/open/floor/corsat,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"RV" = (
+/obj/structure/ship_ammo/heavygun/antitank,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Sc" = (
+/obj/structure/sign/poster/propaganda{
+	pixel_x = 25
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Sf" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Sg" = (
+/turf/open/floor/almayer_hull,
+/area/space)
+"Sl" = (
+/turf/open/space,
+/area/space/almayer/lifeboat_dock)
+"Sy" = (
+/obj/structure/platform{
+	layer = 3.1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"SC" = (
+/obj/structure/cargo_container/uscm/chinook/left{
+	color = "#898988";
+	layer = 3.2;
+	pixel_y = 15;
+	opacity = 0;
+	pixel_x = 6
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"SM" = (
+/obj/structure/ship_ammo/rocket/widowmaker,
+/turf/open/floor/almayer{
+	icon_state = "test_floor5"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"SQ" = (
+/obj/structure/ship_ammo/rocket/widowmaker,
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder{
+	layer = 2.1
+	},
+/obj/structure/ship_ammo/rocket/widowmaker{
+	pixel_y = 8
+	},
+/obj/structure/ship_ammo/rocket/widowmaker{
+	pixel_y = 4
+	},
+/turf/open/floor/almayer/cargo,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"SZ" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Tb" = (
+/obj/structure/platform{
+	dir = 1;
+	base_pixel_y = null;
+	pixel_y = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Tc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Tp" = (
+/obj/item/tool/warning_cone,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Tv" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/vehicle/powerloader{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"TD" = (
+/obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
+	id = "vicnw"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"TP" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	name = " Vehicle Bay Two Blast Door";
+	id = "lowervehiclebay2";
+	dir = 8
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"TR" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/blocker/invisible_wall/water,
+/turf/open/floor/tdome/tcomms,
+/area/space)
+"Uc" = (
+/turf/open/floor/prison/darkyellow2/north,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Ud" = (
+/obj/structure/machinery/door_control{
+	id = "hangardeckwest";
+	pixel_x = -24
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Um" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/closed/wall/almayer/outer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Uz" = (
+/turf/closed/wall/almayer/outer/gear,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"UO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/vehicle/multitile/box_van/ambulance{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"UQ" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	name = " Vehicle Bay Two Blast Door";
+	id = "lowervehiclebay2";
+	dir = 8
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/golden_arrow/motor_pool)
+"UX" = (
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/motor_pool)
+"Vo" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Vx" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/space,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"VN" = (
+/obj/structure/cargo_container/wy/right,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"VR" = (
+/turf/open/floor/prison/darkyellowcorners2/north,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Wa" = (
+/obj/structure/machinery/door_control{
+	id = "hangarentrancesouth";
+	name = "South Hangar Shutters";
+	pixel_y = 30;
+	req_one_access_txt = "2;3;12;19";
+	throw_range = 15
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Wf" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"Wl" = (
+/obj/structure/cargo_container/wy/mid,
+/obj/structure/sign/poster{
+	desc = "YOU ALWAYS KNOW A WORKING JOE. YOU ALWAYS KNOW A WORKING JOE. YOU ALWAYS KNOW A WORKING JOE. YOU ALWAYS KNOW A WORKING JOE. YOU ALWAYS KNOW A WORKING JOE.";
+	icon_state = "poster11";
+	name = "YOU ALWAYS KNOW A WORKING JOE.";
+	pixel_x = -22;
+	pixel_y = 3;
+	serial_number = 11
+	},
+/obj/structure/sign/poster{
+	desc = "One of those hot, tanned babes back the beaches of good ol' Earth.";
+	icon_state = "poster12";
+	name = "Beach Babe Pinup";
+	pixel_x = 6;
+	pixel_y = 8;
+	serial_number = 12
+	},
+/obj/structure/sign/poster{
+	desc = "This poster features Audrey Rainwater standing in a jacuzzi. She was the July 2182 centerfold in Playboy Magazine. Don't ask how you know that.";
+	icon_state = "poster16";
+	name = "'Miss July' Pinup";
+	serial_number = 16
+	},
+/obj/structure/sign/poster{
+	desc = "Koorlander Golds, lovingly machine rolled for YOUR pleasure.";
+	icon_state = "poster10";
+	name = "Koorlander Gold Poster";
+	pixel_x = 29;
+	pixel_y = 6;
+	serial_number = 10
+	},
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = 42
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Wz" = (
+/obj/vehicle/train/cargo/trolley,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"WA" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 4;
+	pixel_y = 29
+	},
+/turf/open/shuttle/escapepod/west,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"WD" = (
+/turf/closed/wall/almayer/outer/friegt,
+/area/golden_arrow/vehicle_shuttle/two/upper)
+"WE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/prison/darkyellow2/west{
+	dir = 2
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"WG" = (
+/obj/structure/platform{
+	dir = 1;
+	base_pixel_y = null;
+	pixel_y = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"WM" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 4;
+	pixel_y = 29
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"WO" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/lifeboat/blastdoor{
+	id_tag = "Boat2-D1";
+	linked_dock = "almayer-lifeboat2";
+	throw_dir = 2
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"WR" = (
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Xf" = (
+/obj/docking_port/stationary/trijent_elevator/shipmap_elevator/one{
+	airlock_area = /area/liberty/vehicle_shuttle/s/one;
+	name = "Storage Deck";
+	id = "LibertyElevatorS1";
+	elevator_network = "LibertyElevatorS"
+	},
+/turf/open/floor/plating,
+/area/space)
+"XM" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Yu" = (
+/obj/structure/machinery/status_display{
+	pixel_x = 16;
+	pixel_y = -30
+	},
+/obj/structure/sign/safety/airlock{
+	pixel_y = -32
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
+"Yv" = (
+/obj/structure/machinery/door_control{
+	id = "vicnw";
+	pixel_x = -24;
+	pixel_y = -19
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/motor_pool)
+"Yz" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/structure/machinery/landinglight/ds1/delayone{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"YA" = (
+/turf/open/floor/prison/darkyellow2/west,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"YX" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/golden_arrow/motor_pool)
+"Zt" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"Zu" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Zv" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/motor_pool)
+"ZH" = (
+/obj/structure/platform{
+	dir = 4;
+	layer = 5
+	},
+/obj/structure/platform{
+	dir = 1;
+	base_pixel_y = null
+	},
+/obj/structure/platform_decoration{
+	dir = 9;
+	layer = 5
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5;
+	layer = 3.51
+	},
+/obj/item/trash/uscm_mre{
+	layer = 1.9;
+	pixel_x = -4
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice-simple";
+	layer = 2.9
+	},
+/turf/open/shuttle/escapepod,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ZL" = (
+/turf/open/shuttle/escapepod/floor0/north,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"ZN" = (
+/obj/vehicle/train/cargo/engine,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ZP" = (
+/obj/structure/cargo_container/uscm/micor/left{
+	pixel_y = 7;
+	color = "#4550A3";
+	pixel_x = 8;
+	opacity = 0
+	},
+/obj/structure/largecrate/random/case/double{
+	pixel_y = -3
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+"ZV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer,
+/area/almayer/hallways/hangar{
+	powernet_name = "saturnine";
+	unlimited_power = 1
+	})
+
+(1,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+pf
+uN
+uN
+uN
+uN
+uN
+pf
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(2,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+vC
+PT
+aJ
+PT
+PT
+hD
+dZ
+wo
+wo
+om
+wo
+wo
+wo
+oM
+vU
+rs
+uq
+vU
+oM
+wo
+Rj
+vC
+aJ
+aJ
+aJ
+aJ
+RV
+pf
+HC
+Qn
+DF
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Hq
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(3,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+aJ
+PT
+aJ
+PT
+PT
+aJ
+gw
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+om
+MR
+wo
+lS
+wo
+wo
+it
+aJ
+aJ
+aJ
+aJ
+aJ
+RV
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(4,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+MR
+wo
+wo
+Nq
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ex
+xp
+Ex
+xp
+Ex
+xp
+by
+nH
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(5,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+wo
+wo
+wo
+eI
+wo
+wo
+wo
+wo
+wo
+bW
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Io
+TR
+TR
+TR
+TR
+JX
+Io
+Io
+Io
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(6,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Pe
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Gf
+Ha
+Gf
+Ha
+Gf
+Ha
+sM
+jK
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(7,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+pf
+uc
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Hq
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(8,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+AC
+cM
+JM
+MR
+wo
+wo
+fV
+cM
+JM
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+fV
+cM
+JM
+ej
+wo
+wo
+fV
+cM
+JM
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(9,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Sy
+hG
+se
+jN
+jN
+jN
+mN
+hG
+se
+jN
+pz
+mX
+jN
+jN
+jN
+jN
+vx
+hG
+se
+jN
+jN
+jN
+vx
+hG
+vq
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ex
+xp
+Ex
+xp
+Ex
+xp
+by
+nH
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(10,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Eq
+lF
+Ml
+ed
+kA
+GC
+Sf
+BD
+Ml
+ed
+op
+op
+ed
+kA
+GC
+ed
+iw
+Yz
+wx
+kA
+GC
+ed
+iw
+rB
+Bo
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Io
+TR
+TR
+TR
+TR
+JX
+Io
+Io
+Io
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(11,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Pb
+Gv
+zf
+YA
+YA
+YA
+YA
+YA
+YA
+iR
+IY
+IY
+zf
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+CB
+YA
+Dt
+WG
+MB
+nE
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Gf
+Ha
+Gf
+Ha
+Gf
+Ha
+sM
+jK
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(12,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Fc
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+qy
+YA
+YA
+vQ
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WE
+DB
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Hq
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(13,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Jf
+Uc
+Cq
+WR
+WR
+WR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+Cq
+Mv
+Tb
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(14,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+qg
+ab
+WG
+MB
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Ar
+Ex
+xp
+Ex
+xp
+Ex
+xp
+by
+nH
+Io
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(15,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+Mv
+de
+aR
+NR
+nE
+PY
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(16,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Pb
+os
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Mv
+de
+aR
+Db
+nE
+PY
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(17,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+Mv
+de
+aR
+ce
+nE
+PY
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(18,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+qy
+iR
+DB
+MB
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(19,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+os
+Uc
+Cq
+WR
+WR
+WR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+Cq
+WE
+Tb
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(20,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+qg
+qP
+qP
+VR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Mv
+WG
+Lz
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(21,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+AS
+qP
+qP
+qP
+qP
+qP
+qP
+ab
+Gr
+Gr
+AS
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+ss
+DB
+MB
+nE
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(22,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+pO
+hY
+ng
+pi
+nh
+dB
+yS
+xF
+ng
+pi
+xv
+xv
+pi
+nh
+dB
+pi
+oV
+Np
+Dh
+nh
+dB
+pi
+oV
+hT
+fX
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(23,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Sy
+hG
+ji
+Vo
+wz
+Vo
+iB
+hG
+ji
+Vo
+tQ
+lE
+Vo
+Vo
+wz
+FZ
+iB
+hG
+ji
+Vo
+Vo
+Vo
+iB
+hG
+vq
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(24,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+sR
+uS
+ga
+MR
+wo
+wo
+qE
+uS
+ga
+MR
+MR
+wo
+wo
+wo
+wo
+wo
+qE
+uS
+ga
+wo
+wo
+wo
+qE
+uS
+ga
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(25,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+zC
+Wz
+Wz
+Wz
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+pf
+uc
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(26,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+wo
+wo
+KX
+wo
+wo
+wo
+wo
+wo
+wo
+Pf
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+nv
+nv
+wo
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(27,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+MR
+NG
+mk
+wo
+wo
+MR
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(28,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+MR
+jd
+wo
+wo
+wo
+kV
+wo
+wo
+wo
+MR
+MR
+wo
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+kV
+wo
+wo
+MR
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(29,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+ZV
+MR
+wo
+wo
+vU
+qo
+gA
+lH
+MC
+Rg
+Jw
+SZ
+xt
+Jw
+HO
+lH
+gA
+nE
+vU
+wo
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(30,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+KX
+wo
+wo
+vU
+nE
+nE
+nE
+qp
+Ou
+Ou
+Ou
+Ou
+Ou
+qp
+nE
+nE
+nE
+vU
+WM
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(31,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(32,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+om
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+CA
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(33,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Fx
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(34,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+CA
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(35,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+wo
+wo
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(36,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+vC
+tt
+Fa
+tt
+tt
+RD
+dZ
+wo
+wo
+wo
+wo
+wo
+wo
+oM
+vU
+wo
+RM
+vU
+oM
+wo
+SQ
+bG
+pD
+oz
+Ph
+mK
+mK
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(37,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+aJ
+tt
+aJ
+tt
+tt
+aJ
+gw
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+om
+MR
+wo
+lS
+wo
+wo
+it
+aJ
+aJ
+aJ
+aJ
+mK
+mK
+pf
+Mr
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(38,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Nq
+wo
+wo
+MR
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(39,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+MR
+wo
+uC
+wo
+MR
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+wo
+wo
+wo
+Lu
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(40,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+hm
+wo
+wo
+wo
+Pe
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(41,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+pf
+uc
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(42,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+AC
+cM
+JM
+MR
+wo
+wo
+fV
+cM
+JM
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+fV
+cM
+JM
+ej
+wo
+wo
+fV
+cM
+JM
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(43,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Sy
+hG
+se
+jN
+jN
+jN
+mN
+hG
+se
+jN
+pz
+mX
+jN
+jN
+jN
+jN
+vx
+hG
+se
+jN
+jN
+jN
+vx
+hG
+vq
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(44,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Eq
+lF
+Ml
+ed
+kA
+GC
+Sf
+BD
+Ml
+ed
+op
+op
+ed
+kA
+GC
+ed
+iw
+Yz
+wx
+kA
+GC
+ed
+iw
+rB
+Bo
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(45,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Pb
+Gv
+zf
+YA
+YA
+YA
+YA
+YA
+YA
+iR
+IY
+IY
+zf
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+CB
+YA
+Dt
+WG
+MB
+nE
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(46,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Fc
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+qy
+YA
+YA
+vQ
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WE
+DB
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(47,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Jf
+Uc
+Cq
+WR
+WR
+WR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+Cq
+Mv
+Tb
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+pf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(48,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+qg
+ab
+WG
+MB
+nE
+pf
+Wa
+Qn
+aS
+JU
+HC
+Fs
+yl
+yl
+yl
+yl
+Xf
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Kl
+jq
+jq
+jq
+jq
+ke
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(49,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+Mv
+de
+aR
+wU
+nE
+Oc
+HC
+Qn
+aS
+JU
+HC
+AL
+yl
+yl
+yl
+yl
+yl
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+NO
+jq
+jq
+jq
+jq
+jq
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(50,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Pb
+os
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+uV
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Mv
+de
+aR
+Db
+nE
+Oc
+HC
+Lm
+Ni
+hb
+HC
+AL
+yl
+yl
+Jz
+yl
+yl
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+NO
+jq
+jq
+dw
+jq
+jq
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(51,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+Mv
+de
+aR
+ce
+nE
+Oc
+HC
+Qn
+aS
+JU
+HC
+AL
+yl
+yl
+yl
+yl
+yl
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+NO
+jq
+jq
+jq
+jq
+jq
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(52,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+qy
+iR
+DB
+MB
+nE
+pf
+HC
+Qn
+aS
+JU
+HP
+pf
+yl
+yl
+yl
+yl
+yl
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+jq
+jq
+jq
+jq
+jq
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(53,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+os
+Uc
+Cq
+WR
+WR
+WR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+Cq
+WE
+Tb
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+pf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(54,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+qg
+qP
+qP
+VR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Mv
+WG
+Lz
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(55,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+AS
+qP
+qP
+qP
+qP
+qP
+qP
+ab
+Gr
+Gr
+AS
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+ab
+DB
+MB
+nE
+pf
+Lj
+Qn
+bi
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(56,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+pO
+hY
+ng
+pi
+nh
+dB
+yS
+xF
+ng
+pi
+xv
+xv
+pi
+nh
+dB
+pi
+oV
+Np
+Dh
+nh
+dB
+pi
+oV
+hT
+fX
+nE
+pf
+Lc
+pJ
+JT
+jD
+Lc
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(57,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Sy
+hG
+ji
+Vo
+wz
+Vo
+iB
+hG
+ji
+Vo
+tQ
+lE
+Vo
+Vo
+wz
+FZ
+iB
+hG
+ji
+Vo
+Vo
+Vo
+iB
+hG
+vq
+nE
+pf
+Ud
+Qn
+EO
+JU
+di
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(58,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+sR
+uS
+ga
+MR
+wo
+wo
+qE
+uS
+ga
+MR
+MR
+wo
+ZN
+wo
+wo
+wo
+qE
+uS
+ga
+wo
+wo
+wo
+qE
+uS
+ga
+nE
+pf
+Mr
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(59,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(60,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+wo
+wo
+KX
+wo
+wo
+wo
+wo
+wo
+wo
+Pf
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Jd
+Qm
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(61,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+Ee
+NG
+mk
+wo
+wo
+MR
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+gY
+Wl
+wo
+pf
+uc
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(62,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+MR
+jd
+wo
+wo
+wo
+kV
+wo
+wo
+wo
+MR
+MR
+wo
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+No
+wo
+wo
+MR
+tx
+VN
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(63,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+uC
+ZV
+MR
+wo
+wo
+vU
+iD
+gA
+lH
+ZH
+Rg
+GF
+mW
+qm
+dS
+th
+lH
+gA
+nE
+vU
+bW
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(64,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+Tp
+wo
+wo
+vU
+nE
+nE
+nE
+Sc
+JI
+jX
+yy
+pc
+nu
+qp
+nE
+nE
+nE
+vU
+WM
+wo
+wo
+kV
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(65,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(66,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Bi
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(67,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Eg
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(68,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+kV
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+Bi
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(69,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+Um
+ew
+ew
+ew
+ew
+wo
+wo
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(70,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+vC
+PT
+aJ
+er
+er
+hD
+dZ
+wo
+wo
+wo
+om
+wo
+wo
+oM
+vU
+rs
+uq
+vU
+oM
+wo
+Rj
+vC
+Fg
+oz
+SM
+aJ
+RV
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(71,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+aJ
+PT
+aJ
+er
+er
+aJ
+gw
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+om
+MR
+wo
+lS
+wo
+wo
+it
+aJ
+aJ
+aJ
+aJ
+aJ
+RV
+pf
+Mr
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(72,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+MR
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(73,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+wo
+wo
+wo
+eI
+wo
+wo
+wo
+wo
+wo
+bW
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(74,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+ZN
+nv
+nv
+nv
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(75,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+HE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+Wz
+Wz
+nE
+nE
+nE
+pf
+uc
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(76,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+AC
+cM
+JM
+MR
+wo
+wo
+fV
+cM
+JM
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+fV
+cM
+JM
+ej
+wo
+wo
+fV
+cM
+JM
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(77,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Sy
+hG
+se
+jN
+jN
+jN
+mN
+hG
+se
+jN
+pz
+mX
+jN
+jN
+jN
+jN
+vx
+hG
+se
+jN
+jN
+jN
+vx
+hG
+vq
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(78,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Eq
+lF
+Ml
+ed
+kA
+GC
+Sf
+BD
+Ml
+ed
+op
+op
+ed
+kA
+GC
+ed
+iw
+Yz
+wx
+kA
+GC
+ed
+iw
+rB
+Bo
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(79,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Pb
+Gv
+zf
+YA
+YA
+YA
+YA
+IO
+YA
+iR
+IY
+IY
+zf
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+CB
+YA
+Dt
+WG
+MB
+nE
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(80,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Fc
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+qy
+YA
+YA
+vQ
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Ce
+WE
+DB
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(81,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Jf
+Uc
+Cq
+WR
+WR
+WR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+Cq
+Mv
+Tb
+vL
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(82,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+qg
+ab
+WG
+nz
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(83,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+Mv
+de
+aR
+wU
+nE
+PY
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(84,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Pb
+os
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+NK
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Mv
+de
+aR
+Db
+nE
+PY
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(85,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+Mv
+de
+aR
+Zt
+nE
+PY
+HC
+Qn
+II
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(86,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+Uc
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+WR
+Cq
+WR
+WR
+Cq
+qy
+iR
+DB
+vL
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(87,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+os
+Uc
+Cq
+WR
+WR
+WR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+WR
+WR
+WR
+Cq
+WR
+WR
+WR
+Cq
+WE
+Tb
+MB
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(88,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+mo
+Uc
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+qg
+qP
+qP
+VR
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Cq
+Mv
+WG
+UO
+nE
+Zu
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(89,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+jY
+Ry
+AS
+qP
+qP
+qP
+qP
+qP
+qP
+ab
+Gr
+Gr
+AS
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+qP
+ab
+DB
+MB
+pn
+pf
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+Zv
+Zv
+Zv
+Zv
+Zv
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+Rf
+"}
+(90,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+pO
+hY
+ng
+pi
+nh
+dB
+yS
+xF
+ng
+pi
+xv
+xv
+pi
+nh
+dB
+pi
+oV
+Np
+Dh
+nh
+dB
+pi
+oV
+hT
+Ly
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+UX
+Rf
+"}
+(91,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+Sy
+hG
+ji
+Vo
+wz
+Vo
+iB
+hG
+ji
+Vo
+tQ
+lE
+Tv
+Vo
+wz
+FZ
+iB
+hG
+ji
+Vo
+vc
+Vo
+iB
+hG
+vq
+nE
+pf
+Mr
+Qn
+II
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(92,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+sR
+uS
+ga
+MR
+wo
+wo
+qE
+uS
+ga
+MR
+MR
+wo
+wo
+wo
+wo
+wo
+qE
+uS
+ga
+wo
+wo
+wo
+qE
+uS
+ga
+nE
+pf
+HC
+Qn
+aS
+FJ
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+sD
+zO
+ib
+ib
+ib
+ib
+XM
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+sD
+bm
+ib
+ib
+ib
+ib
+XM
+rl
+UX
+Rf
+"}
+(93,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+JA
+wM
+JA
+AG
+AG
+Je
+rl
+rl
+TD
+rl
+Ot
+xf
+un
+rl
+TD
+rl
+rl
+Po
+JA
+JA
+JA
+AG
+AG
+Je
+rl
+UX
+Rf
+"}
+(94,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ei
+wo
+wo
+wo
+KX
+wo
+wo
+wo
+wo
+wo
+wo
+Pf
+MR
+wo
+wo
+MR
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+rl
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+UX
+Rf
+"}
+(95,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+MR
+NG
+mk
+wo
+wo
+MR
+wo
+wo
+wo
+Pf
+wo
+wo
+wo
+MR
+wo
+wo
+wo
+MR
+wo
+wo
+MR
+wo
+fB
+SC
+ZP
+lo
+pf
+HC
+vV
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+mL
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+AG
+AG
+gb
+JA
+AG
+uh
+rl
+UX
+Rf
+"}
+(96,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+MR
+jd
+wo
+wo
+wo
+kV
+wo
+wo
+wo
+MR
+MR
+wo
+MR
+wo
+wo
+Pf
+wo
+wo
+wo
+kV
+wo
+PO
+Iq
+ri
+ns
+vS
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+YX
+Jc
+Jc
+OB
+OB
+Tc
+vW
+rl
+UX
+Rf
+"}
+(97,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+ZV
+MR
+wo
+wo
+vU
+iD
+gA
+lH
+MC
+Rg
+Jw
+SZ
+xt
+Jw
+HO
+lH
+gA
+nE
+vU
+wo
+PO
+cO
+sP
+pM
+wo
+pf
+HC
+Qn
+aS
+FJ
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(98,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+ew
+wo
+wo
+kV
+KX
+wo
+wo
+vU
+nE
+nE
+nE
+qp
+Ou
+Ou
+Ou
+Ou
+Ou
+qp
+nE
+nE
+nE
+vU
+WM
+wo
+wo
+wo
+wo
+wo
+pf
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+sD
+zO
+ib
+ib
+Ez
+ib
+XM
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+sD
+zO
+ib
+ib
+ib
+ib
+XM
+rl
+UX
+Rf
+"}
+(99,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+ew
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+vU
+sn
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+JA
+JA
+JA
+AG
+AG
+Je
+rl
+rl
+TD
+rl
+hy
+fd
+un
+rl
+TD
+rl
+rl
+Po
+JA
+wM
+JA
+AG
+AG
+Je
+rl
+UX
+Rf
+"}
+(100,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+hC
+BS
+LC
+bL
+LC
+Ld
+BS
+BS
+BS
+BS
+LC
+bL
+LC
+BS
+hC
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+rl
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+ey
+MO
+MO
+oZ
+ay
+vl
+rl
+UX
+Rf
+"}
+(101,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+cr
+BS
+gf
+gf
+gf
+gf
+gf
+gf
+gf
+gf
+gf
+gf
+gf
+BS
+jH
+sn
+JE
+Qn
+II
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+rl
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+UX
+Rf
+"}
+(102,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+gf
+gf
+BS
+BS
+BS
+BS
+BS
+Ld
+BS
+BS
+BS
+gf
+Wf
+BS
+sn
+ud
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+rl
+zb
+rl
+Ot
+xf
+un
+rl
+zb
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+UX
+Rf
+"}
+(103,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+gf
+BS
+Ld
+BS
+BS
+BS
+BS
+BS
+BS
+BS
+BS
+BS
+gf
+BS
+sn
+ud
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(104,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+BS
+BS
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+oo
+BS
+BS
+BS
+sn
+ud
+vV
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+sD
+zO
+ib
+ib
+ib
+ib
+XM
+rl
+IQ
+zb
+oA
+hy
+xf
+un
+Yv
+zb
+IQ
+rl
+sD
+zO
+ib
+ib
+ib
+ib
+XM
+rl
+UX
+Rf
+"}
+(105,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+BS
+BS
+Bk
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+JA
+wM
+JA
+gb
+AG
+Je
+rl
+mL
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+JA
+wM
+JA
+AG
+AG
+Je
+rl
+UX
+Rf
+"}
+(106,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+BS
+oo
+Bk
+AX
+AX
+AX
+AX
+AX
+AX
+Lf
+oo
+oo
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+ey
+MO
+oZ
+MO
+ay
+vl
+rl
+rl
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+UX
+Rf
+"}
+(107,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+BS
+oo
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+oo
+BS
+BS
+sn
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+rl
+TD
+rl
+hy
+xf
+un
+rl
+TD
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+UX
+Rf
+"}
+(108,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+oo
+BS
+BS
+oo
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+oo
+BS
+BS
+sn
+HC
+Qn
+aS
+FJ
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+YX
+Jc
+Jc
+OB
+OB
+Tc
+vW
+rl
+rl
+zb
+rl
+hy
+fd
+un
+rl
+zb
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+UX
+Rf
+"}
+(109,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+oo
+BS
+BS
+FL
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+oo
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(110,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+oo
+BS
+BS
+FL
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+oo
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+sD
+zO
+ib
+ib
+Ez
+ib
+XM
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+sD
+bm
+ib
+ib
+Ez
+ib
+XM
+rl
+UX
+Rf
+"}
+(111,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+ug
+oo
+BS
+BS
+FL
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+FL
+Ld
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+JA
+JA
+JA
+AG
+AG
+Je
+rl
+rl
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+JA
+JA
+JA
+AG
+AG
+Je
+rl
+UX
+Rf
+"}
+(112,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+mA
+oo
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+FL
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+ey
+oZ
+MO
+MO
+iL
+vl
+rl
+mL
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+UX
+Rf
+"}
+(113,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+oo
+rL
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+rL
+oo
+BS
+Ld
+sn
+HC
+vV
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+rl
+Py
+rl
+Ot
+xf
+un
+rl
+Py
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+UX
+Rf
+"}
+(114,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+WO
+tq
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Lq
+nZ
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+YX
+Jc
+Tc
+OB
+OB
+Jc
+vW
+rl
+UX
+Rf
+"}
+(115,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+lc
+tq
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Lq
+lc
+BS
+BS
+sn
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(116,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+lc
+tq
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Lq
+lc
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+sD
+zO
+ib
+ib
+Ez
+ib
+XM
+rl
+gV
+zb
+mp
+hy
+xf
+un
+Cs
+zb
+gV
+rl
+sD
+zO
+ib
+ib
+ib
+ib
+XM
+rl
+UX
+Rf
+"}
+(117,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+Yu
+oo
+Pm
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Pm
+oo
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+JA
+JA
+JA
+AG
+AG
+Je
+rl
+rl
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+JA
+wM
+JA
+AG
+AG
+Je
+rl
+UX
+Rf
+"}
+(118,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+mR
+oo
+rL
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+rL
+oo
+BS
+Ld
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+pp
+ey
+MO
+oZ
+MO
+ay
+vl
+rl
+rl
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+UX
+Rf
+"}
+(119,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+sf
+tq
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Lq
+Aa
+BS
+BS
+sn
+HC
+Qn
+II
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+rl
+Py
+rl
+hy
+fd
+un
+rl
+Py
+rl
+rl
+Po
+AG
+AG
+AG
+wM
+AG
+uh
+rl
+UX
+Rf
+"}
+(120,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+lc
+tq
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Lq
+lc
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+YX
+Jc
+Tc
+OB
+OB
+Jc
+vW
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+YX
+Jc
+Jc
+OB
+OB
+Jc
+vW
+rl
+UX
+Rf
+"}
+(121,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+lc
+tq
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Lq
+lc
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(122,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+oo
+Pm
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Pm
+oo
+BS
+BS
+sn
+HC
+vV
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+sD
+zO
+ib
+ib
+ib
+ib
+XM
+rl
+gV
+zb
+uW
+Ot
+xf
+un
+rl
+zb
+rl
+rl
+sD
+zO
+ib
+ib
+Ez
+ib
+XM
+rl
+UX
+Rf
+"}
+(123,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+lZ
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+FL
+BS
+BS
+sn
+uB
+Qn
+aS
+JU
+ny
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+JA
+wM
+JA
+AG
+AG
+Je
+rl
+rl
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+JA
+JA
+JA
+AG
+AG
+Je
+rl
+UX
+Rf
+"}
+(124,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+Vx
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+FL
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+rl
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+ey
+MO
+MO
+MO
+ay
+vl
+rl
+UX
+Rf
+"}
+(125,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+BS
+BS
+oo
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+oo
+BS
+BS
+sn
+HC
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+mL
+Py
+rl
+hy
+xf
+un
+rl
+Py
+rl
+rl
+Po
+AG
+AG
+AG
+JA
+AG
+uh
+rl
+UX
+Rf
+"}
+(126,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+oo
+yo
+yo
+oo
+oS
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+ug
+oo
+yo
+yo
+pf
+mT
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+rl
+zb
+rl
+hy
+xf
+un
+rl
+zb
+rl
+rl
+YX
+Jc
+Jc
+OB
+qs
+Jc
+vW
+rl
+UX
+Rf
+"}
+(127,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+uZ
+Kw
+Kw
+Kw
+Kw
+vk
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+GG
+Kw
+Sg
+Sg
+pf
+Mr
+Qn
+aS
+JU
+HC
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+zb
+zb
+pq
+hy
+xf
+un
+kl
+zb
+zb
+rl
+zb
+ot
+ot
+ot
+ot
+ot
+zb
+rl
+UX
+Rf
+"}
+(128,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yT
+yT
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+yT
+yT
+ug
+Sg
+pf
+lq
+Gy
+pe
+mq
+lq
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+zb
+rl
+QA
+AB
+hl
+rl
+zb
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+rl
+UX
+Rf
+"}
+(129,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yT
+yT
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+yT
+yT
+ug
+Sg
+pf
+FH
+FH
+FH
+FH
+FH
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+jP
+jP
+jP
+jP
+jP
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+Rf
+"}
+(130,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yT
+yT
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+yT
+yT
+ug
+Sg
+pf
+ZL
+HC
+HC
+HC
+MU
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+qQ
+rl
+rl
+rl
+Oi
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(131,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yT
+yT
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+yT
+yT
+ug
+Sg
+pf
+WA
+HC
+HC
+HC
+MW
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+pw
+rl
+rl
+rl
+wC
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(132,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yT
+yT
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+Sl
+yT
+yT
+ug
+Sg
+pf
+jo
+HC
+HC
+HC
+ol
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+bg
+rl
+rl
+rl
+rt
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(133,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+pf
+EP
+HC
+HC
+HC
+MW
+sn
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+zr
+rl
+rl
+rl
+wC
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(134,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+JJ
+TP
+TP
+TP
+TP
+TP
+DU
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+UX
+UQ
+UQ
+UQ
+UQ
+UQ
+UX
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(135,1,1) = {"
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Uz
+RU
+RU
+RU
+RU
+sl
+Uz
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+AH
+NU
+NU
+NU
+NU
+Kk
+AH
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(136,1,1) = {"
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+WD
+RU
+RU
+RU
+RU
+RU
+WD
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+nc
+NU
+NU
+NU
+NU
+NU
+nc
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(137,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+JJ
+RU
+RU
+RU
+RU
+RU
+JJ
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+UX
+NU
+NU
+NU
+NU
+NU
+UX
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(138,1,1) = {"
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+JJ
+RU
+RU
+RU
+RU
+RU
+JJ
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+NU
+NU
+NU
+NU
+NU
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(139,1,1) = {"
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+JJ
+RU
+RU
+RU
+fI
+RU
+JJ
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+NU
+NU
+NU
+NU
+NU
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(140,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+JJ
+RU
+RU
+RU
+RU
+RU
+JJ
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+NU
+NU
+NU
+NU
+NU
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(141,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Uz
+RU
+RU
+RU
+RU
+RU
+Uz
+Ar
+Ar
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+AH
+NU
+NU
+NU
+NU
+NU
+AH
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(142,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+JJ
+JJ
+JJ
+JJ
+JJ
+JJ
+JJ
+Bk
+Bk
+Av
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+UX
+UX
+UX
+UX
+UX
+UX
+UX
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(143,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(144,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(145,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(146,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(147,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(148,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(149,1,1) = {"
+Rf
+Rf
+Bk
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(150,1,1) = {"
+Rf
+Rf
+Rf
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(151,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(152,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+GG
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(153,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(154,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(155,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(156,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(157,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(158,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(159,1,1) = {"
+Rf
+Rf
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(160,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(161,1,1) = {"
+Rf
+Rf
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(162,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(163,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(164,1,1) = {"
+Rf
+Rf
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(165,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(166,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(167,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(168,1,1) = {"
+Rf
+Bk
+Rf
+Bk
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(169,1,1) = {"
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(170,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(171,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(172,1,1) = {"
+Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(173,1,1) = {"
+Rf
+Bk
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(174,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}
+(175,1,1) = {"
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+ug
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+yR
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+Rf
+"}

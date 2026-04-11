@@ -339,4 +339,7 @@
 	VAN.update_icon()
 
 /obj/effect/vehicle_spawner/humvee/fixed/load_hardpoints(obj/vehicle/multitile/humvee/V)
-	V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels/upp)
+	V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels/humvee)
+	V.add_hardpoint(new /obj/item/hardpoint/holder/tank_turret/humvee)
+	for(var/obj/item/hardpoint/holder/tank_turret/humvee/turret in V.hardpoints)
+		turret.add_hardpoint(new /obj/item/hardpoint/primary/autocannon/humvee)

@@ -72,15 +72,53 @@
 	use_muzzle_flash = TRUE
 	muzzleflash_icon_state = "muzzle_flash"
 
-	scatter = 1
-	gun_firemode = GUN_FIREMODE_BURSTFIRE
-	gun_firemode_list = list(
-		GUN_FIREMODE_SEMIAUTO,
-		GUN_FIREMODE_BURSTFIRE,
-		GUN_FIREMODE_AUTOMATIC
+	muzzle_flash_pos = list(
+		"1" = list(-16, 0),
+		"2" = list(-17, -64),
+		"4" = list(18, -33),
+		"8" = list(-50, -32)
 	)
-	burst_delay = 2
-	burst_amount = 3
+
+	px_offsets = list(
+		"1" = list(0, 0),
+		"2" = list(0, 0),
+		"4" = list(0, 0),
+		"8" = list(0, 0)
+	)
+
+	var/list/bullet_px_offsets = list(
+		"1" = list(-16, 0),
+		"2" = list(16, 0),
+		"4" = list(0, 32),
+		"8" = list(0, 0)
+	)
+
+	scatter = 1
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	fire_delay = 4
+
+/obj/item/hardpoint/primary/autocannon/humvee/generate_bullet(mob/user, turf/origin_turf)
+	var/obj/projectile/bullet = new projectile_type(origin_turf, create_cause_data(initial(name), user))
+
+	var/obj/item/hardpoint/holder/holder = loc
+	bullet.process_start_pixel_x = bullet_px_offsets["[holder.dir]"][1]
+	bullet.process_start_pixel_y = bullet_px_offsets["[holder.dir]"][2]
+	bullet.generate_bullet(new ammo.default_ammo)
+
+
+	// Apply bullet traits from gun
+	for(var/entry in traits_to_give)
+		var/list/traits_list
+		// Check if this is an ID'd bullet trait
+		if(istext(entry))
+			traits_list = traits_to_give[entry].Copy()
+		else
+			// Prepend the bullet trait to the list
+			traits_list = list(entry) + traits_to_give[entry]
+		bullet.apply_bullet_trait(traits_list)
+
+	return bullet
 
 /obj/item/ammo_magazine/hardpoint/humvee_autocannon
 	name = "AC3-E Autocannon Magazine"
@@ -95,10 +133,14 @@
 /datum/ammo/bullet/tank/flak/humvee
 	name = "flak autocannon bullet"
 	icon_state = "autocannon"
-	sound_hit  = 'sound/weapons/sting_boom_small1.ogg'
+	sound_hit  = null
+	sound_armor = null
+	sound_bounce = null
 	damage_falloff = 0
 	flags_ammo_behavior = AMMO_BALLISTIC
 	accurate_range_min = 4
+	ammo_glowing = TRUE
+	bullet_light_color = LIGHT_COLOR_FIRE
 
 	accuracy = HIT_ACCURACY_TIER_8
 	scatter = 0
@@ -107,10 +149,15 @@
 	penetration = ARMOR_PENETRATION_TIER_7
 	accurate_range = 32
 	max_range = 32
-	shell_speed = AMMO_SPEED_TIER_7
+	shell_speed = AMMO_SPEED_TIER_8
 
 /datum/ammo/bullet/tank/flak/humvee/on_hit_mob(mob/target, obj/projectile/projectile)
-	knockback(target, projectile, 2)
-	burst(get_turf(target), projectile, damage_type, 2 , 5)
-	burst(get_turf(target), projectile, damage_type, 1 , 3 , 0)
+	knockback(target, projectile, 10)
+	playsound(target, "ballistic_hit", 30)
 
+/datum/ammo/bullet/tank/flak/humvee/on_hit_obj(obj/O,obj/projectile/P)
+	return
+
+/datum/ammo/bullet/tank/flak/humvee/on_hit_turf(turf/T,obj/projectile/P)
+	playsound(T, pick(60;'sound/bullets/bullet_miss1.ogg', 20;'sound/bullets/bullet_ricochet2.ogg', 20;'sound/bullets/bullet_ricochet6.ogg'), 35)
+	return

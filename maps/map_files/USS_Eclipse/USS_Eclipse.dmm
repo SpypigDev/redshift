@@ -317,15 +317,6 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
-"fI" = (
-/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
-	dockId = "garrow_vehicle_elevator_two";
-	shuttleId = "garrow_vehicle_elevator_two";
-	pixel_y = 35;
-	name = "\improper vehicle elevator two control panel"
-	},
-/turf/open/floor/corsat,
-/area/golden_arrow/vehicle_shuttle/two/upper)
 "fV" = (
 /obj/structure/platform_decoration,
 /turf/open/floor/almayer,
@@ -717,8 +708,7 @@
 	airlock_area = /area/liberty/vehicle_shuttle/s/three;
 	name = "Crew Deck";
 	id = "LibertyElevatorS3";
-	elevator_network = "LibertyElevatorS";
-	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/south
+	elevator_network = "LibertyElevatorS"
 	},
 /turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
 /area/space)
@@ -1521,9 +1511,10 @@
 "sl" = (
 /obj/docking_port/stationary/trijent_elevator/shipmap_elevator/two{
 	id = "garrow_vehicle_elevator_two";
-	name = "Vehicle Elevator Two Upper";
+	name = "Vehicle Elevator Two Lower";
 	elevator_network = "ArrowVehicleTwo";
-	airlock_area = /area/golden_arrow/vehicle_shuttle/two/upper
+	airlock_area = /area/golden_arrow/vehicle_shuttle/two/upper;
+	roundstart_template = /datum/map_template/shuttle/trijent_elevator/golden_arrow/vehicletwo
 	},
 /turf/open/floor/corsat,
 /area/golden_arrow/vehicle_shuttle/two/upper)
@@ -22191,7 +22182,7 @@ JJ
 RU
 RU
 RU
-fI
+RU
 RU
 JJ
 Ar

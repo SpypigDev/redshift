@@ -269,26 +269,11 @@ SUBSYSTEM_DEF(human_ai_cover)
  */
 /datum/controller/subsystem/human_ai_cover/proc/request_chunk_data(datum/ai_cover_data_request/request, data_generation_allowed = FALSE)
 	var/turf/requesting_turf = request.requesting_turf
-
-	var/nearby_chunk_range = 5
 	var/chunk_size = PROCESSING_CHUNK_RADIUS * 2 + 1
-	for(var/index in 1 to 4)
 	var/x_array_index = floor(requesting_turf.x / chunk_size)
 	var/y_array_index = floor(requesting_turf.y / chunk_size)
 
-	if(floor((requesting_turf.x + nearby_chunk_range) / chunk_size) != x_array_index)
-
-
-
-
-
-
-
-
-
-
-	//var/x_array_index = floor(requesting_turf.x / 13)
-	//var/y_array_index = floor(requesting_turf.y / 13)
+	//if(floor((requesting_turf.x + nearby_chunk_range) / chunk_size) != x_array_index)
 	var/datum/ai_cover_data_chunk/chunk_data_index
 	if(chunk_data_array[requesting_turf.z][x_array_index][y_array_index])
 		chunk_data_index = chunk_data_array[requesting_turf.z][x_array_index][y_array_index]

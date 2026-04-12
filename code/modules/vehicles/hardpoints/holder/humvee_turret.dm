@@ -2,8 +2,8 @@
 	name = "\improper M34A2-A Multipurpose Turret"
 	desc = "The centerpiece of the tank. Designed to support quick installation and deinstallation of various tank weapon modules. Has inbuilt flare deployment system."
 
-	icon = 'icons/obj/vehicles/humvee.dmi'
-	icon_state = "humveeturret_0"
+	icon = 'icons/obj/vehicles/hardpoints/humvee.dmi'
+	icon_state = "humveeturret"
 	disp_icon = "humvee"
 	disp_icon_state = "humveeturret"
 	pixel_x = -65
@@ -18,7 +18,10 @@
 	health = 1500
 	damage_multiplier = 0.05
 
-	accepted_hardpoints = list(/obj/item/hardpoint/primary/autocannon/humvee)
+	accepted_hardpoints = list(
+		/obj/item/hardpoint/primary/autocannon/humvee,
+		/obj/item/hardpoint/secondary/grenade_launcher/humvee
+		)
 
 	hdpt_layer = HDPT_LAYER_TURRET
 	px_offsets = list(
@@ -159,5 +162,68 @@
 	return
 
 /datum/ammo/bullet/tank/flak/humvee/on_hit_turf(turf/T,obj/projectile/P)
-	playsound(T, pick(60;'sound/bullets/bullet_miss1.ogg', 20;'sound/bullets/bullet_ricochet2.ogg', 20;'sound/bullets/bullet_ricochet6.ogg'), 35)
+	playsound(T, pick(60;"ballistic_miss", 40;"ballistic_bounce"), 65)
 	return
+
+/obj/item/hardpoint/secondary/grenade_launcher/humvee
+	name = "\improper M92T Grenade Launcher"
+	desc = "A magazine fed secondary grenade launcher for tanks that shoots M40 grenades."
+
+	icon = 'icons/obj/vehicles/hardpoints/humvee.dmi'
+	icon_state = "humveelauncher_installed"
+	disp_icon = "humvee"
+	disp_icon_state = "humveelauncher"
+	activation_sounds = list('sound/weapons/handling/m79_shoot.ogg')
+
+	health = 2000
+	firing_arc = 120
+
+	ammo = new /obj/item/ammo_magazine/hardpoint/tank_glauncher
+	max_clips = 4
+
+	angle_muzzleflash = FALSE
+	muzzleflash_icon_state = "muzzle_laser"
+	use_muzzle_flash = TRUE
+
+	px_offsets = list(
+		"1" = list(0, 0),
+		"2" = list(0, 0),
+		"4" = list(0, 0),
+		"8" = list(0, 0)
+	)
+
+	muzzle_flash_pos = list(
+		"1" = list(-27, -28),
+		"2" = list(-5, -37),
+		"4" = list(-12, -19),
+		"8" = list(-21, -42)
+	)
+
+	scatter = 3
+	gun_firemode = GUN_FIREMODE_SEMIAUTO
+	gun_firemode_list = list(
+		GUN_FIREMODE_SEMIAUTO,
+	)
+	fire_delay = 10
+
+/obj/item/hardpoint/secondary/grenade_launcher/humvee/update_icon()
+	if(!ammo || ammo?.current_rounds <= 0)
+		icon_state = "humveelauncher_2"
+	else if(health <= 0)
+		icon_state = "humveelauncher_1"
+	else
+		icon_state = "humveelauncher_0"
+
+/obj/item/ammo_magazine/hardpoint/humvee_glauncher
+	name = "M92T Grenade Launcher Magazine"
+	desc = "A magazine loaded with frag grenades. Used to reload the magazine fed M92T Grenade launcher."
+	caliber = "grenade"
+	icon_state = "glauncher_2"
+	w_class = SIZE_LARGE
+	default_ammo = /datum/ammo/grenade_container/humvee_glauncher
+	max_rounds = 20
+	gun_type = /obj/item/hardpoint/secondary/grenade_launcher/humvee
+
+/datum/ammo/grenade_container/humvee_glauncher
+	nade_type = /obj/item/explosive/grenade/frag
+

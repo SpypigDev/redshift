@@ -5,6 +5,14 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"af" = (
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "ah" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 1
@@ -27,6 +35,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/golden_arrow/platoonprep)
+"am" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "ar" = (
 /obj/structure/pipes/standard/simple/visible{
 	dir = 9
@@ -100,6 +115,21 @@
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
+"aZ" = (
+/obj/structure/filingcabinet/security{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet/medical{
+	pixel_x = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "bc" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -200,6 +230,18 @@
 /obj/structure/machinery/telecomms/relay/preset/tower,
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
+"bF" = (
+/obj/structure/ladder{
+	height = 2;
+	id = "med2"
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
 "bG" = (
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 8
@@ -211,6 +253,19 @@
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
+	})
+"bI" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 6
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "bL" = (
 /obj/structure/bed/chair/comfy{
@@ -328,6 +383,15 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"cJ" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/prep_hallway)
 "cM" = (
 /obj/structure/platform{
 	dir = 4
@@ -429,6 +493,23 @@
 "dj" = (
 /turf/open/asphalt/cement_darkened,
 /area/golden_arrow/motor_pool)
+"dn" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/phone_base{
+	pixel_y = 30;
+	pixel_x = 9;
+	phone_id = "Overwatch";
+	name = "overwatch receiver";
+	phone_category = "Overwatch"
+	},
+/obj/structure/machinery/computer/groundside_operations{
+	pixel_y = 10
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "dq" = (
 /obj/structure/surface/table/almayer,
 /obj/item/circuitboard/airlock,
@@ -474,6 +555,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/platoonprep)
+"dy" = (
+/obj/structure/ladder{
+	height = 1;
+	id = "med2"
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/dorms)
 "dB" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 8
@@ -533,6 +623,14 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
+"dP" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer/edge/north,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
 "dS" = (
 /obj/structure/platform{
 	dir = 4
@@ -563,6 +661,15 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"ea" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 4;
+	pixel_y = 29
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/platoonprep)
 "ed" = (
 /obj/structure/platform{
 	dir = 4;
@@ -673,12 +780,29 @@
 /obj/structure/stairs,
 /turf/open/shuttle/escapepod/floor4,
 /area/golden_arrow/motor_pool)
+"ez" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/door_control{
+	pixel_y = 10;
+	pixel_x = -6;
+	id = "squadarmory1";
+	name = "section one armory doors"
+	},
+/obj/structure/machinery/door_control{
+	pixel_y = 10;
+	pixel_x = 6;
+	id = "squadarmory2";
+	name = "section two armory doors"
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "eB" = (
 /obj/structure/barricade/handrail,
 /obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_color = "#0071B2";
-	name = "Blue Light"
+	dir = 1
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
@@ -762,6 +886,27 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"eO" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "eQ" = (
 /obj/structure/machinery/computer/cryopod{
 	pixel_x = 6;
@@ -808,6 +953,22 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/cryo_cells)
+"fl" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/barricade/handrail{
+	dir = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "fn" = (
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
 /turf/open/floor/almayer,
@@ -836,7 +997,6 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
-<<<<<<< HEAD:maps/map_files/USS Eclipse/USS_Eclipse.dmm
 "fD" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/golden_arrow/dorms)
@@ -859,6 +1019,15 @@
 	dir = 8
 	},
 /area/golden_arrow/platoonprep)
+"fQ" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_ew_full_cap";
+	layer = 3.5;
+	dir = 8
+	},
+/obj/structure/platform/stair_cut,
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "fR" = (
 /obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
 	dir = 4;
@@ -873,8 +1042,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
-=======
->>>>>>> 38a05cf40a4acd947c4d695fe8d2dcc4beb070ad:maps/map_files/USS_Eclipse/USS_Eclipse.dmm
 "fV" = (
 /obj/structure/platform_decoration,
 /turf/open/floor/almayer,
@@ -953,6 +1120,18 @@
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/golden_arrow/medical{
 	unlimited_power = 1
+	})
+"gv" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "gw" = (
 /obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
@@ -1079,6 +1258,12 @@
 /obj/effect/spawner/random/powercell,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoonprep)
+"gS" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
 "gU" = (
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass{
 	dir = 2
@@ -1156,6 +1341,12 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"hn" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/prep_hallway)
 "ho" = (
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
 /turf/open/floor/almayer/plate,
@@ -1212,6 +1403,17 @@
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
+	})
+"hE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/office/dark,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "hG" = (
 /obj/structure/machinery/floodlight/landing{
@@ -1280,6 +1482,23 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"hZ" = (
+/obj/structure/window/reinforced/toughened{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "ib" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -1299,6 +1518,25 @@
 /obj/structure/surface/table/reinforced/black,
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
+"io" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "it" = (
 /obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
 	layer = 2.1
@@ -1441,6 +1679,16 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"iZ" = (
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med/lifeboat{
+	name = "Medical Cabinet";
+	can_block_movement = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/platoonprep)
 "jd" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer,
@@ -1488,6 +1736,19 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
+"jn" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_color = "#0071B2";
+	name = "Blue Light"
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "jo" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
@@ -1511,6 +1772,28 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
+"jw" = (
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"jy" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "jD" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -1660,6 +1943,55 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"kq" = (
+/obj/item/paper{
+	icon_state = "paper_words";
+	pixel_y = -3;
+	pixel_x = 5;
+	layer = 3.01;
+	info = "OUT OF ORDER - When I find the dumbass that thought it was a good idea to drive over the elevator with the APC they're gonna get their ass beat.";
+	name = "OUT OF ORDER"
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/prep_hallway)
+"kv" = (
+/obj/structure/window/reinforced/toughened{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"kw" = (
+/obj/structure/platform{
+	dir = 1;
+	layer = 3.1
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/platform_decoration{
+	dir = 5
+	},
+/obj/structure/prop/server_equipment/yutani_server,
+/obj/structure/platform_decoration{
+	dir = 5;
+	layer = 3.1
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "kx" = (
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/golden_arrow/prep_hallway)
@@ -1677,6 +2009,16 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"kE" = (
+/obj/structure/platform/stair_cut/alt,
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_ew_full_cap"
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "kF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/warnwhite/west,
@@ -1742,6 +2084,28 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/platoonprep)
+"lg" = (
+/obj/structure/machinery/message_server,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"lk" = (
+/obj/structure/stairs,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "lm" = (
 /obj/structure/surface/rack,
 /obj/item/device/binoculars/range/designator/monocular{
@@ -1992,14 +2356,26 @@
 /turf/open/floor/warnwhite/northeast,
 /area/golden_arrow/dorms)
 "mA" = (
-/obj/structure/machinery/light,
-/turf/open/floor/almayer,
-/area/almayer/command/lifeboat{
-	name = "\improper Docking Port"
+/obj/structure/machinery/door/poddoor/almayer,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/shuttle/trijent_shuttle/omega{
+	name = "Hangar Deck"
 	})
 "mB" = (
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
+"mE" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/emails{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "mF" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/golden_arrow/dorms)
@@ -2171,6 +2547,20 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"ni" = (
+/obj/structure/machinery/telecomms/receiver,
+/obj/structure/machinery/light/blue{
+	light_color = "#0071B2";
+	name = "Blue light fixture";
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "nj" = (
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_x = 4;
@@ -2180,6 +2570,18 @@
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
+	})
+"nn" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 1;
+	layer = 3.25
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "ns" = (
 /obj/structure/cargo_container/uscm/mid{
@@ -2285,9 +2687,7 @@
 /area/golden_arrow/platoonprep)
 "nO" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_color = "#0071B2";
-	name = "Blue Light"
+	dir = 1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -2304,9 +2704,21 @@
 /area/almayer/command/lifeboat{
 	name = "\improper Docking Port"
 	})
+"ob" = (
+/turf/open/shuttle/escapepod/floor1/east,
+/area/golden_arrow/prep_hallway)
 "oe" = (
 /turf/open/floor/warnwhite/southwest,
 /area/golden_arrow/dorms)
+"og" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
 "ol" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /turf/open/shuttle/escapepod/floor1/east,
@@ -2347,12 +2759,14 @@
 /turf/open/floor/almayer/orange/southeast,
 /area/golden_arrow/platoonprep)
 "or" = (
-/obj/structure/sign/safety/bathwomens{
-	pixel_x = 33;
-	name = "women's dorm semiotic"
+/obj/structure/machinery/status_display{
+	pixel_y = -29
 	},
-/turf/open/floor/almayer,
-/area/golden_arrow/dorms)
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer/edge/smooth,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
 "os" = (
 /obj/structure/platform{
 	pixel_y = 5
@@ -2469,6 +2883,10 @@
 /obj/item/clothing/accessory/stethoscope,
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/golden_arrow/platoonprep)
+"oL" = (
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/turf/open/floor/almayer/plating_striped,
+/area/golden_arrow/prep_hallway)
 "oM" = (
 /obj/structure/closet/firecloset{
 	pixel_x = 9;
@@ -2712,6 +3130,31 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
+"qe" = (
+/obj/structure/platform{
+	pixel_y = 27
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
+/obj/structure/machinery/telecomms/hub/preset,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"qf" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer/edge/smooth,
+/area/almayer/command/lifeboat{
+	name = "\improper Docking Port"
+	})
 "qg" = (
 /turf/open/floor/prison/darkyellowcorners2/west{
 	dir = 2
@@ -2785,6 +3228,17 @@
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"qv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/telecomms/hub/preset,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "qy" = (
 /turf/open/floor/prison/darkyellowcorners2/west,
 /area/almayer/hallways/hangar{
@@ -2814,6 +3268,25 @@
 	},
 /turf/open/asphalt/cement_darkened,
 /area/golden_arrow/motor_pool)
+"qJ" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.8
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "qL" = (
 /obj/structure/machinery/door/poddoor/almayer{
 	dir = 4;
@@ -3028,6 +3501,14 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
+"rJ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/prep_hallway)
 "rK" = (
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_x = 4;
@@ -3083,10 +3564,9 @@
 "sl" = (
 /obj/docking_port/stationary/trijent_elevator/shipmap_elevator/two{
 	id = "garrow_vehicle_elevator_two";
-	name = "Vehicle Elevator Two Lower";
+	name = "Vehicle Elevator Two Upper";
 	elevator_network = "ArrowVehicleTwo";
-	airlock_area = /area/golden_arrow/vehicle_shuttle/two/upper;
-	roundstart_template = /datum/map_template/shuttle/trijent_elevator/golden_arrow/vehicletwo
+	airlock_area = /area/golden_arrow/vehicle_shuttle/two/upper
 	},
 /turf/open/floor/corsat,
 /area/golden_arrow/vehicle_shuttle/two/upper)
@@ -3145,6 +3625,20 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"sH" = (
+/obj/structure/machinery/telecomms/allinone/interceptor,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_color = "#0071B2";
+	name = "Blue Light"
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "sI" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 4
@@ -3313,6 +3807,12 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
+"tP" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "tQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes{
@@ -3423,6 +3923,14 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"uz" = (
+/obj/structure/stairs/perspective{
+	dir = 8;
+	icon_state = "p_stair_full"
+	},
+/obj/structure/platform,
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "uB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
@@ -3763,6 +4271,31 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"wa" = (
+/obj/item/tool/wet_sign{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
+"wb" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "wf" = (
 /turf/closed/wall/almayer/white/outer_tile,
 /area/golden_arrow/medical{
@@ -3896,6 +4429,12 @@
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
+	})
+"wW" = (
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "wX" = (
 /obj/structure/bed/chair/comfy{
@@ -4059,6 +4598,9 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"xL" = (
+/turf/open/floor/almayer/plating_striped/east,
+/area/golden_arrow/prep_hallway)
 "xT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -4087,6 +4629,14 @@
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoonprep)
+"yg" = (
+/obj/structure/stairs/perspective{
+	dir = 4;
+	icon_state = "p_stair_full"
+	},
+/obj/structure/platform,
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "yh" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1
@@ -4321,11 +4871,14 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
 "zm" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_x = 4;
-	pixel_y = 29
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 2;
+	req_access = null
 	},
-/turf/open/floor/almayer,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
 /area/golden_arrow/dorms)
 "zn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4456,6 +5009,24 @@
 /turf/open/floor/almayer/test_floor4,
 /area/almayer/command/lifeboat{
 	name = "\improper Docking Port"
+	})
+"Ab" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_color = "#0071B2";
+	name = "Blue Light"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "Ah" = (
 /obj/structure/foamed_metal,
@@ -4687,6 +5258,22 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
+"Bw" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Bz" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 1;
@@ -4737,17 +5324,43 @@
 	name = "\improper Docking Port"
 	})
 "BV" = (
-/obj/structure/machinery/door/poddoor/almayer,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/golden_arrow/prep_hallway)
+"BZ" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Ce" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/floor_plate,
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
+	})
+"Cg" = (
+/obj/structure/window/reinforced/toughened{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "Ck" = (
 /obj/structure/machinery/autodoc_console{
@@ -4803,6 +5416,48 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"CE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"CI" = (
+/obj/structure/window/reinforced/toughened{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"CN" = (
+/obj/structure/machinery/disposal,
+/obj/structure/machinery/light/blue{
+	light_color = "#0071B2";
+	name = "Blue light fixture";
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "CQ" = (
 /obj/item/ammo_box/magazine/nade_box/m15,
 /obj/structure/surface/table/reinforced/black,
@@ -4817,6 +5472,19 @@
 /obj/item/ammo_box/magazine/nade_box/m15,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
+"CR" = (
+/obj/structure/platform{
+	dir = 1;
+	layer = 3.1
+	},
+/obj/structure/machinery/computer3/server/rack,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Db" = (
 /turf/open/floor/almayer{
 	icon_state = "plate"
@@ -4826,10 +5494,13 @@
 	unlimited_power = 1
 	})
 "Dd" = (
-/obj/structure/window/framed/almayer/white,
-/turf/closed/wall/almayer/white/outer_tile,
-/area/golden_arrow/medical{
-	unlimited_power = 1
+/obj/structure/machinery/telecomms/receiver,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "Dg" = (
 /obj/structure/surface/table/reinforced/black,
@@ -4880,6 +5551,13 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"DC" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/prep_hallway)
 "DF" = (
 /turf/open/asphalt/cement_darkened,
 /area/almayer/hallways/lower/port_fore_hallway{
@@ -5194,12 +5872,39 @@
 	},
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
+"Fv" = (
+/turf/closed/wall/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Fx" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
 /area/almayer/hallways/lower/port_fore_hallway{
 	unlimited_power = 1;
 	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"FA" = (
+/obj/structure/machinery/prop/almayer/CICmap/table/horizontal,
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 10
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"FB" = (
+/obj/structure/stairs,
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "FE" = (
 /obj/structure/extinguisher_cabinet/alt{
@@ -5472,6 +6177,18 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"GQ" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "GS" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -5482,6 +6199,9 @@
 /area/golden_arrow/motor_pool)
 "GU" = (
 /obj/structure/pipes/vents/scrubber{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/almayer,
@@ -5535,6 +6255,12 @@
 /obj/structure/surface/table/reinforced/black,
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
+"Hk" = (
+/obj/structure/sign/safety/bathwomens{
+	pixel_x = 31
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/dorms)
 "Hl" = (
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
 /turf/open/floor/almayer,
@@ -5566,6 +6292,16 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
+"Hv" = (
+/obj/structure/barricade/handrail,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Hz" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -5598,6 +6334,23 @@
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
+	})
+"HJ" = (
+/obj/item/paper{
+	icon_state = "paper_words";
+	pixel_y = -3;
+	pixel_x = 5;
+	layer = 3.01;
+	info = "OUT OF ORDER - When I find the dumbass that thought it was a good idea to drive over the elevator with the APC they're gonna get their ass beat.";
+	name = "OUT OF ORDER"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
 	})
 "HM" = (
 /obj/structure/machinery/bioprinter{
@@ -5709,6 +6462,15 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/golden_arrow/platoonprep)
+"Ix" = (
+/obj/structure/machinery/telecomms/hub,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "IF" = (
 /obj/structure/surface/table/almayer,
 /obj/item/device/radio{
@@ -5919,7 +6681,6 @@
 	})
 "JS" = (
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
-/obj/structure/machinery/door/poddoor/almayer,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -5994,10 +6755,15 @@
 /area/golden_arrow/motor_pool)
 "Kl" = (
 /obj/structure/machinery/door/airlock/multi_tile/elevator,
+/obj/structure/machinery/door/poddoor/almayer,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/shuttle/trijent_shuttle/omega{
 	name = "Hangar Deck"
 	})
+"Km" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "Ko" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -6285,6 +7051,45 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"LO" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"LP" = (
+/obj/structure/filingcabinet,
+/obj/structure/machinery/light/blue{
+	light_color = "#0071B2";
+	name = "Blue light fixture";
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "LS" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /obj/structure/pipes/vents/scrubber{
@@ -6433,6 +7238,37 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"MD" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/prop/almayer/CICmap{
+	density = 0;
+	icon_state = "shuttle";
+	layer = 2.97;
+	name = "Tactical Map Display";
+	pixel_x = 7;
+	pixel_y = 14
+	},
+/obj/structure/machinery/computer/cameras/almayer/vehicle{
+	network = list("Golden Arrow","Vehicle","Midway");
+	pixel_x = -9;
+	pixel_y = 14
+	},
+/obj/item/tool/pen{
+	pixel_x = -10;
+	pixel_y = -5
+	},
+/obj/item/paper_bin/uscm{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"MG" = (
+/turf/open/floor/almayer/plating_striped,
+/area/golden_arrow/prep_hallway)
 "MH" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -6443,6 +7279,18 @@
 	icon_state = "plating"
 	},
 /area/golden_arrow/motor_pool)
+"MJ" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "MN" = (
 /obj/structure/closet/secure_closet/marine_personal/platoon_commander,
 /turf/open/floor/almayer/plate,
@@ -6500,6 +7348,19 @@
 	})
 "MW" = (
 /turf/open/shuttle/escapepod/floor1/east,
+/area/almayer/hallways/lower/port_fore_hallway{
+	unlimited_power = 1;
+	name = "\improper Mid Deck Port-Fore Hallway"
+	})
+"Nf" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 2;
+	req_access = null
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
 /area/almayer/hallways/lower/port_fore_hallway{
 	unlimited_power = 1;
 	name = "\improper Mid Deck Port-Fore Hallway"
@@ -6710,6 +7571,16 @@
 	},
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
+"Oq" = (
+/obj/structure/platform/stair_cut/alt,
+/obj/structure/sign/safety/cryo{
+	pixel_y = 25
+	},
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_ew_full_cap"
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "Os" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
@@ -6906,6 +7777,16 @@
 	},
 /turf/open/floor/almayer/sterile_green_corner,
 /area/golden_arrow/platoonprep)
+"PE" = (
+/obj/structure/platform,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "PJ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -7039,6 +7920,37 @@
 "QP" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoonprep)
+"QQ" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/overwatch/almayer{
+	pixel_y = 24
+	},
+/obj/item/device/radio/intercom{
+	freerange = 1;
+	name = "General Listening Channel";
+	pixel_x = 25;
+	pixel_y = 28
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 5;
+	pixel_x = 7
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"QS" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	unacidable = 1
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/prep_hallway)
 "QT" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -7251,6 +8163,19 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"RY" = (
+/obj/structure/filingcabinet,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Sa" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
 /turf/open/floor/almayer/plating,
@@ -7319,6 +8244,15 @@
 "Sl" = (
 /turf/open/space,
 /area/space/almayer/lifeboat_dock)
+"Sm" = (
+/obj/structure/bed/chair/office/dark,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "So" = (
 /obj/structure/gun_rack/m20a/unloaded,
 /obj/structure/machinery/light/double/blue{
@@ -7328,6 +8262,12 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
+"St" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "Su" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
 	req_access = list();
@@ -7336,6 +8276,22 @@
 	},
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
+"Sw" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 10
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Sy" = (
 /obj/structure/platform{
 	layer = 3.1
@@ -7537,6 +8493,19 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"Tw" = (
+/obj/structure/barricade/handrail{
+	dir = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "TD" = (
 /obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
 	id = "vicnw"
@@ -7571,6 +8540,12 @@
 "TR" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/cryo_cells)
+"TS" = (
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass{
+	dir = 2
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/golden_arrow/prep_hallway)
 "Ub" = (
 /turf/open/floor/almayer/edge/smooth,
 /area/almayer/command/lifeboat{
@@ -7612,6 +8587,10 @@
 "Ui" = (
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/golden_arrow/cryo_cells)
+"Uj" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/space/basic,
+/area/golden_arrow/prep_hallway)
 "Um" = (
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
@@ -7688,6 +8667,25 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
+"Vg" = (
+/obj/structure/platform{
+	pixel_y = 27
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
+	},
+/obj/structure/machinery/telecomms/hub/preset,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Vj" = (
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/cryo_cells)
@@ -7765,6 +8763,18 @@
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/golden_arrow/medical{
 	unlimited_power = 1
+	})
+"VM" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/crew/alt{
+	dir = 4;
+	pixel_y = 4;
+	pixel_x = 2
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "VN" = (
 /obj/structure/cargo_container/wy/right,
@@ -8080,6 +9090,12 @@
 	},
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
+"Xz" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/east,
+/area/golden_arrow/prep_hallway)
 "XB" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 1;
@@ -8168,6 +9184,27 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
+"XQ" = (
+/obj/structure/machinery/light/blue{
+	light_color = "#0071B2";
+	name = "Blue light fixture";
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
+"XV" = (
+/obj/structure/platform,
+/obj/structure/machinery/prop/almayer/CICmap/toc,
+/turf/open/floor/almayer,
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Yl" = (
 /obj/structure/machinery/cryopod/big/flipped{
 	layer = 3.1;
@@ -8283,6 +9320,18 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"YB" = (
+/obj/structure/machinery/telecomms/processor,
+/obj/structure/barricade/handrail,
+/obj/structure/window/reinforced/ultra,
+/obj/structure/machinery/door/window/ultra,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "YE" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
@@ -8318,6 +9367,21 @@
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/golden_arrow/medical{
 	unlimited_power = 1
+	})
+"YL" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/paper_bin/uscm,
+/obj/item/tool/pen,
+/obj/item/device/flashlight/lamp{
+	pixel_x = -9;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
 	})
 "YO" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access,
@@ -8397,6 +9461,24 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/golden_arrow/dorms)
+"Zd" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_color = "#0071B2";
+	name = "Blue Light"
+	},
+/obj/structure/machinery/door/window/ultra,
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/machinery/telecomms/processor,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/golden_arrow/platoon_commander_rooms{
+	unlimited_power = 1;
+	name = "\improper Tactical Operations Center"
+	})
 "Ze" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/storage/firstaid/fire{
@@ -8783,6 +9865,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (2,1,1) = {"
 Rf
@@ -8833,7 +9916,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -8882,6 +9965,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -8965,7 +10049,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9014,6 +10098,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9097,7 +10182,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9146,6 +10231,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9229,7 +10315,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9278,6 +10364,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9361,7 +10448,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9410,6 +10497,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9493,7 +10581,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9542,6 +10630,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9625,7 +10714,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9674,6 +10763,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9757,7 +10847,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9806,6 +10896,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -9889,7 +10980,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -9938,6 +11029,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10021,7 +11113,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10070,6 +11162,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10153,7 +11246,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10202,6 +11295,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10285,7 +11379,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10334,6 +11428,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10417,7 +11512,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10466,6 +11561,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10549,7 +11645,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10598,6 +11694,7 @@ TR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10681,7 +11778,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10730,6 +11827,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10813,7 +11911,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10834,15 +11932,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+sH
+ni
+Fv
+Zd
+YB
+Fv
+RY
+Fv
 TR
 YE
 YE
@@ -10862,6 +11960,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -10945,7 +12044,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -10966,15 +12065,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+af
+af
+PE
+fl
+jy
+gv
+jw
+LP
 TR
 Ak
 pB
@@ -10994,6 +12093,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11077,7 +12177,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11098,15 +12198,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+Ix
+af
+Bw
+Tw
+Hv
+wb
+hE
+mE
 TR
 xr
 wD
@@ -11114,7 +12214,7 @@ AR
 xr
 YE
 Bv
-rc
+cJ
 oy
 CC
 LT
@@ -11126,6 +12226,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11209,7 +12310,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11230,15 +12331,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+hZ
+kv
+io
+jw
+jw
+FB
+jw
+YL
 TR
 Ak
 zy
@@ -11246,7 +12347,7 @@ Ak
 xr
 YE
 Yt
-rc
+cJ
 rc
 CC
 Od
@@ -11258,6 +12359,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11341,7 +12443,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11362,15 +12464,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+MD
+VM
+eO
+jw
+jw
+FA
+BZ
+Vg
 TR
 Tg
 Nt
@@ -11390,6 +12492,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11473,7 +12576,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11494,15 +12597,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+QQ
+nn
+FB
+MJ
+tP
+XV
+jw
+qv
 TR
 Ak
 Ko
@@ -11510,7 +12613,7 @@ Ak
 xr
 YE
 rc
-rc
+cJ
 rc
 CC
 jm
@@ -11522,6 +12625,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11605,7 +12709,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11626,15 +12730,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+dn
+ez
+LO
+jw
+jw
+bI
+GQ
+qe
 TR
 YE
 YE
@@ -11642,7 +12746,7 @@ YE
 YE
 YE
 YF
-rc
+cJ
 rc
 CC
 ZZ
@@ -11654,6 +12758,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11737,7 +12842,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11758,15 +12863,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+Cg
+CI
+qJ
+jw
+jw
+lk
+jw
+aZ
 TR
 mB
 uK
@@ -11774,7 +12879,7 @@ Lg
 YE
 YE
 Bv
-rc
+cJ
 oy
 CC
 CC
@@ -11786,6 +12891,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -11869,7 +12975,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -11890,15 +12996,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+Ix
+af
+Sw
+Tw
+Hv
+kw
+Sm
+mE
 TR
 kW
 YE
@@ -11906,7 +13012,7 @@ YE
 YE
 YE
 FE
-rc
+cJ
 rc
 CC
 tD
@@ -11918,6 +13024,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12001,7 +13108,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -12022,15 +13129,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+Ix
+Dd
+PE
+fl
+jy
+CR
+af
+CN
 TR
 Ui
 si
@@ -12038,7 +13145,7 @@ Yq
 fG
 YE
 rc
-rc
+cJ
 rc
 CC
 nO
@@ -12050,6 +13157,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12133,7 +13241,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -12154,15 +13262,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+wW
+jn
+XQ
+wW
+Ab
+CE
+Fv
+lg
+Fv
 TR
 Gz
 mB
@@ -12182,6 +13290,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12265,18 +13374,12 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -12293,8 +13396,14 @@ Rf
 Rf
 Rf
 RT
-nF
-nF
+RT
+RT
+RT
+BV
+TS
+RT
+RT
+RT
 TR
 NL
 mB
@@ -12302,7 +13411,7 @@ mB
 bt
 aV
 rc
-rc
+cJ
 rc
 Dm
 Yx
@@ -12314,6 +13423,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12397,18 +13507,12 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -12425,8 +13529,14 @@ Rf
 Rf
 Rf
 RT
-rc
-rc
+nF
+nF
+RT
+St
+BV
+RT
+DC
+DC
 TR
 Yn
 mB
@@ -12434,7 +13544,7 @@ ha
 bt
 mB
 rc
-rc
+cJ
 rc
 cg
 Aj
@@ -12446,6 +13556,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12529,18 +13640,12 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -12557,8 +13662,14 @@ Rf
 Rf
 Rf
 RT
-rc
-rc
+BV
+BV
+Km
+BV
+BV
+RT
+cJ
+hn
 TR
 En
 Rm
@@ -12566,7 +13677,7 @@ mB
 bt
 YE
 rc
-rc
+cJ
 rc
 CC
 ry
@@ -12578,6 +13689,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12661,18 +13773,12 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -12689,6 +13795,12 @@ Rf
 Rf
 Rf
 RT
+Xz
+xL
+Km
+BV
+BV
+RT
 rc
 rc
 TR
@@ -12698,7 +13810,7 @@ mB
 ND
 YE
 YF
-rc
+cJ
 rc
 CC
 ry
@@ -12710,6 +13822,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12793,18 +13906,12 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -12821,8 +13928,14 @@ Rf
 Rf
 Rf
 RT
+fQ
+yg
+RT
+BV
+BV
+RT
 ZC
-rc
+oy
 TR
 BC
 qO
@@ -12830,7 +13943,7 @@ yG
 Sk
 YE
 BP
-rc
+cJ
 oy
 CC
 eB
@@ -12842,6 +13955,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -12925,7 +14039,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -12946,12 +14060,12 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+RT
+RT
+RT
+RT
+BV
+BV
 RT
 rc
 rc
@@ -12974,6 +14088,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -13057,18 +14172,12 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -13085,16 +14194,22 @@ Rf
 Rf
 Rf
 RT
+RT
+RT
+RT
+St
+BV
+oL
 rc
 rc
-rc
+su
 rc
 JH
 rc
 rc
 JS
 su
-su
+rJ
 su
 CC
 Aj
@@ -13106,6 +14221,7 @@ jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -13189,18 +14305,12 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
 Rf
 yR
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 Rf
 Rf
 Rf
@@ -13217,27 +14327,34 @@ Rf
 Rf
 Rf
 RT
+RT
+RT
+RT
+BV
+BV
+MG
 rc
 rc
-rc
+su
 rc
 zg
 rc
 rc
-BV
 su
 su
+rJ
 su
 CC
 DP
 qM
-cg
+vH
 cg
 UK
 jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -13321,7 +14438,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -13342,12 +14459,12 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+RT
+Oq
+uz
+Uj
+BV
+BV
 RT
 rc
 rc
@@ -13361,15 +14478,16 @@ rc
 GU
 rc
 CC
+nO
+Hk
+Yx
 cg
-CC
-vH
-cg
-cg
+Rc
 jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -13453,7 +14571,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -13474,15 +14592,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+RT
+St
+wa
+Uj
+ob
+ob
 RT
 ZC
-rc
+oy
 RT
 RS
 nU
@@ -13490,18 +14608,19 @@ nU
 Ox
 Vr
 BP
-rc
+cJ
 oy
 CC
-nO
-cg
-Yx
-cg
-Rc
+CC
+CC
+fE
+CC
+CC
 jR
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -13585,7 +14704,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -13606,12 +14725,12 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+RT
+BV
+BV
+RT
+kE
+uz
 RT
 rc
 rc
@@ -13622,14 +14741,14 @@ KM
 rc
 nJ
 rc
-rc
+cJ
 rc
 CC
-zm
-or
-cg
-cg
-cg
+VO
+mF
+sI
+mF
+YZ
 jR
 Rf
 Rf
@@ -13666,6 +14785,7 @@ Zv
 Zv
 Zv
 yW
+Rf
 Rf
 "}
 (39,1,1) = {"
@@ -13717,7 +14837,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -13738,12 +14858,12 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+RT
+BV
+BV
+RT
+am
+am
 RT
 rc
 rc
@@ -13754,14 +14874,14 @@ KM
 rc
 rc
 rc
+cJ
 rc
-rc
 CC
-CC
-CC
-fE
-CC
-CC
+Xn
+cg
+cg
+dt
+cf
 jR
 Rf
 Rf
@@ -13798,6 +14918,7 @@ xU
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (40,1,1) = {"
@@ -13849,7 +14970,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -13870,15 +14991,15 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
 RT
-rc
-rc
+QS
+nF
+RT
+BV
+BV
+RT
+cJ
+hn
 RT
 KM
 KM
@@ -13886,14 +15007,14 @@ KM
 oy
 Vr
 rc
-rc
+cJ
 rc
 CC
-VO
-mF
-sI
-mF
-YZ
+tG
+Um
+dC
+Um
+Zb
 jR
 Rf
 Rf
@@ -13930,6 +15051,7 @@ Tm
 Ky
 Zv
 yW
+Rf
 Rf
 "}
 (41,1,1) = {"
@@ -13981,7 +15103,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -14005,9 +15127,9 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
+RT
+nF
+nF
 RT
 nF
 nF
@@ -14018,13 +15140,13 @@ rc
 rc
 Vr
 rc
-rc
+cJ
 rc
 CC
-Xn
-cg
-cg
-dt
+yH
+Aj
+Nh
+Aj
 cf
 jR
 Rf
@@ -14062,6 +15184,7 @@ mT
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (42,1,1) = {"
@@ -14113,7 +15236,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -14150,12 +15273,12 @@ ql
 rc
 Vr
 rc
-rc
+cJ
 oy
 CC
-tG
+PL
 Um
-dC
+vp
 Um
 Zb
 jR
@@ -14194,6 +15317,7 @@ EB
 va
 Zv
 yW
+Rf
 Rf
 "}
 (43,1,1) = {"
@@ -14245,7 +15369,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -14282,13 +15406,13 @@ rc
 rc
 Vr
 YF
-rc
+cJ
 rc
 CC
-yH
-Aj
-Nh
-Aj
+XE
+cg
+cg
+dt
 cf
 jR
 Rf
@@ -14320,12 +15444,13 @@ SG
 mT
 mT
 mT
-Dd
+ht
 mT
 VY
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (44,1,1) = {"
@@ -14377,7 +15502,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -14414,14 +15539,14 @@ ql
 rc
 Vr
 rc
-rc
+cJ
 rc
 CC
-PL
-Um
-vp
-Um
-Zb
+ZZ
+cg
+Mw
+fD
+cx
 jR
 Rf
 Rf
@@ -14458,6 +15583,7 @@ mT
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (45,1,1) = {"
@@ -14507,9 +15633,9 @@ aS
 JU
 ny
 sn
-DJ
-DJ
 sn
+sn
+pf
 Rf
 Rf
 Rf
@@ -14546,14 +15672,14 @@ rc
 oy
 Vr
 rc
+cJ
 rc
-rc
-CC
-XE
-cg
-cg
-dt
-cf
+jR
+jR
+jR
+jR
+jR
+jR
 jR
 Rf
 Rf
@@ -14584,12 +15710,13 @@ mT
 mT
 mT
 mT
-Dd
+ht
 mT
 mT
 Ky
 Zv
 yW
+Rf
 Rf
 "}
 (46,1,1) = {"
@@ -14638,10 +15765,10 @@ Qn
 aS
 JU
 HC
+Nf
+bF
 sn
-DJ
-DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -14680,12 +15807,12 @@ Vr
 Yt
 GU
 rc
-CC
-ZZ
-fD
-Mw
-fD
-cx
+zm
+dy
+jR
+jR
+jR
+jR
 jR
 Rf
 Rf
@@ -14722,6 +15849,7 @@ mT
 Rt
 Zv
 yW
+Rf
 Rf
 "}
 (47,1,1) = {"
@@ -14810,7 +15938,7 @@ Vr
 Vr
 Vr
 ZM
-su
+rJ
 pP
 Jz
 Jz
@@ -14854,6 +15982,7 @@ sS
 wf
 Zv
 yW
+Rf
 Rf
 "}
 (48,1,1) = {"
@@ -14987,6 +16116,7 @@ VS
 Zv
 yW
 Rf
+Rf
 "}
 (49,1,1) = {"
 Rf
@@ -15074,9 +16204,9 @@ rc
 rc
 rc
 rc
-rc
-rc
-NO
+cJ
+kq
+mA
 jq
 jq
 jq
@@ -15118,6 +16248,7 @@ mT
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (50,1,1) = {"
@@ -15165,7 +16296,7 @@ HC
 Lm
 Ni
 hb
-HC
+HJ
 NO
 jq
 jq
@@ -15206,9 +16337,9 @@ rc
 rc
 rc
 rc
+cJ
 rc
-rc
-NO
+mA
 jq
 jq
 dw
@@ -15250,6 +16381,7 @@ mT
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (51,1,1) = {"
@@ -15338,9 +16470,9 @@ rc
 rc
 rc
 rc
+cJ
 rc
-rc
-NO
+mA
 jq
 jq
 jq
@@ -15382,6 +16514,7 @@ mT
 mT
 Zv
 yW
+Rf
 Rf
 "}
 (52,1,1) = {"
@@ -15515,6 +16648,7 @@ mT
 Zv
 yW
 Rf
+Rf
 "}
 (53,1,1) = {"
 Rf
@@ -15647,6 +16781,7 @@ Br
 Zv
 yW
 Rf
+Rf
 "}
 (54,1,1) = {"
 Rf
@@ -15697,7 +16832,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -15779,6 +16914,7 @@ Dg
 Zv
 yW
 Rf
+Rf
 "}
 (55,1,1) = {"
 Rf
@@ -15829,7 +16965,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -15911,6 +17047,7 @@ lP
 Zv
 yW
 Rf
+Rf
 "}
 (56,1,1) = {"
 Rf
@@ -15961,7 +17098,7 @@ Lc
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16043,6 +17180,7 @@ Br
 Zv
 yW
 Rf
+Rf
 "}
 (57,1,1) = {"
 Rf
@@ -16093,7 +17231,7 @@ di
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16175,6 +17313,7 @@ EB
 Zv
 yW
 Rf
+Rf
 "}
 (58,1,1) = {"
 Rf
@@ -16225,7 +17364,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16307,6 +17446,7 @@ lP
 Zv
 yW
 Rf
+Rf
 "}
 (59,1,1) = {"
 Rf
@@ -16357,7 +17497,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16439,6 +17579,7 @@ mT
 Zv
 yW
 Rf
+Rf
 "}
 (60,1,1) = {"
 Rf
@@ -16489,7 +17630,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16571,6 +17712,7 @@ SU
 Zv
 yW
 Rf
+Rf
 "}
 (61,1,1) = {"
 Rf
@@ -16621,7 +17763,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16657,9 +17799,9 @@ td
 ef
 gU
 td
-UP
-dL
-dL
+iZ
+ef
+ef
 sM
 TQ
 dL
@@ -16702,6 +17844,7 @@ rl
 rl
 rl
 UX
+Rf
 Rf
 "}
 (62,1,1) = {"
@@ -16753,7 +17896,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16835,6 +17978,7 @@ xT
 xT
 ik
 Rf
+Rf
 "}
 (63,1,1) = {"
 Rf
@@ -16885,7 +18029,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -16967,6 +18111,7 @@ dg
 dg
 ik
 Rf
+Rf
 "}
 (64,1,1) = {"
 Rf
@@ -17017,7 +18162,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17099,6 +18244,7 @@ GS
 AB
 ik
 Rf
+Rf
 "}
 (65,1,1) = {"
 Rf
@@ -17149,7 +18295,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17185,9 +18331,9 @@ td
 td
 td
 td
-Vd
-dL
-dL
+ea
+ef
+ef
 td
 em
 em
@@ -17230,6 +18376,7 @@ dj
 un
 rl
 UX
+Rf
 Rf
 "}
 (66,1,1) = {"
@@ -17281,7 +18428,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17363,6 +18510,7 @@ un
 rl
 UX
 Rf
+Rf
 "}
 (67,1,1) = {"
 Rf
@@ -17413,7 +18561,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17495,6 +18643,7 @@ un
 rl
 UX
 Rf
+Rf
 "}
 (68,1,1) = {"
 Rf
@@ -17545,7 +18694,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17627,6 +18776,7 @@ un
 rl
 UX
 Rf
+Rf
 "}
 (69,1,1) = {"
 Rf
@@ -17677,7 +18827,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17759,6 +18909,7 @@ Yp
 rl
 UX
 Rf
+Rf
 "}
 (70,1,1) = {"
 Rf
@@ -17809,7 +18960,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -17891,6 +19042,7 @@ un
 rl
 UX
 Rf
+Rf
 "}
 (71,1,1) = {"
 Rf
@@ -17941,7 +19093,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18023,6 +19175,7 @@ yI
 rl
 UX
 Rf
+Rf
 "}
 (72,1,1) = {"
 Rf
@@ -18073,7 +19226,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18155,6 +19308,7 @@ rl
 rl
 UX
 Rf
+Rf
 "}
 (73,1,1) = {"
 Rf
@@ -18205,7 +19359,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18287,6 +19441,7 @@ Zv
 Zv
 yW
 Rf
+Rf
 "}
 (74,1,1) = {"
 Rf
@@ -18337,7 +19492,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18419,6 +19574,7 @@ QZ
 Zv
 yW
 Rf
+Rf
 "}
 (75,1,1) = {"
 Rf
@@ -18469,7 +19625,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18551,6 +19707,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (76,1,1) = {"
 Rf
@@ -18601,7 +19758,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18683,6 +19840,7 @@ LE
 Zv
 yW
 Rf
+Rf
 "}
 (77,1,1) = {"
 Rf
@@ -18733,7 +19891,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18815,6 +19973,7 @@ wf
 Zv
 yW
 Rf
+Rf
 "}
 (78,1,1) = {"
 Rf
@@ -18865,7 +20024,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -18947,6 +20106,7 @@ HM
 Zv
 yW
 Rf
+Rf
 "}
 (79,1,1) = {"
 Rf
@@ -18997,7 +20157,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19079,6 +20239,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (80,1,1) = {"
 Rf
@@ -19129,7 +20290,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19211,6 +20372,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (81,1,1) = {"
 Rf
@@ -19261,7 +20423,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19343,6 +20505,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (82,1,1) = {"
 Rf
@@ -19393,7 +20556,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19475,6 +20638,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (83,1,1) = {"
 Rf
@@ -19525,7 +20689,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19607,6 +20771,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (84,1,1) = {"
 Rf
@@ -19657,7 +20822,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19739,6 +20904,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (85,1,1) = {"
 Rf
@@ -19789,7 +20955,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -19871,6 +21037,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (86,1,1) = {"
 Rf
@@ -19921,7 +21088,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20003,6 +21170,7 @@ lR
 Zv
 yW
 Rf
+Rf
 "}
 (87,1,1) = {"
 Rf
@@ -20053,7 +21221,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20135,6 +21303,7 @@ iJ
 Zv
 yW
 Rf
+Rf
 "}
 (88,1,1) = {"
 Rf
@@ -20185,7 +21354,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20267,6 +21436,7 @@ Zv
 Zv
 yW
 Rf
+Rf
 "}
 (89,1,1) = {"
 Rf
@@ -20317,7 +21487,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20399,6 +21569,7 @@ UX
 UX
 UX
 Rf
+Rf
 "}
 (90,1,1) = {"
 Rf
@@ -20449,7 +21620,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20531,6 +21702,7 @@ rl
 rl
 UX
 Rf
+Rf
 "}
 (91,1,1) = {"
 Rf
@@ -20581,7 +21753,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20663,6 +21835,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (92,1,1) = {"
 Rf
@@ -20713,7 +21886,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20795,6 +21968,7 @@ XM
 rl
 UX
 Rf
+Rf
 "}
 (93,1,1) = {"
 Rf
@@ -20845,7 +22019,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -20927,6 +22101,7 @@ Je
 rl
 UX
 Rf
+Rf
 "}
 (94,1,1) = {"
 Rf
@@ -20977,7 +22152,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21059,6 +22234,7 @@ vl
 rl
 UX
 Rf
+Rf
 "}
 (95,1,1) = {"
 Rf
@@ -21109,7 +22285,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21191,6 +22367,7 @@ uh
 rl
 UX
 Rf
+Rf
 "}
 (96,1,1) = {"
 Rf
@@ -21241,7 +22418,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21323,6 +22500,7 @@ vW
 rl
 UX
 Rf
+Rf
 "}
 (97,1,1) = {"
 Rf
@@ -21373,7 +22551,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21455,6 +22633,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (98,1,1) = {"
 Rf
@@ -21505,7 +22684,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21587,6 +22766,7 @@ XM
 rl
 UX
 Rf
+Rf
 "}
 (99,1,1) = {"
 Rf
@@ -21637,7 +22817,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21719,6 +22899,7 @@ Je
 rl
 UX
 Rf
+Rf
 "}
 (100,1,1) = {"
 Rf
@@ -21769,7 +22950,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21851,6 +23032,7 @@ vl
 rl
 UX
 Rf
+Rf
 "}
 (101,1,1) = {"
 Rf
@@ -21891,7 +23073,7 @@ gf
 gf
 gf
 BS
-jH
+or
 sn
 JE
 Qn
@@ -21901,7 +23083,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -21983,6 +23165,7 @@ uh
 rl
 UX
 Rf
+Rf
 "}
 (102,1,1) = {"
 Rf
@@ -22033,7 +23216,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22115,6 +23298,7 @@ vW
 rl
 UX
 Rf
+Rf
 "}
 (103,1,1) = {"
 Rf
@@ -22145,13 +23329,13 @@ TI
 gf
 BS
 Ld
+og
 BS
 BS
 BS
 BS
 BS
-BS
-BS
+og
 BS
 BS
 gf
@@ -22165,7 +23349,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22247,6 +23431,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (104,1,1) = {"
 Rf
@@ -22273,7 +23458,7 @@ Sg
 Sg
 Sg
 oo
-TI
+dP
 BS
 BS
 oo
@@ -22297,7 +23482,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22379,6 +23564,7 @@ XM
 rl
 UX
 Rf
+Rf
 "}
 (105,1,1) = {"
 Rf
@@ -22429,7 +23615,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22511,6 +23697,7 @@ Je
 rl
 UX
 Rf
+Rf
 "}
 (106,1,1) = {"
 Rf
@@ -22561,7 +23748,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22643,6 +23830,7 @@ vl
 rl
 UX
 Rf
+Rf
 "}
 (107,1,1) = {"
 Rf
@@ -22683,7 +23871,7 @@ Sl
 ug
 oo
 BS
-Ub
+qf
 sn
 uB
 Qn
@@ -22693,7 +23881,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22775,6 +23963,7 @@ uh
 rl
 UX
 Rf
+Rf
 "}
 (108,1,1) = {"
 Rf
@@ -22825,7 +24014,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -22907,6 +24096,7 @@ vW
 rl
 UX
 Rf
+Rf
 "}
 (109,1,1) = {"
 Rf
@@ -22957,7 +24147,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23039,6 +24229,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (110,1,1) = {"
 Rf
@@ -23089,7 +24280,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23171,6 +24362,7 @@ XM
 rl
 UX
 Rf
+Rf
 "}
 (111,1,1) = {"
 Rf
@@ -23221,7 +24413,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23303,6 +24495,7 @@ Je
 rl
 UX
 Rf
+Rf
 "}
 (112,1,1) = {"
 Rf
@@ -23330,7 +24523,7 @@ Rf
 ug
 oo
 TI
-mA
+BS
 oo
 oS
 Sl
@@ -23353,7 +24546,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23435,6 +24628,7 @@ vl
 rl
 UX
 Rf
+Rf
 "}
 (113,1,1) = {"
 Rf
@@ -23461,8 +24655,8 @@ Rf
 Rf
 ug
 oo
-yn
-BS
+dP
+gS
 oo
 rL
 Sl
@@ -23485,7 +24679,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23567,6 +24761,7 @@ uh
 rl
 UX
 Rf
+Rf
 "}
 (114,1,1) = {"
 Rf
@@ -23593,7 +24788,7 @@ Rf
 Rf
 ug
 oo
-TI
+yn
 BS
 WO
 tq
@@ -23617,7 +24812,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23699,6 +24894,7 @@ vW
 rl
 UX
 Rf
+Rf
 "}
 (115,1,1) = {"
 Rf
@@ -23739,7 +24935,7 @@ Sl
 Lq
 lc
 BS
-Ub
+qf
 sn
 uB
 Qn
@@ -23749,7 +24945,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23831,6 +25027,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (116,1,1) = {"
 Rf
@@ -23881,7 +25078,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -23963,6 +25160,7 @@ XM
 rl
 UX
 Rf
+Rf
 "}
 (117,1,1) = {"
 Rf
@@ -24013,7 +25211,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24095,6 +25293,7 @@ Je
 rl
 UX
 Rf
+Rf
 "}
 (118,1,1) = {"
 Rf
@@ -24145,7 +25344,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24227,6 +25426,7 @@ vl
 rl
 UX
 Rf
+Rf
 "}
 (119,1,1) = {"
 Rf
@@ -24277,7 +25477,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24359,6 +25559,7 @@ uh
 rl
 UX
 Rf
+Rf
 "}
 (120,1,1) = {"
 Rf
@@ -24409,7 +25610,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24491,6 +25692,7 @@ vW
 rl
 UX
 Rf
+Rf
 "}
 (121,1,1) = {"
 Rf
@@ -24517,7 +25719,7 @@ Rf
 Rf
 ug
 oo
-TI
+yn
 BS
 lc
 tq
@@ -24541,7 +25743,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24623,6 +25825,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (122,1,1) = {"
 Rf
@@ -24649,8 +25852,8 @@ Rf
 Rf
 ug
 oo
-yn
-BS
+dP
+gS
 oo
 Pm
 Sl
@@ -24673,7 +25876,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24755,6 +25958,7 @@ XM
 rl
 UX
 Rf
+Rf
 "}
 (123,1,1) = {"
 Rf
@@ -24795,7 +25999,7 @@ Sl
 ug
 FL
 BS
-Ub
+qf
 sn
 uB
 Qn
@@ -24805,7 +26009,7 @@ ny
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -24887,6 +26091,7 @@ Je
 rl
 UX
 Rf
+Rf
 "}
 (124,1,1) = {"
 Rf
@@ -24937,7 +26142,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25019,6 +26224,7 @@ vl
 rl
 UX
 Rf
+Rf
 "}
 (125,1,1) = {"
 Rf
@@ -25069,7 +26275,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25151,6 +26357,7 @@ uh
 rl
 UX
 Rf
+Rf
 "}
 (126,1,1) = {"
 Rf
@@ -25201,7 +26408,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25283,6 +26490,7 @@ vW
 rl
 UX
 Rf
+Rf
 "}
 (127,1,1) = {"
 Rf
@@ -25333,7 +26541,7 @@ HC
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25415,6 +26623,7 @@ zb
 rl
 UX
 Rf
+Rf
 "}
 (128,1,1) = {"
 Rf
@@ -25465,7 +26674,7 @@ lq
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25547,6 +26756,7 @@ rl
 rl
 UX
 Rf
+Rf
 "}
 (129,1,1) = {"
 Rf
@@ -25597,7 +26807,7 @@ FH
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25679,6 +26889,7 @@ UX
 UX
 UX
 Rf
+Rf
 "}
 (130,1,1) = {"
 Rf
@@ -25729,7 +26940,7 @@ MU
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25811,6 +27022,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (131,1,1) = {"
 Rf
@@ -25861,7 +27073,7 @@ MW
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -25943,6 +27155,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (132,1,1) = {"
 Rf
@@ -25993,7 +27206,7 @@ ol
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26075,6 +27288,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (133,1,1) = {"
 Rf
@@ -26125,7 +27339,7 @@ MW
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26195,6 +27409,7 @@ zr
 zr
 zr
 UX
+Rf
 Rf
 Rf
 Rf
@@ -26257,7 +27472,7 @@ TP
 sn
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26339,6 +27554,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (135,1,1) = {"
 Rf
@@ -26389,7 +27605,7 @@ sl
 Av
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26471,6 +27687,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (136,1,1) = {"
 Rf
@@ -26521,7 +27738,7 @@ RU
 yl
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26592,6 +27809,7 @@ NU
 NU
 nc
 UX
+Rf
 Rf
 Rf
 Rf
@@ -26653,7 +27871,7 @@ RU
 pf
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26724,6 +27942,7 @@ NU
 NU
 UX
 UX
+Rf
 Rf
 Rf
 Rf
@@ -26785,7 +28004,7 @@ RU
 pf
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26867,6 +28086,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (139,1,1) = {"
 Rf
@@ -26914,11 +28134,10 @@ RU
 RU
 RU
 RU
-RU
 pf
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -26988,6 +28207,7 @@ NU
 NU
 NU
 UX
+Rf
 Rf
 Rf
 Rf
@@ -27050,7 +28270,7 @@ RU
 pf
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -27120,6 +28340,7 @@ NU
 NU
 NU
 UX
+Rf
 Rf
 Rf
 Rf
@@ -27182,7 +28403,7 @@ RU
 Av
 DJ
 DJ
-sn
+pf
 Rf
 Rf
 Rf
@@ -27252,6 +28473,7 @@ NU
 NU
 NU
 AH
+Rf
 Rf
 Rf
 Rf
@@ -27314,7 +28536,7 @@ JJ
 pf
 pf
 pf
-sn
+pf
 Rf
 Rf
 Rf
@@ -27384,6 +28606,7 @@ UX
 UX
 UX
 UX
+Rf
 Rf
 Rf
 Rf
@@ -27495,6 +28718,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -27660,6 +28884,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (145,1,1) = {"
 Rf
@@ -27780,6 +29005,7 @@ Gh
 Gh
 Gh
 Gh
+Rf
 Rf
 Rf
 Rf
@@ -27924,6 +29150,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (147,1,1) = {"
 Rf
@@ -28044,6 +29271,7 @@ Gh
 Gh
 Gh
 Gh
+Rf
 Rf
 Rf
 Rf
@@ -28188,6 +29416,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (149,1,1) = {"
 Rf
@@ -28287,6 +29516,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -28452,6 +29682,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (151,1,1) = {"
 Rf
@@ -28551,6 +29782,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -28716,6 +29948,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (153,1,1) = {"
 Rf
@@ -28815,6 +30048,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -28980,6 +30214,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (155,1,1) = {"
 Rf
@@ -29079,6 +30314,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -29244,6 +30480,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (157,1,1) = {"
 Rf
@@ -29343,6 +30580,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -29508,6 +30746,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (159,1,1) = {"
 Rf
@@ -29607,6 +30846,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -29772,6 +31012,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (161,1,1) = {"
 Rf
@@ -29871,6 +31112,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -30036,6 +31278,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (163,1,1) = {"
 Rf
@@ -30135,6 +31378,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -30300,6 +31544,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (165,1,1) = {"
 Rf
@@ -30399,6 +31644,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -30564,6 +31810,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (167,1,1) = {"
 Rf
@@ -30663,6 +31910,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -30828,6 +32076,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (169,1,1) = {"
 Rf
@@ -30927,6 +32176,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -31092,6 +32342,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (171,1,1) = {"
 Rf
@@ -31191,6 +32442,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -31356,6 +32608,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (173,1,1) = {"
 Rf
@@ -31455,6 +32708,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf
@@ -31620,6 +32874,7 @@ Rf
 Rf
 Rf
 Rf
+Rf
 "}
 (175,1,1) = {"
 Rf
@@ -31719,6 +32974,7 @@ Rf
 Rf
 Rf
 yR
+Rf
 Rf
 Rf
 Rf

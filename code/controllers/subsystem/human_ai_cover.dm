@@ -62,6 +62,21 @@ SUBSYSTEM_DEF(human_ai_cover)
 		request_chunk_data(data_request, data_request_status)
 
 	// -----------------------------
+	// CENTRAL CHUNK CONTROLLER
+	//
+	// -----------------------------
+
+	MC_SPLIT_TICK
+
+	for(var/chunk_processing_request in chunk_generation_requests)
+
+		if(generate_chunk_data(chunk_processing_request))
+			chunk_generation_requests -= chunk_processing_request
+
+		if(MC_TICK_CHECK)
+			break
+
+	// -----------------------------
 	// COVER REQUEST PROCESSOR
 	//
 	// -----------------------------
@@ -100,21 +115,6 @@ SUBSYSTEM_DEF(human_ai_cover)
 		cover_data_requests -= data_request
 		QDEL_NULL(data_request)
 
-	// -----------------------------
-	// CENTRAL CHUNK CONTROLLER
-	//
-	// -----------------------------
-
-	MC_SPLIT_TICK
-
-	for(var/chunk_processing_request in chunk_generation_requests)
-
-		if(generate_chunk_data(chunk_processing_request))
-			chunk_generation_requests -= chunk_processing_request
-
-		if(MC_TICK_CHECK)
-			break
-
 /datum/controller/subsystem/human_ai_cover/proc/process_cover_locations(datum/ai_cover_data_request/data_request)
 	var/list/raw_chunk_data = list()
 
@@ -141,24 +141,24 @@ SUBSYSTEM_DEF(human_ai_cover)
 
 	if(best_cover && best_cover != data_request.requesting_turf)
 		data_request.final_cover_location = best_cover
+		best_cover.color = COLOR_BLUE
 		return TRUE
 
 	return FALSE
 
-/datum/controller/subsystem/human_ai_cover/proc/generate_chunk_data(chunk_processing_request)
-	var/list/unpacked_chunk_data = chunk_processing_request
-	var/datum/ai_cover_data_chunk/chunk = unpacked_chunk_data["chunk"]
-	var/chunk_x = unpacked_chunk_data["x"]
-	var/chunk_y = unpacked_chunk_data["y"]
-	var/chunk_z = unpacked_chunk_data["z"]
-	var/turf/requester_turf = unpacked_chunk_data["requester_turf"]
+/datum/controller/subsystem/human_ai_cover/proc/generate_chunk_data(datum/ai_chunk_generation_request/chunk_processing_request)
+	var/datum/ai_cover_data_chunk/chunk = chunk_processing_request.chunk
+	var/chunk_x = chunk_processing_request.x_index
+	var/chunk_y = chunk_processing_request.y_index
+	var/chunk_z = chunk_processing_request.z_index
+	var/turf/requester_turf = chunk_processing_request.requester_turf
 	var/turf/middle_turf = locate(chunk_x * 13 + 7, chunk_y * 13 + 7, chunk_z)
 	var/list/scannable_turfs = list(middle_turf)
 
 	// i know how clunky this looks, but believe me, its easier
 	chunk_data_array[chunk_z][chunk_x][chunk_y] = chunk
 
-	if(isclosedturf(middle_turf) && requester_turf)
+	if((isclosedturf(middle_turf) || istype(middle_turf, /turf/open/space)) && requester_turf)
 		scannable_turfs = list(requester_turf)	// the middle of the chunk is a wall. start at the original request
 
 	var/first_iteration = TRUE
@@ -166,7 +166,7 @@ SUBSYSTEM_DEF(human_ai_cover)
 
 	while(length(scannable_turfs))
 		var/turf/scan_turf = scannable_turfs[1]
-		scannable_turfs.Cut(scan_turf)
+		scannable_turfs -= scan_turf
 		chunk.turf_dict[scan_turf] = 0
 		scanned_turfs |= scan_turf
 		var/list/turf_contents = scan_turf.contents.Copy()
@@ -183,24 +183,25 @@ SUBSYSTEM_DEF(human_ai_cover)
 				if(istype(atom, /obj/item/explosive/mine))
 					turf_contents -= atom
 					continue
-#ifdef TESTING
-		scan_turf.color = COLOR_RED
-#endif
+
 		for(var/cardinal in GLOB.cardinals)
 			var/turf/nearby_turf = get_step(scan_turf, cardinal)
 
 #ifdef TESTING
-			nearby_turf.color = COLOR_RED
+			nearby_turf.color = COLOR_ORANGE
 #endif
 
 			if(!nearby_turf)
 				continue
 
 			if(nearby_turf in scanned_turfs)
+#ifdef TESTING
+				nearby_turf.color = COLOR_YELLOW
+#endif
 				continue
 
 			if(isclosedturf(nearby_turf))
-				chunk.turf_dict[scan_turf] += 2 // Near a wall is a bit safer
+				chunk.turf_dict[scan_turf] += 5 // Near a wall is a bit safer
 				continue
 
 			if(abs(middle_turf.x - nearby_turf.x) > 6 || abs(middle_turf.y - nearby_turf.y) > 6)
@@ -208,6 +209,11 @@ SUBSYSTEM_DEF(human_ai_cover)
 
 			scannable_turfs |= nearby_turf
 
+#ifdef TESTING
+		scan_turf.color = COLOR_RED
+#endif
+
+	middle_turf.color = COLOR_GREEN
 	return TRUE
 
 /**
@@ -291,15 +297,16 @@ SUBSYSTEM_DEF(human_ai_cover)
 			chunk_template.index_x = x_array_index
 			chunk_template.index_y = y_array_index
 			chunk_template.index_z = requesting_turf.z
-			chunk_generation_requests |= list(
-				list(
-					"x" = x_array_index,
-					"y" = y_array_index,
-					"z" = requesting_turf.z,
-					"chunk" = chunk_template,
-					"requester_turf" = request.requesting_turf
-					)
-				)
+
+			var/datum/ai_chunk_generation_request/generation_request = new /datum/ai_chunk_generation_request
+			generation_request.x_index = x_array_index
+			generation_request.y_index = y_array_index
+			generation_request.z_index = requesting_turf.z
+			generation_request.chunk = chunk_template
+			generation_request.requester_turf = request.requesting_turf
+			request.data_chunks += chunk_template
+			return TRUE
+
 	return FALSE
 
 /datum/ai_cover_data_request
@@ -314,6 +321,13 @@ SUBSYSTEM_DEF(human_ai_cover)
 	var/turf/final_cover_location
 
 	var/list/data_chunks = list()
+
+/datum/ai_chunk_generation_request
+	var/x_index
+	var/y_index
+	var/z_index
+	var/chunk
+	var/turf/requester_turf
 
 /datum/ai_cover_data_request/Destroy(force)
 	requester_brain = null

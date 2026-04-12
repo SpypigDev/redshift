@@ -287,8 +287,8 @@ SUBSYSTEM_DEF(human_ai_cover)
 
 
 
-	var/x_array_index = floor(requesting_turf.x / 13)
-	var/y_array_index = floor(requesting_turf.y / 13)
+	//var/x_array_index = floor(requesting_turf.x / 13)
+	//var/y_array_index = floor(requesting_turf.y / 13)
 	var/datum/ai_cover_data_chunk/chunk_data_index
 	if(chunk_data_array[requesting_turf.z][x_array_index][y_array_index])
 		chunk_data_index = chunk_data_array[requesting_turf.z][x_array_index][y_array_index]

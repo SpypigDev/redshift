@@ -116,8 +116,10 @@
 	if(!(stat & NOPOWER))
 		return
 
-	brain.holster_primary()
 	var/obj/item/crowbar = brain.get_tool_from_equipment_map(TRAIT_TOOL_CROWBAR)
+	if(!crowbar)
+		return
+	brain.holster_primary()
 	brain.equip_item_from_equipment_map(HUMAN_AI_TOOLS, crowbar)
 	ai_human.do_click(src, "", list())
 	brain.store_item(crowbar, brain.storage_has_room(crowbar), HUMAN_AI_TOOLS)

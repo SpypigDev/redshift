@@ -1,10 +1,23 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/closed/wall/almayer/outer,
+/area/eclipse/vehicle_shuttle/south/two)
 "ab" = (
 /turf/open/floor/prison/darkyellow2/southeast,
 /area/almayer/hallways/hangar{
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"ac" = (
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/eclipse/vehicle_shuttle/south/two)
+"ad" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/eclipse/vehicle_shuttle/south/two)
 "af" = (
 /turf/open/floor/almayer{
 	icon_state = "tcomms"
@@ -602,10 +615,8 @@
 	color = "#dae2ff";
 	light_color = "#dae2ff"
 	},
-/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/turf/open/floor/corsat,
+/area/eclipse/vehicle_shuttle/south/one)
 "dx" = (
 /obj/structure/sign/safety/ammunition{
 	pixel_x = 32;
@@ -1842,10 +1853,8 @@
 	name = "\improper Mid Deck Port-Fore Hallway"
 	})
 "jq" = (
-/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/turf/open/floor/corsat,
+/area/eclipse/vehicle_shuttle/south/one)
 "js" = (
 /obj/structure/machinery/medical_pod/sleeper,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -1986,15 +1995,15 @@
 /area/golden_arrow/motor_pool)
 "ke" = (
 /obj/docking_port/stationary/trijent_elevator/shipmap_elevator/one{
-	airlock_area = /area/liberty/vehicle_shuttle/s/three;
+	airlock_area = /area/eclipse/vehicle_shuttle/south/one;
 	name = "Crew Deck";
-	id = "LibertyElevatorS3";
-	elevator_network = "LibertyElevatorS"
+	id = "EclipseElevatorS_lower";
+	elevator_network = "EclipseElevatorS";
+	airlock_exit = /obj/structure/machinery/door/airlock/multi_tile/elevator;
+	roundstart_template = /datum/map_template/shuttle/trijent_elevator/eclipse/south
 	},
-/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/turf/open/floor/corsat,
+/area/eclipse/vehicle_shuttle/south/one)
 "kh" = (
 /turf/open/floor/warnwhite/southeast,
 /area/golden_arrow/dorms)
@@ -2439,11 +2448,8 @@
 /turf/open/floor/warnwhite/northeast,
 /area/golden_arrow/dorms)
 "mA" = (
-/obj/structure/machinery/door/poddoor/almayer,
 /turf/open/floor/almayer/pod_landing_floor,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/area/eclipse/vehicle_shuttle/south/one)
 "mB" = (
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
@@ -5968,14 +5974,9 @@
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
 "Fs" = (
-/obj/structure/machinery/door/airlock/multi_tile/elevator/freight{
-	icon_state = "door_locked";
-	locked = 1
-	},
+/obj/structure/machinery/door/airlock/multi_tile/elevator,
 /turf/open/floor/almayer/pod_landing_floor,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/area/eclipse/vehicle_shuttle/south/two)
 "Ft" = (
 /obj/effect/landmark/start/marine/tl/alpha,
 /obj/effect/landmark/late_join/alpha,
@@ -6506,9 +6507,9 @@
 "HP" = (
 /obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
 	pixel_y = -15;
-	dockId = "LibertyElevatorS2";
+	dockId = "EclipseElevatorS_upper";
 	name = "starboard elevator control";
-	shuttleId = "LibertyElevatorS"
+	shuttleId = "EclipseElevatorS"
 	},
 /turf/open/floor/almayer{
 	dir = 5;
@@ -6727,9 +6728,7 @@
 	})
 "Jz" = (
 /turf/closed/wall/almayer/outer,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/area/eclipse/vehicle_shuttle/south/one)
 "JA" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer,
@@ -6884,11 +6883,8 @@
 /area/golden_arrow/motor_pool)
 "Kl" = (
 /obj/structure/machinery/door/airlock/multi_tile/elevator,
-/obj/structure/machinery/door/poddoor/almayer,
 /turf/open/floor/almayer/pod_landing_floor,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/area/eclipse/vehicle_shuttle/south/one)
 "Km" = (
 /obj/structure/window/framed/almayer/hull,
 /turf/open/floor/almayer/plating/northeast,
@@ -7662,9 +7658,7 @@
 /area/golden_arrow/cryo_cells)
 "NO" = (
 /turf/open/floor/almayer/pod_landing_floor,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/area/eclipse/vehicle_shuttle/south/two)
 "NR" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -7994,9 +7988,9 @@
 "Qd" = (
 /obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
 	pixel_y = -15;
-	dockId = "LibertyElevatorS3";
+	dockId = "EclipseElevatorS_lower";
 	name = "starboard elevator control";
-	shuttleId = "LibertyElevatorS"
+	shuttleId = "EclipseElevatorS"
 	},
 /turf/open/floor/almayer/red/east,
 /area/golden_arrow/prep_hallway)
@@ -9195,15 +9189,14 @@
 /area/golden_arrow/platoonprep)
 "Xf" = (
 /obj/docking_port/stationary/trijent_elevator/shipmap_elevator/one{
-	airlock_area = /area/liberty/vehicle_shuttle/s/two;
-	name = "Hangar Deck";
-	id = "LibertyElevatorS2";
-	elevator_network = "LibertyElevatorS"
+	airlock_area = /area/eclipse/vehicle_shuttle/south/two;
+	name = "Crew Deck";
+	id = "EclipseElevatorS_upper";
+	elevator_network = "EclipseElevatorS";
+	airlock_exit = /obj/structure/machinery/door/airlock/multi_tile/elevator
 	},
 /turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
-/area/shuttle/trijent_shuttle/omega{
-	name = "Hangar Deck"
-	})
+/area/eclipse/vehicle_shuttle/south/two)
 "Xg" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/bag/trash{
@@ -16056,13 +16049,13 @@ Qn
 aS
 JU
 HC
-Jz
-Jz
-Jz
-Jz
-Jz
-Jz
-Jz
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Rf
 yR
 Rf
@@ -16190,12 +16183,12 @@ aS
 JU
 HC
 Fs
-jq
-jq
-jq
-jq
+ac
+ac
+ac
+ac
 Xf
-Jz
+aa
 Rf
 yR
 Rf
@@ -16323,12 +16316,12 @@ aS
 JU
 HC
 NO
-jq
-jq
-jq
-jq
-jq
-Jz
+ac
+ac
+ac
+ac
+ac
+aa
 Rf
 yR
 Rf
@@ -16456,12 +16449,12 @@ Ni
 hb
 HJ
 NO
-jq
-jq
-dw
-jq
-jq
-Jz
+ac
+ac
+ad
+ac
+ac
+aa
 Rf
 yR
 Rf
@@ -16589,12 +16582,12 @@ aS
 JU
 HC
 NO
-jq
-jq
-jq
-jq
-jq
-Jz
+ac
+ac
+ac
+ac
+ac
+aa
 Rf
 yR
 Rf
@@ -16721,13 +16714,13 @@ Qn
 aS
 JU
 HP
-Jz
-jq
-jq
-jq
-jq
-jq
-Jz
+aa
+ac
+ac
+ac
+ac
+ac
+aa
 Rf
 yR
 Rf
@@ -16854,13 +16847,13 @@ Qn
 aS
 JU
 HC
-Jz
-Jz
-Jz
-Jz
-Jz
-Jz
-Jz
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Rf
 yR
 Rf

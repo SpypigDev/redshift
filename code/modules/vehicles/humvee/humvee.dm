@@ -178,9 +178,6 @@
 
 	return ..()
 
-/*
-** PRESETS
-*/
 /obj/vehicle/multitile/humvee/pre_movement()
 	if(locate(/obj/effect/alien/weeds) in loc)
 		move_momentum *= momentum_loss_on_weeds_factor
@@ -293,6 +290,24 @@
 	return FALSE
 
 /*
+** PRESETS
+*/
+
+/obj/vehicle/multitile/humvee/transport
+	icon = 'icons/obj/vehicles/humvee_transport.dmi'
+
+	interior_map = /datum/map_template/interior/humvee/transport
+
+	hardpoints_allowed = list(/obj/item/hardpoint/locomotion/van_wheels/humvee)
+
+/obj/vehicle/multitile/humvee/medical
+	icon = 'icons/obj/vehicles/humvee_medical.dmi'
+
+	interior_map = /datum/map_template/interior/humvee/medical
+
+	hardpoints_allowed = list(/obj/item/hardpoint/locomotion/van_wheels/humvee)
+
+/*
 ** PRESETS SPAWNERS
 */
 
@@ -316,21 +331,8 @@
 	handle_direction(VAN)
 	VAN.update_icon()
 
-//PRESET: wheels installed, destroyed
-/obj/effect/vehicle_spawner/humvee/decrepit/spawn_vehicle()
-	var/obj/vehicle/multitile/humvee/VAN = new (loc)
-
-	load_misc(VAN)
-	load_hardpoints(VAN)
-	handle_direction(VAN)
-	load_damage(VAN)
-	VAN.update_icon()
-
-/obj/effect/vehicle_spawner/humvee/decrepit/load_hardpoints(obj/vehicle/multitile/humvee/V)
-	V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels/upp)
-
 //PRESET: wheels installed
-/obj/effect/vehicle_spawner/humvee/fixed/spawn_vehicle()
+/obj/effect/vehicle_spawner/humvee/assault/spawn_vehicle()
 	var/obj/vehicle/multitile/humvee/VAN = new (loc)
 
 	load_misc(VAN)
@@ -338,8 +340,30 @@
 	handle_direction(VAN)
 	VAN.update_icon()
 
-/obj/effect/vehicle_spawner/humvee/fixed/load_hardpoints(obj/vehicle/multitile/humvee/V)
+/obj/effect/vehicle_spawner/humvee/assault/load_hardpoints(obj/vehicle/multitile/humvee/V)
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels/humvee)
 	V.add_hardpoint(new /obj/item/hardpoint/holder/tank_turret/humvee)
 	for(var/obj/item/hardpoint/holder/tank_turret/humvee/turret in V.hardpoints)
 		turret.add_hardpoint(new /obj/item/hardpoint/primary/autocannon/humvee)
+
+/obj/effect/vehicle_spawner/humvee/transport/spawn_vehicle()
+	var/obj/vehicle/multitile/humvee/VAN = new (loc)
+
+	load_misc(VAN)
+	load_hardpoints(VAN)
+	handle_direction(VAN)
+	VAN.update_icon()
+
+/obj/effect/vehicle_spawner/humvee/transport/load_hardpoints(obj/vehicle/multitile/humvee/V)
+	V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels/humvee)
+
+/obj/effect/vehicle_spawner/humvee/medical/spawn_vehicle()
+	var/obj/vehicle/multitile/humvee/VAN = new (loc)
+
+	load_misc(VAN)
+	load_hardpoints(VAN)
+	handle_direction(VAN)
+	VAN.update_icon()
+
+/obj/effect/vehicle_spawner/humvee/medical/load_hardpoints(obj/vehicle/multitile/humvee/V)
+	V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels/humvee)

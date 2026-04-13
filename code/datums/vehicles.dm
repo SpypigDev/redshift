@@ -115,5 +115,13 @@
 	interior_id = "uppapc"
 
 /datum/map_template/interior/humvee
-	name = "humvee"
+	name = "Humvee"
 	interior_id = "humvee"
+
+/datum/map_template/interior/humvee/transport
+	name = "Transport Humvee"
+	interior_id = "humvee_transport"
+
+/datum/map_template/interior/humvee/medical
+	name = "Medical Humvee"
+	interior_id = "humvee_medical"

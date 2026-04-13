@@ -225,5 +225,5 @@
 	gun_type = /obj/item/hardpoint/secondary/grenade_launcher/humvee
 
 /datum/ammo/grenade_container/humvee_glauncher
-	nade_type = /obj/item/explosive/grenade/frag
+	nade_type = /obj/item/explosive/grenade/high_explosive/impact/frag
 

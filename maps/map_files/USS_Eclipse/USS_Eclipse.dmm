@@ -50,6 +50,17 @@
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
+"au" = (
+/obj/structure/closet{
+	pixel_x = 7
+	},
+/obj/structure/closet{
+	pixel_x = -7
+	},
+/obj/item/storage/backpack,
+/obj/item/tape,
+/turf/open/floor/almayer/edge/smooth/endcap_right,
+/area/golden_arrow/dorms)
 "ax" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/almayer{
@@ -319,6 +330,7 @@
 /obj/structure/closet{
 	pixel_x = -7
 	},
+/obj/item/storage/donut_box,
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/golden_arrow/dorms)
 "cg" = (
@@ -374,6 +386,41 @@
 	pixel_x = 4;
 	pixel_y = 29
 	},
+/obj/item/ammo_magazine/m60{
+	pixel_x = -4
+	},
+/obj/item/ammo_magazine/m60{
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/structure/surface/table/reinforced/black,
+/obj/item/ammo_magazine/m60{
+	pixel_x = 5
+	},
+/obj/item/ammo_magazine/m60{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/ammo_magazine/m60{
+	pixel_x = -4
+	},
+/obj/item/ammo_magazine/m60{
+	pixel_x = 5
+	},
+/obj/item/ammo_magazine/m60{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/ammo_magazine/m60{
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/item/attachable/bipod/m60{
+	pixel_x = -7
+	},
+/obj/item/attachable/bipod/m60{
+	pixel_x = 7
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "cH" = (
@@ -412,6 +459,17 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"cU" = (
+/obj/structure/closet{
+	pixel_x = 7
+	},
+/obj/structure/closet{
+	pixel_x = -7
+	},
+/obj/item/storage/wallet,
+/obj/item/storage/fancy/crayons,
+/turf/open/floor/almayer/edge/smooth/endcap_right,
+/area/golden_arrow/dorms)
 "cV" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/vehicle_locker/cabinet/utensils{
@@ -918,6 +976,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"eR" = (
+/obj/structure/closet,
+/turf/open/floor/almayer/edge/smooth/east,
+/area/golden_arrow/platoonprep)
 "fb" = (
 /turf/open/floor/almayer/edge/smooth/northeast,
 /area/golden_arrow/prep_hallway)
@@ -970,7 +1032,9 @@
 	name = "\improper Tactical Operations Center"
 	})
 "fn" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "fv" = (
@@ -1348,7 +1412,9 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/prep_hallway)
 "ho" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "ht" = (
@@ -1609,6 +1675,19 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"iC" = (
+/obj/structure/closet{
+	pixel_x = 7
+	},
+/obj/structure/closet{
+	pixel_x = -7
+	},
+/obj/item/storage/briefcase{
+	pixel_y = 1
+	},
+/obj/item/storage/beer_pack,
+/turf/open/floor/almayer/edge/smooth/endcap_right,
+/area/golden_arrow/dorms)
 "iD" = (
 /obj/structure/barricade/handrail,
 /obj/structure/closet/firecloset/full{
@@ -1733,6 +1812,10 @@
 /obj/item/prop/magazine/dirty/torn{
 	pixel_x = 2;
 	pixel_y = 6
+	},
+/obj/item/storage/fancy/cigar{
+	pixel_x = -2;
+	pixel_y = 10
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -2678,7 +2761,9 @@
 /turf/open/floor/almayer/plating,
 /area/golden_arrow/cryo_cells)
 "nJ" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
 "nK" = (
@@ -3124,6 +3209,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
+"qa" = (
+/obj/structure/machinery/door_control{
+	id = "cargodivider";
+	pixel_y = 28
+	},
+/turf/open/floor/almayer/red/west,
+/area/golden_arrow/platoonprep)
 "qb" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
@@ -3165,7 +3257,7 @@
 	})
 "qj" = (
 /obj/structure/machinery/vending/coffee,
-/turf/open/floor/almayer/dark_sterile,
+/turf/open/floor/almayer/sterile_green_corner/north,
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
@@ -4361,18 +4453,12 @@
 	unlimited_power = 1
 	})
 "wA" = (
-/obj/structure/machinery/door_control{
-	pixel_x = -21;
-	id = "cargodivider"
-	},
 /obj/structure/extinguisher_cabinet/alt{
-	pixel_y = 29;
-	pixel_x = -8
+	pixel_x = 4;
+	pixel_y = 29
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
-/area/golden_arrow/platoonprep)
+/turf/open/floor/almayer/red/east,
+/area/golden_arrow/prep_hallway)
 "wC" = (
 /turf/open/shuttle/escapepod/floor1/east,
 /area/golden_arrow/motor_pool)
@@ -4594,7 +4680,7 @@
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
@@ -4870,6 +4956,13 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
+"zh" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_y = 29;
+	pixel_x = -8
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoonprep)
 "zm" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
 	dir = 2;
@@ -4991,7 +5084,9 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
 "zW" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -5188,6 +5283,7 @@
 	pixel_y = 13
 	},
 /obj/item/card/id/visa,
+/obj/item/storage/donut_box,
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/golden_arrow/dorms)
 "AR" = (
@@ -5526,8 +5622,18 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"Dj" = (
+/obj/structure/machinery/computer/cameras/wooden_tv/prop{
+	pixel_y = 29
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/golden_arrow/medical{
+	unlimited_power = 1
+	})
 "Dm" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "Dt" = (
@@ -5696,8 +5802,8 @@
 	})
 "Er" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.3;
-	dir = 8
+	dir = 8;
+	light_power = 0.7
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
@@ -5801,6 +5907,15 @@
 	powernet_name = "saturnine";
 	unlimited_power = 1
 	})
+"Fd" = (
+/obj/structure/machinery/door_control{
+	pixel_x = 21;
+	id = "cargodivider"
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/golden_arrow/prep_hallway)
 "Fg" = (
 /obj/structure/dropship_equipment/mg_holder,
 /turf/open/floor/almayer{
@@ -6262,7 +6377,9 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "Hl" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "Hm" = (
@@ -6494,6 +6611,16 @@
 /obj/structure/machinery/cm_vending/clothing/medic/forecon,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/platoonprep)
+"IM" = (
+/obj/structure/closet{
+	pixel_x = 7
+	},
+/obj/structure/closet{
+	pixel_x = -7
+	},
+/obj/item/storage/photo_album,
+/turf/open/floor/almayer/edge/smooth/endcap_right,
+/area/golden_arrow/dorms)
 "IO" = (
 /obj/vehicle/powerloader{
 	dir = 4
@@ -6680,7 +6807,9 @@
 	unlimited_power = 1
 	})
 "JS" = (
-/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
+	name = "\improper Hypersleep Bay"
+	},
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -6866,6 +6995,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"KS" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/almayer,
+/area/golden_arrow/platoonprep)
 "KT" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/weapon/gun/launcher/grenade/m81,
@@ -6951,6 +7084,19 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
+"Li" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/weapon/gun/m60{
+	desc = "The military version of the Mk70. Due to its reliable build and effectiveness in cutting down hostile fauna in the frontier regions of space, the UAAC has adopted it as standard issue. \n<b>Alt-click to open the feed tray cover for handling reloads.</b>";
+	name = "\improper M70 Machine Gun"
+	},
+/obj/item/weapon/gun/m60{
+	desc = "The military version of the Mk70. Due to its reliable build and effectiveness in cutting down hostile fauna in the frontier regions of space, the UAAC has adopted it as standard issue. \n<b>Alt-click to open the feed tray cover for handling reloads.</b>";
+	name = "\improper M70 Machine Gun";
+	pixel_y = 7
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/platoonprep)
 "Lj" = (
 /obj/structure/machinery/door_control{
 	id = "hangardeckwest";
@@ -8793,6 +8939,7 @@
 	pixel_y = 29;
 	pixel_x = -8
 	},
+/obj/item/storage/fancy/crayons,
 /turf/open/floor/almayer/edge/smooth/northwest,
 /area/golden_arrow/dorms)
 "VR" = (
@@ -8803,23 +8950,22 @@
 	})
 "VS" = (
 /obj/structure/machinery/vending/generic,
-/turf/open/floor/almayer/dark_sterile,
+/turf/open/floor/almayer/sterile_green_corner/west,
 /area/golden_arrow/medical{
 	unlimited_power = 1
 	})
 "VU" = (
-/obj/structure/machinery/door_control{
-	pixel_x = 21;
-	id = "cargodivider"
+/obj/structure/closet{
+	pixel_x = 7
 	},
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_x = 4;
-	pixel_y = 29
+/obj/structure/closet{
+	pixel_x = -7
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
+/obj/item/storage/pill_bottle{
+	name = "birth control"
 	},
-/area/golden_arrow/prep_hallway)
+/turf/open/floor/almayer/edge/smooth/endcap_right,
+/area/golden_arrow/dorms)
 "VY" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -9116,6 +9262,7 @@
 /obj/structure/closet{
 	pixel_x = -7
 	},
+/obj/item/storage/backpack,
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "XG" = (
@@ -9162,6 +9309,16 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"XN" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7;
+	light_color = "#00FFF7"
+	},
+/turf/open/floor/grass,
+/area/golden_arrow/medical{
+	unlimited_power = 1
+	})
 "XP" = (
 /obj/item/tool/kitchen/rollingpin{
 	pixel_y = 4;
@@ -9517,6 +9674,7 @@
 	pixel_y = 29;
 	pixel_x = -8
 	},
+/obj/item/storage/photo_album,
 /turf/open/floor/almayer/edge/smooth/northwest,
 /area/golden_arrow/dorms)
 "Zt" = (
@@ -10359,7 +10517,7 @@ mB
 Er
 ha
 mB
-ij
+mB
 TR
 Rf
 Rf
@@ -10488,7 +10646,7 @@ xW
 tY
 tY
 YE
-uK
+rI
 rI
 uK
 YE
@@ -11023,7 +11181,7 @@ YE
 rI
 rI
 uK
-mB
+YE
 AD
 TR
 Rf
@@ -12354,7 +12512,7 @@ Od
 Aj
 cl
 Aj
-cf
+iC
 jR
 Rf
 Rf
@@ -12620,7 +12778,7 @@ jm
 cg
 cg
 dt
-cf
+au
 jR
 Rf
 Rf
@@ -14640,18 +14798,18 @@ Rf
 Rf
 Rf
 Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
-Rf
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
 Rf
 Rf
 "}
@@ -14773,7 +14931,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 Zv
 Zv
@@ -14881,7 +15039,7 @@ Xn
 cg
 cg
 dt
-cf
+VU
 jR
 Rf
 Rf
@@ -14906,7 +15064,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 aP
 aP
@@ -15039,7 +15197,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 jk
 jk
@@ -15147,7 +15305,7 @@ yH
 Aj
 Nh
 Aj
-cf
+cU
 jR
 Rf
 Rf
@@ -15172,7 +15330,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 wf
 wf
@@ -15305,7 +15463,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 oE
 rC
@@ -15413,7 +15571,7 @@ XE
 cg
 cg
 dt
-cf
+IM
 jR
 Rf
 Rf
@@ -15438,7 +15596,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 SG
 mT
@@ -15571,7 +15729,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 rC
 rC
@@ -15704,7 +15862,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 mT
 mT
@@ -15837,7 +15995,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 oE
 rC
@@ -15970,7 +16128,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 wf
 wf
@@ -16068,8 +16226,8 @@ oX
 rc
 rc
 rc
-rc
-rc
+JH
+su
 rc
 GU
 rc
@@ -16103,7 +16261,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 ux
 YQ
@@ -16111,7 +16269,7 @@ mT
 mT
 wf
 qj
-mT
+xz
 VS
 Zv
 yW
@@ -16202,7 +16360,7 @@ rc
 rc
 rc
 rc
-rc
+su
 rc
 cJ
 kq
@@ -16236,7 +16394,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 bs
 bs
@@ -16335,7 +16493,7 @@ rc
 rc
 rc
 rc
-rc
+su
 rc
 cJ
 rc
@@ -16369,7 +16527,7 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 wf
 wf
@@ -16467,8 +16625,8 @@ oX
 rc
 rc
 rc
-rc
-rc
+zg
+Fd
 rc
 cJ
 rc
@@ -16502,11 +16660,11 @@ Rf
 Rf
 Rf
 Rf
-Rf
+Bk
 Zv
 wk
 Ep
-Ep
+XN
 wk
 wf
 mT
@@ -16601,8 +16759,8 @@ RT
 RT
 RT
 RT
-VU
-gJ
+RT
+wA
 gJ
 Qd
 Jz
@@ -16733,7 +16891,7 @@ em
 So
 ah
 dL
-em
+Li
 em
 fR
 fR
@@ -16866,9 +17024,9 @@ em
 vT
 zF
 dL
+KS
 td
-wA
-vo
+qa
 vo
 vo
 sM
@@ -16908,7 +17066,7 @@ JP
 Ue
 Ep
 wf
-mT
+Dj
 mT
 Dg
 Zv
@@ -16999,7 +17157,7 @@ em
 Xe
 zF
 dL
-td
+KS
 td
 Bz
 dL
@@ -17134,7 +17292,7 @@ zF
 dL
 KT
 td
-dL
+zh
 dL
 dL
 fn
@@ -17440,7 +17598,7 @@ SA
 SA
 Zz
 FX
-mT
+Dj
 mT
 lP
 Zv
@@ -17573,9 +17731,9 @@ Mx
 Jh
 ru
 iY
-mT
-mT
-mT
+Vs
+Mx
+iJ
 Zv
 yW
 Rf
@@ -18202,7 +18360,7 @@ dL
 dL
 dL
 sM
-QP
+eR
 QP
 Wm
 Fo

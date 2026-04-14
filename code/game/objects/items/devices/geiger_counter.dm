@@ -8,7 +8,6 @@
 	flags_equip_slot = SLOT_WAIST
 	detector_range = 14
 	var/starting_battery = /obj/item/cell/crap
-	iff_signal = FACTION_MARINE
 	long_range_locked = FALSE //only long-range MD
 	var/datum/looping_sound/geiger/geiger_counter_loop
 	var/obj/item/cell/battery
@@ -111,7 +110,7 @@
 	for(var/mob/living/target as anything in ping_candidates)
 		if(target == human_user)
 			continue //device user isn't detected
-		if(target.get_target_lock(iff_signal))
+		if(target.faction != FACTION_ANOMALY)
 			continue
 
 		ping_count++

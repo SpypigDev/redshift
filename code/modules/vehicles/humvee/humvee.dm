@@ -17,6 +17,8 @@
 	bound_x = 0
 	bound_y = 0
 
+	health = 800
+
 	interior_map = /datum/map_template/interior/humvee
 
 	entrances = list(
@@ -43,14 +45,27 @@
 	light_range = 3
 	vehicle_light_range = 6
 
-	move_max_momentum = 3
+	dmg_multipliers = list(
+		"all" = 1,
+		"acid" = 1.8,
+		"slash" = 1.1,
+		"bullet" = 0.6,
+		"explosive" = 0.8,
+		"blunt" = 0.8,
+		"abstract" = 1,
+	)
+
+	move_max_momentum = 2.2
+	move_momentum_build_factor = 1.5
+	move_turn_momentum_loss_factor = 0.8
+
+	vehicle_ram_multiplier = VEHICLE_TRAMPLE_DAMAGE_APC_REDUCTION
+
 
 	hardpoints_allowed = list(
 		/obj/item/hardpoint/locomotion/van_wheels/humvee,
 		/obj/item/hardpoint/holder/tank_turret/humvee
 	)
-
-	move_turn_momentum_loss_factor = 1
 
 	req_access = list()
 	req_one_access = list()

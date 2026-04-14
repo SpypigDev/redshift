@@ -64,7 +64,7 @@
 
 	hardpoints_allowed = list(
 		/obj/item/hardpoint/locomotion/van_wheels/humvee,
-		/obj/item/hardpoint/holder/tank_turret/humvee
+		/obj/item/hardpoint/holder/tank_turret/humvee,
 	)
 
 	req_access = list()

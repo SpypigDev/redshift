@@ -27,3 +27,12 @@
 	health = 1200
 
 	move_delay = VEHICLE_SPEED_VERYFAST
+
+/obj/item/hardpoint/locomotion/van_wheels/humvee
+	name = "Humvee tires"
+	icon = 'icons/obj/vehicles/hardpoints/humvee.dmi'
+
+	disp_icon = "humvee"
+	disp_icon_state = "humvee_wheels"
+
+	health = 1200

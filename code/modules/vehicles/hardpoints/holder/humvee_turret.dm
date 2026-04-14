@@ -21,7 +21,7 @@
 	accepted_hardpoints = list(
 		/obj/item/hardpoint/primary/autocannon/humvee,
 		/obj/item/hardpoint/secondary/grenade_launcher/humvee,
-		)
+	)
 
 	hdpt_layer = HDPT_LAYER_TURRET
 	px_offsets = list(

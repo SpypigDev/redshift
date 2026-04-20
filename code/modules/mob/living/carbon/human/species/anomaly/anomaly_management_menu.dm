@@ -118,6 +118,12 @@ GLOBAL_LIST_EMPTY(anomaly_ai_spawn_presets)
 	desc = "Dangerous entity that mimics players before attacking"
 	anomaly_type_ref = "Duplicate"
 
+/datum/anomaly_ai_spawn_preset/keter/statue
+	name = "Statue"
+	icon_state = "statue"
+	desc = "Dangerous entity that mimics players before attacking"
+	anomaly_type_ref = "Statue"
+
 /datum/anomaly_ai_spawn_preset/euclid
 	anomaly_class = ANOMALY_CLASS_EUCLID
 

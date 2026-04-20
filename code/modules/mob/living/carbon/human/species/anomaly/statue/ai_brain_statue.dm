@@ -19,22 +19,11 @@
 	/// If TRUE, we care about the target being in view after shooting at them. If not, then we only do a line check instead
 	requires_vision = TRUE
 	ignore_looting = TRUE
-	COOLDOWN_DECLARE(replicate_speech)
-	COOLDOWN_DECLARE(pain_scream)
+	COOLDOWN_DECLARE(movement_cooldown)
 
-	var/static/list/pain_sounds = list(
-		'sound/voice/pred_pain5.ogg',
-		'sound/voice/pred_pain4.ogg',
-		'sound/voice/pred_pain3.ogg',
-		'sound/voice/pred_pain2.ogg'
-	)
-
-	enter_combat_lines = list(
-		"*roar",
-		"*roar",
-	)
-
-	in_combat_line_chance = 100
+/datum/human_ai_brain/statue/configure_custom_spawn()
+	COOLDOWN_START(src, movement_cooldown, 3 SECONDS)
+	range_bounds = new()
 
 /datum/human_ai_brain/statue/say_in_combat_line(chance)
 	if(!length(enter_combat_lines) || !prob(chance) || (tied_human.health < HEALTH_THRESHOLD_CRIT))
@@ -57,146 +46,83 @@
 	return
 
 /datum/human_ai_brain/statue/process(delta_time)
-	var/turf/cur_turf = get_turf(src)
+	var/list/mobs_in_view = list()
+	var/list/watchers = list()
+	var/list/blinkers = list()
+	var/turf/cur_turf = get_turf(tied_human)
+	var/movement_speed = 5
+
+	if(!COOLDOWN_FINISHED(src, movement_cooldown))
+		return
+
 	if(!istype(cur_turf))
 		return
 
 	range_bounds.set_shape(cur_turf.x, cur_turf.y, 12)
 
-	var/list/ping_candidates = oviewers()
-
-	for(var/mob/living/carbon/human/possible_watcher as anything in ping_candidates)
-		var/angle = Get_Angle(get_turf(target), get_turf(src))
-		var/angle_diff = (dir2angle(target.dir) - angle) %% 360
-		if(angle_diff > 90)
-			ping_candidates -= possible_watcher
+	mobs_in_view = oviewers(GLOB.world_view_size, tied_human)
+	for(var/mob/living/carbon/human/viewer as anything in mobs_in_view)
+		if(!istype(viewer) || viewer.stat)
+			mobs_in_view -= viewer
 			continue
-		if(possible_watcher.stat)
-			ping_candidates -= possible_watcher
-			continue
-	var/watchers = length(ping_candidates)
-	if(!watchers)
+	if(!length(mobs_in_view))
+		COOLDOWN_START(src, movement_cooldown, 10 SECONDS)
 		return
-	if(watchers <= 2)
-		var/move_chance = (1 - 0.25 * watchers)
-	else
-		var/move_chance = 0.15
-	..()
 
-/datum/human_ai_brain/statue/proc/blink_roll(list/blinkers)
-	for(var/mob/living/carbon/human/blinker as anything in blinkers)
-		blinker.overlay_fullscreen("blind", /atom/movable/screen/fullscreen/blind)
-		addtimer(CALLBACK(src, PROC_REF(de_blind_watchers), blinkers), 0.3 SECONDS)
+	for(var/mob/living/carbon/human/possible_watcher as anything in mobs_in_view)
+		var/angle = Get_Angle(get_turf(possible_watcher), get_turf(tied_human))
+		var/angle_diff = (dir2angle(possible_watcher.dir) - angle) %% 360
+		if(angle_diff > 90)
+			continue
+		watchers |= possible_watcher
+		if(blinkers[possible_watcher])
+			continue
+		blinkers[possible_watcher] = world.time
+
+	for(var/mob/living/carbon/human/watcher as anything in watchers)
+		if(!listgetindex(blinkers, watcher))
+			continue
+		if(world.time - blinkers[watcher] <= 2 SECONDS)
+			continue
+		if(prob(0.2))
+			watcher.emote("blink")
+			blinkers[watcher] = world.time
+			watchers -= watcher
+		else
+			blinkers[watcher] |= 0.5 SECONDS
+
+	if(length(watchers))
+		COOLDOWN_START(src, movement_cooldown, 0.5 SECONDS)
+		return	//kill proc here
+	var/mob/living/carbon/human/target = pick(mobs_in_view)
+	var/turf/jump_turf
+	var/kill_on_arrival = FALSE
+
+	if(get_dist(target, tied_human) > movement_speed)
+		var/list/jump_path = get_line(get_turf(tied_human), get_turf(target), FALSE)
+		jump_turf = jump_path[movement_speed]
+	else
+		jump_turf = get_turf(target)
+		kill_on_arrival = TRUE
+	if(!jump_turf)
+		return
+
+	for(var/mob/living/carbon/human/blinker in mobs_in_view)
+		blinker.overlay_fullscreen("statue_blink", /atom/movable/screen/fullscreen/blind)
+		addtimer(CALLBACK(src, PROC_REF(de_blind_watchers), watchers), 0.3 SECONDS)
+
+	tied_human.forceMove(jump_turf)
+
+	if(kill_on_arrival)
+		playsound(get_turf(tied_human), 'sound/scp/firstpersonsnap2.ogg')
+		var/obj/limb/target_head = target.get_limb("head")
+		target.apply_damage(rand(100, 150), BRUTE, "head")
+		target_head.fracture(100)
+		target.death()
+	else
+		playsound(get_turf(tied_human), 'sound/scp/scare2.ogg')
+	COOLDOWN_START(src, movement_cooldown, 5 SECONDS)
 
 /datum/human_ai_brain/statue/proc/de_blind_watchers(list/blinkers)
-
-
-/datum/human_ai_brain/statue/proc/initial_contact_alter()
-	if(tied_human.client || !alter.client)
-		return
-	if(mimic_timer)
-		return
-	if(!pretending_to_be_human)
-		return
-	// no using guns allowed
-	if(primary_weapon)
-		qdel(primary_weapon)
-	for(var/obj/item/weapon as anything in secondary_weapons)
-		qdel(weapon)
-
-	mimic_timer = addtimer(CALLBACK(src, PROC_REF(engage_alter)), 6 SECONDS, TIMER_STOPPABLE)
-	addtimer(CALLBACK(src, PROC_REF(turn_off_armor_lights)), 4 SECONDS)
-	RegisterSignal(alter, COMSIG_HUMAN_SAY, PROC_REF(replicate_speech))
-	pretending_to_be_human = FALSE
-	hold_position = TRUE
-
-/datum/human_ai_brain/statue/proc/turn_off_armor_lights()
-	playsound(tied_human, pick('sound/voice/pred_laugh3.ogg', 'sound/voice/pred_over_there.ogg', 'sound/voice/pred_itsatrap.ogg', 'sound/voice/pred_helpme.ogg'), 25)
-	var/obj/item/clothing/suit/storage/marine/armor = tied_human.get_item_by_slot(WEAR_JACKET)
-	if(armor)
-		armor.turn_light(tied_human, FALSE)
-
-/datum/human_ai_brain/statue/proc/post_death()
-	tied_human.clear_filters()
-	addtimer(CALLBACK(src, PROC_REF(transform_corpse)), 3 SECONDS)
-
-/datum/human_ai_brain/statue/proc/transform_corpse()
-	playsound(tied_human, 'sound/weapons/vehicles/flamethrower.ogg', 35)
-	tied_human.fire_stacks = 25	// avert your gaze
-	tied_human.IgniteMob(TRUE)
-	tied_human.name = "\improper mangled corpse"
-
-/datum/human_ai_brain/statue/proc/replicate_alter(mob/living/carbon/human/alter)
-	var/list/alter_equipment_list = list()
-	alter_equipment_list |= alter.get_equipped_items()
-	tied_human.create_hud()
-	for(var/obj/item/item in alter_equipment_list)
-		var/obj/item/new_item = new item.type()
-		tied_human.equip_to_appropriate_slot(new_item)
-	var/obj/item/clothing/suit/storage/marine/armor = tied_human.get_item_by_slot(WEAR_JACKET)
-	if(armor)
-		armor.turn_light(tied_human, TRUE)
-	tied_human.body_size = alter.body_size
-	tied_human.body_type = alter.body_type
-	tied_human.skin_color = alter.skin_color
-
-	tied_human.gender = alter.gender
-	tied_human.r_hair = alter.r_hair
-	tied_human.g_hair = alter.g_hair
-	tied_human.b_hair = alter.b_hair
-	tied_human.r_facial = alter.r_facial
-	tied_human.g_facial = alter.g_facial
-	tied_human.b_facial = alter.b_facial
-	tied_human.h_style = alter.h_style
-	tied_human.f_style = alter.f_style
-
-	tied_human.change_real_name(tied_human, alter.real_name)
-
-	tied_human.regenerate_icons()
-
-/datum/human_ai_brain/statue/unholster_melee()
-	if(pretending_to_be_human)
-		return ..()
-
-/datum/human_ai_brain/statue/proc/scream_in_pain()
-	if(!COOLDOWN_FINISHED(src, pain_scream))
-		return
-	// shh, we're trying to sleep
-	if(tied_human.stat)
-		return
-	COOLDOWN_START(src, replicate_speech, 2 SECONDS)
-
-	playsound(tied_human, pick(pain_sounds), 50)
-
-/datum/human_ai_brain/statue/proc/replicate_speech(source, message)
-	if(!COOLDOWN_FINISHED(src, replicate_speech))
-		return
-	COOLDOWN_START(src, replicate_speech, 1 SECONDS)
-
-	tied_human.say(message)
-
-/datum/human_ai_brain/statue/proc/engage_alter()
-	if(pretending_to_be_human)
-		return
-	UnregisterSignal(alter, COMSIG_HUMAN_SAY)
-	tied_human.emote("roar")
-	tied_human.speed = -1.5
-	playsound(tied_human, 'sound/weapons/wristblades_on.ogg', 25)
-	tied_human.add_filter("empower_rage", 1, list("type" = "outline", "color" = "#440202", "size" = 1))
-	mimic_timer = null
-
-	//tied_human.has_fine_manipulation = FALSE
-	tied_human.a_intent_change(INTENT_HARM)
-	hold_position = FALSE
-	friendly_factions -= alter.faction
-	neutral_factions -= alter.faction
-	current_target = alter
-	quick_approach = get_turf(alter)
-	tied_human.r_eyes = 255
-	tied_human.g_eyes = 0
-	tied_human.b_eyes = 0
-	tied_human.update_body()
-
-	RegisterSignal(tied_human, COMSIG_HUMAN_BULLET_ACT, PROC_REF(scream_in_pain), TRUE)
-
-	enter_combat()
+	for(var/mob/living/carbon/human/blinker as anything in blinkers)
+		blinker.clear_fullscreen("statue_blink")

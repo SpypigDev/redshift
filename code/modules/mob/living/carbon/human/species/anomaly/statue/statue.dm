@@ -2,7 +2,7 @@
 	group = SPECIES_ANOMALY
 	name = "Statue"
 	name_plural = "Statues"
-
+	default_ai_brain_type = /datum/human_ai_brain/statue
 	icobase = 'icons/mob/statue.dmi'
 	eyes = null
 	uses_skin_color = FALSE

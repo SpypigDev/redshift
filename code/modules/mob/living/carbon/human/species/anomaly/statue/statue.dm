@@ -4,7 +4,7 @@
 	name_plural = "Statues"
 	default_ai_brain_type = /datum/human_ai_brain/statue
 	icobase = 'icons/mob/statue.dmi'
-	eyes = null
+	eyes = "blank_s"
 	uses_skin_color = FALSE
 	special_body_types = FALSE
 
@@ -27,10 +27,13 @@
 	total_health = 100
 	brute_mod = 0.25
 	burn_mod = 0
-	blood_mask = null
+	blood_mask = FALSE
 	blood_color = null
 	bloodsplatter_type = null
 	flesh_color = "#2422227c"
 	mob_inherent_traits = list(TRAIT_FOREIGN_BIO, TRAIT_UNSTRIPPABLE, TRAIT_FORCED_STANDING, TRAIT_HARDCORE)
 	flags = NO_CLONE_LOSS|NO_POISON|NO_NEURO|NO_SLIP|NO_BLOOD|NO_BREATHE|NO_SHRAPNEL
 	default_ai_brain_type
+
+/datum/species/anomaly/statue/handle_blood_splatter()
+	return

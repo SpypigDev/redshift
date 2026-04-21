@@ -20,6 +20,7 @@
 	requires_vision = TRUE
 	ignore_looting = TRUE
 	COOLDOWN_DECLARE(movement_cooldown)
+	var/list/blinkers = list()
 
 /datum/human_ai_brain/statue/configure_custom_spawn()
 	COOLDOWN_START(src, movement_cooldown, 3 SECONDS)
@@ -48,7 +49,7 @@
 /datum/human_ai_brain/statue/process(delta_time)
 	var/list/mobs_in_view = list()
 	var/list/watchers = list()
-	var/list/blinkers = list()
+
 	var/turf/cur_turf = get_turf(tied_human)
 	var/movement_speed = 5
 
@@ -71,25 +72,22 @@
 
 	for(var/mob/living/carbon/human/possible_watcher as anything in mobs_in_view)
 		var/angle = Get_Angle(get_turf(possible_watcher), get_turf(tied_human))
-		var/angle_diff = (dir2angle(possible_watcher.dir) - angle) %% 360
-		if(angle_diff > 90)
-			continue
-		watchers |= possible_watcher
-		if(blinkers[possible_watcher])
-			continue
-		blinkers[possible_watcher] = world.time
+		var/list/watcher_directions = make_dir_cardinal(angle2dir(angle))
+		if(possible_watcher.dir in watcher_directions)
+			watchers |= possible_watcher
+			if(blinkers[possible_watcher])
+				continue
+			blinkers[possible_watcher] = world.time
 
 	for(var/mob/living/carbon/human/watcher as anything in watchers)
 		if(!listgetindex(blinkers, watcher))
 			continue
 		if(world.time - blinkers[watcher] <= 2 SECONDS)
 			continue
-		if(prob(0.2))
+		if(prob(50))
 			watcher.emote("blink")
 			blinkers[watcher] = world.time
 			watchers -= watcher
-		else
-			blinkers[watcher] |= 0.5 SECONDS
 
 	if(length(watchers))
 		COOLDOWN_START(src, movement_cooldown, 0.5 SECONDS)
@@ -108,9 +106,9 @@
 		return
 
 	for(var/mob/living/carbon/human/blinker in mobs_in_view)
-		blinker.overlay_fullscreen("statue_blink", /atom/movable/screen/fullscreen/blind)
-		addtimer(CALLBACK(src, PROC_REF(de_blind_watchers), watchers), 0.3 SECONDS)
+		blinker.overlay_fullscreen_timer(0.2 SECONDS, FALSE, "statue_blink", /atom/movable/screen/fullscreen/blind/full)
 
+	tied_human.dir = pick(make_dir_cardinal(get_dir(get_turf(tied_human), jump_turf)))
 	tied_human.forceMove(jump_turf)
 
 	if(kill_on_arrival)
@@ -122,7 +120,3 @@
 	else
 		playsound(get_turf(tied_human), 'sound/scp/scare2.ogg')
 	COOLDOWN_START(src, movement_cooldown, 5 SECONDS)
-
-/datum/human_ai_brain/statue/proc/de_blind_watchers(list/blinkers)
-	for(var/mob/living/carbon/human/blinker as anything in blinkers)
-		blinker.clear_fullscreen("statue_blink")

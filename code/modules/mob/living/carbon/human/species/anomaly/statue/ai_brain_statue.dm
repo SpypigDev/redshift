@@ -1,29 +1,19 @@
-// TO DO LIST
-//
-
 /datum/human_ai_brain/statue
 	var/datum/shape/rectangle/square/range_bounds
+	var/list/blinkers = list()
+	var/blink_jump_range = 5
+	var/static/list/allowed_target_species = list(SPECIES_HUMAN, SPECIES_MONKEY)
 
-	micro_action_delay = 0.2 SECONDS
-	short_action_delay = 0.5 SECONDS
-	medium_action_delay = 2 SECONDS
-	long_action_delay = 5 SECONDS
-	/// Global multiplier for all AI action delays
-	action_delay_mult = 2 // Doubled from 1, gives hAI a believable time between actions
-	/// Factions that the AI won't engage in hostilities with. Controlled by the AI's faction
-	friendly_factions = list()
-	/// Factions that the AI will not become hostile to unless attacked
-	neutral_factions = list()
-	/// If TRUE, the AI will throw grenades at enemies who enter cover
 	grenading_allowed = FALSE
-	/// If TRUE, we care about the target being in view after shooting at them. If not, then we only do a line check instead
 	requires_vision = TRUE
 	ignore_looting = TRUE
-	COOLDOWN_DECLARE(movement_cooldown)
-	var/list/blinkers = list()
+
+	COOLDOWN_DECLARE(processing_cooldown)
+	COOLDOWN_DECLARE(nearby_targets_scan)
 
 /datum/human_ai_brain/statue/configure_custom_spawn()
-	COOLDOWN_START(src, movement_cooldown, 3 SECONDS)
+	COOLDOWN_START(src, processing_cooldown, 3 SECONDS)
+	COOLDOWN_START(src, nearby_targets_scan, 1 SECONDS)
 	range_bounds = new()
 
 /datum/human_ai_brain/statue/say_in_combat_line(chance)
@@ -46,38 +36,62 @@
 /datum/human_ai_brain/statue/say_need_healing_line()
 	return
 
+/datum/human_ai_brain/statue/proc/get_nearby_targets()
+	if(!COOLDOWN_FINISHED(src, nearby_targets_scan))
+		return FALSE
+
+	var/turf/current_turf = get_turf(tied_human)
+	if(!istype(current_turf))
+		return
+
+	range_bounds.set_shape(current_turf.x, current_turf.y, 12)
+
+	var/list/nearby_targets = SSquadtree.players_in_range(range_bounds, current_turf.z, QTREE_EXCLUDE_OBSERVER | QTREE_SCAN_MOBS)
+
+	for(var/mob/living/carbon/human/target as anything in nearby_targets)
+		if(target.stat)
+			continue
+		if(target.species?.group in allowed_target_species)
+			COOLDOWN_START(src, nearby_targets_scan, 5 SECONDS)
+			return TRUE
+
+	COOLDOWN_START(src, nearby_targets_scan, 1 SECONDS)
+	return FALSE
+
 /datum/human_ai_brain/statue/process(delta_time)
-	var/list/mobs_in_view = list()
 	var/list/watchers = list()
+	var/turf/current_turf = get_turf(tied_human)
 
-	var/turf/cur_turf = get_turf(tied_human)
-	var/movement_speed = 5
-
-	if(!COOLDOWN_FINISHED(src, movement_cooldown))
+	if(!COOLDOWN_FINISHED(src, processing_cooldown))
 		return
 
-	if(!istype(cur_turf))
+	if(!tied_human)
 		return
 
-	range_bounds.set_shape(cur_turf.x, cur_turf.y, 12)
+	if(!get_nearby_targets())	// nobody is around
+		return
 
-	mobs_in_view = oviewers(GLOB.world_view_size, tied_human)
+	var/list/mobs_in_view  = oviewers(GLOB.world_view_size, tied_human)
+
 	for(var/mob/living/carbon/human/viewer as anything in mobs_in_view)
+		if(!is_type_in_list(viewer.species.group, allowed_target_species))
+			mobs_in_view -= viewer
+			continue
 		if(!istype(viewer) || viewer.stat)
 			mobs_in_view -= viewer
 			continue
 	if(!length(mobs_in_view))
-		COOLDOWN_START(src, movement_cooldown, 10 SECONDS)
+		COOLDOWN_START(src, processing_cooldown, 2 SECONDS)	// they are close, we just cant see them
 		return
 
 	for(var/mob/living/carbon/human/possible_watcher as anything in mobs_in_view)
-		var/angle = Get_Angle(get_turf(possible_watcher), get_turf(tied_human))
+		var/angle = Get_Angle(get_turf(possible_watcher), current_turf)
 		var/list/watcher_directions = make_dir_cardinal(angle2dir(angle))
 		if(possible_watcher.dir in watcher_directions)
 			watchers |= possible_watcher
 			if(blinkers[possible_watcher])
 				continue
-			blinkers[possible_watcher] = world.time
+			blinkers[possible_watcher] = world.time	// first blink time
 
 	for(var/mob/living/carbon/human/watcher as anything in watchers)
 		if(!listgetindex(blinkers, watcher))
@@ -90,33 +104,29 @@
 			watchers -= watcher
 
 	if(length(watchers))
-		COOLDOWN_START(src, movement_cooldown, 0.5 SECONDS)
-		return	//kill proc here
+		COOLDOWN_START(src, processing_cooldown, 0.5 SECONDS)	// someone is looking at us
+		return
+
 	var/mob/living/carbon/human/target = pick(mobs_in_view)
 	var/turf/jump_turf
 	var/kill_on_arrival = FALSE
 
-	if(get_dist(target, tied_human) > movement_speed)
-		var/list/jump_path = get_line(get_turf(tied_human), get_turf(target), FALSE)
-		jump_turf = jump_path[movement_speed]
+	if(get_dist(target, tied_human) > blink_jump_range)
+		var/list/jump_path = get_line(current_turf, get_turf(target), FALSE)
+		jump_turf = jump_path[blink_jump_range]
+		playsound(current_turf, 'sound/scp/scare2.ogg')
 	else
 		jump_turf = get_turf(target)
-		kill_on_arrival = TRUE
-	if(!jump_turf)
-		return
-
-	for(var/mob/living/carbon/human/blinker in mobs_in_view)
-		blinker.overlay_fullscreen_timer(0.2 SECONDS, FALSE, "statue_blink", /atom/movable/screen/fullscreen/blind/full)
-
-	tied_human.dir = pick(make_dir_cardinal(get_dir(get_turf(tied_human), jump_turf)))
-	tied_human.forceMove(jump_turf)
-
-	if(kill_on_arrival)
-		playsound(get_turf(tied_human), 'sound/scp/firstpersonsnap2.ogg')
+		playsound(current_turf, 'sound/scp/firstpersonsnap2.ogg')
 		var/obj/limb/target_head = target.get_limb("head")
 		target.apply_damage(rand(100, 150), BRUTE, "head")
 		target_head.fracture(100)
 		target.death()
-	else
-		playsound(get_turf(tied_human), 'sound/scp/scare2.ogg')
-	COOLDOWN_START(src, movement_cooldown, 5 SECONDS)
+
+	tied_human.dir = pick(make_dir_cardinal(get_dir(current_turf, jump_turf)))
+	tied_human.forceMove(jump_turf)
+
+	for(var/mob/living/carbon/human/blinker as anything in mobs_in_view)
+		blinker.overlay_fullscreen_timer(0.2 SECONDS, FALSE, "statue_blink", /atom/movable/screen/fullscreen/blind/full)
+
+	COOLDOWN_START(src, processing_cooldown, 3 SECONDS)

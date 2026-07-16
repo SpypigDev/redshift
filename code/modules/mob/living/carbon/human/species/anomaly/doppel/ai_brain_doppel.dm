@@ -1,7 +1,11 @@
 // TO DO LIST
+// Combat:
+// - Leap
+// - Double slash
+// - Slash
 //
 
-/datum/human_ai_brain/duplicate
+/datum/human_ai_brain/doppelganger
 	/// The original mob the duplicant has copied
 	var/mob/living/carbon/human/alter
 	var/pretending_to_be_human = TRUE
@@ -24,6 +28,8 @@
 	ignore_looting = TRUE
 	COOLDOWN_DECLARE(replicate_speech)
 	COOLDOWN_DECLARE(pain_scream)
+	COOLDOWN_DECLARE(ability_thresh_cooldown)
+	COOLDOWN_DECLARE(ability_leap_cooldown)
 
 	var/static/list/pain_sounds = list(
 		'sound/voice/pred_pain5.ogg',
@@ -39,27 +45,27 @@
 
 	in_combat_line_chance = 100
 
-/datum/human_ai_brain/duplicate/say_in_combat_line(chance)
+/datum/human_ai_brain/doppelganger/say_in_combat_line(chance)
 	if(!length(enter_combat_lines) || !prob(chance) || (tied_human.health < HEALTH_THRESHOLD_CRIT))
 		return
 	tied_human.say(pick(enter_combat_lines))
 
-/datum/human_ai_brain/duplicate/say_exit_combat_line()
+/datum/human_ai_brain/doppelganger/say_exit_combat_line()
 	return
 
-/datum/human_ai_brain/duplicate/on_squad_member_death()
+/datum/human_ai_brain/doppelganger/on_squad_member_death()
 	return
 
-/datum/human_ai_brain/duplicate/say_grenade_thrown_line()
+/datum/human_ai_brain/doppelganger/say_grenade_thrown_line()
 	return
 
-/datum/human_ai_brain/duplicate/say_reload_line()
+/datum/human_ai_brain/doppelganger/say_reload_line()
 	return
 
-/datum/human_ai_brain/duplicate/say_need_healing_line()
+/datum/human_ai_brain/doppelganger/say_need_healing_line()
 	return
 
-/datum/human_ai_brain/duplicate/configure_custom_spawn(mob/living/carbon/human/target)
+/datum/human_ai_brain/doppelganger/configure_custom_spawn(mob/living/carbon/human/target)
 	var/datum/squad/alter_target_squad = tgui_input_list(usr, "Select a squad for [tied_human] to join", "Select a squad", GLOB.RoleAuthority.squads)
 	var/list/alters_list = list()
 	if (!alter_target_squad)
@@ -82,7 +88,7 @@
 	COOLDOWN_START(src, replicate_speech, 1 SECONDS)
 	COOLDOWN_START(src, pain_scream, 2 SECONDS)
 
-/datum/human_ai_brain/duplicate/process(delta_time)
+/datum/human_ai_brain/doppelganger/process(delta_time)
 	if(hold_position)
 		return
 	if(!alter)
@@ -106,7 +112,7 @@
 		quick_approach = get_turf(alter)
 	..()
 
-/datum/human_ai_brain/duplicate/proc/initial_contact_alter()
+/datum/human_ai_brain/doppelganger/proc/initial_contact_alter()
 	if(tied_human.client || !alter.client)
 		return
 	if(mimic_timer)
@@ -125,23 +131,23 @@
 	pretending_to_be_human = FALSE
 	hold_position = TRUE
 
-/datum/human_ai_brain/duplicate/proc/turn_off_armor_lights()
+/datum/human_ai_brain/doppelganger/proc/turn_off_armor_lights()
 	playsound(tied_human, pick('sound/voice/pred_laugh3.ogg', 'sound/voice/pred_over_there.ogg', 'sound/voice/pred_itsatrap.ogg', 'sound/voice/pred_helpme.ogg'), 25)
 	var/obj/item/clothing/suit/storage/marine/armor = tied_human.get_item_by_slot(WEAR_JACKET)
 	if(armor)
 		armor.turn_light(tied_human, FALSE)
 
-/datum/human_ai_brain/duplicate/proc/post_death()
+/datum/human_ai_brain/doppelganger/proc/post_death()
 	tied_human.clear_filters()
 	addtimer(CALLBACK(src, PROC_REF(transform_corpse)), 3 SECONDS)
 
-/datum/human_ai_brain/duplicate/proc/transform_corpse()
+/datum/human_ai_brain/doppelganger/proc/transform_corpse()
 	playsound(tied_human, 'sound/weapons/vehicles/flamethrower.ogg', 35)
 	tied_human.fire_stacks = 25	// avert your gaze
 	tied_human.IgniteMob(TRUE)
 	tied_human.name = "\improper mangled corpse"
 
-/datum/human_ai_brain/duplicate/proc/replicate_alter(mob/living/carbon/human/alter)
+/datum/human_ai_brain/doppelganger/proc/replicate_alter(mob/living/carbon/human/alter)
 	var/list/alter_equipment_list = list()
 	alter_equipment_list |= alter.get_equipped_items()
 	tied_human.create_hud()
@@ -169,11 +175,11 @@
 
 	tied_human.regenerate_icons()
 
-/datum/human_ai_brain/duplicate/unholster_melee()
+/datum/human_ai_brain/doppelganger/unholster_melee()
 	if(pretending_to_be_human)
 		return ..()
 
-/datum/human_ai_brain/duplicate/proc/scream_in_pain()
+/datum/human_ai_brain/doppelganger/proc/scream_in_pain()
 	if(!COOLDOWN_FINISHED(src, pain_scream))
 		return
 	// shh, we're trying to sleep
@@ -183,14 +189,14 @@
 
 	playsound(tied_human, pick(pain_sounds), 50)
 
-/datum/human_ai_brain/duplicate/proc/replicate_speech(source, message)
+/datum/human_ai_brain/doppelganger/proc/replicate_speech(source, message)
 	if(!COOLDOWN_FINISHED(src, replicate_speech))
 		return
 	COOLDOWN_START(src, replicate_speech, 1 SECONDS)
 
 	tied_human.say(message)
 
-/datum/human_ai_brain/duplicate/proc/engage_alter()
+/datum/human_ai_brain/doppelganger/proc/engage_alter()
 	if(pretending_to_be_human)
 		return
 	UnregisterSignal(alter, COMSIG_HUMAN_SAY)

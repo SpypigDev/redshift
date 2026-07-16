@@ -106,11 +106,14 @@ const AnomalyAISpawnerr = (props) => {
                 </Box>
               </Stack.Item>
               <Stack.Item className="AnomalyInfo" height="90%">
-                {chosenPreset ? chosenPreset.description : 'NULL'}
+                {chosenPreset ? chosenPreset.description : ''}
               </Stack.Item>
             </Stack>
             <Button
               textAlign="center"
+              className="AnomalySpawner__SpawnButton"
+              fontSize={1.1}
+              bold
               width="100%"
               onClick={() =>
                 act('create_ai', {
@@ -118,7 +121,7 @@ const AnomalyAISpawnerr = (props) => {
                 })
               }
             >
-              Spawns
+              - SPAWN ENTITY -
             </Button>
           </Stack>
         </Stack.Item>

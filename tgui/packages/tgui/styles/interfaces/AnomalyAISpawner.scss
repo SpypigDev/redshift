@@ -53,10 +53,17 @@
   background-color: #00e94e;
 }
 
-.AnomalySpawner__FuelButton {
+.AnomalySpawner__SpawnButton {
   border: 1px solid #00e94e;
   color: #00e94e;
-  background-color: transparent;
+  background-color: #02b83e42;
+  font-family: monospace;
+  stroke: 1px solid #00e94e;
+  border-radius: 0px;
+  &:hover {
+    background-color: #00e94ecc;
+    color: black;
+  }
 }
 
 .AnomalySpawner__Readout {

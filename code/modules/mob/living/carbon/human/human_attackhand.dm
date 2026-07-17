@@ -84,7 +84,7 @@
 			msg_admin_attack("[key_name(attacking_mob)] [pick(attack.attack_verb)]ed [key_name(src)] in [get_area(src)] ([src.loc.x],[src.loc.y],[src.loc.z]).", src.loc.x, src.loc.y, src.loc.z)
 
 			attacking_mob.animation_attack_on(src)
-			attacking_mob.flick_attack_overlay(src, attack.attack_icon || "punch")
+			attacking_mob.flick_attack_overlay(src, attack.attack_icon ? attack.attack_icon : "punch")
 
 			var/extra_cqc_dmg = 0 //soft maximum of 5, this damage is added onto the final value depending on how much cqc skill you have
 			if(attacking_mob.skills)

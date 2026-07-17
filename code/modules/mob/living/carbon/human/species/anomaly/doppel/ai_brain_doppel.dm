@@ -30,7 +30,7 @@
 	COOLDOWN_DECLARE(pain_scream)
 	COOLDOWN_DECLARE(ability_thresh_cooldown)
 	COOLDOWN_DECLARE(ability_leap_cooldown)
-	COOLDOWN_DECLARE(ability_leap_retargeting_cooldown)
+	COOLDOWN_DECLARE(ability_retargeting_cooldown)
 
 	var/static/list/pain_sounds = list(
 		'sound/voice/pred_pain5.ogg',
@@ -85,6 +85,7 @@
 	alter = target_alter
 	neutral_factions |= alter.faction
 	replicate_alter(alter)
+	tied_human.status_flags |= NO_PERMANENT_DAMAGE
 	RegisterSignal(tied_human, COMSIG_MOB_DEATH, PROC_REF(post_death), TRUE)
 	COOLDOWN_START(src, replicate_speech, 1 SECONDS)
 	COOLDOWN_START(src, pain_scream, 2 SECONDS)
@@ -112,11 +113,6 @@
 				break
 	else if(pretending_to_be_human && distance_to_alter < 36)
 		quick_approach = get_turf(alter)
-	var/mob/target_mob = current_target
-	var/forced_retarget = FALSE
-	if(ismob(current_target) && target_mob?.is_mob_incapacitated() && !pretending_to_be_human)
-		forced_retarget = TRUE
-	retargeting(ceil(rand(2, 5)), forced_retarget)
 
 	..()
 
@@ -169,19 +165,6 @@
 		return
 
 	..()
-
-/datum/human_ai_brain/doppelganger/proc/retargeting(time_override = 2, forced = FALSE)
-
-	if(!COOLDOWN_FINISHED(src, ability_leap_retargeting_cooldown) && !forced)
-		return
-
-	COOLDOWN_START(src, ability_leap_retargeting_cooldown, time_override SECONDS)
-
-	var/mob/new_target = get_target(TRUE)
-
-	if(new_target != current_target)
-		lose_target()
-		set_target(new_target)
 
 /datum/human_ai_brain/doppelganger/proc/replicate_alter(mob/living/carbon/human/alter)
 	var/list/alter_equipment_list = list()

@@ -174,6 +174,7 @@
 	var/mob/new_target = get_target(TRUE)
 
 	if(new_target != current_target)
+		lose_target()
 		set_target(new_target)
 
 /datum/human_ai_brain/doppelganger/proc/replicate_alter(mob/living/carbon/human/alter)

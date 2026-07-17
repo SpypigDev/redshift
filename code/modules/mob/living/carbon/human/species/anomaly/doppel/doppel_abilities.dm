@@ -5,6 +5,7 @@
 	name = "Lunge at Target"
 	action_flags = ACTION_USING_LEGS
 	var/leaping = FALSE
+	var/turf/lunge_turf
 
 /datum/ai_action/doppel/lunge_at_target/get_weight(datum/human_ai_brain/brain)
 
@@ -51,6 +52,9 @@
 			INVOKE_ASYNC(doppel_brain.current_target, TYPE_PROC_REF(/mob, emote), "scream")
 		return ONGOING_ACTION_COMPLETED
 
+	if(get_turf(doppel) == lunge_turf)	// you missed
+		return ONGOING_ACTION_COMPLETED
+
 	if(leaping)
 		return ONGOING_ACTION_UNFINISHED_BLOCK
 
@@ -62,8 +66,10 @@
 
 	leaping = TRUE
 	doppel.emote("roar")
+	if(!lunge_turf)
+		lunge_turf = get_turf(doppel_brain.current_target)
 	doppel.visible_message(SPAN_WARNING("[doppel] lunges towards [doppel_brain.current_target]!"), SPAN_WARNING("We lunge at [doppel_brain.current_target]!"))
-	INVOKE_ASYNC(doppel, TYPE_PROC_REF(/atom/movable, throw_atom), get_step_towards(doppel_brain.current_target, doppel), 3, SPEED_FAST, doppel)
+	INVOKE_ASYNC(doppel, TYPE_PROC_REF(/atom/movable, throw_atom), get_step_towards(lunge_turf, doppel), 3, SPEED_FAST, doppel)
 
 	return ONGOING_ACTION_UNFINISHED_BLOCK
 

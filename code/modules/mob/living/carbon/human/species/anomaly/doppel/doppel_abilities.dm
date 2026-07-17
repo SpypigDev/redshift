@@ -6,6 +6,7 @@
 	action_flags = ACTION_USING_LEGS
 	var/leaping = FALSE
 	var/turf/lunge_turf
+	var/turf/origin_turf
 
 /datum/ai_action/doppel/lunge_at_target/get_weight(datum/human_ai_brain/brain)
 
@@ -52,7 +53,7 @@
 			INVOKE_ASYNC(doppel_brain.current_target, TYPE_PROC_REF(/mob, emote), "scream")
 		return ONGOING_ACTION_COMPLETED
 
-	if(get_turf(doppel) == lunge_turf)	// you missed
+	if(get_dist(doppel, origin_turf) >= 3)	// you missed, but it was close enough
 		return ONGOING_ACTION_COMPLETED
 
 	if(leaping)
@@ -66,6 +67,8 @@
 
 	leaping = TRUE
 	doppel.emote("roar")
+	if(!origin_turf)
+		origin_turf = get_turf(doppel)
 	if(!lunge_turf)
 		lunge_turf = get_turf(doppel_brain.current_target)
 	doppel.visible_message(SPAN_WARNING("[doppel] lunges towards [doppel_brain.current_target]!"), SPAN_WARNING("We lunge at [doppel_brain.current_target]!"))
@@ -107,19 +110,21 @@
 	. = ..()
 
 	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
+	if(!doppel_brain.current_target)
+		return ONGOING_ACTION_COMPLETED
 	var/mob/living/carbon/target = doppel_brain.current_target
 	var/mob/living/carbon/human/doppel = doppel_brain.tied_human
 
 	doppel.drop_held_items()
 
 	doppel.visible_message(SPAN_DANGER("[doppel] threshes [target]!"))
-	doppel.flick_attack_overlay(target, "double_slash")
+	doppel.flick_attack_overlay(target, "tail")
 	var/resolve_name = doppel_brain:alter ? doppel_brain:alter : "Doppelganger"
 	target.last_damage_data = create_cause_data(resolve_name, doppel)
 
 	target.apply_armoured_damage(get_xeno_damage_slash(target, 40), ARMOR_MELEE, BRUTE, rand_zone())
 	playsound(get_turf(target), 'sound/weapons/alien_claw_flesh3.ogg', 30, TRUE)
-	addtimer(CALLBACK(src, GLOBAL_PROC_REF(playsound), get_turf(target), 'sound/weapons/alien_tail_attack.ogg', 40, TRUE), 0.1 SECONDS)
+	addtimer(CALLBACK(src, GLOBAL_PROC_REF(playsound), get_turf(target), 'sound/weapons/alien_tail_attack.ogg', 40, TRUE), 0.2 SECONDS)
 
 	doppel.animation_attack_on(target)
 	target.sway_jitter(times = 2)

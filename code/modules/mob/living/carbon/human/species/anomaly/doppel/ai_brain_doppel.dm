@@ -116,7 +116,7 @@
 	var/forced_retarget = FALSE
 	if(ismob(current_target) && target_mob?.is_mob_incapacitated() && !pretending_to_be_human)
 		forced_retarget = TRUE
-	retargeting(ceil(rand(1, 3)), forced_retarget)
+	retargeting(ceil(rand(2, 5)), forced_retarget)
 
 	..()
 
@@ -163,6 +163,12 @@
 	tied_human.fire_stacks = 25	// avert your gaze
 	tied_human.IgniteMob(TRUE)
 	tied_human.name = "\improper mangled corpse"
+
+/datum/human_ai_brain/doppelganger/on_shot()
+	if(!pretending_to_be_human)
+		return
+
+	..()
 
 /datum/human_ai_brain/doppelganger/proc/retargeting(time_override = 2, forced = FALSE)
 
@@ -243,6 +249,7 @@
 	tied_human.faction = FACTION_ANOMALY
 	friendly_factions = list()
 	neutral_factions = list(FACTION_ANOMALY)
+	shoot_to_kill = FALSE
 	set_target(alter)
 	tied_human.r_eyes = 255
 	tied_human.g_eyes = 0

@@ -3,6 +3,7 @@
 	var/attack_verb = list("attack") // Empty hand hurt intent verb.
 	var/damage = 0 // Extra empty hand attack damage.
 	var/attack_sound = "punch"
+	var/attack_icon = "punch"
 	var/miss_sound = 'sound/weapons/punchmiss.ogg'
 	var/shredding = FALSE // Calls the old attack_alien() behavior on objects/mobs when on harm intent.
 	var/sharp = FALSE
@@ -61,6 +62,19 @@
 	attack_verb = list("slash")
 	damage = 25
 	shredding = TRUE
+
+/datum/unarmed_attack/claws/shredding/sharper
+	attack_verb = list("slash")
+	attack_icon = "slash"
+	attack_sound = list(
+		'sound/weapons/alien_claw_flesh4.ogg',
+		'sound/weapons/alien_claw_flesh2.ogg',
+		'sound/weapons/alien_claw_flesh5.ogg'
+	)
+	damage = 35
+	shredding = TRUE
+	sharp = TRUE
+	edge = TRUE
 
 /datum/unarmed_attack/bite/strong
 	attack_verb = list("maul")

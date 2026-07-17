@@ -5,10 +5,10 @@
 	name_plural = "Doppelgangers"
 	uses_skin_color = TRUE
 	special_body_types = TRUE
-	unarmed_type = /datum/unarmed_attack/claws/shredding
+	unarmed_type = /datum/unarmed_attack/claws/shredding/sharper
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
 	pain_type = /datum/pain/anomaly
-	flags = NO_CLONE_LOSS|NO_POISON|NO_NEURO|HAS_UNDERWEAR
+	flags = NO_POISON|NO_NEURO|HAS_UNDERWEAR
 	default_ai_brain_type = /datum/human_ai_brain/doppelganger
 	gibbed_anim = "gibbed-h"
 	dusted_anim = "dust-h"
@@ -19,7 +19,7 @@
 	death_message = "falls still, one last inhuman screech escaping their stolen lungs..."
 	speech_sounds = list('sound/voice/hiss2.ogg', 'sound/voice/hiss3.ogg', 'sound/voice/hiss4.ogg')
 	speech_chance = 100
-	brute_mod = 0.5
+	brute_mod = 0.25
 	burn_mod = 2
 
 //datum/species/anomaly/doppelganger/handle_on_fire(humanoidmob)

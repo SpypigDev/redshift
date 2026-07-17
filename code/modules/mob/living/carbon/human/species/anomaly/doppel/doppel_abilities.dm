@@ -1,3 +1,6 @@
+#define MAX_DOPPEL_LUNGE_RANGE 5
+#define MIN_DOPPEL_LUNGE_RANGE 2
+
 /datum/ai_action/doppel
 	action_species_whitelist = list("Doppelganger")
 
@@ -5,8 +8,9 @@
 	name = "Lunge at Target"
 	action_flags = ACTION_USING_LEGS
 	var/leaping = FALSE
+	var/landed = FALSE
 	var/turf/lunge_turf
-	var/turf/origin_turf
+	var/list/lunge_path
 
 /datum/ai_action/doppel/lunge_at_target/get_weight(datum/human_ai_brain/brain)
 
@@ -41,8 +45,28 @@
 
 	var/distance = get_dist(doppel_brain.tied_human, current_target)
 
-	if(distance == 3)
+	if(distance <= MIN_DOPPEL_LUNGE_RANGE)
+		return lunge_target(doppel_brain)
+
+	if(distance <= MAX_DOPPEL_LUNGE_RANGE)
 		return ACTION_WEIGHT_DOPPEL_LUNGE
+
+/datum/ai_action/doppel/proc/lunge_target(datum/human_ai_brain/doppelganger/brain)
+	if(!COOLDOWN_FINISHED(brain, ability_retargeting_cooldown))
+		return 0
+
+	var/mob/new_target = brain.get_target(TRUE)
+
+	var/distance = get_dist(brain.tied_human, brain.current_target)
+	if(new_target == brain.current_target || distance != clamp(distance, MIN_DOPPEL_LUNGE_RANGE, MAX_DOPPEL_LUNGE_RANGE))
+		return 0
+
+	brain.lose_target()
+	brain.set_target(new_target)
+
+	COOLDOWN_START(brain, ability_retargeting_cooldown, 2 SECONDS)
+
+	return ACTION_WEIGHT_DOPPEL_LUNGE
 
 /datum/ai_action/doppel/lunge_at_target/trigger_action()
 	. = ..()
@@ -52,19 +76,21 @@
 
 	COOLDOWN_START(doppel_brain, ability_leap_cooldown, 2 SECONDS)
 
-	if(doppel.Adjacent(doppel_brain.current_target))
+	if(landed && doppel.Adjacent(doppel_brain.current_target))
 		doppel_brain.ongoing_actions += new /datum/ai_action/doppel/thresh(doppel_brain)
 		if(ishuman(doppel_brain.current_target))
 			INVOKE_ASYNC(doppel_brain.current_target, TYPE_PROC_REF(/mob, emote), "scream")
 		return ONGOING_ACTION_COMPLETED
 
-	if(!origin_turf)
-		origin_turf = get_turf(doppel)
-	if(doppel.Adjacent(lunge_turf))	// you missed, but it was close enough
+	if(landed)
 		return ONGOING_ACTION_COMPLETED
 
-	if(leaping)
-		return ONGOING_ACTION_UNFINISHED_BLOCK
+	if(!lunge_path)
+		lunge_path = get_line(get_turf(doppel), get_turf(doppel_brain.current_target))
+		lunge_turf = get_turf(doppel_brain.current_target)
+
+	//if(!locate(get_turf(doppel)) in lunge_path)	// stay on the beaten track next time
+	//	return ONGOING_ACTION_COMPLETED
 
 	if(!doppel_brain.current_target)
 		return	ONGOING_ACTION_COMPLETED
@@ -72,14 +98,19 @@
 	if(doppel.stat || doppel_brain.pretending_to_be_human)
 		return ONGOING_ACTION_COMPLETED
 
+	if(leaping)
+		return ONGOING_ACTION_UNFINISHED_BLOCK
+
 	leaping = TRUE
 	doppel.emote("roar")
-	if(!lunge_turf)
-		lunge_turf = get_turf(doppel_brain.current_target)
 	doppel.visible_message(SPAN_WARNING("[doppel] lunges towards [doppel_brain.current_target]!"), SPAN_WARNING("We lunge at [doppel_brain.current_target]!"))
-	INVOKE_ASYNC(doppel, TYPE_PROC_REF(/atom/movable, throw_atom), get_step_towards(lunge_turf, doppel), 3, SPEED_FAST, doppel)
+	var/list/throwing_callbacks = list(CALLBACK(src, PROC_REF(handle_post_lunge)))
+	INVOKE_ASYNC(doppel, TYPE_PROC_REF(/atom/movable, throw_atom), get_step_towards(lunge_turf, doppel), MAX_DOPPEL_LUNGE_RANGE, SPEED_FAST, doppel, FALSE, NORMAL_LAUNCH, NO_FLAGS, throwing_callbacks)
 
 	return ONGOING_ACTION_UNFINISHED_BLOCK
+
+/datum/ai_action/doppel/lunge_at_target/proc/handle_post_lunge()
+	landed = TRUE
 
 /datum/ai_action/doppel/thresh
 	name = "Flurry Slash"
@@ -152,7 +183,6 @@
 		return 0
 
 	var/mob/current_target = brain.current_target
-	var/mob/living/carbon/human/doppel = brain?.tied_human
 
 	if(!ismob(current_target))
 		return 0
@@ -163,12 +193,13 @@
 	if(!COOLDOWN_FINISHED(brain, ability_retargeting_cooldown))
 		return
 
-	COOLDOWN_START(brain, ability_retargeting_cooldown, ceil(rand(2, 4)) SECONDS)
-
 	return ACTION_WEIGHT_DOPPEL_RETARGET
 
 /datum/ai_action/doppel/retarget/trigger_action()
 	. = ..()
+
+	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
+	COOLDOWN_START(doppel_brain, ability_retargeting_cooldown, ceil(rand(4, 6)) SECONDS)
 
 	var/mob/new_target = brain.get_target(TRUE)
 
@@ -177,3 +208,6 @@
 		brain.set_target(new_target)
 
 	return ONGOING_ACTION_COMPLETED
+
+#undef MAX_DOPPEL_LUNGE_RANGE
+#undef MIN_DOPPEL_LUNGE_RANGE

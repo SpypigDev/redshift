@@ -133,6 +133,7 @@
 		/datum/ai_action/walk_melee,
 		/datum/ai_action/doppel/thresh,
 		/datum/ai_action/doppel/lunge_at_target,
+		/datum/ai_action/doppel/retarget,
 		/datum/ai_action/chase_target,
 		/datum/ai_action/quick_approach
 	)
@@ -140,12 +141,14 @@
 	mimic_timer = addtimer(CALLBACK(src, PROC_REF(engage_alter)), 6 SECONDS, TIMER_STOPPABLE)
 	addtimer(CALLBACK(src, PROC_REF(turn_off_armor_lights)), 4 SECONDS)
 	if(alter.client)
+		addtimer(CALLBACK(src, GLOBAL_PROC_REF(playsound_client), alter.client, 'sound/voice/pred_laugh3.ogg', alter, 25), 2 SECONDS)
+		addtimer(CALLBACK(src, GLOBAL_PROC_REF(show_blurb), alter, 3, "that's not human...", null, "center", "center", "#680000", null, null, 1), 2 SECONDS)
 		RegisterSignal(alter, COMSIG_HUMAN_SAY, PROC_REF(replicate_speech))
 	pretending_to_be_human = FALSE
 	hold_position = TRUE
 
 /datum/human_ai_brain/doppelganger/proc/turn_off_armor_lights()
-	playsound(tied_human, pick('sound/voice/pred_laugh3.ogg', 'sound/voice/pred_over_there.ogg', 'sound/voice/pred_itsatrap.ogg', 'sound/voice/pred_helpme.ogg'), 25)
+	playsound(tied_human, pick('sound/voice/pred_over_there.ogg', 'sound/voice/pred_itsatrap.ogg', 'sound/voice/pred_helpme.ogg'), 25)
 	var/obj/item/clothing/suit/storage/marine/armor = tied_human.get_item_by_slot(WEAR_JACKET)
 	if(armor)
 		armor.turn_light(tied_human, FALSE)
@@ -221,7 +224,9 @@
 		return
 	UnregisterSignal(alter, COMSIG_HUMAN_SAY)
 	tied_human.emote("roar")
-	tied_human.speed = -1.5
+	tied_human.speed = -2
+	tied_human.blind_luck = 85
+	addtimer(CALLBACK(src, PROC_REF(reset_bullet_evasion)), 3 SECONDS)
 	playsound(tied_human, 'sound/weapons/wristblades_on.ogg', 25)
 	tied_human.add_filter("empower_rage", 1, list("type" = "outline", "color" = "#440202", "size" = 1))
 	mimic_timer = null
@@ -242,6 +247,9 @@
 	RegisterSignal(tied_human, COMSIG_HUMAN_BULLET_ACT, PROC_REF(scream_in_pain), TRUE)
 
 	enter_combat()
+
+/datum/human_ai_brain/doppelganger/proc/reset_bullet_evasion()
+	tied_human.blind_luck = 30
 
 /datum/human_ai_brain/doppelganger/exit_combat()
 	if(!pretending_to_be_human)

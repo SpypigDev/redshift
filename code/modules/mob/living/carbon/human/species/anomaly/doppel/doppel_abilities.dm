@@ -1,61 +1,69 @@
 /datum/ai_action/doppel
-	whitelisted_brain_types = list("Doppelganger")
+	action_species_whitelist = list("Doppelganger")
 
 /datum/ai_action/doppel/lunge_at_target
 	name = "Lunge at Target"
 	action_flags = ACTION_USING_LEGS
 	var/leaping = FALSE
 
-/datum/ai_action/doppel/lunge_at_target/get_weight(datum/human_ai_brain/doppelganger/brain)
-	var/atom/movable/current_target = brain.current_target
+/datum/ai_action/doppel/lunge_at_target/get_weight(datum/human_ai_brain/brain)
+
+	if(!brain)
+		return 0
+
+	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
+	var/atom/movable/current_target = doppel_brain.current_target
 
 	if(!current_target)
 		return 0
 
-	if(brain.pretending_to_be_human)
+	if(doppel_brain.pretending_to_be_human)
 		return 0
-
-	var/distance = get_dist(brain.tied_human, current_target)
 
 	if(!ismob(current_target))	// how did you even get here
 		return 0
 
-	if(brain.in_cover)
+	if(doppel_brain.in_cover)
 		return 0
 
-	if(!COOLDOWN_FINISHED(brain, ability_leap_cooldown))
+	if(!COOLDOWN_FINISHED(doppel_brain, ability_leap_cooldown))
 		return 0
 
-	COOLDOWN_START(brain, ability_leap_cooldown, 2 SECONDS)
+	if(doppel_brain.tied_human.Adjacent(doppel_brain.current_target))
+		doppel_brain.retargeting(forced=TRUE)
 
-	if(distance <= 3)
+	var/distance = get_dist(doppel_brain.tied_human, current_target)
+
+	if(distance == 3)
 		return ACTION_WEIGHT_DOPPLE_LUNGE
 
-/datum/ai_action/doppel/lunge_at_target/trigger_action(datum/human_ai_brain/doppelganger/brain)
+/datum/ai_action/doppel/lunge_at_target/trigger_action()
 	. = ..()
 
-	var/mob/living/carbon/human/doppel = brain.tied_human
+	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
+	var/mob/living/carbon/human/doppel = doppel_brain.tied_human
 
-	if(doppel.Adjacent(brain.current_target))
-		var/datum/ai_action/doppel/thresh/thresh = get_action(brain.tied_human, /datum/ai_action/doppel/thresh)
-		thresh.trigger_action(brain.current_target)
-		if(ishuman(brain.current_target))
-			INVOKE_ASYNC(brain.current_target, TYPE_PROC_REF(/mob, emote), "scream")
+	COOLDOWN_START(doppel_brain, ability_leap_cooldown, 2 SECONDS)
+
+	if(doppel.Adjacent(doppel_brain.current_target))
+		doppel_brain.ongoing_actions += new /datum/ai_action/doppel/thresh(doppel_brain)
+		if(ishuman(doppel_brain.current_target))
+			INVOKE_ASYNC(doppel_brain.current_target, TYPE_PROC_REF(/mob, emote), "scream")
 		return ONGOING_ACTION_COMPLETED
 
 	if(leaping)
 		return ONGOING_ACTION_UNFINISHED_BLOCK
 
-	if(!brain.current_target)
+	if(!doppel_brain.current_target)
 		return	ONGOING_ACTION_COMPLETED
 
-	if(!doppel.stat || brain?:pretending_to_be_human)
+	if(doppel.stat || doppel_brain.pretending_to_be_human)
 		return ONGOING_ACTION_COMPLETED
 
 	leaping = TRUE
 	doppel.emote("roar")
-	doppel.visible_message(SPAN_WARNING("[doppel] lunges towards [brain.current_target]!"), SPAN_WARNING("We lunge at [brain.current_target]!"))
-	INVOKE_ASYNC(doppel, TYPE_PROC_REF(/atom/movable, throw_atom), get_step_towards(brain.current_target, doppel), 3, SPEED_FAST, doppel)
+	doppel.visible_message(SPAN_WARNING("[doppel] lunges towards [doppel_brain.current_target]!"), SPAN_WARNING("We lunge at [doppel_brain.current_target]!"))
+	INVOKE_ASYNC(doppel, TYPE_PROC_REF(/atom/movable, throw_atom), get_step_towards(doppel_brain.current_target, doppel), 3, SPEED_FAST, doppel)
 
 	return ONGOING_ACTION_UNFINISHED_BLOCK
 
@@ -63,23 +71,28 @@
 	name = "Flurry Slash"
 	action_flags = ACTION_USING_HANDS
 
-/datum/ai_action/doppel/thresh/get_weight(datum/human_ai_brain/doppelganger/brain)
-	var/atom/movable/current_target = brain.current_target
-	var/mob/living/carbon/human/doppel = brain.tied_human
+/datum/ai_action/doppel/thresh/get_weight(datum/human_ai_brain/brain)
+
+	if(!brain)
+		return 0
+
+	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
+	var/atom/movable/current_target = doppel_brain.current_target
+	var/mob/living/carbon/human/doppel = doppel_brain?.tied_human
 
 	if(!current_target)
 		return 0
 
-	if(brain?:pretending_to_be_human)
+	if(doppel_brain.pretending_to_be_human)
 		return 0
 
 	if(ismob(current_target) && current_target?:is_mob_incapacitated())
 		return 0
 
-	if(!COOLDOWN_FINISHED(brain, ability_thresh_cooldown))
+	if(!COOLDOWN_FINISHED(doppel_brain, ability_thresh_cooldown))
 		return 0
 
-	COOLDOWN_START(brain, ability_thresh_cooldown, 3 SECONDS)
+	COOLDOWN_START(doppel_brain, ability_thresh_cooldown, 3 SECONDS)
 
 	if(doppel.Adjacent(current_target))
 		return ACTION_WEIGHT_DOPPLE_THRESH
@@ -87,14 +100,15 @@
 /datum/ai_action/doppel/thresh/trigger_action()
 	. = ..()
 
-	var/mob/living/carbon/target = brain.current_target
-	var/mob/living/carbon/human/doppel = brain.tied_human
+	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
+	var/mob/living/carbon/target = doppel_brain.current_target
+	var/mob/living/carbon/human/doppel = doppel_brain.tied_human
 
 	doppel.drop_held_items()
 
 	doppel.visible_message(SPAN_DANGER("[doppel] threshes [target]!"))
 	doppel.flick_attack_overlay(target, "double_slash")
-	var/resolve_name = brain:alter ? brain:alter : "Doppelganger"
+	var/resolve_name = doppel_brain:alter ? doppel_brain:alter : "Doppelganger"
 	target.last_damage_data = create_cause_data(resolve_name, doppel)
 
 	target.apply_armoured_damage(get_xeno_damage_slash(target, 40), ARMOR_MELEE, BRUTE, rand_zone())

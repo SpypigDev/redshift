@@ -136,11 +136,13 @@ GLOBAL_LIST_EMPTY(human_ai_brains)
 	item_search(range(2, tied_human))
 
 	// List all allowed action types for AI to consider
-	var/list/allowed_actions = action_whitelist || (GLOB.AI_actions.Copy() - action_blacklist)
-	for(var/datum/ai_action/action in allowed_actions)
-		if(LAZYLEN(action.whitelisted_brain_types))
-			if(!locate(action.brain.tied_human?.get_species()) in action.whitelisted_brain_types)
-				allowed_actions -= action
+	var/list/allowed_actions = LAZYLEN(action_whitelist) ? action_whitelist.Copy() : (GLOB.AI_actions.Copy() - action_blacklist)
+	for(var/action_index as anything in allowed_actions)
+		var/datum/ai_action/action = GLOB.AI_actions[action_index]
+		if(LAZYLEN(action.action_species_whitelist))
+			if(tied_human?.get_species() in action.action_species_whitelist)
+				continue
+			allowed_actions -= action_index
 	for(var/datum/ongoing_action as anything in ongoing_actions)
 		if(is_type_in_list(ongoing_action, allowed_actions))
 			allowed_actions -= ongoing_action.type

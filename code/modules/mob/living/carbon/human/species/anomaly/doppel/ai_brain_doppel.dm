@@ -16,7 +16,7 @@
 	medium_action_delay = 2 SECONDS
 	long_action_delay = 5 SECONDS
 	/// Global multiplier for all AI action delays
-	action_delay_mult = 2 // Doubled from 1, gives hAI a believable time between actions
+	action_delay_mult = 1 // Doubled from 1, gives hAI a believable time between actions
 	/// Factions that the AI won't engage in hostilities with. Controlled by the AI's faction
 	friendly_factions = list()
 	/// Factions that the AI will not become hostile to unless attacked
@@ -30,6 +30,7 @@
 	COOLDOWN_DECLARE(pain_scream)
 	COOLDOWN_DECLARE(ability_thresh_cooldown)
 	COOLDOWN_DECLARE(ability_leap_cooldown)
+	COOLDOWN_DECLARE(ability_leap_retargeting_cooldown)
 
 	var/static/list/pain_sounds = list(
 		'sound/voice/pred_pain5.ogg',
@@ -107,13 +108,20 @@
 
 			if(viewing_mob == alter)
 				initial_contact_alter()
+				quick_approach = null
 				break
-	if(distance_to_alter < 36)
+	else if(pretending_to_be_human && distance_to_alter < 36)
 		quick_approach = get_turf(alter)
+	var/mob/target_mob = current_target
+	var/forced_retarget = FALSE
+	if(ismob(current_target) && target_mob?.is_mob_incapacitated() && !pretending_to_be_human)
+		forced_retarget = TRUE
+	retargeting(ceil(rand(1, 3)), forced_retarget)
+
 	..()
 
 /datum/human_ai_brain/doppelganger/proc/initial_contact_alter()
-	if(tied_human.client || !alter.client)
+	if(tied_human.client)
 		return
 	if(mimic_timer)
 		return
@@ -125,9 +133,18 @@
 	for(var/obj/item/weapon as anything in secondary_weapons)
 		qdel(weapon)
 
+	action_whitelist = list(
+		/datum/ai_action/walk_melee,
+		/datum/ai_action/doppel/thresh,
+		/datum/ai_action/doppel/lunge_at_target,
+		/datum/ai_action/chase_target,
+		/datum/ai_action/quick_approach
+	)
+
 	mimic_timer = addtimer(CALLBACK(src, PROC_REF(engage_alter)), 6 SECONDS, TIMER_STOPPABLE)
 	addtimer(CALLBACK(src, PROC_REF(turn_off_armor_lights)), 4 SECONDS)
-	RegisterSignal(alter, COMSIG_HUMAN_SAY, PROC_REF(replicate_speech))
+	if(alter.client)
+		RegisterSignal(alter, COMSIG_HUMAN_SAY, PROC_REF(replicate_speech))
 	pretending_to_be_human = FALSE
 	hold_position = TRUE
 
@@ -147,10 +164,23 @@
 	tied_human.IgniteMob(TRUE)
 	tied_human.name = "\improper mangled corpse"
 
+/datum/human_ai_brain/doppelganger/proc/retargeting(time_override = 2, forced = FALSE)
+
+	if(!COOLDOWN_FINISHED(src, ability_leap_retargeting_cooldown) && !forced)
+		return
+
+	COOLDOWN_START(src, ability_leap_retargeting_cooldown, time_override SECONDS)
+
+	var/mob/new_target = get_target(TRUE)
+
+	if(new_target != current_target)
+		set_target(new_target)
+
 /datum/human_ai_brain/doppelganger/proc/replicate_alter(mob/living/carbon/human/alter)
 	var/list/alter_equipment_list = list()
 	alter_equipment_list |= alter.get_equipped_items()
 	tied_human.create_hud()
+	tied_human.faction = alter.faction
 	for(var/obj/item/item in alter_equipment_list)
 		var/obj/item/new_item = new item.type()
 		tied_human.equip_to_appropriate_slot(new_item)
@@ -209,10 +239,10 @@
 	//tied_human.has_fine_manipulation = FALSE
 	tied_human.a_intent_change(INTENT_HARM)
 	hold_position = FALSE
-	friendly_factions -= alter.faction
-	neutral_factions -= alter.faction
-	current_target = alter
-	quick_approach = get_turf(alter)
+	tied_human.faction = FACTION_ANOMALY
+	friendly_factions = list()
+	neutral_factions = list(FACTION_ANOMALY)
+	set_target(alter)
 	tied_human.r_eyes = 255
 	tied_human.g_eyes = 0
 	tied_human.b_eyes = 0
@@ -221,3 +251,9 @@
 	RegisterSignal(tied_human, COMSIG_HUMAN_BULLET_ACT, PROC_REF(scream_in_pain), TRUE)
 
 	enter_combat()
+
+/datum/human_ai_brain/doppelganger/exit_combat()
+	if(!pretending_to_be_human)
+		return
+	..()
+

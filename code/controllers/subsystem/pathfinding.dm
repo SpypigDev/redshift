@@ -87,7 +87,7 @@ SUBSYSTEM_DEF(pathfinding)
 				for(var/index in 1 to length(expansion_nodes) + 1)
 					var/list/indexed_node = listgetindex(expansion_nodes, index)
 					var/indexed_f_distance = indexed_node ? indexed_node["f_distance"] : 100	// protects against null references
-					neighbor.maptext = "<h3>[f_distance]</h3>"
+					//neighbor.maptext = "<h3>[f_distance]</h3>"
 					if(indexed_f_distance > f_distance)
 						expansion_nodes.Insert(index, list(list("node" = neighbor, "f_distance" = f_distance)))
 						visited_nodes[neighbor] = distance_between

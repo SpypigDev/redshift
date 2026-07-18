@@ -69,7 +69,7 @@
 	attack_sound = list(
 		'sound/weapons/alien_claw_flesh4.ogg',
 		'sound/weapons/alien_claw_flesh2.ogg',
-		'sound/weapons/alien_claw_flesh5.ogg'
+		'sound/weapons/alien_claw_flesh5.ogg',
 	)
 	damage = 35
 	shredding = TRUE

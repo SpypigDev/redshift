@@ -41,12 +41,15 @@
 			return list[index]
 	return
 
-//Checks for specific types in a list
-/proc/is_type_in_list(atom/A, list/L)
-	for(var/type in L)
-		if(istype(A, type))
-			return 1
-	return 0
+///Checks if the needle atom is any type in the type_list
+/proc/is_type_in_list(atom/needle, list/type_list, return_atom = FALSE)
+	for(var/type in type_list)
+		if(!istype(needle, type))
+			continue
+		if(return_atom)
+			return type
+		return TRUE
+	return FALSE
 
 //Removes any null entries from the list
 /proc/listclearnulls(list/list)

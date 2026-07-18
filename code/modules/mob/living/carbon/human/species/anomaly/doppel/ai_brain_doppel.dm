@@ -36,7 +36,7 @@
 		'sound/voice/pred_pain5.ogg',
 		'sound/voice/pred_pain4.ogg',
 		'sound/voice/pred_pain3.ogg',
-		'sound/voice/pred_pain2.ogg'
+		'sound/voice/pred_pain2.ogg',
 	)
 
 	enter_combat_lines = list(
@@ -135,7 +135,7 @@
 		/datum/ai_action/doppel/lunge_at_target,
 		/datum/ai_action/doppel/retarget,
 		/datum/ai_action/chase_target,
-		/datum/ai_action/quick_approach
+		/datum/ai_action/quick_approach,
 	)
 
 	mimic_timer = addtimer(CALLBACK(src, PROC_REF(engage_alter)), 6 SECONDS, TIMER_STOPPABLE)

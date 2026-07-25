@@ -41,7 +41,7 @@ SUBSYSTEM_DEF(pathfinding)
 		while(length(expansion_nodes))
 			var/list/unpacked_node = expansion_nodes[1]
 			current_run.current_node = unpacked_node["node"]
-			expansion_nodes.Cut(1)
+			expansion_nodes.Cut(1, 2)
 			if(!current_run.current_node)
 				current_run.to_return.Invoke()
 				log_debug("PATHFINDING FAULT! Unable to identify current node in expansion list ([length(expansion_nodes)] contained nodes) for [current_run.agent].")
@@ -54,13 +54,13 @@ SUBSYSTEM_DEF(pathfinding)
 					continue
 				if(neighbor == target)	// bingo!
 					previous_node_link[neighbor] = current_run.current_node
-					expansion_nodes = list()
+					expansion_nodes.Cut()
 					break
 				if(listgetindex(visited_nodes, neighbor))
 					continue
 				if(get_dist(neighbor, current_run.agent) > current_run.path_range)
 					continue
-				var/distance_between = listgetindex(visited_nodes, current_run.current_node) * DISTANCE_PENALTY
+				var/distance_between = listgetindex(visited_nodes, current_run.current_node) + DISTANCE_PENALTY
 				if(!distance_between)
 					visited_nodes[neighbor] = INFINITY
 					continue
@@ -71,8 +71,7 @@ SUBSYSTEM_DEF(pathfinding)
 					distance_between += DIRECTION_CHANGE_PENALTY
 				if(isxeno(current_run.agent) && !neighbor.weeds)
 					distance_between += NO_WEED_PENALTY
-				var/list/blockers = list()
-				//var/list/blockers = LinkBlocked(current_run.agent, current_run.current_node, neighbor, current_run.ignore, TRUE)
+				var/list/blockers = LinkBlocked(current_run.agent, current_run.current_node, neighbor, current_run.ignore, TRUE)
 				blockers |= check_special_blockers(current_run.agent, neighbor)
 				if(length(blockers))
 					if(isxeno(current_run.agent))
@@ -83,12 +82,20 @@ SUBSYSTEM_DEF(pathfinding)
 						var/datum/human_ai_brain/brain = ai_component.ai_brain
 						for(var/atom/A as anything in blockers)
 							distance_between += A.human_ai_obstacle(current_run.agent, brain, direction, target)
-				var/f_distance = distance_between + ASTAR_COST_FUNCTION(neighbor)
-				for(var/index in 1 to length(expansion_nodes) + 1)
+				if(distance_between == INFINITY)
+					continue	// woah dude, you wont fit
+				for(var/blocker_direction in GLOB.cardinals - get_dir(neighbor, current_run.current_node))	// lets see who your friends are
+					var/turf/adjacent_blocker = get_step(neighbor, blocker_direction)
+					if(!isclosedturf(adjacent_blocker))
+						continue
+					visited_nodes[adjacent_blocker] = INFINITY
+					distance_between += ADJACENT_WALL_PENALTY
+				var/f_distance = distance_between + ASTAR_COST_FUNCTION(neighbor) * DISTANCE_PENALTY
+				for(var/index in 1 to length(expansion_nodes) + 1)	// fine, you're on the list
 					var/list/indexed_node = listgetindex(expansion_nodes, index)
-					var/indexed_f_distance = indexed_node ? indexed_node["f_distance"] : 100	// protects against null references
+					var/indexed_f_distance = indexed_node ? indexed_node["f_distance"] : INFINITY	// protects against null references
 					//neighbor.maptext = "<h3>[f_distance]</h3>"
-					if(indexed_f_distance > f_distance)
+					if(indexed_f_distance >= f_distance)
 						expansion_nodes.Insert(index, list(list("node" = neighbor, "f_distance" = f_distance)))
 						visited_nodes[neighbor] = distance_between
 						previous_node_link[neighbor] = current_run.current_node
@@ -164,7 +171,7 @@ SUBSYSTEM_DEF(pathfinding)
 	data.ignore = ignore
 
 	data.visited_nodes[data.current_node] = 1
-	data.expansion_nodes |= list(list("node" = data.current_node, "f_distance" = ASTAR_COST_FUNCTION(data.current_node)))
+	data.expansion_nodes |= list(list("node" = data.current_node, "f_distance" = ASTAR_COST_FUNCTION(data.current_node) * DISTANCE_PENALTY))
 
 /datum/xeno_pathinfo
 	var/turf/start

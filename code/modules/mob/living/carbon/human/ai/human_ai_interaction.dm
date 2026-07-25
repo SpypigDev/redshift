@@ -26,7 +26,7 @@
 	if(!density)
 		return 0
 
-	return OBJECT_PENALTY
+	return INFINITY
 
 /obj/structure/human_ai_act(mob/living/carbon/human/ai_human, datum/human_ai_brain/brain)
 	if(climbable)
@@ -186,6 +186,24 @@
 		return
 
 	return SENTRY_PENALTY
+
+/////////////////////////////
+//      WINDOW FRAME       //
+/////////////////////////////
+
+/obj/structure/window_frame/human_ai_obstacle(mob/living/carbon/human/ai_human, datum/human_ai_brain/brain, direction, turf/target)
+	. = ..()
+	if(!.)
+		return
+
+	return WINDOW_FRAME_PENALTY
+
+/obj/structure/window/framed/human_ai_obstacle(mob/living/carbon/human/ai_human, datum/human_ai_brain/brain, direction, turf/target)
+	. = ..()
+	if(!.)
+		return
+
+	return WINDOW_PENALTY
 
 /////////////////////////////
 //       BARRICADES        //

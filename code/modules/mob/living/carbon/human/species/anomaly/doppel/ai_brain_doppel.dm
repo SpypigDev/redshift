@@ -224,7 +224,7 @@
 		return
 	UnregisterSignal(alter, COMSIG_HUMAN_SAY)
 	tied_human.emote("roar")
-	tied_human.speed = -2
+	tied_human.speed = -1.5
 	tied_human.blind_luck = 85
 	addtimer(CALLBACK(src, PROC_REF(reset_bullet_evasion)), 3 SECONDS)
 	playsound(tied_human, 'sound/weapons/wristblades_on.ogg', 25)

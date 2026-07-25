@@ -74,6 +74,12 @@
 	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
 	var/mob/living/carbon/human/doppel = doppel_brain.tied_human
 
+	if(!doppel_brain.current_target)
+		return	ONGOING_ACTION_COMPLETED
+
+	if(doppel.stat || doppel_brain.pretending_to_be_human)
+		return ONGOING_ACTION_COMPLETED
+
 	COOLDOWN_START(doppel_brain, ability_leap_cooldown, 2 SECONDS)
 
 	if(landed && doppel.Adjacent(doppel_brain.current_target))
@@ -91,12 +97,6 @@
 
 	//if(!locate(get_turf(doppel)) in lunge_path)	// stay on the beaten track next time
 	//	return ONGOING_ACTION_COMPLETED
-
-	if(!doppel_brain.current_target)
-		return	ONGOING_ACTION_COMPLETED
-
-	if(doppel.stat || doppel_brain.pretending_to_be_human)
-		return ONGOING_ACTION_COMPLETED
 
 	if(leaping)
 		return ONGOING_ACTION_UNFINISHED_BLOCK
@@ -201,7 +201,7 @@
 	var/datum/human_ai_brain/doppelganger/doppel_brain = brain
 	COOLDOWN_START(doppel_brain, ability_retargeting_cooldown, ceil(rand(4, 6)) SECONDS)
 
-	var/mob/new_target = brain.get_target(TRUE)
+	var/mob/new_target = brain.get_target()
 
 	if(new_target != brain.current_target)
 		brain.lose_target()

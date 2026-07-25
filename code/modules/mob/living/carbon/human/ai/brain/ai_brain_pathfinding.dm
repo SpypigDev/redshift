@@ -44,12 +44,10 @@
 
 	if(no_path_found)
 		if(no_path_found_amount > 0)
-			COOLDOWN_START(src, no_path_found_cooldown, no_path_found_period)
+			COOLDOWN_START(src, no_path_found_cooldown, no_path_found_period * min(3, no_path_found_amount))
 		no_path_found = FALSE
 		no_path_found_amount++
 		return FALSE
-
-	no_path_found_amount = 0
 
 	if((!current_path || (next_path_generation < world.time && current_path_target != T)) && COOLDOWN_FINISHED(src, no_path_found_cooldown))
 		if(!CALCULATING_PATH(tied_human) || current_path_target != T)
@@ -83,6 +81,8 @@
 	L += SSpathfinding.check_special_blockers(tied_human, next_turf)
 	for(var/a in L)
 		var/atom/A = a
+		if(ishuman_strict(A) && A.density)
+			return FALSE
 		if(A.human_ai_obstacle(tied_human, src, get_dir(tied_human.loc, next_turf)) == INFINITY)
 			return FALSE
 		INVOKE_ASYNC(A, TYPE_PROC_REF(/atom, human_ai_act), tied_human, src)
@@ -100,7 +100,16 @@
 	if(CALCULATING_PATH(tied_human))	// the missile is thinking...
 		return
 
-	for(var/index in 1 to min(LAZYLEN(current_path), 5))	// is the turf where the missile isnt, somewhere it will be
+	if(!current_path && next_path_generation < world.time && !CALCULATING_PATH(tied_human))
+		SSpathfinding.calculate_path(tied_human, updated_target_turf, max_travel_distance, tied_human, CALLBACK(src, PROC_REF(set_path)), list(tied_human, current_target))
+		current_path_target = updated_target_turf
+		next_path_generation = world.time + path_update_period
+		return TRUE
+
+	if(!current_path)
+		return TRUE
+
+	for(var/index in 1 to min(length(current_path), 5))	// is the turf where the missile isnt, somewhere it will be
 		if(current_path[index] == updated_target_turf)
 			current_path.Cut(1, index)
 			current_path_target = updated_target_turf
@@ -124,6 +133,8 @@
 	current_path = path
 	if(!path)
 		no_path_found = TRUE
+		return
+	no_path_found_amount = 0
 
 /datum/human_ai_brain/proc/append_path(list/path)
 	current_path.Insert(1, path)

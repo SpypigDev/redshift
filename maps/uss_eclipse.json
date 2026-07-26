@@ -1,0 +1,8 @@
+{
+    "map_name": "USS Eclipse",
+    "map_path": "map_files/USS_Eclipse",
+    "map_file": "USS_Eclipse.dmm",
+    "webmap_url": "Solaris",
+    "traits": [{"Marine Main Ship": true}],
+    "platoon": "/datum/squad/marine/alpha"
+}

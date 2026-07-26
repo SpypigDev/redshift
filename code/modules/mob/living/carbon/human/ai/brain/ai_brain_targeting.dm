@@ -2,7 +2,7 @@
 
 /datum/human_ai_brain
 	/// At how far out the AI can see cloaked enemies
-	var/cloak_visible_range = 3
+	var/cloak_visible_range = 1
 	/// Ref to the currently focused (and shooting at) target
 	var/atom/movable/current_target
 	/// Last turf our target was seen at

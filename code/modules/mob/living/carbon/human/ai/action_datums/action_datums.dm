@@ -3,8 +3,8 @@ GLOBAL_LIST_INIT_TYPED(AI_actions, /datum/ai_action, setup_ai_actions())
 /proc/setup_ai_actions()
 	var/list/action_list = list()
 	for(var/datum/ai_action/action as anything in subtypesof(/datum/ai_action))
-		//if(action.action_flags & ACTION_UNIQUE)	// AI action is applied in unique_actions on human_ai_brain
-		//	continue
+		if(initial(action.parent_path) == action)
+			continue
 		var/datum/ai_action/new_action = new action
 		action_list[new_action.type] = new_action
 	return action_list
@@ -14,6 +14,8 @@ GLOBAL_LIST_INIT_TYPED(AI_actions, /datum/ai_action, setup_ai_actions())
 	var/name
 	var/datum/human_ai_brain/brain
 	var/action_flags = null
+	var/parent_path = /datum/ai_action
+	var/list/action_species_whitelist = list()
 
 /// Proc to be overridden to determine what weight this action should have
 /// The reason a brain is passed in as an arg is that we have GLOB.AI_actions that are iterated through, calling get_weight() on each for every AI

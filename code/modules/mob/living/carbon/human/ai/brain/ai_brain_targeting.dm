@@ -17,7 +17,7 @@
 	COOLDOWN_DECLARE(fire_offscreen)
 
 /// Locates a viable target within vision
-/datum/human_ai_brain/proc/get_target()
+/datum/human_ai_brain/proc/get_target(forced_retargeting = FALSE)
 	var/list/viable_targets = list()
 	var/atom/movable/closest_target
 	var/smallest_distance = INFINITY
@@ -40,6 +40,9 @@
 			view_list += viewing_mob
 
 	for(var/mob/living/carbon/potential_target as anything in view_list)
+		if(LAZYLEN(view_list) > 1 && forced_retargeting && current_target == potential_target)
+			continue
+
 		if(!can_target(potential_target))
 			continue
 

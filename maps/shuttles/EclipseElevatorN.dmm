@@ -93,17 +93,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/eclipse/vehicle_shuttle/north)
-"A" = (
-/obj/structure/barricade/handrail{
-	dir = 4;
-	indestructible = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 4;
-	indestructible = 1
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/eclipse/vehicle_shuttle/north)
 "C" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/handrail{
@@ -209,7 +198,7 @@ i
 (5,1,1) = {"
 p
 Y
-A
+Y
 Y
 R
 "}

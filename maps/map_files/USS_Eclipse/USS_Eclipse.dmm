@@ -3107,7 +3107,6 @@
 	id = "garrow_vehicle_elevator_two";
 	name = "Vehicle Elevator Two Upper";
 	elevator_network = "ArrowVehicleTwo";
-	airlock_area = /area/eclipse/vehicle_shuttle/two/upper;
 	airlock_exit = "west"
 	},
 /turf/open/floor/corsat,
@@ -4063,17 +4062,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/almayer,
 /area/eclipse/motor_pool)
-"yD" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
-	req_one_access_txt = "8;12;39;40";
-	req_access = list()
-	},
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
-	req_one_access_txt = "8;12;39;40";
-	req_access = list()
-	},
-/turf/open/floor/almayer/plate,
-/area/eclipse/platoonprep)
 "yG" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -6049,9 +6037,6 @@
 /turf/open/floor/almayer/sterile_green_corner/west,
 /area/eclipse/medical)
 "LO" = (
-/obj/structure/platform{
-	dir = 1
-	},
 /obj/structure/platform{
 	dir = 1
 	},
@@ -16077,7 +16062,7 @@ DW
 dL
 az
 Pr
-yD
+az
 em
 Rf
 Rf
@@ -16474,9 +16459,9 @@ dL
 sM
 Ei
 eu
-yD
+az
 Pr
-yD
+az
 em
 Rf
 Rf

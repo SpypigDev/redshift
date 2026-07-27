@@ -137,14 +137,8 @@ export const LobbyMenu = () => {
     );
   }
 
-  const themeToUse = themeDisabled
-    ? 'weyland_yutani'
-    : upp_enabled
-      ? 'crtlobbyred'
-      : 'crtlobby';
-
   return (
-    <Window theme={themeToUse} fitted scrollbars={false}>
+    <Window theme={'crtlobbyred'} fitted scrollbars={false}>
       <audio src={resolveAsset('load.mp3')} ref={onLoadPlayer} />
       <Window.Content
         className={classes([

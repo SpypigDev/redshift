@@ -67,8 +67,7 @@
 	.["round_start"] = !SSticker || !SSticker.mode || SSticker.current_state <= GAME_STATE_PREGAME
 	.["readied"] = ready
 
-	.["confirmation_message"] = list()
-
+	.["confirmation_message"]
 	.["xenomorph_enabled"] = GLOB.master_mode == /datum/game_mode/colonialmarines::name && client.prefs && (client.prefs.get_job_priority(JOB_XENOMORPH) || client.prefs.get_job_priority(JOB_XENOMORPH_QUEEN))
 	.["predator_enabled"] = SSticker.mode?.flags_round_type & MODE_PREDATOR && SSticker.mode.check_predator_late_join(src, FALSE)
 	.["fax_responder_enabled"] = FALSE

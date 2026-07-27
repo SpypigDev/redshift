@@ -20,16 +20,11 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/eclipse/medical)
 "af" = (
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "ag" = (
 /obj/structure/machinery/power/apc/upgraded/power/north,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "ah" = (
 /obj/structure/pipes/vents/scrubber{
@@ -74,9 +69,7 @@
 /area/eclipse/prep_hallway)
 "an" = (
 /obj/structure/machinery/power/apc/upgraded/power/north,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "ao" = (
 /obj/effect/landmark/start/marine/leader/alpha,
@@ -112,10 +105,7 @@
 /area/eclipse/medical)
 "as" = (
 /obj/structure/machinery/power/apc/upgraded/power/north,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "at" = (
 /obj/structure/machinery/power/apc/upgraded/power/north,
@@ -147,10 +137,7 @@
 /area/eclipse/medical)
 "ax" = (
 /obj/effect/decal/cleanable/generic,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "ay" = (
 /obj/structure/platform{
@@ -173,9 +160,7 @@
 /turf/open/floor/almayer/plate,
 /area/eclipse/platoonprep)
 "aJ" = (
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "aR" = (
 /obj/structure/stairs{
@@ -201,10 +186,7 @@
 /obj/structure/filingcabinet/medical{
 	pixel_x = 8
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "bc" = (
 /obj/structure/bed/chair{
@@ -212,10 +194,7 @@
 	layer = 3.1
 	},
 /obj/item/trash/semki,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "bd" = (
 /obj/effect/decal/cleanable/dirt{
@@ -303,18 +282,14 @@
 	height = 2;
 	id = "med2"
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "bG" = (
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 8
 	},
 /obj/structure/dropship_equipment/medevac_system,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "bI" = (
 /obj/structure/platform,
@@ -356,9 +331,7 @@
 	icon_state = "E";
 	pixel_x = 1
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/hallways/hangar)
 "cf" = (
 /obj/structure/closet{
@@ -538,16 +511,10 @@
 "dd" = (
 /obj/structure/surface/table/almayer,
 /obj/effect/spawner/random/toolbox,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "de" = (
-/turf/open/floor/almayer{
-	dir = 1;
-	icon_state = "cargo_arrow"
-	},
+/turf/open/floor/almayer/cargo_arrow/north,
 /area/eclipse/hallways/hangar)
 "dg" = (
 /obj/structure/desertdam/decals/road_stop{
@@ -634,9 +601,7 @@
 	height = 1;
 	id = "med2"
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/dorms)
 "dB" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
@@ -729,9 +694,7 @@
 	pixel_x = 4;
 	pixel_y = 29
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/platoonprep)
 "ed" = (
 /obj/structure/platform{
@@ -745,9 +708,7 @@
 /turf/open/floor/plating,
 /area/eclipse/hallways/hangar)
 "ef" = (
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/platoonprep)
 "ei" = (
 /obj/structure/machinery/door/poddoor/almayer,
@@ -802,9 +763,7 @@
 "er" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ship_ammo/minirocket,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "eu" = (
 /obj/structure/pipes/vents/scrubber{
@@ -933,10 +892,7 @@
 /obj/structure/barricade/handrail{
 	dir = 8
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "eQ" = (
 /obj/structure/machinery/computer/cryopod{
@@ -1041,9 +997,7 @@
 /area/eclipse/cryo_cells)
 "fI" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/almayer/edge/smooth/east{
-	dir = 8
-	},
+/turf/open/floor/almayer/edge/smooth/west,
 /area/eclipse/platoonprep)
 "fQ" = (
 /obj/structure/stairs/perspective{
@@ -1136,10 +1090,7 @@
 /obj/structure/platform{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "gw" = (
 /obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
@@ -1269,19 +1220,14 @@
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass{
 	dir = 2
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/platoonprep)
 "gV" = (
 /obj/structure/machinery/door_control{
 	id = "vicne";
 	pixel_x = -24
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "gY" = (
 /turf/open/floor/almayer/plate,
@@ -1383,17 +1329,12 @@
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -18
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "hE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office/dark,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "hG" = (
 /obj/structure/machinery/floodlight/landing{
@@ -1463,9 +1404,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "ib" = (
 /obj/effect/decal/warning_stripes{
@@ -1497,10 +1436,7 @@
 	dir = 4;
 	layer = 2.8
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "it" = (
 /obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
@@ -1548,10 +1484,7 @@
 "iA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "iB" = (
 /obj/structure/platform{
@@ -1635,9 +1568,7 @@
 	can_block_movement = 0;
 	pixel_y = 25
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/platoonprep)
 "jd" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -1688,9 +1619,7 @@
 	light_color = "#0071B2";
 	name = "Blue Light"
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "jo" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1711,10 +1640,7 @@
 /turf/open/floor/almayer/test_floor4,
 /area/eclipse/platoonprep)
 "jw" = (
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "jy" = (
 /obj/structure/cable/heavyduty{
@@ -1814,10 +1740,7 @@
 	pixel_y = 6;
 	pixel_x = 6
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "ke" = (
 /obj/docking_port/stationary/trijent_elevator/shipmap_elevator/one{
@@ -1835,10 +1758,7 @@
 /area/eclipse/dorms)
 "kl" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "km" = (
 /obj/structure/machinery/cryopod/big{
@@ -1877,9 +1797,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "kw" = (
 /obj/structure/platform{
@@ -1898,9 +1816,7 @@
 	dir = 5;
 	layer = 3.1
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "kx" = (
 /turf/open/floor/almayer/edge/smooth/southeast,
@@ -1989,16 +1905,11 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "lk" = (
 /obj/structure/stairs,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "lm" = (
 /obj/structure/surface/rack,
@@ -2032,10 +1943,7 @@
 	icon_state = "cargo_arrow";
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "lu" = (
 /obj/structure/sign/safety/bathmens{
@@ -2058,10 +1966,7 @@
 "lx" = (
 /obj/structure/surface/table/almayer,
 /obj/item/clothing/head/welding,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "lA" = (
 /obj/structure/surface/table/almayer,
@@ -2116,9 +2021,7 @@
 /turf/open/floor/plating,
 /area/eclipse/hallways/hangar)
 "lO" = (
-/turf/open/floor/almayer/edge/smooth/east{
-	dir = 8
-	},
+/turf/open/floor/almayer/edge/smooth/west,
 /area/eclipse/platoonprep)
 "lP" = (
 /obj/structure/bed/chair/comfy{
@@ -2137,10 +2040,6 @@
 	},
 /turf/open/floor/almayer,
 /area/eclipse/hallways/hangar)
-"lZ" = (
-/obj/structure/window/framed/almayer/hull,
-/turf/open/space/basic,
-/area/eclipse/cargo_shuttle/upper)
 "mb" = (
 /obj/effect/vehicle_spawner/box_van/ambulance/fixed{
 	dir = 4
@@ -2168,10 +2067,7 @@
 /obj/structure/machinery/status_display{
 	pixel_y = 30
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "mq" = (
 /obj/effect/decal/warning_stripes{
@@ -2225,9 +2121,7 @@
 /obj/structure/machinery/computer/emails{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "mF" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
@@ -2241,16 +2135,11 @@
 /obj/structure/ship_ammo/heavygun/antitank{
 	pixel_y = 12
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "mL" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "mN" = (
 /obj/structure/platform{
@@ -2383,9 +2272,7 @@
 	name = "Blue light fixture";
 	dir = 8
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "nj" = (
 /obj/structure/extinguisher_cabinet/alt{
@@ -2399,9 +2286,7 @@
 	dir = 1;
 	layer = 3.25
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "ns" = (
 /obj/structure/cargo_container/uscm/mid{
@@ -2445,10 +2330,7 @@
 /area/eclipse/hallways/hangar)
 "ny" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "nz" = (
 /obj/effect/decal/warning_stripes{
@@ -2566,10 +2448,7 @@
 /area/eclipse/hallways/hangar)
 "ot" = (
 /obj/structure/surface/table/almayer,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "oy" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -2577,9 +2456,7 @@
 /area/eclipse/prep_hallway)
 "oz" = (
 /obj/structure/dropship_equipment/paradrop_system,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "oA" = (
 /obj/structure/machinery/door_control{
@@ -2590,10 +2467,7 @@
 /obj/structure/machinery/status_display{
 	pixel_y = 30
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "oC" = (
 /obj/structure/machinery/door/poddoor/almayer{
@@ -2766,10 +2640,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "pr" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
@@ -2809,9 +2680,7 @@
 /obj/structure/dropship_equipment/mg_holder{
 	pixel_y = 9
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "pF" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
@@ -2857,9 +2726,7 @@
 /area/eclipse/hallways/hangar)
 "pP" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "pR" = (
 /obj/structure/barricade/handrail{
@@ -2892,19 +2759,14 @@
 	dir = 9
 	},
 /obj/structure/machinery/telecomms/hub/preset,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "qf" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /turf/open/floor/almayer/edge/smooth,
 /area/eclipse/cargo_shuttle/upper)
 "qg" = (
-/turf/open/floor/prison/darkyellowcorners2/west{
-	dir = 2
-	},
+/turf/open/floor/prison/darkyellowcorners2/southwest,
 /area/eclipse/hallways/hangar)
 "qj" = (
 /obj/structure/machinery/vending/coffee,
@@ -2963,10 +2825,7 @@
 "qv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/telecomms/hub/preset,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "qy" = (
 /turf/open/floor/prison/darkyellowcorners2/west,
@@ -3000,20 +2859,14 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "qL" = (
 /obj/structure/machinery/door/poddoor/almayer{
 	dir = 4;
 	unacidable = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "qM" = (
 /obj/structure/machinery/conveyor{
@@ -3075,10 +2928,7 @@
 /turf/open/floor/almayer,
 /area/eclipse/hallways/hangar)
 "rl" = (
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "rp" = (
 /obj/structure/barricade/handrail{
@@ -3152,9 +3002,7 @@
 /obj/structure/sign/safety/cryo{
 	pixel_y = 25
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "rB" = (
 /obj/structure/platform{
@@ -3205,9 +3053,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "rK" = (
 /obj/structure/extinguisher_cabinet/alt{
@@ -3296,9 +3142,7 @@
 /turf/open/floor/prison/darkyellow2/southeast,
 /area/eclipse/hallways/hangar)
 "su" = (
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "sD" = (
 /obj/effect/decal/warning_stripes{
@@ -3318,9 +3162,7 @@
 	light_color = "#0071B2";
 	name = "Blue Light"
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "sI" = (
 /obj/structure/pipes/vents/scrubber{
@@ -3421,9 +3263,7 @@
 /obj/structure/ship_ammo/minirocket{
 	pixel_y = 9
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "tv" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3487,9 +3327,7 @@
 /area/eclipse/medical)
 "tU" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/hallways/hangar)
 "tY" = (
 /turf/open/floor/almayer/plating,
@@ -3498,17 +3336,11 @@
 /obj/structure/machinery/status_display{
 	pixel_y = 30
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "ud" = (
 /obj/vehicle/train/cargo/trolley,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "ue" = (
 /obj/effect/decal/cleanable/dirt{
@@ -3573,10 +3405,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "uC" = (
 /obj/vehicle/powerloader{
@@ -3586,10 +3415,7 @@
 /area/eclipse/hallways/hangar)
 "uH" = (
 /obj/item/trash/kepler/flamehot,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "uK" = (
 /obj/structure/mirror{
@@ -3632,16 +3458,8 @@
 	pixel_x = -24;
 	pixel_y = 24
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
-"uZ" = (
-/turf/open/floor/almayer_hull/outerhull_dir/north{
-	dir = 5
-	},
-/area/space)
 "va" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -3698,9 +3516,7 @@
 /turf/open/asphalt/cement_darkened,
 /area/eclipse/motor_pool)
 "vk" = (
-/turf/open/floor/almayer_hull/outerhull_dir/north{
-	dir = 6
-	},
+/turf/open/floor/almayer_hull/outerhull_dir/southeast,
 /area/space)
 "vl" = (
 /obj/effect/decal/warning_stripes{
@@ -3761,10 +3577,7 @@
 	dir = 8;
 	layer = 3.1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "vx" = (
 /obj/structure/platform{
@@ -3787,9 +3600,7 @@
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 8
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "vE" = (
 /obj/structure/prop/invuln/overhead_pipe{
@@ -3880,10 +3691,7 @@
 /obj/structure/platform_decoration{
 	dir = 9
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "wf" = (
 /turf/closed/wall/almayer/white/outer_tile,
@@ -3990,9 +3798,7 @@
 	icon_state = "W";
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/hallways/hangar)
 "wW" = (
 /turf/closed/wall/almayer/outer,
@@ -4035,10 +3841,7 @@
 	dir = 4;
 	pixel_y = 3
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "xp" = (
 /obj/structure/machinery/door/poddoor/almayer,
@@ -4403,10 +4206,7 @@
 	dir = 2;
 	req_access = null
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/dorms)
 "zn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4432,10 +4232,7 @@
 	name = "\improper Vehicle Bay Two Blast Door";
 	id = "vehiclebay2"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "zx" = (
 /obj/effect/decal/warning_stripes{
@@ -4447,10 +4244,7 @@
 	id = "vehiclebay2";
 	name = "vehicle bay blast door control"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "zy" = (
 /obj/structure/pipes/vents/scrubber{
@@ -4499,10 +4293,7 @@
 "zN" = (
 /obj/structure/surface/table/almayer,
 /obj/effect/spawner/random/tool,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "zO" = (
 /obj/effect/decal/warning_stripes{
@@ -4516,9 +4307,7 @@
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
 	name = "\improper Hypersleep Bay"
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/platoonprep)
 "zZ" = (
 /obj/structure/pipes/vents/pump,
@@ -4542,10 +4331,7 @@
 	light_color = "#0071B2";
 	name = "Blue Light"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Ah" = (
 /obj/structure/foamed_metal,
@@ -4768,10 +4554,7 @@
 /obj/structure/platform_decoration{
 	dir = 6
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Bz" = (
 /obj/structure/machinery/light/double/blue{
@@ -4824,10 +4607,7 @@
 /obj/structure/stairs{
 	dir = 8
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Ce" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -4843,9 +4623,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "Ck" = (
 /obj/structure/machinery/autodoc_console{
@@ -4863,10 +4641,7 @@
 	pixel_x = -24;
 	pixel_y = -24
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "CA" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
@@ -4894,10 +4669,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "CI" = (
 /obj/structure/window/reinforced/toughened{
@@ -4906,9 +4678,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "CN" = (
 /obj/structure/machinery/disposal,
@@ -4917,9 +4687,7 @@
 	name = "Blue light fixture";
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "CQ" = (
 /obj/item/ammo_box/magazine/nade_box/m15,
@@ -4941,20 +4709,11 @@
 	layer = 3.1
 	},
 /obj/structure/machinery/computer3/server/rack,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
-"Db" = (
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
-/area/eclipse/hallways/hangar)
 "Dd" = (
 /obj/structure/machinery/telecomms/receiver,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "Dg" = (
 /obj/structure/surface/table/reinforced/black,
@@ -5036,7 +4795,7 @@
 /area/eclipse/dorms)
 "DV" = (
 /obj/structure/foamed_metal,
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/eclipse/cryo_cells)
 "DW" = (
 /obj/structure/largecrate/random/case/small{
@@ -5167,10 +4926,7 @@
 /obj/item/tool/weldpack{
 	pixel_x = -2
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "EO" = (
 /obj/structure/desertdam/decals/road_stop,
@@ -5188,10 +4944,7 @@
 "ER" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "EU" = (
 /turf/open/floor/almayer/orange/north,
@@ -5207,9 +4960,7 @@
 /obj/structure/ship_ammo/rocket/harpoon{
 	pixel_y = 12
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "Fc" = (
 /obj/structure/platform{
@@ -5226,15 +4977,11 @@
 	pixel_x = 21;
 	id = "cargodivider"
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "Fg" = (
 /obj/structure/dropship_equipment/mg_holder,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "Fj" = (
 /obj/structure/machinery/cm_vending/sorted/medical/blood{
@@ -5419,10 +5166,7 @@
 	pixel_x = 5;
 	pixel_y = 12
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "Gh" = (
 /obj/structure/machinery/power/reactor{
@@ -5449,10 +5193,7 @@
 /turf/open/floor/almayer,
 /area/eclipse/platoonprep)
 "Gr" = (
-/turf/open/floor/almayer{
-	dir = 8;
-	icon_state = "cargo_arrow"
-	},
+/turf/open/floor/almayer/cargo_arrow/west,
 /area/eclipse/hallways/hangar)
 "Gv" = (
 /obj/structure/platform{
@@ -5555,10 +5296,7 @@
 /obj/structure/stairs{
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "GS" = (
 /obj/effect/decal/warning_stripes{
@@ -5667,10 +5405,7 @@
 /area/eclipse/cryo_cells)
 "Hv" = (
 /obj/structure/barricade/handrail,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Hz" = (
 /obj/effect/decal/warning_stripes{
@@ -5682,10 +5417,7 @@
 /turf/open/floor/almayer,
 /area/eclipse/hallways/hangar)
 "HC" = (
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "HE" = (
 /obj/structure/prop/dam/crane{
@@ -5705,10 +5437,7 @@
 	info = "OUT OF ORDER - When I find the dumbass that thought it was a good idea to drive over the elevator with the APC they're gonna get their ass beat.";
 	name = "OUT OF ORDER"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "HM" = (
 /obj/structure/machinery/bioprinter{
@@ -5746,10 +5475,7 @@
 	name = "starboard elevator control";
 	shuttleId = "EclipseElevatorS"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "HU" = (
 /obj/structure/surface/table/almayer,
@@ -5771,10 +5497,7 @@
 	pixel_x = -8;
 	pixel_y = 10
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "Ih" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5811,9 +5534,7 @@
 /area/eclipse/platoonprep)
 "Ix" = (
 /obj/structure/machinery/telecomms/hub,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "IF" = (
 /obj/structure/surface/table/almayer,
@@ -5856,16 +5577,10 @@
 	id = "vicnw";
 	pixel_x = -24
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "IY" = (
-/turf/open/floor/almayer{
-	dir = 4;
-	icon_state = "cargo_arrow"
-	},
+/turf/open/floor/almayer/cargo_arrow/east,
 /area/eclipse/hallways/hangar)
 "Jc" = (
 /obj/effect/decal/warning_stripes{
@@ -5941,10 +5656,7 @@
 /obj/vehicle/train/cargo/engine{
 	dir = 2
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "JF" = (
 /obj/structure/machinery/optable,
@@ -5997,9 +5709,7 @@
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
 	name = "\improper Hypersleep Bay"
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "JT" = (
 /obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
@@ -6272,10 +5982,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "Lm" = (
 /obj/effect/decal/warning_stripes{
@@ -6336,9 +6043,7 @@
 /turf/open/floor/almayer/plate,
 /area/eclipse/cryo_cells)
 "LJ" = (
-/turf/open/floor/almayer/plating_striped{
-	dir = 4
-	},
+/turf/open/floor/almayer/plating_striped/east,
 /area/eclipse/cryo_cells)
 "LL" = (
 /turf/open/floor/almayer/sterile_green_corner/west,
@@ -6359,10 +6064,7 @@
 /obj/structure/barricade/handrail{
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "LP" = (
 /obj/structure/filingcabinet,
@@ -6371,10 +6073,7 @@
 	name = "Blue light fixture";
 	dir = 8
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "LS" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -6434,31 +6133,20 @@
 /turf/open/floor/plating,
 /area/eclipse/hallways/hangar)
 "Mm" = (
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/medical)
 "Mr" = (
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_x = 4;
 	pixel_y = 29
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "Ms" = (
 /obj/structure/machinery/cryo_cell,
 /obj/structure/pipes/standard/cap/hidden,
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/eclipse/medical)
-"Mv" = (
-/turf/open/floor/prison/darkyellow2/west{
-	dir = 2
-	},
-/area/eclipse/hallways/hangar)
 "Mw" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 4
@@ -6534,10 +6222,7 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "MJ" = (
 /obj/structure/cable/heavyduty{
@@ -6605,10 +6290,7 @@
 	dir = 2;
 	req_access = null
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "Nh" = (
 /obj/structure/surface/table/reinforced/black,
@@ -6752,9 +6434,7 @@
 /obj/vehicle/powerloader{
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/hallways/hangar)
 "NU" = (
 /turf/open/floor/corsat,
@@ -6902,9 +6582,7 @@
 /obj/structure/ship_ammo/rocket/widowmaker{
 	pixel_y = 4
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "Pm" = (
 /obj/structure/prop/invuln{
@@ -6933,10 +6611,7 @@
 /obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
 	id = "vicne"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "Pz" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access,
@@ -6968,10 +6643,7 @@
 /area/eclipse/platoonprep)
 "PE" = (
 /obj/structure/platform,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "PJ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -7009,9 +6681,7 @@
 /area/eclipse/platoonprep)
 "PT" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "PV" = (
 /obj/structure/surface/table/almayer,
@@ -7211,10 +6881,7 @@
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass{
 	dir = 2
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/medical)
 "RC" = (
 /obj/effect/decal/warning_stripes{
@@ -7232,9 +6899,7 @@
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -18
 	},
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "RH" = (
 /obj/structure/machinery/cryopod/big/flipped{
@@ -7285,19 +6950,14 @@
 /area/eclipse/prep_hallway)
 "RV" = (
 /obj/structure/ship_ammo/heavygun/antitank,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "RY" = (
 /obj/structure/filingcabinet,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Sa" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
@@ -7363,9 +7023,7 @@
 /area/space/almayer/lifeboat_dock)
 "Sm" = (
 /obj/structure/bed/chair/office/dark,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "So" = (
 /obj/structure/gun_rack/m20a/unloaded,
@@ -7398,10 +7056,7 @@
 /obj/structure/platform_decoration{
 	dir = 10
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Sy" = (
 /obj/structure/platform{
@@ -7455,9 +7110,7 @@
 /area/eclipse/hallways/hangar)
 "SM" = (
 /obj/structure/ship_ammo/rocket/widowmaker,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
+/turf/open/floor/almayer/test_floor5,
 /area/eclipse/hallways/hangar)
 "SQ" = (
 /obj/structure/ship_ammo/rocket/widowmaker,
@@ -7477,19 +7130,13 @@
 	pixel_x = 4;
 	pixel_y = 29
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "SU" = (
 /obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass{
 	dir = 2
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/medical)
 "SW" = (
 /obj/effect/landmark/start/marine/medic/alpha,
@@ -7573,19 +7220,13 @@
 	dir = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "TD" = (
 /obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor{
 	id = "vicnw"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "TI" = (
 /turf/open/floor/almayer/edge/north,
@@ -7630,10 +7271,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "Ue" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
@@ -7649,7 +7287,7 @@
 /area/eclipse/cryo_cells)
 "Uj" = (
 /obj/structure/window/framed/almayer/hull,
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/eclipse/prep_hallway)
 "Um" = (
 /turf/open/floor/almayer/mono,
@@ -7698,10 +7336,7 @@
 	id = "vehiclebay2";
 	name = "vehicle bay blast door control"
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "UX" = (
 /turf/closed/wall/almayer/outer,
@@ -7732,10 +7367,7 @@
 	dir = 5
 	},
 /obj/structure/machinery/telecomms/hub/preset,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/platoon_commander_rooms)
 "Vj" = (
 /turf/open/floor/almayer/edge/smooth,
@@ -7761,10 +7393,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "Vo" = (
 /obj/effect/decal/warning_stripes{
@@ -7779,10 +7408,6 @@
 "Vs" = (
 /turf/open/floor/almayer/sterile_green_corner,
 /area/eclipse/medical)
-"Vx" = (
-/obj/structure/window/framed/almayer/hull,
-/turf/open/space,
-/area/eclipse/cargo_shuttle/upper)
 "VD" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -7865,10 +7490,7 @@
 	req_one_access_txt = "2;3;12;19";
 	throw_range = 15
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "Wb" = (
 /obj/structure/pipes/standard/tank/oxygen,
@@ -7971,12 +7593,6 @@
 "WD" = (
 /turf/closed/wall/almayer/outer/friegt,
 /area/eclipse/vehicle_shuttle/south/one)
-"WE" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/darkyellow2/west{
-	dir = 2
-	},
-/area/eclipse/hallways/hangar)
 "WG" = (
 /obj/structure/platform{
 	dir = 1;
@@ -8192,9 +7808,7 @@
 	name = "Blue light fixture";
 	dir = 4
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "XV" = (
 /obj/structure/platform,
@@ -8282,10 +7896,7 @@
 	pixel_x = -24;
 	pixel_y = -19
 	},
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/motor_pool)
 "Yx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8313,9 +7924,7 @@
 /obj/structure/barricade/handrail,
 /obj/structure/window/reinforced/ultra,
 /obj/structure/machinery/door/window/ultra,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "YE" = (
 /turf/closed/wall/almayer,
@@ -8359,9 +7968,7 @@
 	pixel_x = -9;
 	pixel_y = 8
 	},
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "YO" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access,
@@ -8448,9 +8055,7 @@
 	dir = 1
 	},
 /obj/structure/machinery/telecomms/processor,
-/turf/open/floor/almayer{
-	icon_state = "tcomms"
-	},
+/turf/open/floor/almayer/tcomms,
 /area/eclipse/platoon_commander_rooms)
 "Ze" = (
 /obj/structure/surface/table/reinforced/prison,
@@ -8495,16 +8100,11 @@
 	pixel_x = 1
 	},
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/hallways/hangar)
 "Zu" = (
 /obj/structure/window/framed/almayer/hull,
-/turf/open/floor/almayer{
-	dir = 5;
-	icon_state = "plating"
-	},
+/turf/open/floor/almayer/plating/northeast,
 /area/eclipse/hallways/lower/port_fore_hallway)
 "Zv" = (
 /turf/closed/wall/almayer/white/hull,
@@ -8574,9 +8174,7 @@
 	light_color = "#0071B2";
 	name = "Blue Light"
 	},
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
+/turf/open/floor/almayer/plate,
 /area/eclipse/prep_hallway)
 "ZN" = (
 /obj/vehicle/train/cargo/engine,
@@ -10171,7 +9769,7 @@ Cq
 Cq
 Cq
 Cq
-WE
+Dt
 DB
 MB
 nE
@@ -10304,7 +9902,7 @@ WR
 WR
 WR
 Cq
-Mv
+iR
 Tb
 MB
 nE
@@ -10569,7 +10167,7 @@ Cq
 WR
 WR
 Cq
-Mv
+iR
 de
 aR
 NR
@@ -10702,10 +10300,10 @@ Cq
 Cq
 Cq
 Cq
-Mv
+iR
 de
 aR
-Db
+gY
 nE
 PY
 HC
@@ -10835,7 +10433,7 @@ Cq
 WR
 WR
 Cq
-Mv
+iR
 de
 aR
 ce
@@ -11102,7 +10700,7 @@ WR
 WR
 WR
 Cq
-WE
+Dt
 Tb
 MB
 nE
@@ -11235,7 +10833,7 @@ Cq
 Cq
 Cq
 Cq
-Mv
+iR
 WG
 Lz
 nE
@@ -14693,7 +14291,7 @@ Cq
 Cq
 Cq
 Cq
-WE
+Dt
 DB
 MB
 nE
@@ -14826,7 +14424,7 @@ WR
 WR
 WR
 Cq
-Mv
+iR
 Tb
 MB
 nE
@@ -15091,7 +14689,7 @@ Cq
 WR
 WR
 Cq
-Mv
+iR
 de
 aR
 wU
@@ -15224,10 +14822,10 @@ Cq
 Cq
 Cq
 Cq
-Mv
+iR
 de
 aR
-Db
+gY
 nE
 Oc
 HC
@@ -15357,7 +14955,7 @@ Cq
 WR
 WR
 Cq
-Mv
+iR
 de
 aR
 ce
@@ -15624,7 +15222,7 @@ WR
 WR
 WR
 Cq
-WE
+Dt
 Tb
 MB
 nE
@@ -15757,7 +15355,7 @@ Cq
 Cq
 Cq
 Cq
-Mv
+iR
 WG
 Lz
 nE
@@ -19215,7 +18813,7 @@ Cq
 Cq
 Cq
 Ce
-WE
+Dt
 DB
 MB
 nE
@@ -19348,7 +18946,7 @@ WR
 WR
 WR
 Cq
-Mv
+iR
 Tb
 vL
 nE
@@ -19613,7 +19211,7 @@ Cq
 WR
 WR
 Cq
-Mv
+iR
 de
 aR
 wU
@@ -19746,7 +19344,7 @@ Cq
 Cq
 Cq
 Cq
-Mv
+iR
 de
 aR
 tU
@@ -19879,7 +19477,7 @@ Cq
 WR
 WR
 Cq
-Mv
+iR
 de
 aR
 Zt
@@ -20146,7 +19744,7 @@ WR
 WR
 WR
 Cq
-WE
+Dt
 Tb
 MB
 nE
@@ -20279,7 +19877,7 @@ Cq
 Cq
 Cq
 Cq
-Mv
+iR
 WG
 UO
 OI
@@ -24925,7 +24523,7 @@ ug
 oo
 TI
 BS
-lZ
+FL
 oS
 Sl
 Sl
@@ -25058,7 +24656,7 @@ ug
 oo
 TI
 BS
-Vx
+FL
 oS
 Sl
 Sl
@@ -25453,7 +25051,7 @@ Rf
 Rf
 Rf
 Rf
-uZ
+GG
 Kw
 Kw
 Kw

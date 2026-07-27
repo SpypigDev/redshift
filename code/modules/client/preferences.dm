@@ -53,6 +53,9 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	var/save_cooldown = 0 //5s cooldown between saving slots
 	var/reload_cooldown = 0 //5s cooldown between loading slots
 
+	/// This contains any potential issues with the users' preferences, and presents them on the lobby screen
+	var/errors = list()
+
 	//game-preferences
 	var/lastchangelog = "" // Saved changlog filesize to detect if there was a change
 	var/ooccolor

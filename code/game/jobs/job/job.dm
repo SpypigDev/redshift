@@ -42,6 +42,8 @@
 	var/job_options
 	/// If TRUE, this job will spawn w/ a cryo emergency kit during evac/red alert
 	var/gets_emergency_kit = TRUE
+	/// Whether or not having enough playtime will allow you to primeroll
+	var/prime_priority = FALSE
 	/// Under what faction menu the job gets displayed in lobby
 	var/faction_menu = FACTION_NEUTRAL //neutral to cover uscm jobs for now as loads of them are under civil and stuff mainly ment for other faction
 

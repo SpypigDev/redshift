@@ -25,7 +25,6 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 GLOBAL_LIST_INIT(be_special_flags, list(
 	"Xenomorph after unrevivable death" = BE_ALIEN_AFTER_DEATH,
 	"Agent" = BE_AGENT,
-	"King" = BE_KING,
 ))
 
 /datum/preferences
@@ -284,10 +283,6 @@ GLOBAL_LIST_INIT(be_special_flags, list(
 
 	/// Which slot is currently in use
 	var/selected_loadout_slot = 1
-
-	/// This contains any potential issues with the users' preferences, and presents them on the lobby screen
-	var/errors = list()
-
 
 /datum/preferences/New(client/C)
 	key_bindings = deep_copy_list(GLOB.hotkey_keybinding_list_by_key) // give them default keybinds and update their movement keys
@@ -2371,9 +2366,6 @@ GLOBAL_LIST_INIT(be_special_flags, list(
 	picker_ui = SStgui.get_open_ui(user, loadout_picker)
 	picker_ui?.send_full_update()
 
-	picker_ui = SStgui.get_open_ui(user, traits_picker)
-	picker_ui?.send_update()
-
 /// Closes all the TGUI interfaces inside the character prefs menu
 /datum/preferences/proc/close_all_pickers(mob/user)
 	var/datum/tgui/picker_ui = SStgui.get_open_ui(user, hair_picker)
@@ -2384,12 +2376,6 @@ GLOBAL_LIST_INIT(be_special_flags, list(
 
 	picker_ui = SStgui.get_open_ui(user, loadout_picker)
 	picker_ui?.close()
-
-	picker_ui = SStgui.get_open_ui(user, traits_picker)
-	picker_ui?.close()
-
-/datum/preferences/proc/get_body_presentation()
-	return body_presentation || gender
 
 #undef MENU_MARINE
 #undef MENU_XENOMORPH

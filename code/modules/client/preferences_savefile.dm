@@ -218,8 +218,6 @@
 	if(savefile_version < 30)
 		var/be_special = 0
 		S["be_special"] >> be_special
-		be_special &= ~BE_KING
-		S["be_special"] << be_special
 
 	if(savefile_version < 31)
 		for(var/i in 1 to MAX_SAVE_SLOTS)

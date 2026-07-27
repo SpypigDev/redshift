@@ -252,10 +252,10 @@
 	return JOB_SQUAD_MARINE
 
 /datum/preferences/proc/job_pref_to_gear_preset()
-	var/high_priority = get_high_priority_job()
+	var/highest_priority_job = get_high_priority_job()
 
 	switch(highest_priority_job)
-//USCM Section
+		//USCM Section
 		if(JOB_SQUAD_MARINE)
 			return /datum/equipment_preset/uscm/private_equipped
 		if(JOB_SQUAD_LEADER)
@@ -268,7 +268,7 @@
 			return /datum/equipment_preset/uscm/tl_equipped
 		if(JOB_SO)
 			return /datum/equipment_preset/uscm_ship/so_equipped
-//USCM Aux forces (not part of pre-round role select normally)
+		//USCM Aux forces (not part of pre-round role select normally)
 		if(JOB_SQUAD_SPECIALIST)
 			return /datum/equipment_preset/uscm/specialist_equipped
 		if(JOB_SQUAD_ENGI)
@@ -286,7 +286,7 @@
 			return J.gear_preset_whitelist["[JOB_SYNTH][J.get_whitelist_status(owner)]"]
 		if(JOB_DI)
 			return /datum/equipment_preset/uscm_ship/di
-//UPP Platoon
+		//UPP Platoon
 		if(JOB_SQUAD_MARINE_UPP)
 			return /datum/equipment_preset/upp/rifleman
 		if(JOB_SQUAD_LEADER_UPP)
@@ -299,7 +299,7 @@
 			return /datum/equipment_preset/upp/squadlead
 		if(JOB_SO_UPP)
 			return /datum/equipment_preset/uscm_ship/so/upp/equipped
-//FORECON Squad
+		//FORECON Squad
 		if(JOB_SQUAD_TEAM_LEADER_FORECON)
 			return /datum/equipment_preset/uscm/forecon/squad_leader
 		if(JOB_SQUAD_LEADER_FORECON)
@@ -312,7 +312,7 @@
 			return /datum/equipment_preset/uscm/forecon/standard
 		if(JOB_SQUAD_SMARTGUN_FORECON)
 			return /datum/equipment_preset/uscm/forecon/smartgunner
-//PMC Taskforce
+		//PMC Taskforce
 		if(JOB_PMCPLAT_OW)
 			return /datum/equipment_preset/uscm_ship/so/pmc/equipped
 		if(JOB_PMCPLAT_LEADER)
@@ -325,7 +325,7 @@
 			return /datum/equipment_preset/pmc/standard
 		if(JOB_PMCPLAT_MEDIC)
 			return /datum/equipment_preset/pmc/medic
-//PMC Taskforce(small)
+		//PMC Taskforce(small)
 		if(JOB_PMCPLAT_SMALL_LEADER)
 			return /datum/equipment_preset/pmc/leader
 		if(JOB_PMCPLAT_SMALL_FTL)
@@ -336,7 +336,7 @@
 			return /datum/equipment_preset/pmc/standard
 		if(JOB_PMCPLAT_SMALL_MEDIC)
 			return /datum/equipment_preset/pmc/medic
-//RMC Troop
+		//RMC Troop
 		if(JOB_TWE_RMC_RIFLEMAN)
 			return /datum/equipment_preset/royal_marine/standard
 		if(JOB_TWE_RMC_MEDIC)

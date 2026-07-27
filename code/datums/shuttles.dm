@@ -140,16 +140,3 @@
 	elevator_network = "garrow_cargo"
 	shuttle_id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_CARGO
 	elevator_network = "ArrowCargo"
-
-/datum/map_template/shuttle/trijent_elevator/eclipse
-	shuttle_id = "unused"
-
-/datum/map_template/shuttle/trijent_elevator/eclipse/south
-	name = "Vehicle Elevator Starboard"
-	shuttle_id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_SOUTH
-	elevator_network = "EclipseElevatorS"
-
-/datum/map_template/shuttle/trijent_elevator/eclipse/north
-	name = "Vehicle Elevator Port"
-	shuttle_id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_NORTH
-	elevator_network = "EclipseElevatorN"

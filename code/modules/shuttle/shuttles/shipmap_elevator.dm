@@ -74,19 +74,3 @@
 	name = "Cargo Elevator"
 	height = 6
 	width = 8
-
-/obj/docking_port/mobile/trijent_elevator/shipmap_elevator/eclipse
-	dir = NORTH
-	height = 5
-	width = 5
-	rechargeTime = 15 SECONDS
-
-/obj/docking_port/mobile/trijent_elevator/shipmap_elevator/eclipse/south
-	name = "Vehicle Elevator Starboard"
-	id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_SOUTH
-	area_type = /area/eclipse/vehicle_shuttle/south
-
-/obj/docking_port/mobile/trijent_elevator/shipmap_elevator/eclipse/north
-	name = "Vehicle Elevator Port"
-	id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_NORTH
-	area_type = /area/eclipse/vehicle_shuttle/north

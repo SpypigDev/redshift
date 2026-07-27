@@ -67,15 +67,15 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /// Attempt to wear this equipment, in the given slot if possible. If not, any slot is used.
 /datum/gear/proc/equip_to_user(mob/living/carbon/human/user, override_checks = FALSE, drop_instead_of_del = TRUE)
 	if(!override_checks && allowed_roles && !(user.job in allowed_roles))
-		to_chat(user, SPAN_WARNING("Gear [display_name] cannot be equipped: Invalid Role."))
+		to_chat(user, SPAN_WARNING("Gear [display_name] cannot be equipped: Invalid Role"))
 		return
 
 	if(!override_checks && allowed_origins && !(user.origin in allowed_origins))
-		to_chat(user, SPAN_WARNING("Gear [display_name] cannot be equipped: Invalid Origin."))
+		to_chat(user, SPAN_WARNING("Gear [display_name] cannot be equipped: Invalid Origin"))
 		return
 
 	if(!(slot && user.equip_to_slot_or_del(new path, slot)))
-		var/obj/item/equipping_gear = new path
+		var/obj/equipping_gear = new path
 		if(user.equip_to_appropriate_slot(equipping_gear))
 			return
 
@@ -84,7 +84,6 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 
 		if(drop_instead_of_del)
 			equipping_gear.forceMove(get_turf(user))
-			equipping_gear.dropped(user)
 			return
 
 		qdel(equipping_gear)
@@ -188,33 +187,6 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	display_name = "BiMex polarized shades, bronze"
 	path = /obj/item/clothing/glasses/sunglasses/big/new_bimex/bronze
 	fluff_cost = 4
-
-// Bimex ripoff shades - cheap but colorful
-
-/datum/gear/eyewear/bimax_shades
-	display_name = "BiMax personal shades"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake
-	fluff_cost = 2
-
-/datum/gear/eyewear/bimax_shades/red
-	display_name = "BiMax personal shades, red"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/red
-
-/datum/gear/eyewear/bimax_shades/orange
-	display_name = "BiMax personal shades, orange"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/orange
-
-/datum/gear/eyewear/bimax_shades/yellow
-	display_name = "BiMax personal shades, yellow"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/yellow
-
-/datum/gear/eyewear/bimax_shades/green
-	display_name = "BiMax personal shades, green"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/green
-
-/datum/gear/eyewear/bimax_shades/blue
-	display_name = "BiMax personal shades, blue"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/blue
 
 /datum/gear/eyewear/prescription_sunglasses
 	display_name = "Prescription sunglasses"
@@ -710,11 +682,6 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	path = /obj/item/device/camera
 	fluff_cost = 2
 
-/datum/gear/toy/camera/disposable
-	display_name = "Old Disposable Camera"
-	path = /obj/item/device/camera/oldcamera
-	fluff_cost = 3
-
 /datum/gear/toy/mags
 	fluff_cost = 1
 
@@ -859,33 +826,9 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 
 /datum/gear/weapon/upppistol //ww2 war trophy luger
 	display_name = "Type 73 Pistol"
-	path = /obj/item/storage/box/fluff_gun/upp
-	slot = WEAR_R_HAND
-
-/datum/gear/weapon/np92_pistol
-	display_name = "NP92 Pistol"
-	path = /obj/item/storage/box/fluff_gun/np92
-	slot = WEAR_R_HAND
-
-/datum/gear/weapon/l54_pistol
-	display_name = "L54 Pistol" // TWE service pistol - same stats as the m4a3
-	path = /obj/item/storage/box/fluff_gun/l54
-	slot = WEAR_R_HAND
-
-/datum/gear/weapon/holdout
-	display_name = "W62 'Whisper'" //22LR ratkiller and/or plinker
-	path = /obj/item/storage/box/fluff_gun/plinker
-	slot = WEAR_R_HAND
-
-/datum/gear/weapon/action
-	display_name = "AC71 'Action'" //380ACP holdout pistol
-	path = /obj/item/storage/box/fluff_gun/action
-	slot = WEAR_R_HAND
-
-/datum/gear/weapon/m1911
-	display_name = "M48A4 Service pistol" //modernized m1911
-	path = /obj/item/storage/box/fluff_gun/m1911
-	slot = WEAR_R_HAND
+	path = /obj/item/storage/box/upp
+	slot = WEAR_IN_BACK
+	fluff_cost = 4
 
 /datum/gear/weapon/m4a3_custom
 	display_name = "M4A3 Custom Pistol"
@@ -1239,7 +1182,7 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /datum/gear/misc/facepaint_body
 	display_name = "Fullbody paint"
 	path = /obj/item/facepaint/sniper
-	fluff_cost = 3
+	fluff_cost = 4 //To match with the skull paint amount of point, gave this amount of point for the same reason of the skull facepaint (too cool for everyone to be able to constantly use)
 
 /datum/gear/misc/jungle_boots
 	display_name = "Jungle pattern combat boots"
@@ -1254,11 +1197,6 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /datum/gear/misc/brown_gloves
 	display_name = "brown combat gloves"
 	path = /obj/item/clothing/gloves/marine/brown
-	fluff_cost = 2
-
-/datum/gear/misc/fingerless_gloves
-	display_name = "fingerless combat gloves"
-	path = /obj/item/clothing/gloves/marine/fingerless
 	fluff_cost = 2
 
 /datum/gear/misc/grey_boots
@@ -1343,8 +1281,8 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 
 
 /datum/gear/civilian/patch
-	display_name = "Freelancer's patch"
-	path = /obj/item/clothing/accessory/patch/freelancer_patch
+	display_name = "Weyland-Yutani shoulder patch, black"
+	path = /obj/item/clothing/accessory/patch/wy
 	fluff_cost = 1
 	slot = WEAR_IN_ACCESSORY
 

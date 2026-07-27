@@ -22,7 +22,11 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	"whitefull"
 ))
 
-#define MAX_SAVE_SLOTS 20
+GLOBAL_LIST_INIT(be_special_flags, list(
+	"Xenomorph after unrevivable death" = BE_ALIEN_AFTER_DEATH,
+	"Agent" = BE_AGENT,
+	"King" = BE_KING,
+))
 
 /datum/preferences
 	var/client/owner
@@ -170,7 +174,6 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	var/body_size = "Average" // Body Size
 	var/body_type = "Lean" // Body Type
 	var/language = "None" //Secondary language
-	var/list/gear //Custom/fluff item loadout.
 	var/preferred_squad = "None"
 
 		//Some faction information.
@@ -269,6 +272,22 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 
 	/// Personal weapon that spawns randomly roundstart
 	var/personal_weapon = "Ithaca 37 shotgun"
+
+	/// Fluff items that the user is equipped with on spawn.
+	var/list/gear
+
+	/// Loadout items that the user is equipped with on spawn.
+	VAR_PRIVATE/list/loadout = list()
+
+	/// Mapping of jobs to slot numbers to names, to allow users to customise slots
+	var/list/loadout_slot_names
+
+	/// Which slot is currently in use
+	var/selected_loadout_slot = 1
+
+	/// This contains any potential issues with the users' preferences, and presents them on the lobby screen
+	var/errors = list()
+
 
 /datum/preferences/New(client/C)
 	key_bindings = deep_copy_list(GLOB.hotkey_keybinding_list_by_key) // give them default keybinds and update their movement keys
@@ -429,10 +448,12 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 			if(length(gear))
 				dat += "<br>"
 				for(var/i = 1; i <= length(gear); i++)
-					var/datum/gear/G = GLOB.gear_datums_by_name[gear[i]]
+					var/datum/gear/G = GLOB.gear_datums_by_type[gear[i]]
 					if(G)
-						total_cost += G.cost
-						dat += "[gear[i]] ([G.cost] points)<br>"
+						total_cost += G.fluff_cost
+						var/fluff_cost = G.fluff_cost ? " ([G.fluff_cost] fluff point\s)" : ""
+						var/loadout_cost = G.loadout_cost ? " ([G.loadout_cost]) loadout point\s" : ""
+						dat += "[G.display_name][fluff_cost][loadout_cost]<br>"
 
 				dat += "<b>Used:</b> [total_cost] points"
 			else
@@ -928,6 +949,8 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	SetJobDepartment(job, priority)
 
 	SetChoices(user)
+
+	check_slot_prefs()
 	return 1
 
 /datum/preferences/proc/ResetJobs()
@@ -943,6 +966,8 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	for(var/role in GLOB.RoleAuthority.roles_by_path)
 		var/datum/job/J = GLOB.RoleAuthority.roles_by_path[role]
 		job_preference_list[J.title] = NEVER_PRIORITY
+
+	check_slot_prefs()
 
 /datum/preferences/proc/get_job_priority(J)
 	if(!J)
@@ -1057,6 +1082,8 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 				if("input")
 					var/priority = text2num(href_list["target_priority"])
 					SetJob(user, href_list["text"], priority)
+					ShowChoices(user)
+					update_all_pickers(user)
 				else
 					SetChoices(user)
 			return TRUE
@@ -2340,8 +2367,29 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	picker_ui = SStgui.get_open_ui(user, body_picker)
 	picker_ui?.send_update()
 
+	/// the loadout picker does a lot of work in static data, so
 	picker_ui = SStgui.get_open_ui(user, loadout_picker)
+	picker_ui?.send_full_update()
+
+	picker_ui = SStgui.get_open_ui(user, traits_picker)
 	picker_ui?.send_update()
+
+/// Closes all the TGUI interfaces inside the character prefs menu
+/datum/preferences/proc/close_all_pickers(mob/user)
+	var/datum/tgui/picker_ui = SStgui.get_open_ui(user, hair_picker)
+	picker_ui?.close()
+
+	picker_ui = SStgui.get_open_ui(user, body_picker)
+	picker_ui?.close()
+
+	picker_ui = SStgui.get_open_ui(user, loadout_picker)
+	picker_ui?.close()
+
+	picker_ui = SStgui.get_open_ui(user, traits_picker)
+	picker_ui?.close()
+
+/datum/preferences/proc/get_body_presentation()
+	return body_presentation || gender
 
 #undef MENU_MARINE
 #undef MENU_XENOMORPH
@@ -2352,3 +2400,104 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 #undef MENU_SETTINGS
 #undef MENU_SPECIAL
 #undef MENU_PLTCO
+
+/datum/preferences/proc/generate_name(faction = FACTION_MARINE)
+	var/female = prob(50)
+	var/name = "John Doe"
+	if(female)
+		name = "Jane Doe"
+
+	switch(faction)
+		if(FACTION_MARINE)
+			if(female)
+				name = "[pick(GLOB.first_names_female)] [pick(GLOB.last_names)]"
+			else
+				name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
+		if(FACTION_WY, FACTION_TWE)
+			if(female)
+				name = "[pick(GLOB.first_names_female_pmc)] [pick(GLOB.last_names_pmc)]"
+			else
+				name = "[pick(GLOB.first_names_male_pmc)] [pick(GLOB.last_names_pmc)]"
+		if(FACTION_COLONIST, FACTION_MARSHAL)
+			if(female)
+				name = "[pick(GLOB.first_names_female_colonist)] [pick(GLOB.last_names_colonist)]"
+			else
+				name = "[pick(GLOB.first_names_male_colonist)] [pick(GLOB.last_names_colonist)]"
+		if(FACTION_UPP)
+			if(female)
+				name = "[pick(GLOB.first_names_female_upp)] [pick(GLOB.last_names_upp)]"
+			else
+				name = "[pick(GLOB.first_names_male_upp)] [pick(GLOB.last_names_upp)]"
+		if(FACTION_CLF)
+			if(female)
+				name = "[pick(GLOB.first_names_female_clf)] [pick(GLOB.last_names_clf)]"
+			else
+				name = "[pick(GLOB.first_names_male_clf)] [pick(GLOB.last_names_clf)]"
+	return name
+
+/// If the role being equipped into has role-specific loadout, offer the player the option to change their slot
+/datum/preferences/proc/update_slot(picked_job, timeout = FALSE)
+	if(!(picked_job in GLOB.roles_with_gear))
+		return TRUE
+
+	var/loadout_for_role = has_loadout_for_role(picked_job)
+	if(!loadout_for_role)
+		if(!timeout)
+			if(tgui_alert(owner, "You have not selected any loadout for this role. Do you want to select this now?", "Loadout", list("Yes", "No")) == "Yes")
+				loadout_picker.tgui_interact(owner)
+				return FALSE
+		return TRUE
+
+	var/options = list()
+
+	for(var/slot in loadout_for_role)
+		var/string_to_use = "Slot [slot]"
+		if(loadout_slot_names[picked_job] && loadout_slot_names[picked_job][slot])
+			string_to_use = loadout_slot_names[picked_job][slot]
+		options[string_to_use] = slot
+
+	owner.mob.sight = BLIND
+	var/selected = tgui_input_list(owner, "You have loadout available - which slot would you like to use?", "Slot Selection", options, theme = "crtgreen", timeout = timeout)
+	owner.mob.sight = owner.mob::sight
+
+	if(!selected)
+		return FALSE
+
+
+	selected_loadout_slot = options[selected]
+	return TRUE
+
+
+/// Gets the currently selected loadout of the provided job, or the job selected on "High"
+/datum/preferences/proc/get_active_loadout(job)
+	if(!job)
+		job = get_high_priority_job()
+
+	if(!job)
+		return
+
+	if(!islist(loadout[job]))
+		loadout[job] = list()
+
+	if(!islist(loadout[job]["[selected_loadout_slot]"]))
+		loadout[job]["[selected_loadout_slot]"] = list()
+
+	return loadout[job]["[selected_loadout_slot]"]
+
+/// If the user has any loadout pre-selected for the given role
+/datum/preferences/proc/has_loadout_for_role(job)
+	if(!job)
+		return
+
+	if(!loadout[job])
+		return
+
+	var/slots_with_stuff = list()
+	for(var/slot in loadout[job])
+		if(length(loadout[job][slot]))
+			slots_with_stuff += slot
+
+	if(!length(slots_with_stuff))
+		return
+
+	return slots_with_stuff

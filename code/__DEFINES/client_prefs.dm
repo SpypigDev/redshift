@@ -54,3 +54,6 @@
 #define DUAL_WIELD_SWAP 1
 ///Do nothing when dual wielding
 #define DUAL_WIELD_NONE 2
+
+/// How many slots players have access to, both for loadout slots and character slots
+#define MAX_SAVE_SLOTS 10

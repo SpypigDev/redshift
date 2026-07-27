@@ -1,5 +1,5 @@
 #define SAVEFILE_VERSION_MIN 8
-#define SAVEFILE_VERSION_MAX 29
+#define SAVEFILE_VERSION_MAX 31
 
 //handles converting savefiles to new formats
 //MAKE SURE YOU KEEP THIS UP TO DATE!
@@ -215,6 +215,31 @@
 
 		S["hair_style_name"] << hair_style
 
+	if(savefile_version < 30)
+		var/be_special = 0
+		S["be_special"] >> be_special
+		be_special &= ~BE_KING
+		S["be_special"] << be_special
+
+	if(savefile_version < 31)
+		for(var/i in 1 to MAX_SAVE_SLOTS)
+			S.cd = "/character[i]"
+
+			var/list/existing_gear
+			S["gear"] >> existing_gear
+
+			var/list/new_list = list()
+			for(var/entry in existing_gear)
+				var/datum/gear/gear = GLOB.gear_datums_by_name[entry]
+				if(!gear)
+					continue
+
+				new_list += "[gear.type]"
+
+			S["gear"] = new_list
+
+		S.cd = "/"
+
 	savefile_version = SAVEFILE_VERSION_MAX
 	return 1
 
@@ -358,6 +383,9 @@
 
 	S["lastchangelog"] >> lastchangelog
 
+	S["job_loadout"] >> loadout
+	S["job_loadout_names"] >> loadout_slot_names
+
 	//Sanitize
 	ooccolor = sanitize_hexcolor(ooccolor, CONFIG_GET(string/ooc_color_normal))
 	lastchangelog = sanitize_text(lastchangelog, initial(lastchangelog))
@@ -431,7 +459,9 @@
 	custom_cursors = sanitize_integer(custom_cursors, FALSE, TRUE, TRUE)
 	pref_special_job_options = sanitize_islist(pref_special_job_options, list())
 	pref_job_slots = sanitize_islist(pref_job_slots, list())
-	vars["fps"] = fps
+
+	loadout = sanitize_loadout(loadout, owner)
+	loadout_slot_names = sanitize_islist(loadout_slot_names, list())
 
 	check_keybindings()
 	S["key_bindings"] << key_bindings
@@ -570,6 +600,9 @@
 	S.Unlock()
 
 	S["lastchangelog"] << lastchangelog
+
+	S["job_loadout"] << save_loadout(loadout)
+	S["job_loadout_names"] << loadout_slot_names
 
 	return TRUE
 
@@ -746,7 +779,9 @@
 		ResetJobs()
 	else
 		for(var/job in job_preference_list)
-			job_preference_list[job] = sanitize_integer(job_preference_list[job], 0, 4, initial(job_preference_list[job]))
+			job_preference_list[job] = sanitize_integer(job_preference_list[job], 0, 3, initial(job_preference_list[job]))
+
+	check_slot_prefs()
 
 	if(!organ_data)
 		organ_data = list()
@@ -756,7 +791,6 @@
 	traits = sanitize_list(traits)
 	read_traits = FALSE
 	trait_points = initial(trait_points)
-	close_browser(owner, "character_traits")
 
 	if(!origin) origin = ORIGIN_USCM
 	if(!faction)  faction =  "None"
@@ -838,7 +872,8 @@
 	S["gen_record"] << gen_record
 	S["be_special"] << be_special
 	S["organ_data"] << organ_data
-	S["gear"] << gear
+	S["gear"] << save_gear(gear)
+	S["job_loadout"] << save_loadout(loadout)
 	S["origin"] << origin
 	S["faction"] << faction
 	S["religion"] << religion
@@ -893,6 +928,19 @@
 
 	if(length(notadded))
 		addtimer(CALLBACK(src, PROC_REF(announce_conflict), notadded), 5 SECONDS)
+
+/// Checks if any job selected has a loadout, and if this is not selected, prompt the user to select it on the lobby screen
+/datum/preferences/proc/check_slot_prefs()
+	errors = list()
+
+	for(var/job in GLOB.roles_with_gear)
+		if(!job_preference_list[job])
+			continue
+
+		if(has_loadout_for_role(job))
+			continue
+
+		errors += "Job [job] has loadout available, but none has been selected."
 
 /datum/preferences/proc/announce_conflict(list/notadded)
 	to_chat(owner, SPAN_ALERTWARNING("<u>Keybinding Conflict</u>"))

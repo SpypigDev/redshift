@@ -202,6 +202,17 @@
 	copy_appearance_to(preview_dummy)
 	preview_dummy.update_body()
 	preview_dummy.update_hair()
+	for (var/datum/character_trait/character_trait as anything in preview_dummy.traits)
+		character_trait.unapply_trait(preview_dummy)
+
+	var/gear_to_preview = gear.Copy()
+	var/loadout_to_preview = get_active_loadout()
+	if(loadout_to_preview)
+		gear_to_preview += loadout_to_preview
+
+	for(var/gear_type in gear_to_preview)
+		var/datum/gear/gear = GLOB.gear_datums_by_type[gear_type]
+		gear.equip_to_user(preview_dummy, override_checks = TRUE, drop_instead_of_del = FALSE)
 
 	arm_equipment(preview_dummy, J, FALSE, FALSE, owner, show_job_gear)
 
@@ -232,17 +243,16 @@
 		rotate_right.screen_loc = "preview:1:-16,0"
 	owner.add_to_screen(rotate_right)
 
-/datum/preferences/proc/job_pref_to_gear_preset()
-	var/highest_priority_job
-	var/highest_priority = LOW_PRIORITY
-
+/// Returns the role that is selected on High
+/datum/preferences/proc/get_high_priority_job()
 	for(var/job in job_preference_list)
-		if(job_preference_list[job] == NEVER_PRIORITY)
-			continue
+		if(job_preference_list[job] == 1)
+			return job
 
-		if(job_preference_list[job] < highest_priority)
-			highest_priority_job = job
-			highest_priority = job_preference_list[job]
+	return JOB_SQUAD_MARINE
+
+/datum/preferences/proc/job_pref_to_gear_preset()
+	var/high_priority = get_high_priority_job()
 
 	switch(highest_priority_job)
 //USCM Section

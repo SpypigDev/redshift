@@ -136,6 +136,15 @@
 /obj/structure/machinery/power/apc/upgraded/power/north,
 /turf/open/floor/almayer,
 /area/eclipse/hallways/hangar)
+"aw" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	layer = 3.8
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/eclipse/medical)
 "ax" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/almayer{
@@ -3972,9 +3981,6 @@
 /obj/structure/window/reinforced{
 	layer = 3.8
 	},
-/obj/structure/window/reinforced{
-	layer = 3.8
-	},
 /turf/open/floor/almayer/dark_sterile,
 /area/eclipse/cryo_cells)
 "wP" = (
@@ -4574,7 +4580,6 @@
 /turf/open/floor/almayer/plate,
 /area/eclipse/cryo_cells)
 "An" = (
-/obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/reagent_container/food/drinks/cans/space_mountain_wind{
 	pixel_x = 2;
 	pixel_y = 13
@@ -4603,7 +4608,7 @@
 	pixel_y = -1
 	},
 /obj/structure/surface/table/reinforced/black,
-/turf/open/floor/corsat/lightplate,
+/turf/open/floor/almayer,
 /area/eclipse/dorms)
 "Aq" = (
 /obj/structure/surface/table/reinforced/black,
@@ -7111,17 +7116,6 @@
 	},
 /turf/open/floor/almayer,
 /area/eclipse/platoon_commander_rooms)
-"QS" = (
-/obj/structure/machinery/door/poddoor/almayer{
-	dir = 4;
-	unacidable = 1
-	},
-/obj/structure/machinery/door/poddoor/almayer{
-	dir = 4;
-	unacidable = 1
-	},
-/turf/closed/wall/almayer/outer,
-/area/eclipse/prep_hallway)
 "QT" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -13860,7 +13854,7 @@ Rf
 Rf
 Bk
 Zv
-aP
+aw
 aP
 to
 to
@@ -13944,7 +13938,7 @@ Rf
 Rf
 Rf
 RT
-QS
+nF
 nF
 RT
 BV

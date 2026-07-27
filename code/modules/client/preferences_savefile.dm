@@ -356,6 +356,8 @@
 	var/list/remembered_key_bindings
 	S["remembered_key_bindings"] >> remembered_key_bindings
 
+	S["lastchangelog"] >> lastchangelog
+
 	//Sanitize
 	ooccolor = sanitize_hexcolor(ooccolor, CONFIG_GET(string/ooc_color_normal))
 	lastchangelog = sanitize_text(lastchangelog, initial(lastchangelog))
@@ -566,6 +568,8 @@
 	S["window_scale"] << window_scale
 
 	S.Unlock()
+
+	S["lastchangelog"] << lastchangelog
 
 	return TRUE
 

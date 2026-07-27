@@ -158,6 +158,3 @@
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_ONE "garrow_vehicle_elevator_one"
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_TWO "garrow_vehicle_elevator_two"
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_CARGO "garrow_cargo_elevator"
-
-#define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_SOUTH "EclipseElevatorS"
-#define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_NORTH "EclipseElevatorN"

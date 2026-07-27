@@ -165,23 +165,18 @@
 	},
 /turf/open/shuttle/escapepod/floor4,
 /area/eclipse/motor_pool)
+"az" = (
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
+	req_one_access_txt = "8;12;39;40";
+	req_access = list()
+	},
+/turf/open/floor/almayer/plate,
+/area/eclipse/platoonprep)
 "aJ" = (
 /turf/open/floor/almayer{
 	icon_state = "test_floor5"
 	},
 /area/eclipse/hallways/hangar)
-"aP" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	layer = 3.8
-	},
-/obj/structure/window/reinforced{
-	layer = 3.8
-	},
-/turf/open/floor/plating/plating_catwalk/prison,
-/area/eclipse/medical)
 "aR" = (
 /obj/structure/stairs{
 	icon_state = "ramptop"
@@ -269,9 +264,6 @@
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/eclipse/cryo_cells)
 "bs" = (
-/obj/structure/window/reinforced{
-	layer = 3.8
-	},
 /obj/structure/window/reinforced{
 	layer = 3.8
 	},
@@ -13855,7 +13847,7 @@ Rf
 Bk
 Zv
 aw
-aP
+aw
 to
 to
 wf
@@ -16485,7 +16477,7 @@ dL
 sM
 DW
 dL
-yD
+az
 Pr
 yD
 em

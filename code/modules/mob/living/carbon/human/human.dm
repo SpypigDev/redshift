@@ -1704,6 +1704,8 @@
 			platoon = "Gamma Troop"
 	play_screen_text("<u>[SSmapping.configs[SHIP_MAP].map_name]<br></u>" + "[platoon]<br><br>" + human_manifest, alert_type)
 
+	qdel(new_player)
+
 /mob/living/carbon/human/point_to_atom(atom/A, turf/T)
 	if(isitem(A))
 		var/obj/item/item = A

@@ -177,7 +177,8 @@ Additional game mode variables.
 
 	msg_admin_niche("([new_predator.key]) joined as Yautja, [new_predator.real_name].")
 
-	if(pred_candidate) pred_candidate.moveToNullspace() //Nullspace it for garbage collection later.
+	if(pred_candidate && !QDELETED(pred_candidate))
+		pred_candidate.moveToNullspace() //Nullspace it for garbage collection later.
 
 /datum/game_mode/proc/calculate_pred_max()
 	return floor(length(GLOB.player_list) / pred_per_players) + pred_additional_max + pred_start_count
@@ -221,8 +222,6 @@ Additional game mode variables.
 	return TRUE
 
 /datum/game_mode/proc/transform_predator(mob/pred_candidate)
-	set waitfor = FALSE
-
 	if(!pred_candidate.client) // Legacy - probably due to spawn code sync sleeps
 		log_debug("Null client attempted to transform_predator")
 		return
@@ -243,9 +242,18 @@ Additional game mode variables.
 		to_chat(pred_candidate, SPAN_WARNING("Could not setup character - you might want to tell someone about this."))
 		return
 
+	var/mob/new_player/new_player_mob
+	if(isnewplayer(pred_candidate))
+		new_player_mob = pred_candidate
+		new_player_mob.spawning = TRUE
+		new_player_mob.close_spawn_windows()
+
 	var/mob/living/carbon/human/yautja/new_predator = new(spawn_point)
 	pred_candidate.mind.transfer_to(new_predator, TRUE)
 	new_predator.client = pred_candidate.client
+
+	if(new_player_mob)
+		qdel(new_player_mob)
 
 	var/datum/job/J = GLOB.RoleAuthority.roles_by_name[JOB_PREDATOR]
 
@@ -464,6 +472,8 @@ Additional game mode variables.
 				if(isnewplayer(xeno_candidate))
 					var/mob/new_player/noob = xeno_candidate
 					noob.close_spawn_windows()
+					noob.spawning = TRUE
+
 				if(picked_hive.hive_location)
 					picked_hive.hive_location.spawn_burrowed_larva(xeno_candidate)
 				else if((world.time < XENO_BURIED_LARVA_TIME_LIMIT + SSticker.round_start_time))
@@ -515,6 +525,7 @@ Additional game mode variables.
 		if(isnewplayer(xeno_candidate))
 			var/mob/new_player/noob = xeno_candidate
 			noob.close_spawn_windows()
+			noob.spawning = TRUE
 		for(var/mob_name in new_xeno.hive.banished_ckeys)
 			if(new_xeno.hive.banished_ckeys[mob_name] == xeno_candidate.ckey)
 				to_chat(xeno_candidate, SPAN_WARNING("You are banished from this hive, You may not rejoin unless the Queen re-admits you or dies."))
@@ -687,6 +698,8 @@ Additional game mode variables.
 	SSround_recording.recorder.update_key(new_xeno)
 	if(new_xeno.client)
 		new_xeno.client.change_view(GLOB.world_view_size)
+		if(isnewplayer(xeno_candidate))
+			qdel(xeno_candidate)
 
 	msg_admin_niche("[new_xeno.key] has joined as [new_xeno].")
 	if(isxeno(new_xeno)) //Dear lord

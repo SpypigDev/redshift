@@ -2090,8 +2090,6 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 					load_character(text2num(href_list["num"]))
 					close_load_dialog(user)
 
-					update_all_pickers(user)
-
 				if("tgui_fancy")
 					tgui_fancy = !tgui_fancy
 				if("tgui_lock")

@@ -29,7 +29,7 @@
   .sectionLoad {
     animation: section-loading 1s forwards;
     box-shadow: 0 0 15px;
-    background-color: hsla(120, 100%, 3%, 0.7);
+    background-color: hsla(0, 100%, 3%, 0.7);
   }
 
   .dividerEffect {
@@ -41,6 +41,28 @@
     opacity: 0;
     animation: bg-load 10s forwards;
     animation-delay: 5s;
+  }
+
+  .bgBackground {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    filter: opacity(1) brightness(1.2) saturate(0.4) contrast(2);
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: hsla(0, 93%, 30%, 0.651);
+      z-index: 2;
+      background-size:
+        100% 8px,
+        6px 100%;
+      pointer-events: none;
+    }
   }
 
   @keyframes bg-load {
@@ -114,7 +136,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background: hsla(0, 6%, 7%, 0.1);
+        background: hsla(0, 7%, 21%, 0.1);
         opacity: 0;
         z-index: 2;
         pointer-events: none;
@@ -124,10 +146,6 @@
         box-shadow: 0 0 500px 25px hsla(0, 0%, 0%, 0.9) inset;
       }
     }
-  }
-
-  .pred {
-    background-image: url('../assets/pred-dark.svg');
   }
 }
 
@@ -157,9 +175,10 @@
   background-size: 'cover';
 
   .bgBackground {
-    background-position: center;
-    background-size: cover;
     position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
   }
 
   .authorAttrib {
@@ -167,19 +186,6 @@
     bottom: 0px;
     right: 0px;
     padding: 5px;
-  }
-
-  .pred {
-    background-image: url('../assets/pred-light.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    width: 24px;
-    height: 24px;
-    margin-left: -0.25em;
-    margin-top: 0.25em;
-    margin-right: 0.25em;
-    margin-bottom: -0.25em;
   }
 
   .Button__content {

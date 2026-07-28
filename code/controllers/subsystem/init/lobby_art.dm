@@ -33,10 +33,10 @@ SUBSYSTEM_DEF(lobby_art)
 		if(!ui)
 			continue
 
+		player.lobby_window.send_asset(get_asset_datum(/datum/asset/simple/lobby_art))
+
 		ui.refresh_cooldown = FALSE
 		ui.send_full_update(force = TRUE)
-
-		player.lobby_window.send_asset(get_asset_datum(/datum/asset/simple/lobby_art))
 
 	return SS_INIT_SUCCESS
 

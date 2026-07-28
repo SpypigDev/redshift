@@ -116,6 +116,7 @@ export const LobbyMenu = () => {
           }}
         >
           {!!modal && <Modal>{modal}</Modal>}
+          <Box height="100%" width="100%" position="absolute" className="crt" />
           <Box
             height="100%"
             width="100%"
@@ -124,7 +125,7 @@ export const LobbyMenu = () => {
             }}
             className="bgLoad bgBackground"
           />
-          <Box height="100%" width="100%" position="absolute" className="crt" />
+
           <Box position="absolute" top="10px" right="10px">
             <Button
               icon="cog"
@@ -244,61 +245,73 @@ const LobbyButtons = (props: {
       className="sectionLoad"
       style={{
         opacity: hidden ? '0' : '1',
+        filter: `brightness(1) contrast(1.2)`,
       }}
     >
-      <Stack vertical>
+      <Stack vertical justify="center">
         <Stack.Item>
-          <Stack>
+          <Box height="68px">
+            <Box
+              style={{
+                backgroundImage: `url("${resolveAsset(upp_enabled ? 'upp.png' : 'uscm_red.png')}")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPositionX: 'center',
+                filter: `brightness(0.8) contrast(1.6)`,
+              }}
+              className="loadEffect"
+              onClick={() => {
+                setHidden(true);
+              }}
+            />
+          </Box>
+        </Stack.Item>
+        <Stack.Item minWidth="267px">
+          <Stack vertical>
             <Stack.Item>
-              <Box height="68px">
-                <Box
-                  style={{
-                    backgroundImage: `url("${resolveAsset(upp_enabled ? 'upp.png' : 'uscm_red.png')}")`,
-                  }}
-                  width="67px"
-                  className="loadEffect"
-                  onClick={() => {
-                    setHidden(true);
-                  }}
-                />
-              </Box>
+              <Stack justify="center" width="100%">
+                <Stack.Item width="100%" textAlign="center">
+                  <Box
+                    className="bgLoad"
+                    pt="3px"
+                    pb="3px"
+                    fontSize={2}
+                    backgroundColor="hsl(0, 94%, 30%)"
+                    color="black"
+                    style={{
+                      animationDelay: '1.4s',
+                      filter: `brightness(1) contrast(1.6)`,
+                    }}
+                  >
+                    PROJECT REDSHIFT
+                  </Box>
+                </Stack.Item>
+              </Stack>
             </Stack.Item>
-            <Stack.Item minWidth="200px">
-              <Stack vertical>
+            <Stack.Item>
+              <Stack justify="center">
                 <Stack.Item>
-                  <Stack justify="center">
-                    <Stack.Item>
-                      <Box className="typeEffect">Welcome,</Box>
-                    </Stack.Item>
-                  </Stack>
+                  <Box
+                    className="typeEffect"
+                    style={{
+                      animationDelay: '1.4s',
+                    }}
+                  >
+                    {character_name}
+                  </Box>
                 </Stack.Item>
+              </Stack>
+            </Stack.Item>
+            <Stack.Item>
+              <Stack justify="center">
                 <Stack.Item>
-                  <Stack justify="center">
-                    <Stack.Item>
-                      <Box
-                        className="typeEffect"
-                        style={{
-                          animationDelay: '1.4s',
-                        }}
-                      >
-                        {character_name}
-                      </Box>
-                    </Stack.Item>
-                  </Stack>
-                </Stack.Item>
-                <Stack.Item>
-                  <Stack justify="center">
-                    <Stack.Item>
-                      <Box
-                        className="typeEffect hiveEffect"
-                        style={{
-                          animationDelay: '1.4s',
-                        }}
-                      >
-                        {`${xeno_prefix}-${xenoNumber}${xeno_postfix}`}
-                      </Box>
-                    </Stack.Item>
-                  </Stack>
+                  <Box
+                    className="typeEffect hiveEffect"
+                    style={{
+                      animationDelay: '1.4s',
+                    }}
+                  >
+                    {`${xeno_prefix}-${xenoNumber}${xeno_postfix}`}
+                  </Box>
                 </Stack.Item>
               </Stack>
             </Stack.Item>

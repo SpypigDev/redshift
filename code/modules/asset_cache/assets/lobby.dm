@@ -3,20 +3,14 @@
 	prefix = FALSE
 
 /datum/asset/simple/lobby_art/register()
-	var/icon_string = "config/lobby_art/[SSlobby_art.selected_file_name].png"
-
-	if(!icon_string || !fexists(icon_string))
-		return
-
-	var/asset = icon(icon_string)
-	if (!asset)
+	var/asset = icon('icons/lobby/title.dmi', SSlobby_art.selected_file_name)
+	if(!asset)
 		return
 
 	asset = fcopy_rsc(asset) //dedupe
-	var/asset_name = "lobby_art.png"
 
-	SSassets.transport.register_asset(asset_name, asset)
-	assets[asset_name] = asset
+	SSassets.transport.register_asset("lobby_art.png", asset)
+	assets["lobby_art.png"] = asset
 
 /datum/asset/simple/lobby_files
 	keep_local_name = TRUE

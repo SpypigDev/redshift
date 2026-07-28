@@ -21,7 +21,7 @@
 /datum/asset/simple/lobby_files
 	keep_local_name = TRUE
 	assets = list(
-		"load.mp3" = 'sound/lobby/lobby_load.mp3',
+		"load.mp3" = 'sound/machines/tcomms_on.ogg',
 	)
 
 /datum/asset/simple/restart_animation

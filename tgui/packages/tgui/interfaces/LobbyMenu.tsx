@@ -94,11 +94,7 @@ export const LobbyMenu = () => {
     );
   }
 
-  const themeToUse = themeDisabled
-    ? 'weyland_yutani'
-    : upp_enabled
-      ? 'crtred'
-      : 'crtgreen';
+  const themeToUse = themeDisabled ? 'weyland_yutani' : 'crtlobbyred';
 
   return (
     <Window theme={themeToUse} fitted scrollbars={false}>
@@ -257,7 +253,7 @@ const LobbyButtons = (props: {
               <Box height="68px">
                 <Box
                   style={{
-                    backgroundImage: `url("${resolveAsset(upp_enabled ? 'upp.png' : 'uscm.png')}")`,
+                    backgroundImage: `url("${resolveAsset(upp_enabled ? 'upp.png' : 'uscm_red.png')}")`,
                   }}
                   width="67px"
                   className="loadEffect"

@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+@use '~tgui/styles/base.scss';
+
 em {
   font-style: normal;
   font-weight: bold;
@@ -1295,7 +1297,8 @@ em {
 }
 
 .round_header {
-  color: #e92d2d;
+  background-color: #e92d2d;
+  color: base.$color-bg-section;
   display: block;
   text-align: center;
   font-family: courier;

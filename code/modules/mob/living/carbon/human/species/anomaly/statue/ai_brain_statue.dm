@@ -3,6 +3,7 @@
 	var/list/blinkers = list()
 	var/blink_jump_range = 5
 	var/static/list/allowed_target_species = list(SPECIES_HUMAN, SPECIES_MONKEY)
+	action_whitelist = list()
 
 	grenading_allowed = FALSE
 	requires_vision = TRUE
@@ -10,6 +11,7 @@
 
 	COOLDOWN_DECLARE(processing_cooldown)
 	COOLDOWN_DECLARE(nearby_targets_scan)
+	var/list/nearby_targets = null
 
 /datum/human_ai_brain/statue/configure_custom_spawn()
 	COOLDOWN_START(src, processing_cooldown, 3 SECONDS)
@@ -38,23 +40,30 @@
 
 /datum/human_ai_brain/statue/proc/get_nearby_targets()
 	if(!COOLDOWN_FINISHED(src, nearby_targets_scan))
-		return FALSE
+		return LAZYLEN(nearby_targets)
 
+	nearby_targets = list()
 	var/turf/current_turf = get_turf(tied_human)
 	if(!istype(current_turf))
 		return
 
 	range_bounds.set_shape(current_turf.x, current_turf.y, 12)
 
-	var/list/nearby_targets = SSquadtree.players_in_range(range_bounds, current_turf.z, QTREE_EXCLUDE_OBSERVER | QTREE_SCAN_MOBS)
+	nearby_targets = SSquadtree.players_in_range(range_bounds, current_turf.z, QTREE_EXCLUDE_OBSERVER | QTREE_SCAN_MOBS)
 
 	for(var/mob/living/carbon/human/target as anything in nearby_targets)
 		if(target.stat)
+			nearby_targets -= target
 			continue
 		if(target.species?.group in allowed_target_species)
-			COOLDOWN_START(src, nearby_targets_scan, 5 SECONDS)
-			return TRUE
+			continue
+		nearby_targets -= target
 
+	if(length(nearby_targets))
+		COOLDOWN_START(src, nearby_targets_scan, 5 SECONDS)
+		return TRUE
+
+	nearby_targets = null
 	COOLDOWN_START(src, nearby_targets_scan, 1 SECONDS)
 	return FALSE
 
@@ -71,20 +80,11 @@
 	if(!get_nearby_targets())	// nobody is around
 		return
 
-	var/list/mobs_in_view  = oviewers(GLOB.world_view_size, tied_human)
-
-	for(var/mob/living/carbon/human/viewer as anything in mobs_in_view)
-		if(!is_type_in_list(viewer.species.group, allowed_target_species))
-			mobs_in_view -= viewer
-			continue
-		if(!istype(viewer) || viewer.stat)
-			mobs_in_view -= viewer
-			continue
-	if(!length(mobs_in_view))
-		COOLDOWN_START(src, processing_cooldown, 2 SECONDS)	// they are close, we just cant see them
+	if(!length(nearby_targets))
+		COOLDOWN_START(src, processing_cooldown, 2 SECONDS)
 		return
 
-	for(var/mob/living/carbon/human/possible_watcher as anything in mobs_in_view)
+	for(var/mob/living/carbon/human/possible_watcher as anything in nearby_targets)
 		var/angle = Get_Angle(get_turf(possible_watcher), current_turf)
 		var/list/watcher_directions = make_dir_cardinal(angle2dir(angle))
 		if(possible_watcher.dir in watcher_directions)
@@ -107,9 +107,11 @@
 		COOLDOWN_START(src, processing_cooldown, 0.5 SECONDS)	// someone is looking at us
 		return
 
-	var/mob/living/carbon/human/target = pick(mobs_in_view)
+	var/mob/living/carbon/human/target = pick(nearby_targets)
 	var/turf/jump_turf
-	var/kill_on_arrival = FALSE
+
+	for(var/mob/living/carbon/human/blinker as anything in nearby_targets)
+		blinker.overlay_fullscreen_timer(0.2 SECONDS, FALSE, "statue_blink", /atom/movable/screen/fullscreen/blind/full)
 
 	if(get_dist(target, tied_human) > blink_jump_range)
 		var/list/jump_path = get_line(current_turf, get_turf(target), FALSE)
@@ -125,8 +127,5 @@
 
 	tied_human.dir = pick(make_dir_cardinal(get_dir(current_turf, jump_turf)))
 	tied_human.forceMove(jump_turf)
-
-	for(var/mob/living/carbon/human/blinker as anything in mobs_in_view)
-		blinker.overlay_fullscreen_timer(0.2 SECONDS, FALSE, "statue_blink", /atom/movable/screen/fullscreen/blind/full)
 
 	COOLDOWN_START(src, processing_cooldown, 3 SECONDS)

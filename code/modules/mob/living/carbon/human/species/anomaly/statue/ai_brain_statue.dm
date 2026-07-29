@@ -1,7 +1,7 @@
 /datum/human_ai_brain/statue
 	var/datum/shape/rectangle/square/range_bounds
 	var/list/blinkers = list()
-	var/blink_jump_range = 5
+	var/blink_jump_range = 4
 	var/static/list/allowed_target_species = list(SPECIES_HUMAN, SPECIES_MONKEY)
 	action_whitelist = list()
 
@@ -123,7 +123,7 @@
 		var/obj/limb/target_head = target.get_limb("head")
 		target.apply_damage(rand(100, 150), BRUTE, "head")
 		target_head.fracture(100)
-		target.death()
+		addtimer(CALLBACK(target, TYPE_PROC_REF(/mob/living/carbon/human, death)), 0.5 SECONDS)
 
 	tied_human.dir = pick(make_dir_cardinal(get_dir(current_turf, jump_turf)))
 	tied_human.forceMove(jump_turf)

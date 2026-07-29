@@ -24414,10 +24414,6 @@
 "taT" = (
 /turf/open/floor/prison/darkbrown2/northwest,
 /area/fiorina/tumor/aux_engi)
-"taY" = (
-/obj/structure/window/framed/prison/reinforced/hull,
-/turf/open/space/basic,
-/area/fiorina/lz/near_lzI)
 "tbs" = (
 /obj/structure/largecrate/random/secure,
 /turf/open/floor/prison,
@@ -76988,7 +76984,7 @@ nfF
 lJr
 ruD
 quZ
-taY
+xDw
 bwC
 hKI
 hKI
@@ -77200,7 +77196,7 @@ fiq
 lJr
 lJr
 lJr
-taY
+xDw
 fgo
 hKI
 hKI
@@ -79543,10 +79539,10 @@ xDw
 lRT
 lRT
 lRT
-taY
-taY
-taY
-taY
+xDw
+xDw
+xDw
+xDw
 lRT
 lRT
 lRT

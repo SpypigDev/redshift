@@ -10233,7 +10233,7 @@
 /area/taipei/maints/south)
 "jgX" = (
 /obj/structure/window/framed/prison/reinforced,
-/turf/open/space/basic,
+/turf/open/floor/corsat/marked,
 /area/taipei/cmb)
 "jhe" = (
 /obj/effect/decal/warning_stripes{
@@ -14813,7 +14813,7 @@
 "nug" = (
 /obj/structure/window/framed/almayer/white,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open,
-/turf/open/space/basic,
+/turf/open/floor/corsat/marked,
 /area/taipei/atrium/medbay)
 "nuJ" = (
 /obj/structure/surface/table,

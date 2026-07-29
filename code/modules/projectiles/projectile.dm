@@ -869,6 +869,8 @@
 			return FALSE
 		if(mobility_aura)
 			. -= mobility_aura * 5
+		if(blind_luck)	// i really dont like this proc
+			. -= blind_luck
 		var/mob/living/carbon/human/shooter_human = P.firer
 		if(istype(shooter_human))
 			if(shooter_human.faction == faction && !(ammo_flags & AMMO_ALWAYS_FF))

@@ -270,9 +270,16 @@ At bare minimum, make sure the relevant checks from parent types gets copied in 
 //      WINDOW FRAME       //
 /////////////////////////////
 /obj/structure/window_frame/xeno_ai_obstacle(mob/living/carbon/xenomorph/X, direction, turf/target)
-	if(X.claw_type == CLAW_TYPE_VERY_SHARP || (X.claw_type >= CLAW_TYPE_SHARP && !reinforced))
-		return ..()
+	. = ..()
+	if(!.)
+		return
+
 	return WINDOW_FRAME_PENALTY
+
+/obj/structure/window/framed/xeno_ai_obstacle(mob/living/carbon/xenomorph/X, direction, turf/target)
+	if(X.claw_type == CLAW_TYPE_VERY_SHARP || X.claw_type >= CLAW_TYPE_SHARP)
+		return WINDOW_PENALTY
+	return INFINITY
 
 
 /////////////////////////////

@@ -1117,3 +1117,5 @@
 	if(new_player.mind)
 		new_player.mind_initialize()
 		new_player.mind.transfer_to(target, TRUE)
+
+	qdel(new_player)

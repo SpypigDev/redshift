@@ -1,0 +1,4 @@
+help: "Windows require a valid turf below them."
+/obj/structure/window:
+  banned_neighbors:
+  - /turf/open/space

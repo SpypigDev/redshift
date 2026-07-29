@@ -1,0 +1,18 @@
+@use 'sass:meta';
+
+@use '../../base.scss' with (
+  $color-bg: #200000,
+  $color-fg: #cf0c0cdc
+);
+
+@use '../crt.scss' with (
+  $font-family: chakrapetch-bold
+);
+
+.theme-crtlobbyred {
+  .Button {
+    background-color: transparent;
+    color: base.$color-fg;
+  }
+  @extend %theme-crt;
+}

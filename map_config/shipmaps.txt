@@ -33,6 +33,9 @@ endmap
 map golden_arrow_classic
 endmap
 
+map uss_eclipse
+endmap
+
 map uscss_obsidian_falk
 endmap
 

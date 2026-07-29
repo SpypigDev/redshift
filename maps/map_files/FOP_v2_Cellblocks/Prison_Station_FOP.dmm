@@ -7271,18 +7271,6 @@
 /obj/structure/largecrate/random,
 /turf/open/floor/prison,
 /area/prison/storage/highsec/s)
-"bKi" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/space,
-/area/space)
-"bKk" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/space,
-/area/space)
 "bKl" = (
 /turf/closed/wall/r_wall/prison_unmeltable,
 /area/prison/residential/south)
@@ -87751,7 +87739,7 @@ bBd
 bzS
 bBd
 bHq
-bKi
+aAO
 bHq
 bBd
 bzS
@@ -88599,7 +88587,7 @@ xTZ
 bzS
 bBd
 bHq
-bKk
+aAO
 bHq
 bBd
 bzS

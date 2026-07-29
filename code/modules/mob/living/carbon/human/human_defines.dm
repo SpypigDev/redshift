@@ -104,6 +104,8 @@
 	var/protection_aura = 0
 	var/marksman_aura = 0
 
+	/// Percentage chance you'll dodge a bullet, or several
+	var/blind_luck = 0
 	var/FF_hit_evade = 15
 	///used to determine if precise taser will shoot. Security code is so convoluted it's the easiest way, sorry.
 	var/criminal = FALSE

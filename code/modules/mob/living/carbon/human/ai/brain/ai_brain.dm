@@ -136,7 +136,13 @@ GLOBAL_LIST_EMPTY(human_ai_brains)
 	item_search(range(2, tied_human))
 
 	// List all allowed action types for AI to consider
-	var/list/allowed_actions = action_whitelist || (GLOB.AI_actions.Copy() - action_blacklist)
+	var/list/allowed_actions = LAZYLEN(action_whitelist) ? action_whitelist.Copy() : (GLOB.AI_actions.Copy() - action_blacklist)
+	for(var/action_index as anything in allowed_actions)
+		var/datum/ai_action/action = GLOB.AI_actions[action_index]
+		if(LAZYLEN(action.action_species_whitelist))
+			if(tied_human?.get_species() in action.action_species_whitelist)
+				continue
+			allowed_actions -= action_index
 	for(var/datum/ongoing_action as anything in ongoing_actions)
 		if(is_type_in_list(ongoing_action, allowed_actions))
 			allowed_actions -= ongoing_action.type
@@ -193,6 +199,7 @@ GLOBAL_LIST_EMPTY(human_ai_brains)
 		UnregisterSignal(current_target, COMSIG_PARENT_QDELETING)
 		UnregisterSignal(current_target, COMSIG_MOB_DEATH)
 		UnregisterSignal(current_target, COMSIG_MOVABLE_MOVED)
+	target_deviations = 0
 	current_target = null
 
 /datum/human_ai_brain/proc/update_target_pos()
@@ -216,6 +223,7 @@ GLOBAL_LIST_EMPTY(human_ai_brains)
 /datum/human_ai_brain/proc/on_target_move(atom/oldloc, dir, forced)
 	SIGNAL_HANDLER
 	update_target_pos()
+	update_path_to_target(get_turf(current_target))
 
 /datum/human_ai_brain/proc/on_human_delete(datum/source, force)
 	SIGNAL_HANDLER

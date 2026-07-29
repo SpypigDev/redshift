@@ -17,6 +17,7 @@ import { byondMessages } from './timers';
 type ByondOpen = {
   channel: Channel;
   mapfocus: BooleanLike;
+  lobbyfocus: BooleanLike;
 };
 
 type ByondProps = {
@@ -283,8 +284,9 @@ export class TguiSay extends Component<{}, State> {
   }
 
   handleOpen = (data: ByondOpen) => {
-    const { channel, mapfocus } = data;
-    if (!mapfocus) {
+    const { channel, mapfocus, lobbyfocus } = data;
+
+    if (!mapfocus && !lobbyfocus) {
       return;
     }
 

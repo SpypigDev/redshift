@@ -112,11 +112,11 @@ GLOBAL_LIST_EMPTY(anomaly_ai_spawn_presets)
 /datum/anomaly_ai_spawn_preset/keter
 	anomaly_class = ANOMALY_CLASS_KETER
 
-/datum/anomaly_ai_spawn_preset/keter/duplicate
-	name = "Duplicate"
-	icon_state = "duplicate"
+/datum/anomaly_ai_spawn_preset/keter/doppel
+	name = "Doppelganger"
+	icon_state = "doppel"
 	desc = "Dangerous entity that mimics players before attacking"
-	anomaly_type_ref = "Duplicate"
+	anomaly_type_ref = "Doppelganger"
 
 /datum/anomaly_ai_spawn_preset/euclid
 	anomaly_class = ANOMALY_CLASS_EUCLID

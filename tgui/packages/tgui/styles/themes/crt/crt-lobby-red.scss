@@ -10,5 +10,9 @@
 );
 
 .theme-crtlobbyred {
+  .Button {
+    background-color: transparent;
+    color: base.$color-fg;
+  }
   @extend %theme-crt;
 }

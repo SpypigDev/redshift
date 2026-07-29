@@ -98,7 +98,7 @@
 			continue
 		if(world.time - blinkers[watcher] <= 2 SECONDS)
 			continue
-		if(prob(50))
+		if(prob(length(watchers) > 3 ? 75 : 50))
 			watcher.emote("blink")
 			blinkers[watcher] = world.time
 			watchers -= watcher

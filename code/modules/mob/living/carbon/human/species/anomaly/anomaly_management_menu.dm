@@ -121,7 +121,7 @@ GLOBAL_LIST_EMPTY(anomaly_ai_spawn_presets)
 /datum/anomaly_ai_spawn_preset/keter/statue
 	name = "Statue"
 	icon_state = "statue"
-	desc = "Dangerous entity that mimics players before attacking"
+	desc = "Dont blink!"
 	anomaly_type_ref = "Statue"
 
 /datum/anomaly_ai_spawn_preset/euclid

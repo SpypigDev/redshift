@@ -1381,9 +1381,9 @@
 	pixel_x = -1;
 	pixel_y = 1
 	},
-/obj/effect/landmark/start/bridge/pmc,
 /obj/effect/landmark/late_join/pmc,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/bridge/forecon/scp,
 /turf/open/floor/plating/plating_catwalk,
 /area/firefly/cryo_cell)
 "adW" = (
@@ -1496,11 +1496,6 @@
 /obj/effect/landmark/late_join,
 /turf/open/floor/plating/plating_catwalk,
 /area/firefly/cryo_cell)
-"aen" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/squad_leader,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/corsat/plate,
-/area/firefly/cryo_cell)
 "aeo" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full"
@@ -1587,7 +1582,7 @@
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
 "aez" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/smartgunner,
+/obj/structure/closet/secure_closet/marine_personal/forecon/corpsman,
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
 "aeA" = (
@@ -5193,13 +5188,7 @@
 	},
 /turf/open/floor/corsat/green/east,
 /area/firefly/cryo_cell)
-"aoj" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/rifleman,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/corsat/plate,
-/area/firefly/cryo_cell)
 "aok" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/rifleman,
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
 "aol" = (
@@ -8172,7 +8161,6 @@
 /area/firefly/supply)
 "avE" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/marine_personal/pmc/corpsman,
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
 "avF" = (
@@ -8727,11 +8715,6 @@
 	},
 /turf/open/floor/corsat/squares,
 /area/firefly/hangar)
-"awX" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/platoon_commander,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/corsat/plate,
-/area/firefly/cryo_cell)
 "awY" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/effect/decal/cleanable/dirt,
@@ -9420,7 +9403,7 @@
 /turf/open/floor/corsat/plate,
 /area/firefly/supply)
 "aUO" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/squad_leader,
+/obj/structure/closet/secure_closet/marine_personal/forecon/platoon_leader,
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
 "aUZ" = (
@@ -13938,10 +13921,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/firefly/supply)
-"fYe" = (
-/obj/structure/closet/secure_closet/marine_personal/pmc/platoon_leader,
-/turf/open/floor/corsat/plate,
-/area/firefly/cryo_cell)
 "fYg" = (
 /obj/structure/cargo_container/ferret/left,
 /turf/open/floor/corsat/cargo,
@@ -15597,11 +15576,6 @@
 	},
 /turf/open/floor/corsat/red/west,
 /area/firefly/cafeteria)
-"hAk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/marine_personal/pmc/rifleman,
-/turf/open/floor/corsat/plate,
-/area/firefly/cryo_cell)
 "hAn" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -36017,11 +35991,11 @@ acQ
 acQ
 acQ
 adw
-aez
+aok
 aKv
 aoE
 anL
-aoj
+avE
 adA
 aez
 aKv
@@ -36341,11 +36315,11 @@ aeV
 aeV
 aeV
 adw
-fYe
+aok
 aKv
 aoE
 anL
-aen
+avE
 adA
 aUO
 aKv
@@ -36669,13 +36643,13 @@ aok
 cFL
 iCh
 iea
-hAk
+avE
 adA
 aok
 aKv
 adY
 anL
-awX
+avE
 adA
 oNA
 gez

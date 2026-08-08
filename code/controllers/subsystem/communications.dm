@@ -145,6 +145,7 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 #define DELTA_FREQ 1494
 #define ECHO_FREQ 1495
 #define CRYO_FREQ 1496
+#define SONGBIRD_FREQ 1497
 
 //Civilian channels
 #define COLONY_FREQ 1469
@@ -187,6 +188,7 @@ GLOBAL_LIST_INIT(radiochannels, list(
 	SQUAD_CBRN = CBRN_FREQ,
 	SQUAD_FORECON = FORECON_FREQ,
 	SQUAD_SOLAR = SOF_FREQ,
+	SQUAD_CONTAINMENT = SONGBIRD_FREQ,
 
 	RADIO_CHANNEL_ALAMO = DS1_FREQ,
 	RADIO_CHANNEL_NORMANDY = DS2_FREQ,

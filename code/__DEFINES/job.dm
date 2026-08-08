@@ -339,6 +339,19 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_FORECON_RIFLEMAN "Reconnaissance Rifleman"
 #define JOB_FORECON_SMARTGUNNER "Reconnaissance Smartgunner"
 
+//-------- SONGBIRDS --------//
+
+#define JOB_SONGBIRD_CO "Commanding Officer"
+#define JOB_SONGBIRD_SO "Recon Field Commander"
+#define JOB_SONGBIRD_IO "Tactical Intelligence Officer"
+#define JOB_SONGBIRD_SL "Reconnaissance Squad Leader"
+#define JOB_SONGBIRD_SYN "Reconnaissance Synthetic"
+#define JOB_SONGBIRD_SNIPER "Reconnaissance Sniper"
+#define JOB_SONGBIRD_MARKSMAN "Reconnaissance Marksman"
+#define JOB_SONGBIRD_SUPPORT "Reconnaissance Support Technician"
+#define JOB_SONGBIRD_RIFLEMAN "Reconnaissance Rifleman"
+#define JOB_SONGBIRD_SMARTGUNNER "Reconnaissance Smartgunner"
+
 //-------- UPP --------//
 #define JOB_UPP "Naval Infantry Rifleman"
 #define JOB_UPP_ENGI "Naval Infantry Sapper"

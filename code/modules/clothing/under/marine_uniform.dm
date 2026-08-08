@@ -155,6 +155,7 @@
 	icon_state = "s_io"
 	worn_state = "s_io"
 	suit_restricted = null
+	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/under/marine/officer/warrant
 	name = "\improper USCM MP chief uniform"

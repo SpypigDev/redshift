@@ -257,8 +257,8 @@ export const RADIO_PREFIXES = {
     label: 'US Army',
   },
   '#s ': {
-    id: 'us-army',
-    label: 'US Army',
+    id: 'songbirds',
+    label: 'Songbirds',
   },
   ':t ': {
     id: 'intel',

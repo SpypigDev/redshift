@@ -686,7 +686,7 @@
 /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/scp
 	name = "USCM SOF headset"
 	desc = "Issued exclusively to Marine Raiders and members of the USCM's Force Reconnaissance."
-	frequency = SOF_FREQ
+	frequency = SONGBIRD_FREQ
 	initial_keys = list(/obj/item/device/encryptionkey/soc/forecon/scp)
 	volume = RADIO_VOLUME_QUIET
 

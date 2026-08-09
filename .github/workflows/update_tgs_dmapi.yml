@@ -12,7 +12,7 @@ jobs:
     steps:
 
     - name: Generate App Token
-      id: app-token-generation
+      id: app-token
       uses: actions/create-github-app-token@v1
       with:
         app-id: ${{ secrets.APP_ID }}
@@ -21,7 +21,7 @@ jobs:
     - name: Clone
       uses: actions/checkout@v3
       with:
-        token: ${{ steps.app-token-generation.outputs.token }}
+        token: ${{ steps.app-token.outputs.token }}
 
     - name: Branch
       run: |
@@ -54,4 +54,4 @@ jobs:
         pr_body: "This pull request updates the TGS DMAPI to the latest version. Please note any breaking or unimplemented changes before merging."
         pr_label: "Tools"
         pr_allow_empty: false
-        github_token: ${{ steps.app-token-generation.outputs.token }}
+        github_token: ${{ steps.app-token.outputs.token }}

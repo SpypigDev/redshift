@@ -61,7 +61,7 @@
 	if(option == JSGT_VARIANT)
 		gear_preset = gear_preset_secondary
 
-/datum/job/marine/tl/ai/forecon/containment
+/datum/job/marine/tl/ai/forecon
 	total_positions = 1
 	spawn_positions = 1
 	title = JOB_SQUAD_TEAM_LEADER_FORECON

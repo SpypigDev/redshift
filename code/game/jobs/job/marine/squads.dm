@@ -211,7 +211,7 @@
 	equipment_color = "#400000"
 	chat_color = "#400000"
 	minimap_color = MINIMAP_SQUAD_SOF
-	radio_freq = SONGBIRD_FREQ
+	radio_freq = CONTAINMENT_FREQ
 	squad_type = "Team"
 
 /datum/squad/marine/bravo

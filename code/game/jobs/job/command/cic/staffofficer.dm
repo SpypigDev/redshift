@@ -126,6 +126,15 @@ OverrideTimelock(/datum/job/command/bridge, list(
 	squad = SQUAD_RMC
 	job = /datum/job/command/bridge/ai/rmc
 
+/datum/job/command/bridge/ai/forecon/containment
+	title = JOB_CONTAINMENT_SO
+	gear_preset = /datum/equipment_preset/uscm_ship/so/forecon/containment
+	job_options = null
+
+/obj/effect/landmark/start/bridge/forecon/containment
+	name = JOB_FORECON_SO
+	job = /datum/job/command/bridge/ai/forecon/containment
+
 #undef FIRST_LT_VARIANT
 #undef SR_LT_VARIANT
 #undef SECOND_LT_VARIANT

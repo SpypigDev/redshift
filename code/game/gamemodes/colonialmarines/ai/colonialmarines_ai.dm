@@ -32,6 +32,10 @@
 	return ..()
 
 /datum/game_mode/colonialmarines/ai/pre_setup()
+
+	if(platoon_overrive)
+		return ..()
+
 	RegisterSignal(SSdcs, COMSIG_GLOB_XENO_SPAWN, PROC_REF(handle_xeno_spawn))
 	squad_limit.Cut()
 	squad_limit += MAIN_SHIP_PLATOON
@@ -138,7 +142,8 @@ GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI
 												/datum/squad/marine/pmc = ROLES_PMCPLT,\
 												/datum/squad/marine/forecon = ROLES_AI_FORECON,\
 												/datum/squad/marine/pmc/small = ROLES_PMCPLT_SMALL,\
-												/datum/squad/marine/rmc = ROLES_RMCTROOP))
+												/datum/squad/marine/rmc = ROLES_RMCTROOP,\
+												/datum/squad/marine/forecon/containment = ROLES_AI_CONTAINMENT))
 
 
 GLOBAL_LIST_INIT(personal_weapons_list, list("Ithaca 37 shotgun-stakeout" = /obj/item/storage/large_holster/m37/full/noammo,\

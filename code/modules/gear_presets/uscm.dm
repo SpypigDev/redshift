@@ -359,6 +359,42 @@
 	name = parent_type::name + " (E5 Rank)"
 	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 
+/datum/equipment_preset/uscm/tl/forecon/containment
+	name = "Recon Team Leader (Containment)"
+	assignment = JOB_CONTAINMENT_TL
+	rank = JOB_CONTAINMENT_TL
+	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "TL"
+	skills = /datum/skills/tl/recon
+	minimap_icon = "tl"
+	minimap_background = MINIMAP_SQUAD_SOF
+
+	dress_under = list(/obj/item/clothing/under/marine/dress/blues/senior)
+	dress_over = list(/obj/item/clothing/suit/storage/jacket/marine/dress/blues/officer)
+	dress_hat = list(/obj/item/clothing/head/marine/dress_cover/officer)
+
+/datum/equipment_preset/uscm/tl/forecon/containment/load_status(mob/living/carbon/human/new_human)
+	new_human.nutrition = NUTRITION_NORMAL
+
+/datum/equipment_preset/uscm/tl/forecon/containment/squad_leader/load_gear(mob/living/carbon/human/new_human)
+	add_forecon_uniform(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/ranks/marine/o1(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/tactical(new_human), WEAR_R_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/marine(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/facepaint/sniper(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/containment(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/rto/forecon(new_human), WEAR_JACKET)
+	GLOB.character_traits[/datum/character_trait/skills/spotter].apply_trait(new_human)
+	..()
+	add_combat_gloves(new_human)
+
 /*****************************************************************************************************/
 
 /datum/equipment_preset/uscm/engineer

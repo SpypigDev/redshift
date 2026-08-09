@@ -140,7 +140,7 @@
 /obj/structure/closet/secure_closet/marine_personal/forecon/scp/spawn_gear()
 	new /obj/item/clothing/under/marine/standard(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
-	new /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/scp(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/containment(src)
 
 /obj/structure/closet/secure_closet/marine_personal/forecon/scp/rifleman
 	job = JOB_SQUAD_MARINE

@@ -341,16 +341,16 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 //-------- SONGBIRDS --------//
 
-#define JOB_SONGBIRD_CO "Commanding Officer"
-#define JOB_SONGBIRD_SO "Recon Field Commander"
-#define JOB_SONGBIRD_IO "Tactical Intelligence Officer"
-#define JOB_SONGBIRD_SL "Reconnaissance Squad Leader"
-#define JOB_SONGBIRD_SYN "Reconnaissance Synthetic"
-#define JOB_SONGBIRD_SNIPER "Reconnaissance Sniper"
-#define JOB_SONGBIRD_MARKSMAN "Reconnaissance Marksman"
-#define JOB_SONGBIRD_SUPPORT "Reconnaissance Support Technician"
-#define JOB_SONGBIRD_RIFLEMAN "Reconnaissance Rifleman"
-#define JOB_SONGBIRD_SMARTGUNNER "Reconnaissance Smartgunner"
+#define JOB_CONTAINMENT_CO "Commanding Officer"
+#define JOB_CONTAINMENT_SO "Recon Field Commander"
+#define JOB_CONTAINMENT_IO "Tactical Intelligence Officer"
+#define JOB_CONTAINMENT_TL "Recon Team Leader"
+#define JOB_CONTAINMENT_SYN "Reconnaissance Synthetic"
+#define JOB_CONTAINMENT_SNIPER "Reconnaissance Sniper"
+#define JOB_CONTAINMENT_MARKSMAN "Reconnaissance Marksman"
+#define JOB_CONTAINMENT_SUPPORT "Reconnaissance Support Technician"
+#define JOB_CONTAINMENT_RIFLEMAN "Reconnaissance Rifleman"
+#define JOB_CONTAINMENT_SMARTGUNNER "Reconnaissance Smartgunner"
 
 //-------- UPP --------//
 #define JOB_UPP "Naval Infantry Rifleman"

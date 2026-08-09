@@ -576,7 +576,7 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 			mixed_squads += S
 
 	//Deal with IOs first
-	if(H.job == JOB_INTEL)
+	if(locate(H.job) in list(JOB_INTEL, JOB_CONTAINMENT_IO))
 		var/datum/squad/intel_squad = get_squad_by_name(SQUAD_MARINE_INTEL)
 		if(!intel_squad || !istype(intel_squad)) //Something went horribly wrong!
 			to_chat(H, "Something went wrong with randomize_squad()! Tell a coder!")

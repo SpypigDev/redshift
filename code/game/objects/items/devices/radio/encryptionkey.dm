@@ -258,7 +258,7 @@
 	icon_state = "binary_key"
 	channels = list(SQUAD_SOF = TRUE)
 
-/obj/item/device/encryptionkey/soc/forecon/scp
+/obj/item/device/encryptionkey/soc/forecon/containment
 	name = "\improper SOF Radio Encryption Key"
 	icon_state = "binary_key"
 	channels = list(SQUAD_CONTAINMENT = TRUE)

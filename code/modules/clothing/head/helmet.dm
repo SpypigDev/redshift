@@ -904,6 +904,10 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	flags_atom = NO_NAME_OVERRIDE
 
+/obj/item/clothing/head/helmet/marine/scout/desert
+	icon_state = "d_scout_helmet"
+	flags_atom = NO_SNOW_TYPE
+
 /obj/item/clothing/head/helmet/marine/pyro
 	name = "\improper M10-P pyrotechnician helmet"
 	icon_state = "pyro_helmet"

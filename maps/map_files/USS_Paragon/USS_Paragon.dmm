@@ -1379,7 +1379,6 @@
 	},
 /obj/effect/landmark/late_join/pmc,
 /obj/effect/landmark/late_join,
-/obj/effect/landmark/start/bridge/forecon/scp,
 /turf/open/floor/plating/plating_catwalk,
 /area/firefly/cryo_cell)
 "adW" = (

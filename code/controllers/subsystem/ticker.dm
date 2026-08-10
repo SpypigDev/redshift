@@ -56,7 +56,7 @@ SUBSYSTEM_DEF(ticker)
 	var/totalPlayersReady = 0 //used for pregame stats on statpanel
 	var/tutorial_disabled = FALSE
 
-	var/intro_sequence = TRUE
+	var/intro_sequence = FALSE
 
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	load_mode()

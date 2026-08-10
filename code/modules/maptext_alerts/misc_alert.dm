@@ -72,12 +72,12 @@
 	screen_loc = "LEFT,TOP-3"
 	letters_per_update = 1
 	fade_out_delay = 1 SECONDS
-	style_open = "<span style='font-size:15pt; text-align:center; color: #c0f7ff; font-family: \"VCR OSD Mono\"' valign='top'>"
+	style_open = "<span style='font-size:15pt; text-align:center; color: #da2020; font-family: \"VCR OSD Mono\"' valign='top'>"
 	style_close = "</span>"
 
 /atom/movable/screen/text/screen_text/hypersleep_status/Initialize(mapload)
 	. = ..()
-	add_filter("text_glow", 2, drop_shadow_filter(x = 0, y = 0, size = 3, color = "#70D5E9"))
+	add_filter("text_glow", 2, drop_shadow_filter(x = 0, y = 0, size = 3, color = "#f05d5d"))
 
 /atom/movable/screen/text/screen_text/directed_by
 	layer = INTRO_LAYER

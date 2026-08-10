@@ -376,7 +376,7 @@
 /datum/equipment_preset/uscm/tl/forecon/containment/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_NORMAL
 
-/datum/equipment_preset/uscm/tl/forecon/containment/squad_leader/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/uscm/tl/forecon/containment/load_gear(mob/living/carbon/human/new_human)
 	add_forecon_uniform(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/ranks/marine/o1(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)

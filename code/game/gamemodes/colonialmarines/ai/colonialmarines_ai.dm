@@ -33,9 +33,6 @@
 
 /datum/game_mode/colonialmarines/ai/pre_setup()
 
-	if(platoon_overrive)
-		return ..()
-
 	RegisterSignal(SSdcs, COMSIG_GLOB_XENO_SPAWN, PROC_REF(handle_xeno_spawn))
 	squad_limit.Cut()
 	squad_limit += MAIN_SHIP_PLATOON
@@ -135,7 +132,15 @@ GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/j
 		/datum/job/marine/engineer/ai/rmc = JOB_TWE_RMC_ENGI,\
 		/datum/job/marine/engineer/ai/rmcmortar = JOB_TWE_RMC_BREACHER,\
 		/datum/job/marine/specialist/ai/rmc = JOB_TWE_RMC_MARKSMAN,\
-		/datum/job/marine/standard/ai/rmc = JOB_TWE_RMC_RIFLEMAN)))
+		/datum/job/marine/standard/ai/rmc = JOB_TWE_RMC_RIFLEMAN),\
+		/datum/squad/marine/forecon/containment = list(/datum/job/command/bridge/ai/forecon/containment = JOB_SO,\
+		/datum/job/command/intel/containment = JOB_CONTAINMENT_IO,\
+		/datum/job/marine/tl/ai/forecon/containment = JOB_SQUAD_TEAM_LEADER,\
+		/datum/job/marine/specialist = JOB_SQUAD_SPECIALIST,\
+		/datum/job/marine/smartgunner/ai/forecon = JOB_SQUAD_SMARTGUN,\
+		/datum/job/marine/medic/ai/forecon = JOB_SQUAD_MEDIC,\
+		/datum/job/marine/engineer/ai = JOB_SQUAD_ENGI,\
+		/datum/job/marine/standard/ai/forecon = JOB_SQUAD_MARINE)))
 
 GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI,\
 												/datum/squad/marine/upp = ROLES_AI_UPP,\

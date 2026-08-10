@@ -11,36 +11,13 @@
 	initial_objectives = 0
 
 	game_started = FALSE
-	platoon_overrive = TRUE
-
-	role_mappings = list(
-		/datum/job/command/bridge/ai/forecon/containment = JOB_CONTAINMENT_SO,
-		/datum/job/command/intel/containment = JOB_CONTAINMENT_IO,
-		/datum/job/marine/tl/ai/forecon/containment = JOB_CONTAINMENT_TL,
-		/datum/job/marine/specialist = JOB_SQUAD_SPECIALIST,
-		/datum/job/marine/smartgunner/ai/forecon = JOB_SQUAD_SMARTGUN_FORECON,
-		/datum/job/marine/medic/ai/forecon = JOB_SQUAD_MEDIC_FORECON,
-		/datum/job/marine/engineer/ai = JOB_SQUAD_ENGI,
-		/datum/job/marine/standard/ai/forecon = JOB_SQUAD_MARINE_FORECON,
-	)
 
 	static_comms_amount = 0
 	requires_comms = FALSE
 	toggleable_flags = MODE_NO_JOIN_AS_XENO|MODE_HARDCORE_PERMA|MODE_DISABLE_FS_PORTRAIT
 
-/datum/game_mode/colonialmarines/ai/scp/pre_setup()
-	GLOB.RoleAuthority.reset_roles()
-	for(var/datum/squad/sq in GLOB.RoleAuthority.squads)
-		if(sq.type in squad_limit)
-			GLOB.main_platoon_name = sq.name
-			GLOB.main_platoon_initial_name = sq.name
-
-	// rework to activate entity spawning
-	//RegisterSignal(SSdcs, COMSIG_GLOB_XENO_SPAWN, PROC_REF(handle_xeno_spawn))
-
-	GLOB.platoon_to_role_list[/datum/squad/marine/forecon/containment] = GLOB.ROLES_AI_CONTAINMENT
-
-	. = ..()
+/datum/game_mode/colonialmarines/ai/scp/get_roles_list()
+	return GLOB.ROLES_AI_CONTAINMENT
 
 // rework to allow entity spawns
 /datum/game_mode/colonialmarines/ai/scp/handle_xeno_spawn(datum/source, mob/living/carbon/xenomorph/spawning_xeno, ai_hard_off = FALSE)

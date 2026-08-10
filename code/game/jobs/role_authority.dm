@@ -576,7 +576,7 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 			mixed_squads += S
 
 	//Deal with IOs first
-	if(locate(H.job) in list(JOB_INTEL, JOB_CONTAINMENT_IO))
+	if(H.job == JOB_INTEL)
 		var/datum/squad/intel_squad = get_squad_by_name(SQUAD_MARINE_INTEL)
 		if(!intel_squad || !istype(intel_squad)) //Something went horribly wrong!
 			to_chat(H, "Something went wrong with randomize_squad()! Tell a coder!")
@@ -692,7 +692,7 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 						if(!lowest)
 							lowest = S
 		if(!lowest)
-			var/ranpick = rand(1,4)
+			var/ranpick = rand(1, length(mixed_squads))
 			lowest = mixed_squads[ranpick]
 		if(lowest) lowest.put_marine_in_squad(H)
 		else to_chat(H, "Something went badly with randomize_squad()! Tell a coder!")

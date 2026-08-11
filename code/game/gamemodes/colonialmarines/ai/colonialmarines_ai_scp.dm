@@ -17,6 +17,7 @@
 	toggleable_flags = MODE_NO_JOIN_AS_XENO|MODE_HARDCORE_PERMA|MODE_DISABLE_FS_PORTRAIT
 
 	var/area/cryo_area
+	var/suspend_startup = FALSE
 
 /datum/game_mode/colonialmarines/ai/scp/get_roles_list()
 	return GLOB.ROLES_AI_CONTAINMENT
@@ -36,7 +37,10 @@
 	for(var/obj/structure/machinery/light/light as anything in cryo_area.all_lights)
 		light.set_light_range(3)
 		light.set_light_color("#800000")
-	addtimer(CALLBACK(src, PROC_REF(cryo_lighting_power)), (SSticker.intro_sequence ? 20 : 11) SECONDS)
+	if(!SSticker.intro_sequence)
+		addtimer(CALLBACK(src, PROC_REF(cryo_lighting_power)), 11 SECONDS)
+	else
+		suspend_startup = TRUE
 	return ..()
 
 /datum/game_mode/colonialmarines/ai/scp/proc/cryo_lighting_power()
@@ -49,10 +53,7 @@
 
 /datum/game_mode/colonialmarines/ai/scp/proc/cryo_lighting_fluff()
 	for(var/obj/structure/machinery/light/light as anything in cryo_area.all_lights)
-		light.set_light_color(initial(light.light_color))
-		light.set_light_power(0.7)
-		light.update()
-		light.set_light_range(initial(light.light_range))
+		light.set_light(6, 0.7, initial(light.light_color))
 	for(var/mob/living/carbon/human/player in GLOB.player_list)
 		playsound_client(player.client, 'sound/AI/ares_online.ogg', player, 30)
 	var/name = "TITAN 1200 Report"

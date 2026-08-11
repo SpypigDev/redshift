@@ -1686,6 +1686,10 @@
 	overlay_fullscreen_timer(time_to_remove, 10, "roundstart2", /atom/movable/screen/fullscreen/black)
 	overlay_fullscreen_timer(time_to_remove, 10, "roundstartcrt2", /atom/movable/screen/fullscreen/crt)
 	overlay_fullscreen_timer(time_to_remove + 2 SECONDS, 20, "roundstart_fade", /atom/movable/screen/fullscreen/spawning_in)
+	if(SSticker.mode:suspend_startup)
+		var/datum/game_mode/colonialmarines/ai/scp/containment = SSticker.mode
+		containment.suspend_startup = FALSE
+		addtimer(CALLBACK(containment, TYPE_PROC_REF(/datum/game_mode/colonialmarines/ai/scp, cryo_lighting_power)), time_to_remove + 12 SECONDS)
 	var/alert_type = /atom/movable/screen/text/screen_text/picture/starting
 	var/platoon = "3rd Bat. 'Solar Devils"
 	switch(faction)

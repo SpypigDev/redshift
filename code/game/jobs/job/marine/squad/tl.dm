@@ -69,10 +69,16 @@
 	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/sergeant
 	job_options = list(SGT_VARIANT = "SGT", SSGT_VARIANT = "SSGT")
 
-/datum/job/marine/tl/ai/forecon/handle_job_options(option)
-	gear_preset = initial(gear_preset)
-	if(option == SGT_VARIANT)
-		gear_preset = gear_preset_secondary
+/datum/job/marine/tl/ai/forecon/containment
+	total_positions = 1
+	spawn_positions = 1
+	title = JOB_CONTAINMENT_TL
+	gear_preset = /datum/equipment_preset/uscm/tl/forecon/containment
+	gear_preset_secondary = null
+	job_options = null
+
+/datum/job/marine/tl/ai/forecon/containment/handle_job_options(option)
+	return
 
 /obj/effect/landmark/start/marine/tl/upp
 	name = JOB_SQUAD_TEAM_LEADER_UPP

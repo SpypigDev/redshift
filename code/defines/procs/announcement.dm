@@ -161,7 +161,7 @@
 
 //the announcement proc that handles announcing for each mob in targets list
 /proc/announcement_helper(message, title, list/targets, sound_to_play)
-	if(!message || !title || !sound_to_play || !targets) //Shouldn't happen
+	if(!message || !title || !targets) //Shouldn't happen
 		return
 	for(var/mob/T in targets)
 		if(istype(T, /mob/new_player))
@@ -170,4 +170,5 @@
 		to_chat_spaced(T, html = "[SPAN_ANNOUNCEMENT_HEADER(title)]<br><br>[SPAN_ANNOUNCEMENT_BODY(message)]", type = MESSAGE_TYPE_RADIO)
 		if(isobserver(T) && !(T.client?.prefs?.toggles_sound & SOUND_OBSERVER_ANNOUNCEMENTS))
 			continue
-		playsound_client(T.client, sound_to_play, T, vol = 45)
+		if(sound_to_play)
+			playsound_client(T.client, sound_to_play, T, vol = 45)

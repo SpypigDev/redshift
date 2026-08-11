@@ -382,6 +382,31 @@
 	armor_variation = 0
 	specialty = "M3 pattern smooth marine"
 
+/obj/item/clothing/suit/storage/marine/medium/smooth/dark
+	flags_atom = NO_SNOW_TYPE
+	valid_accessory_slots = list(
+		ACCESSORY_SLOT_MEDAL,
+		ACCESSORY_SLOT_PAINT,
+		ACCESSORY_SLOT_M3UTILITY,
+		ACCESSORY_SLOT_PONCHO,
+		ACCESSORY_SLOT_DECORNECK,
+		ACCESSORY_SLOT_DECORARMOR,
+		ACCESSORY_SLOT_DECORBRACER,
+		ACCESSORY_SLOT_DECORGROIN,
+		ACCESSORY_SLOT_DECORKNEE,
+		ACCESSORY_SLOT_DECORSHIN,
+	)
+	restricted_accessory_slots = list(
+		ACCESSORY_SLOT_M3UTILITY,
+		ACCESSORY_SLOT_PAINT,
+		ACCESSORY_SLOT_DECORNECK,
+		ACCESSORY_SLOT_DECORARMOR,
+		ACCESSORY_SLOT_DECORBRACER,
+		ACCESSORY_SLOT_DECORGROIN,
+		ACCESSORY_SLOT_DECORKNEE,
+		ACCESSORY_SLOT_DECORSHIN,
+	)
+
 // M3-L pattern light armor
 /obj/item/clothing/suit/storage/marine/light
 	name = "\improper M3-L pattern light armor"

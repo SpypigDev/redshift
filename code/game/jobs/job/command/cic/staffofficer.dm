@@ -76,6 +76,15 @@ OverrideTimelock(/datum/job/command/bridge, list(
 /datum/job/command/bridge/ai/cleanup_leader_candidate(mob/M)
 	GLOB.marine_leaders -= JOB_SO
 
+/datum/job/command/bridge/ai/forecon
+	title = JOB_FORECON_SO
+	gear_preset = /datum/equipment_preset/uscm_ship/so/forecon
+	job_options = null
+
+/obj/effect/landmark/start/bridge/forecon
+	name = JOB_FORECON_SO
+	job = /datum/job/command/bridge/ai/forecon
+
 /datum/job/command/bridge/ai/upp
 	title = JOB_SO_UPP
 	gear_preset = /datum/equipment_preset/uscm_ship/so/upp
@@ -116,6 +125,15 @@ OverrideTimelock(/datum/job/command/bridge, list(
 	name = JOB_TWE_RMC_LIEUTENANT
 	squad = SQUAD_RMC
 	job = /datum/job/command/bridge/ai/rmc
+
+/datum/job/command/bridge/ai/forecon/containment
+	title = JOB_CONTAINMENT_SO
+	gear_preset = /datum/equipment_preset/uscm_ship/so/forecon/containment
+	job_options = null
+
+/obj/effect/landmark/start/bridge/forecon/containment
+	name = JOB_FORECON_SO
+	job = /datum/job/command/bridge/ai/forecon/containment
 
 #undef FIRST_LT_VARIANT
 #undef SR_LT_VARIANT

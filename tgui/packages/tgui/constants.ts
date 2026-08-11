@@ -267,6 +267,11 @@ export const RADIO_CHANNELS = [
     color: '#318779',
   },
   {
+    name: 'Songbirds',
+    freq: 1479,
+    color: '#400000',
+  },
+  {
     name: 'Provost',
     freq: 1473,
     color: '#9b0612',

@@ -66,6 +66,9 @@
 	var/nightmare_path
 
 	var/platoon
+
+	var/cryo_sleep_area
+
 	/// If truthy this is config for a round overridden map: search for override maps in data/, instead of using a path in maps/
 	var/override_map
 
@@ -125,6 +128,16 @@
 
 #define CHECK_EXISTS(X) if(!istext(json[X])) { log_world("[##X] missing from json!"); return; }
 /datum/map_config/proc/LoadConfig(filename, error_if_missing, maptype)
+	#ifdef FORCE_GROUND_MAP
+	if(maptype == GROUND_MAP)
+		filename = FORCE_GROUND_MAP
+	#endif
+
+	#ifdef FORCE_SHIP_MAP
+	if(maptype == SHIP_MAP)
+		filename = FORCE_SHIP_MAP
+	#endif
+
 	if(!fexists(filename))
 		if(error_if_missing)
 			log_world("map_config not found: [filename]")
@@ -355,6 +368,9 @@
 
 	if(json["platoon"])
 		platoon = json["platoon"]
+
+	if(json["cryo_sleep_area"])
+		cryo_sleep_area = text2path(json["cryo_sleep_area"])
 
 	if(islist(json["environment_traits"]))
 		environment_traits = json["environment_traits"]

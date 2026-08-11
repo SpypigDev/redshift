@@ -36,6 +36,9 @@ endmap
 map uss_eclipse
 endmap
 
+map uss_paragon
+endmap
+
 map uscss_obsidian_falk
 endmap
 

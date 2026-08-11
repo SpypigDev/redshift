@@ -507,7 +507,7 @@ GLOBAL_LIST_INIT(frozen_items, list(SQUAD_MARINE_1 = list(), SQUAD_MARINE_2 = li
 	mob.forceMove(src)
 	occupant = mob
 	update_icon()
-	set_light(2)
+	set_light(MINIMUM_USEFUL_LIGHT_RANGE, 0.4, LIGHT_COLOR_CYAN )
 	time_entered = world.time
 	start_processing()
 

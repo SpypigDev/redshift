@@ -135,6 +135,31 @@
 /obj/structure/closet/secure_closet/marine_personal/forecon/rto
 	job = JOB_SQUAD_RTO
 
+// == CONTAINMENT == //
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/spawn_gear()
+	new /obj/item/clothing/under/marine/standard(src)
+	new /obj/item/clothing/shoes/marine/knife(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/containment(src)
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/rifleman
+	job = JOB_SQUAD_MARINE
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/smartgunner
+	job = JOB_SQUAD_SMARTGUN
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/corpsman
+	job = JOB_SQUAD_MEDIC
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/squad_leader
+	job = JOB_SQUAD_TEAM_LEADER
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/platoon_leader
+	job = JOB_SQUAD_LEADER
+
+/obj/structure/closet/secure_closet/marine_personal/forecon/scp/rto
+	job = JOB_SQUAD_RTO
+
 // ==WY PMC== //
 
 /obj/structure/closet/secure_closet/marine_personal/pmc/spawn_gear()

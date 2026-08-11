@@ -23,6 +23,7 @@
 #define SQUAD_RMC "Gamma Troop"
 #define SQUAD_LRRP "Snake Eaters"
 #define SQUAD_LRRP_2 "Ocelot Grapplers"
+#define SQUAD_CONTAINMENT "Songbirds"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -329,6 +330,7 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 //-------- FORECON --------//
 
 #define JOB_FORECON_CO "Reconnaissance Commander"
+#define JOB_FORECON_SO "Reconnaissance Platoon Commander"
 #define JOB_FORECON_SL "Reconnaissance Squad Leader"
 #define JOB_FORECON_SYN "Reconnaissance Synthetic"
 #define JOB_FORECON_SNIPER "Reconnaissance Sniper"
@@ -336,6 +338,19 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_FORECON_SUPPORT "Reconnaissance Support Technician"
 #define JOB_FORECON_RIFLEMAN "Reconnaissance Rifleman"
 #define JOB_FORECON_SMARTGUNNER "Reconnaissance Smartgunner"
+
+//-------- SONGBIRDS --------//
+
+#define JOB_CONTAINMENT_CO "Commanding Officer"
+#define JOB_CONTAINMENT_SO "Recon Field Commander"
+#define JOB_CONTAINMENT_IO "Tactical Intelligence Officer"
+#define JOB_CONTAINMENT_TL "Recon Team Leader"
+#define JOB_CONTAINMENT_SYN "Reconnaissance Synthetic"
+#define JOB_CONTAINMENT_SNIPER "Reconnaissance Sniper"
+#define JOB_CONTAINMENT_MARKSMAN "Reconnaissance Marksman"
+#define JOB_CONTAINMENT_SUPPORT "Reconnaissance Support Technician"
+#define JOB_CONTAINMENT_RIFLEMAN "Reconnaissance Rifleman"
+#define JOB_CONTAINMENT_SMARTGUNNER "Reconnaissance Smartgunner"
 
 //-------- UPP --------//
 #define JOB_UPP "Naval Infantry Rifleman"
@@ -439,7 +454,11 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define BD_MERCS_JOB_LIST list(JOB_MERCENARY_GRUNT, JOB_MERCENARY_PILOT, JOB_MERCENARY_SENTINEL, JOB_MERCENARY_SUPERVISOR, JOB_MERCENARY_BULWARK, JOB_MERCENARY_SYNTH, JOB_MERCENARY_INFILTRATOR, JOB_MERCENARY_OFFICER)
 
+//-------- UNNC --------//
+#define JOB_UNNC_OIS "UNNC Internal Security Officer"
+
 #define TIS_JOB_LIST list(JOB_TIS_SA, JOB_TIS_IO)
+
 //-------- UACG -------//
 #define JOB_UACG_RIFLE "Colonial Militiaman"
 #define JOB_UACG_TECH "Colonial Militiaman Technician"

@@ -14,6 +14,10 @@
 	var/larva_queue_message_stale_time
 
 /mob/new_player/Initialize()
+	#ifdef QUICK_START
+	ready = TRUE
+	#endif
+
 	. = ..()
 	GLOB.dead_mob_list -= src
 	ADD_TRAIT(src, TRAIT_IMMOBILIZED, TRAIT_SOURCE_INHERENT)

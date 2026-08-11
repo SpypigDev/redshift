@@ -44,6 +44,8 @@
 			if(JOB_FORECON_RIFLEMAN) marine_rk = null
 			if(JOB_FORECON_CO) marine_rk = "co"
 
+			if(JOB_CONTAINMENT_IO) marine_rk = "cialo"
+
 		if(squad.squad_leader == current_human)
 			switch(squad.squad_type)
 				if("Section") marine_rk = "leader_a"

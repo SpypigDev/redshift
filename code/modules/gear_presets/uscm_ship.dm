@@ -685,6 +685,11 @@
 	change_dropship_camo(new_human.client.prefs.dropship_camo)
 	change_dropship_name(new_human.client.prefs.dropship_name)
 
+/datum/equipment_preset/uscm_ship/so/forecon
+	name = "Recon Platoon Commander (PltCo)"
+	paygrades = list(PAY_SHORT_MO3 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/XO
+
 /datum/equipment_preset/uscm_ship/so/upp
 	name = "UPP Platoon Commander (PltCo)"
 	idtype = /obj/item/card/id/dogtag
@@ -767,6 +772,65 @@
 	faction_group = FACTION_LIST_TWE
 	faction = FACTION_TWE
 	access_list = ACCESS_LIST_TWE_TROOP
+
+/datum/equipment_preset/uscm_ship/so/forecon/containment
+	name = "Recon Field Commander (Containment)"
+	idtype = /obj/item/card/id/dogtag
+	assignment = JOB_CONTAINMENT_SO
+	rank = JOB_SO
+	paygrades = list(PAY_SHORT_MO3 = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "FiCO"
+	skills = /datum/skills/XO
+	minimap_icon = list("cic" = COLOR_SILVER)
+	minimap_background = MINIMAP_SQUAD_SOF
+
+/datum/equipment_preset/uscm_ship/so/forecon/containment/load_status(mob/living/carbon/human/new_human, client/mob_client)
+	. = ..()
+	if(!new_human.client)
+		return
+
+	give_action(new_human, /datum/action/innate/message_squad)
+
+/datum/equipment_preset/uscm_ship/so/forecon/containment/handle_late_join(mob/living/carbon/human/new_human, late_join)
+	if(late_join)
+		return
+
+	change_dropship_camo(new_human.client.prefs.dropship_camo)
+
+/datum/equipment_preset/uscm_ship/so/forecon/containment/load_gear(mob/living/carbon/human/new_human)
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/rto(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/swat(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/containment(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big(new_human), WEAR_EYES)
+	//head
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/marine/commander/black(new_human), WEAR_HEAD)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/forecon(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/sheath(new_human), WEAR_ACCESSORY)
+	// armour
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/medium/smooth/dark(new_human), WEAR_JACKET)
+
+	var/static/list/armor_pads = list(
+		/obj/item/clothing/accessory/pads,
+		/obj/item/clothing/accessory/pads/groin,
+		/obj/item/clothing/accessory/twepads/legs
+	)
+	for(var/pad_type in armor_pads)
+		var/obj/item/clothing/accessory/pads/armor_pad = new pad_type(new_human)
+		armor_pad.flags_atom |= NO_SNOW_TYPE
+		armor_pad.icon_state = initial(armor_pad.icon_state)
+		armor_pad.update_icon()
+		new_human.equip_to_slot_or_del(armor_pad, WEAR_ACCESSORY)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m3/small/army/leader(new_human), WEAR_ACCESSORY)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/vp78/dark(new_human), WEAR_WAIST)
 
 //*****************************************************************************************************/
 
@@ -870,6 +934,36 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/pistol(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/vp70(new_human), WEAR_IN_R_STORE)
+
+/datum/equipment_preset/uscm_ship/io/containment
+	name = "Tactical Intelligence Officer (Containment)"
+	idtype = /obj/item/card/id/dogtag
+	assignment = JOB_CONTAINMENT_IO
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
+	rank = JOB_CONTAINMENT_IO
+
+/datum/equipment_preset/uscm_ship/io/containment/load_gear(mob/living/carbon/human/new_human)
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/intel(new_human), WEAR_BACK)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/forecon/containment(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf/tacticalmask(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud/tactical(new_human), WEAR_EYES)
+	//head
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/scout/desert(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/helmet_nvg(new_human), WEAR_IN_HELMET)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/intel/dark(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/usasf(new_human), WEAR_ACCESSORY)
+	//armour
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/veteran/royal_marine(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/twepads/legs(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m3/uppmags/rmc(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/forecon(new_human), WEAR_J_STORE)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/jungle/knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/brown(new_human), WEAR_HANDS)
+
 
 //*****************************************************************************************************/
 
